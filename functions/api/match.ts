@@ -93,7 +93,7 @@ async function fetchWithTimeout(url: string, options: RequestInit, timeoutMs: nu
 
 export const onRequestPost: PagesFunction<Env> = async (context) => {
   const { request, env } = context;
-  const allowedOrigin = env.ALLOWED_ORIGIN || 'https://aimatchagent.jp';
+  const allowedOrigin = env.ALLOWED_ORIGIN || 'https://ai.matchagent.workers.dev';
   const corsHeaders = getCorsHeaders(request, allowedOrigin);
 
   if (request.method === 'OPTIONS') {
@@ -139,7 +139,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     }
 
     // パートナー一覧を取得（ビルド時に生成されたJSONを想定）
-    const siteUrl = env.PUBLIC_SITE_URL || 'https://aimatchagent.jp';
+    const siteUrl = env.PUBLIC_SITE_URL || 'https://ai.matchagent.workers.dev';
     const partnersResponse = await fetchWithTimeout(
       `${siteUrl}/data/partners.json`,
       {},
@@ -318,7 +318,7 @@ export const onRequest: PagesFunction<Env> = async (context) => {
     return onRequestPost(context);
   }
 
-  const allowedOrigin = context.env.ALLOWED_ORIGIN || 'https://aimatchagent.jp';
+  const allowedOrigin = context.env.ALLOWED_ORIGIN || 'https://ai.matchagent.workers.dev';
   const corsHeaders = getCorsHeaders(context.request, allowedOrigin);
 
   return new Response(

@@ -5,7 +5,7 @@ import cloudflare from '@astrojs/cloudflare';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://aimatchagent.jp',
+  site: 'https://ai.matchagent.workers.dev',
   output: 'static',
   adapter: cloudflare(),
   integrations: [

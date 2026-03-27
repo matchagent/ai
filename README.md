@@ -2,7 +2,7 @@
 
 AI開発パートナーのマッチングプラットフォーム。企業のAI導入課題・予算・業種をもとに、最適なAI開発パートナーをClaude AIで自動推薦する。
 
-サイト: https://aimatchagent.jp
+サイト: https://ai.matchagent.workers.dev
 
 ## 技術スタック
 
@@ -72,8 +72,8 @@ npm run check        # TypeScript 型チェック
 ANTHROPIC_API_KEY=    # Claude API キー
 SUPABASE_URL=         # Supabase プロジェクト URL
 SUPABASE_ANON_KEY=    # Supabase 匿名キー
-PUBLIC_SITE_URL=      # 本番サイト URL (https://aimatchagent.jp)
-ALLOWED_ORIGIN=       # CORS 許可オリジン (https://aimatchagent.jp)
+PUBLIC_SITE_URL=      # 本番サイト URL (https://ai.matchagent.workers.dev)
+ALLOWED_ORIGIN=       # CORS 許可オリジン (https://ai.matchagent.workers.dev)
 ```
 
 Cloudflare Pages の環境変数にも同様に設定すること。
