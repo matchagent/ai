@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const partners = await getCollection('partners');
+const activePartners = partners.filter(p => p.data.is_active);
+
+const industryLabels: Record<string, string> = {
+  manufacturing: '製造業',
+  retail: '小売・EC業',
+  logistics: '物流・運輸',
+  construction: '建設業',
+  legal: '士業',
+  food: '飲食業',
+  hotel: '宿泊業',
+  realestate: '不動産業',
+  entertainment: '娯楽業',
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'AI開発パートナー一覧',
+  description: '審査制で選ばれたAI開発パートナーをご紹介。専門領域や予算帯で最適なパートナーを見つけられます。',
+};
+---
+
+<BaseLayout 
+  title="開発パートナー一覧" 
+  description="審査制で選ばれたAI開発パートナーをご紹介。専門領域や予算帯で最適なパートナーを見つけられます。"
+  jsonLd={jsonLd}
+>
+  <Header />
+  
+  <main class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          AI開発パートナー
+        </h1>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          実績と技術力を審査したAI開発パートナーを掲載。
+          AIオーケストレーションの専門家が、あなたの課題解決をサポートします。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {activePartners.map(partner => (
+          <div class="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="text-xl font-bold text-gray-900">
+                {partner.data.company_name}
+              </h3>
+              <div class="flex items-center gap-1">
+                <span class="text-yellow-500">★</span>
+                <span class="font-bold">{partner.data.rating.toFixed(1)}</span>
+              </div>
+            </div>
+            
+            <p class="text-gray-600 text-sm mb-4">
+              {partner.data.specialty_description}
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+              {partner.data.specialty_industries.map(ind => (
+                <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">
+                  {industryLabels[ind]}
+                </span>
+              ))}
+            </div>
+
+            <div class="flex items-center justify-between text-sm text-gray-500 pt-4 border-t border-gray-100">
+              <div>
+                予算帯: {partner.data.min_budget}万円〜{partner.data.max_budget}万円
+              </div>
+              <div>
+                実績: {partner.data.completed_count}件
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-12 p-8 bg-blue-50 rounded-xl text-center">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">
+          最適なパートナーを見つけたいですか？
+        </h2>
+        <p class="text-gray-600 mb-6">
+          AIマッチングシステムが、あなたの要件に最適なパートナーをご提案します。
+        </p>
+        <a 
+          href="/matching"
+          class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+        >
+          マッチングフォームへ
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>

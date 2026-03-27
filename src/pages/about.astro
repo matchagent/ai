@@ -1,0 +1,129 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'サービス説明 | AIマッチエージェント',
+  description: 'AIマッチエージェントのサービス概要と特徴についてご紹介します。',
+};
+---
+
+<BaseLayout 
+  title="サービス説明" 
+  description="AIマッチエージェントは、AI導入事例とパートナーマッチングで企業のAI導入を支援するプラットフォームです。"
+  jsonLd={jsonLd}
+>
+  <Header />
+  
+  <main class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+        サービス説明
+      </h1>
+      
+      <div class="prose prose-lg max-w-none">
+        <p class="text-xl text-gray-600 mb-8">
+          AIマッチエージェントは、「◯◯したら、売上が上がった」というAI導入事例を9業種で網羅し、
+          AIオーケストレーター開発会社と発注企業をマッチングするプラットフォームです。
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">サービスの特徴</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <div class="text-3xl mb-4">📊</div>
+            <h3 class="font-bold text-lg mb-2">実績ベースの事例紹介</h3>
+            <p class="text-gray-600 text-sm">
+              「売上向上」「コスト削減」など、具体的な数値効果が確認できる導入事例のみを掲載。
+            </p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <div class="text-3xl mb-4">🤖</div>
+            <h3 class="font-bold text-lg mb-2">AIマッチング</h3>
+            <p class="text-gray-600 text-sm">
+              Claude APIを活用したインテリジェントなマッチングで、最適なパートナーをご紹介。
+            </p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <div class="text-3xl mb-4">🔒</div>
+            <h3 class="font-bold text-lg mb-2">審査制のパートナー</h3>
+            <p class="text-gray-600 text-sm">
+              実績と技術力を審査したパートナーのみを掲載。品質の高い開発を保証します。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">利用フロー</h2>
+        
+        <ol class="space-y-6 mb-12">
+          <li class="flex items-start gap-4">
+            <span class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">1</span>
+            <div>
+              <h3 class="font-bold text-lg">事例を閲覧</h3>
+              <p class="text-gray-600">同業他社のAI導入事例から、イメージを膨らませます。</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">2</span>
+            <div>
+              <h3 class="font-bold text-lg">マッチングフォームに回答</h3>
+              <p class="text-gray-600">業種、課題、予算などを入力すると、AIが最適なパートナーを選定します。</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">3</span>
+            <div>
+              <h3 class="font-bold text-lg">パートナーと直接相談</h3>
+              <p class="text-gray-600">マッチングされたパートナーと直接やり取りし、詳細を詰めていきます。</p>
+            </div>
+          </li>
+        </ol>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">対応業種</h2>
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+          <li class="flex items-center gap-2">
+            <span class="text-green-500">✓</span> 製造業
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-green-500">✓</span> 小売・EC業
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-green-500">✓</span> 物流・運輸
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-green-500">✓</span> 建設業
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-green-500">✓</span> 士業
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-green-500">✓</span> 飲食業
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-green-500">✓</span> 宿泊業
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-green-500">✓</span> 不動産業
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-green-500">✓</span> 娯楽業
+          </li>
+        </ul>
+      </div>
+
+      <div class="mt-12 text-center">
+        <a 
+          href="/matching"
+          class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+        >
+          無料でパートナーを探す
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>

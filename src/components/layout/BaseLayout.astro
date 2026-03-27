@@ -1,0 +1,62 @@
+---
+import '../../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  type?: 'website' | 'article';
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  canonical?: string;
+}
+
+const { 
+  title, 
+  description, 
+  image = '/og-image.png', 
+  type = 'website',
+  jsonLd,
+  canonical
+} = Astro.props;
+
+const siteUrl = 'https://aimatchagent.jp';
+const fullTitle = `${title} | AIマッチエージェント`;
+const fullImage = image.startsWith('http') ? image : `${siteUrl}${image}`;
+const canonicalUrl = canonical || `${siteUrl}${Astro.url.pathname}`;
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalUrl} />
+  
+  <!-- OGP -->
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={fullImage} />
+  <meta property="og:type" content={type} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:site_name" content="AIマッチエージェント" />
+  <meta property="og:locale" content="ja_JP" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={fullImage} />
+  
+  <!-- JSON-LD -->
+  {jsonLd && (
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  )}
+  
+  <slot name="head" />
+</head>
+<body class="min-h-screen bg-white text-gray-900">
+  <slot />
+</body>
+</html>

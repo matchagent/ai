@@ -1,0 +1,44 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import IndustryBadge from './IndustryBadge.astro';
+import CaseMetric from './CaseMetric.astro';
+
+interface Props {
+  case: CollectionEntry<'cases'>;
+}
+
+const { case: caseItem } = Astro.props;
+const { data, id } = caseItem;
+---
+
+<article class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
+  <a href={`/cases/${id}`} class="block p-6">
+    <div class="flex items-start justify-between mb-4">
+      <IndustryBadge industry={data.industry} />
+      {data.is_sponsored && (
+        <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">
+          スポンサー
+        </span>
+      )}
+    </div>
+    <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+      {data.title}
+    </h3>
+    <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+      {data.excerpt}
+    </p>
+    <div class="flex items-center justify-between">
+      <CaseMetric value={data.metric_value} unit={data.metric_unit} />
+      <span class="text-xs text-gray-500">
+        {data.date.toLocaleDateString('ja-JP')}
+      </span>
+    </div>
+    <div class="mt-4 flex flex-wrap gap-2">
+      {data.problem_tags.slice(0, 3).map(tag => (
+        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+          {tag}
+        </span>
+      ))}
+    </div>
+  </a>
+</article>

@@ -1,0 +1,11 @@
+{
+  "company_name": "AIソリューションズ株式会社",
+  "specialty_industries": ["retail", "food", "hotel"],
+  "specialty_description": "小売業・飲食業向けのAI導入支援が専門。商品説明自動生成・需要予測・顧客分析の実績豊富。中小企業にも柔軟に対応。",
+  "min_budget": 50,
+  "max_budget": 500,
+  "capacity": 5,
+  "is_active": true,
+  "rating": 4.5,
+  "completed_count": 8
+}

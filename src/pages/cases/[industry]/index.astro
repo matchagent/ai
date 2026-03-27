@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import Header from '../../../components/layout/Header.astro';
+import Footer from '../../../components/layout/Footer.astro';
+import CaseCard from '../../../components/case/CaseCard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  // 直接配列を定義（Cloudflareビルド時のスコープ問題を回避）
+  return [
+    { params: { industry: 'manufacturing' } },
+    { params: { industry: 'retail' } },
+    { params: { industry: 'logistics' } },
+    { params: { industry: 'construction' } },
+    { params: { industry: 'legal' } },
+    { params: { industry: 'food' } },
+    { params: { industry: 'hotel' } },
+    { params: { industry: 'realestate' } },
+    { params: { industry: 'entertainment' } },
+  ];
+}
+
+const { industry } = Astro.params;
+
+const industryLabels: Record<string, string> = {
+  manufacturing: '製造業',
+  retail: '小売・EC業',
+  logistics: '物流・運輸',
+  construction: '建設業',
+  legal: '士業',
+  food: '飲食業',
+  hotel: '宿泊業',
+  realestate: '不動産業',
+  entertainment: '娯楽業',
+};
+
+const allCases = await getCollection('cases');
+const industryCases = allCases.filter(c => c.data.industry === industry);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: `${industryLabels[industry]}のAI導入事例`,
+  description: `${industryLabels[industry]}向けのAI導入事例をご紹介。売上向上や業務効率化を実現した具体的な事例を掲載しています。`,
+};
+---
+
+<BaseLayout 
+  title={`${industryLabels[industry]}の導入事例`}
+  description={`${industryLabels[industry]}向けのAI導入事例をご紹介。売上向上や業務効率化を実現した具体的な事例を掲載しています。`}
+  jsonLd={jsonLd}
+>
+  <Header />
+  
+  <main class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <!-- Breadcrumb -->
+      <nav class="text-sm text-gray-500 mb-6">
+        <a href="/" class="hover:text-blue-600">ホーム</a>
+        <span class="mx-2">/</span>
+        <a href="/cases" class="hover:text-blue-600">導入事例</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-900">{industryLabels[industry]}</span>
+      </nav>
+
+      <div class="text-center mb-12">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          {industryLabels[industry]}のAI導入事例
+        </h1>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          {industryLabels[industry]}向けのAI導入事例を{industryCases.length}件掲載。
+          同業他社の成功事例から、あなたのビジネスに最適なAI活用法を見つけられます。
+        </p>
+      </div>
+
+      {industryCases.length > 0 ? (
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {industryCases.map(caseItem => (
+            <CaseCard case={caseItem} />
+          ))}
+        </div>
+      ) : (
+        <div class="text-center py-16">
+          <p class="text-gray-500 text-lg">
+            現在、{industryLabels[industry]}の事例を準備中です。
+          </p>
+          <p class="text-gray-400 mt-2">
+            今しばらくお待ちください。
+          </p>
+        </div>
+      )}
+
+      <div class="mt-12 text-center">
+        <a 
+          href="/cases"
+          class="inline-block text-blue-600 hover:text-blue-800 font-medium"
+        >
+          ← すべての事例を見る
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>

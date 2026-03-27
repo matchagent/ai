@@ -1,0 +1,27 @@
+# ビルド成果物
+dist/
+.astro/
+
+# 依存関係
+node_modules/
+
+# Cloudflare / Wrangler
+.wrangler/
+
+# 環境変数
+.env
+.env.*
+!.env.example
+
+# エディタ / OS
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# ログ
+*.log
+npm-debug.log*
+
+# 型定義 (自動生成)
+worker-configuration.d.ts

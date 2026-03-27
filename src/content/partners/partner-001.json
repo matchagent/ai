@@ -1,0 +1,11 @@
+{
+  "company_name": "テックエージェント株式会社",
+  "specialty_industries": ["manufacturing", "logistics", "retail"],
+  "specialty_description": "製造業・物流業向けのAIオーケストレーション開発が専門。需要予測・在庫最適化・配送ルート最適化の実績多数。",
+  "min_budget": 100,
+  "max_budget": 1000,
+  "capacity": 3,
+  "is_active": true,
+  "rating": 4.8,
+  "completed_count": 12
+}
