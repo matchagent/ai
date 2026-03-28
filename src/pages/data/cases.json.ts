@@ -11,7 +11,6 @@ export const GET: APIRoute = async () => {
     problem_tags: caseItem.data.problem_tags,
     company_size: caseItem.data.company_size,
     metric_value: caseItem.data.metric_value,
-    partner_id: caseItem.data.partner_id,
   }));
   
   return new Response(

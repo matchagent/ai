@@ -7,7 +7,6 @@ company_size: "mid"
 metric_value: 23.5
 metric_unit: "%"
 metric_verified: true
-partner_id: "partner-001"
 is_sponsored: false
 date: 2025-04-01
 excerpt: "在庫の過不足で月200万円のロスが発生していた中堅製造業が、需要予測AIを導入して売上23.5%向上を達成した事例。"

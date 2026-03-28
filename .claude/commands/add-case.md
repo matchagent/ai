@@ -9,7 +9,6 @@
    - 課題タグ (配列)
    - 企業規模 (small / mid / large)
    - 効果指標の値・単位・検証済みかどうか
-   - パートナーID (既存の partner-XXX から選択)
    - スポンサードかどうか
    - 事例詳細本文
 
@@ -28,7 +27,6 @@
    metric_value: 0
    metric_unit: ""
    metric_verified: false
-   partner_id: ""
    is_sponsored: false
    date: "YYYY-MM-DD"
    excerpt: ""

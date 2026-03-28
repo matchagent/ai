@@ -22,7 +22,6 @@ company_size: "mid"               # small / mid / large
 metric_value: 30                  # 効果の数値
 metric_unit: "%削減"              # 効果の単位
 metric_verified: true             # 検証済みか
-partner_id: "partner-001"         # src/content/partners/ のID
 is_sponsored: false               # スポンサード記事か
 date: "2025-01-15"
 excerpt: "事例の概要（1〜2文）"

@@ -7,7 +7,6 @@ company_size: "large"
 metric_value: 15
 metric_unit: "%"
 metric_verified: true
-partner_id: "partner-001"
 is_sponsored: true
 date: 2025-02-20
 excerpt: "配送車両50台を運用する物流企業が、AIによる配送ルート最適化で燃料費15%削減と配送効率向上を実現。"

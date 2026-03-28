@@ -7,7 +7,6 @@ company_size: "mid"
 metric_value: 18
 metric_unit: "%"
 metric_verified: true
-partner_id: "partner-002"
 is_sponsored: false
 date: 2025-03-15
 excerpt: "ECサイト運営で商品説明の作成に時間がかかっていた小売業が、AI自動生成で作業効率を向上し、売上18%増を達成。"

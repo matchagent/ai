@@ -7,7 +7,6 @@ company_size: "small"
 metric_value: 12
 metric_unit: "%"
 metric_verified: false
-partner_id: "partner-002"
 is_sponsored: false
 date: 2025-01-10
 excerpt: "飲食店チェーン3店舗が、AI需要予測による発注最適化で食材廃棄を削減し、利益率12%改善を達成。"
