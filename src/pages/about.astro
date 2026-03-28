@@ -9,6 +9,33 @@ const jsonLd = {
   name: 'サービス説明 | AIケースラボ',
   description: 'AIケースラボのサービス概要と特徴についてご紹介します。',
 };
+
+// サービス特徴アイコン（SVG）
+const featureIcons = {
+  chart: `<svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>`,
+  robot: `<svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect width="12" height="8" x="6" y="9" rx="2"/><path d="M9 9V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/><circle cx="9" cy="14" r="1" fill="currentColor"/><circle cx="15" cy="14" r="1" fill="currentColor"/></svg>`,
+  shield: `<svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
+};
+
+// 利用フローアイコン
+const flowIcons = {
+  search: `<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>`,
+  form: `<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3 1 3 1"/><path d="M12 3v18"/></svg>`,
+  handshake: `<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m11 14 2.4 3.2a1 1 0 0 0 1.6 0l4.4-5.8a1 1 0 0 0-.8-1.6H14"/><path d="m11 14-.8 1a1 1 0 0 1-.8.4H7l-2.4 1.6a1 1 0 0 0-.6.8v1.4a1 1 0 0 0 1 1h2"/><path d="M14 10h4"/><path d="m14 6 1.6-1.4a1 1 0 0 1 1.5.1v0a1 1 0 0 1-.1 1.4L14 10"/></svg>`,
+};
+
+// 業種データ
+const industries = [
+  { id: 'manufacturing', name: '製造業', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg>`, color: 'from-blue-500 to-blue-600' },
+  { id: 'retail', name: '小売・EC業', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`, color: 'from-purple-500 to-purple-600' },
+  { id: 'logistics', name: '物流・運輸', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect width="16" height="13" x="4" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="m9 9 2 2 4-4"/></svg>`, color: 'from-orange-500 to-orange-600' },
+  { id: 'construction', name: '建設業', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"/><path d="M14 2v6h6"/><path d="M2 15h10"/><path d="m5 12-3 3 3 3"/></svg>`, color: 'from-yellow-500 to-yellow-600' },
+  { id: 'legal', name: '士業', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.5 8.6"/><path d="M22 22l-5.5-5.5"/></svg>`, color: 'from-red-500 to-red-600' },
+  { id: 'food', name: '飲食業', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>`, color: 'from-green-500 to-green-600' },
+  { id: 'hotel', name: '宿泊業', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 22h20"/><path d="M4 22V9a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v13"/><path d="M9 22v-4h6v4"/><path d="M8 6h8"/><path d="M12 6v-3"/></svg>`, color: 'from-pink-500 to-pink-600' },
+  { id: 'realestate', name: '不動産業', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>`, color: 'from-indigo-500 to-indigo-600' },
+  { id: 'entertainment', name: '娯楽業', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10v3"/><path d="M6 6v11"/><path d="M10 3v18"/><path d="M14 8v7"/><path d="M18 5v13"/><path d="M22 10v3"/></svg>`, color: 'from-teal-500 to-teal-600' },
+];
 ---
 
 <BaseLayout 
@@ -18,103 +45,176 @@ const jsonLd = {
 >
   <Header />
   
-  <main class="py-16">
-    <div class="max-w-4xl mx-auto px-4">
-      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-        サービス説明
-      </h1>
+  <main class="pb-16">
+    <!-- Hero Section -->
+    <div class="relative bg-gradient-to-br from-blue-600 to-indigo-700 pt-16 pb-24 overflow-hidden">
+      <!-- 背景パターン -->
+      <div class="absolute inset-0 opacity-10">
+        <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <pattern id="about-hero-pattern" patternUnits="userSpaceOnUse" width="30" height="30">
+            <circle cx="2" cy="2" r="1.5" fill="white"/>
+          </pattern>
+          <rect width="100" height="100" fill="url(#about-hero-pattern)"/>
+        </svg>
+      </div>
       
-      <div class="prose prose-lg max-w-none">
-        <p class="text-xl text-gray-600 mb-8">
+      <div class="max-w-4xl mx-auto px-4 relative">
+        <h1 class="text-3xl md:text-4xl font-bold text-white mb-6">
+          サービス説明
+        </h1>
+        <p class="text-xl text-white/90 max-w-2xl">
           AIケースラボは、「◯◯したら、売上が上がった」というAI導入事例を9業種で網羅し、
           AIオーケストレーター開発会社と発注企業をマッチングするプラットフォームです。
         </p>
-
-        <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">サービスの特徴</h2>
+      </div>
+    </div>
+    
+    <div class="max-w-6xl mx-auto px-4 -mt-12 relative z-10">
+      <!-- サービスの特徴 -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">サービスの特徴</h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div class="bg-gray-50 p-6 rounded-xl">
-            <div class="text-3xl mb-4">📊</div>
-            <h3 class="font-bold text-lg mb-2">実績ベースの事例紹介</h3>
-            <p class="text-gray-600 text-sm">
-              「売上向上」「コスト削減」など、具体的な数値効果が確認できる導入事例のみを掲載。
-            </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- 特徴1 -->
+          <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="h-2 bg-gradient-to-r from-blue-500 to-blue-600"></div>
+            <div class="p-6">
+              <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-4 group-hover:scale-110 transition-transform">
+                <Fragment set:html={featureIcons.chart} />
+              </div>
+              <h3 class="font-bold text-lg mb-2 text-gray-900">実績ベースの事例紹介</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                「売上向上」「コスト削減」など、具体的な数値効果が確認できる導入事例のみを掲載。
+              </p>
+            </div>
           </div>
-          <div class="bg-gray-50 p-6 rounded-xl">
-            <div class="text-3xl mb-4">🤖</div>
-            <h3 class="font-bold text-lg mb-2">AIマッチング</h3>
-            <p class="text-gray-600 text-sm">
-              Claude APIを活用したインテリジェントなマッチングで、最適なパートナーをご紹介。
-            </p>
+          
+          <!-- 特徴2 -->
+          <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="h-2 bg-gradient-to-r from-purple-500 to-purple-600"></div>
+            <div class="p-6">
+              <div class="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center text-purple-600 mb-4 group-hover:scale-110 transition-transform">
+                <Fragment set:html={featureIcons.robot} />
+              </div>
+              <h3 class="font-bold text-lg mb-2 text-gray-900">AIマッチング</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Claude APIを活用したインテリジェントなマッチングで、最適なパートナーをご紹介。
+              </p>
+            </div>
           </div>
-          <div class="bg-gray-50 p-6 rounded-xl">
-            <div class="text-3xl mb-4">🔒</div>
-            <h3 class="font-bold text-lg mb-2">審査制のパートナー</h3>
-            <p class="text-gray-600 text-sm">
-              実績と技術力を審査したパートナーのみを掲載。品質の高い開発を保証します。
-            </p>
+          
+          <!-- 特徴3 -->
+          <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="h-2 bg-gradient-to-r from-green-500 to-green-600"></div>
+            <div class="p-6">
+              <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center text-green-600 mb-4 group-hover:scale-110 transition-transform">
+                <Fragment set:html={featureIcons.shield} />
+              </div>
+              <h3 class="font-bold text-lg mb-2 text-gray-900">審査制のパートナー</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                実績と技術力を審査したパートナーのみを掲載。品質の高い開発を保証します。
+              </p>
+            </div>
           </div>
         </div>
-
-        <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">利用フロー</h2>
+      </section>
+      
+      <!-- 利用フロー（マッチングフォーム未実装のため一時コメントアウト）
+      <section class="mb-16">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">利用フロー</h2>
         
-        <ol class="space-y-6 mb-12">
-          <li class="flex items-start gap-4">
-            <span class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">1</span>
-            <div>
-              <h3 class="font-bold text-lg">事例を閲覧</h3>
-              <p class="text-gray-600">同業他社のAI導入事例から、イメージを膨らませます。</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          -- Step 1 --
+          <div class="relative">
+            <div class="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">1</div>
+                <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600">
+                  <Fragment set:html={flowIcons.search} />
+                </div>
+              </div>
+              <h3 class="font-bold text-lg mb-2 text-gray-900">事例を閲覧</h3>
+              <p class="text-gray-600 text-sm">同業他社のAI導入事例から、イメージを膨らませます。</p>
             </div>
-          </li>
-          <li class="flex items-start gap-4">
-            <span class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">2</span>
-            <div>
-              <h3 class="font-bold text-lg">マッチングフォームに回答</h3>
-              <p class="text-gray-600">業種、課題、予算などを入力すると、AIが最適なパートナーを選定します。</p>
+            -- 矢印（デスクトップのみ） --
+            <div class="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+              <svg class="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
             </div>
-          </li>
-          <li class="flex items-start gap-4">
-            <span class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">3</span>
-            <div>
-              <h3 class="font-bold text-lg">パートナーと直接相談</h3>
-              <p class="text-gray-600">マッチングされたパートナーと直接やり取りし、詳細を詰めていきます。</p>
+          </div>
+          
+          -- Step 2 --
+          <div class="relative">
+            <div class="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">2</div>
+                <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600">
+                  <Fragment set:html={flowIcons.form} />
+                </div>
+              </div>
+              <h3 class="font-bold text-lg mb-2 text-gray-900">マッチングフォームに回答</h3>
+              <p class="text-gray-600 text-sm">業種、課題、予算などを入力すると、AIが最適なパートナーを選定します。</p>
             </div>
-          </li>
-        </ol>
-
-        <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">対応業種</h2>
-        <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-          <li class="flex items-center gap-2">
-            <span class="text-green-500">✓</span> 製造業
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-green-500">✓</span> 小売・EC業
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-green-500">✓</span> 物流・運輸
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-green-500">✓</span> 建設業
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-green-500">✓</span> 士業
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-green-500">✓</span> 飲食業
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-green-500">✓</span> 宿泊業
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-green-500">✓</span> 不動産業
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-green-500">✓</span> 娯楽業
-          </li>
-        </ul>
-      </div>
-
-
+            -- 矢印（デスクトップのみ） --
+            <div class="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+              <svg class="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </div>
+          </div>
+          
+          -- Step 3 --
+          <div class="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">3</div>
+              <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600">
+                <Fragment set:html={flowIcons.handshake} />
+              </div>
+            </div>
+            <h3 class="font-bold text-lg mb-2 text-gray-900">パートナーと直接相談</h3>
+            <p class="text-gray-600 text-sm">マッチングされたパートナーと直接やり取りし、詳細を詰めていきます。</p>
+          </div>
+        </div>
+      </section>
+      -->
+      <!-- 対応業種 -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">対応業種</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {industries.map(industry => (
+            <a
+              href={`/cases/${industry.id}`}
+              class="group bg-white rounded-xl border border-gray-200 text-center hover:shadow-lg transition-all duration-300 overflow-hidden"
+            >
+              <div class={`h-1.5 bg-gradient-to-r ${industry.color}`}></div>
+              <div class="p-5">
+                <div class="w-12 h-12 mx-auto bg-gray-50 rounded-lg flex items-center justify-center text-gray-600 mb-3 group-hover:scale-110 transition-transform">
+                  <Fragment set:html={industry.icon} />
+                </div>
+                <div class="font-medium text-gray-900 text-sm">{industry.name}</div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+      
+      <!-- CTA Section -->
+      <section class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-8 md:p-12 text-center text-white">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">あなたのビジネスにもAI導入を</h2>
+        <p class="text-white/90 mb-8 max-w-2xl mx-auto">
+          9業種の導入事例を見て、最適なAI開発パートナーを見つけましょう。
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a 
+            href="/cases" 
+            class="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+          >
+            事例を見る
+          </a>
+        </div>
+      </section>
     </div>
   </main>
 
