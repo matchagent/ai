@@ -2,8 +2,6 @@
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import Header from '../../components/layout/Header.astro';
 import Footer from '../../components/layout/Footer.astro';
-import IndustryBadge from '../../components/case/IndustryBadge.astro';
-import CaseMetric from '../../components/case/CaseMetric.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -38,6 +36,59 @@ const domainLabels: Record<string, string> = {
   customer_support: 'カスタマーサポート',
   logistics: '物流',
 };
+
+// 業種アイコン（SVG）
+const industryIcons: Record<string, string> = {
+  manufacturing: `<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg>`,
+  retail: `<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`,
+  logistics: `<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect width="16" height="13" x="4" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="m9 9 2 2 4-4"/></svg>`,
+  construction: `<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"/><path d="M14 2v6h6"/><path d="M2 15h10"/><path d="m5 12-3 3 3 3"/></svg>`,
+  legal: `<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.5 8.6"/><path d="M22 22l-5.5-5.5"/></svg>`,
+  food: `<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>`,
+  hotel: `<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 22h20"/><path d="M4 22V9a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v13"/><path d="M9 22v-4h6v4"/><path d="M8 6h8"/><path d="M12 6v-3"/></svg>`,
+  realestate: `<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>`,
+  entertainment: `<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10v3"/><path d="M6 6v11"/><path d="M10 3v18"/><path d="M14 8v7"/><path d="M18 5v13"/><path d="M22 10v3"/></svg>`,
+};
+
+// 業種グラデーション
+const industryGradients: Record<string, string> = {
+  manufacturing: 'from-blue-500 to-blue-600',
+  retail: 'from-purple-500 to-purple-600',
+  logistics: 'from-orange-500 to-orange-600',
+  construction: 'from-yellow-500 to-yellow-600',
+  legal: 'from-red-500 to-red-600',
+  food: 'from-green-500 to-green-600',
+  hotel: 'from-pink-500 to-pink-600',
+  realestate: 'from-indigo-500 to-indigo-600',
+  entertainment: 'from-teal-500 to-teal-600',
+};
+
+// 業種バッジ色
+const industryBadgeColors: Record<string, string> = {
+  manufacturing: 'bg-blue-100 text-blue-800',
+  retail: 'bg-purple-100 text-purple-800',
+  logistics: 'bg-orange-100 text-orange-800',
+  construction: 'bg-yellow-100 text-yellow-800',
+  legal: 'bg-red-100 text-red-800',
+  food: 'bg-green-100 text-green-800',
+  hotel: 'bg-pink-100 text-pink-800',
+  realestate: 'bg-indigo-100 text-indigo-800',
+  entertainment: 'bg-teal-100 text-teal-800',
+};
+
+// メトリクス色分け
+const getMetricColor = (value: number): string => {
+  if (value >= 50) return 'text-green-600 bg-green-50 border-green-200';
+  if (value >= 20) return 'text-blue-600 bg-blue-50 border-blue-200';
+  if (value >= 10) return 'text-indigo-600 bg-indigo-50 border-indigo-200';
+  return 'text-gray-600 bg-gray-50 border-gray-200';
+};
+
+const gradientClass = industryGradients[data.industry] || 'from-gray-500 to-gray-600';
+const badgeColorClass = industryBadgeColors[data.industry] || 'bg-gray-100 text-gray-800';
+const metricColorClass = getMetricColor(data.metric_value);
+const formattedValue = data.metric_value % 1 === 0 ? data.metric_value.toString() : data.metric_value.toFixed(1);
+const iconSvg = industryIcons[data.industry] || '';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -86,69 +137,115 @@ const breadcrumbJsonLd = {
 >
   <Header />
   
-  <main class="py-16">
-    <div class="max-w-4xl mx-auto px-4">
-      <!-- Breadcrumb -->
-      <nav class="text-sm text-gray-500 mb-6">
-        <a href="/" class="hover:text-blue-600">ホーム</a>
-        <span class="mx-2">/</span>
-        <a href="/cases" class="hover:text-blue-600">導入事例</a>
-        <span class="mx-2">/</span>
-        <span class="text-gray-900">{data.title}</span>
-      </nav>
-
-      <article>
-        <!-- Header -->
-        <header class="mb-8">
-          <div class="flex flex-wrap items-center gap-3 mb-4">
-            <IndustryBadge industry={data.industry} />
-            <span class="text-sm text-gray-500">
-              {domainLabels[data.domain]}
-            </span>
-            {data.is_sponsored && (
-              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">
-                スポンサー事例
-              </span>
-            )}
+  <main class="pb-16">
+    <!-- Hero Header: 業種カラー背景 -->
+    <div class={`relative bg-gradient-to-br ${gradientClass} pt-8 pb-24 overflow-hidden`}>
+      <!-- 背景パターン -->
+      <div class="absolute inset-0 opacity-10">
+        <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <pattern id="hero-pattern" patternUnits="userSpaceOnUse" width="30" height="30">
+            <circle cx="2" cy="2" r="1.5" fill="white"/>
+          </pattern>
+          <rect width="100" height="100" fill="url(#hero-pattern)"/>
+        </svg>
+      </div>
+      
+      <div class="max-w-4xl mx-auto px-4 relative">
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-white/80 mb-8">
+          <a href="/" class="hover:text-white transition-colors">ホーム</a>
+          <span class="mx-2">/</span>
+          <a href="/cases" class="hover:text-white transition-colors">導入事例</a>
+          <span class="mx-2">/</span>
+          <span class="text-white">{industryLabels[data.industry]}</span>
+        </nav>
+        
+        <!-- Header Content -->
+        <div class="flex flex-col md:flex-row md:items-start gap-6">
+          <!-- アイコン -->
+          <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white flex-shrink-0">
+            <Fragment set:html={iconSvg} />
           </div>
           
-          <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            {data.title}
-          </h1>
-          
-          <p class="text-gray-600 text-lg mb-6">
-            {data.excerpt}
-          </p>
-
-          <div class="flex flex-wrap items-center gap-6 p-6 bg-gray-50 rounded-xl">
-            <div>
-              <div class="text-sm text-gray-500 mb-1">効果</div>
-              <CaseMetric value={data.metric_value} unit={data.metric_unit} />
+          <div class="flex-1">
+            <!-- バッジ行 -->
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+              <span class={`inline-block text-sm font-medium px-3 py-1 rounded-full ${badgeColorClass}`}>
+                {industryLabels[data.industry]}
+              </span>
+              <span class="text-sm text-white/80">
+                {domainLabels[data.domain]}
+              </span>
+              {data.is_sponsored && (
+                <span class="text-xs bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full font-medium shadow-sm">
+                  スポンサー事例
+                </span>
+              )}
             </div>
-            <div class="hidden md:block w-px h-12 bg-gray-200"></div>
+            
+            <h1 class="text-2xl md:text-4xl font-bold text-white mb-4">
+              {data.title}
+            </h1>
+            
+            <p class="text-white/90 text-lg">
+              {data.excerpt}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Content Area -->
+    <div class="max-w-4xl mx-auto px-4 -mt-12 relative z-10">
+      <!-- Stats Card -->
+      <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-6 mb-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- メトリクス -->
+          <div class="flex items-center gap-4">
+            <div class={`inline-flex items-center gap-2 px-4 py-3 rounded-lg border ${metricColorClass}`}>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+              </svg>
+              <span class="text-2xl font-bold">+{formattedValue}</span>
+              <span class="text-sm font-medium">{data.metric_unit}</span>
+              {data.metric_verified && (
+                <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" title="検証済み">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              )}
+            </div>
+          </div>
+          
+          <div class="hidden md:flex items-center justify-center">
+            <div class="w-px h-12 bg-gray-200"></div>
+          </div>
+          
+          <!-- 企業規模 & 検証状態 -->
+          <div class="flex items-center gap-8 md:justify-end">
             <div>
               <div class="text-sm text-gray-500 mb-1">企業規模</div>
-              <span class="font-medium">
+              <span class="font-medium text-gray-900">
                 {data.company_size === 'small' && '少人数（1〜10名）'}
                 {data.company_size === 'mid' && '中規模（11〜100名）'}
                 {data.company_size === 'large' && '大規模（101名以上）'}
               </span>
             </div>
-            <div class="hidden md:block w-px h-12 bg-gray-200"></div>
             <div>
-              <div class="text-sm text-gray-500 mb-1">検証済み</div>
+              <div class="text-sm text-gray-500 mb-1">検証状態</div>
               <span class={`font-medium ${data.metric_verified ? 'text-green-600' : 'text-gray-400'}`}>
-                {data.metric_verified ? '✓ 効果検証済み' : '検証未完了'}
+                {data.metric_verified ? '✓ 検証済み' : '検証未完了'}
               </span>
             </div>
           </div>
-        </header>
+        </div>
+      </div>
 
+      <article>
         <!-- Tags -->
         <div class="flex flex-wrap gap-2 mb-8">
           {data.problem_tags.map(tag => (
-            <span class="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded-full">
-              #{tag}
+            <span class="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded">
+              {tag}
             </span>
           ))}
         </div>
@@ -160,13 +257,22 @@ const breadcrumbJsonLd = {
 
         <!-- Date -->
         <div class="mt-12 pt-8 border-t border-gray-200">
-          <p class="text-sm text-gray-500">
-            公開日: {data.date.toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' })}
-          </p>
+          <div class="flex items-center justify-between">
+            <p class="text-sm text-gray-500">
+              公開日: {data.date.toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+            <a 
+              href="/cases" 
+              class="inline-flex items-center gap-2 text-blue-600 font-medium hover:text-blue-800 transition-colors"
+            >
+              <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+              事例一覧に戻る
+            </a>
+          </div>
         </div>
       </article>
-
-
     </div>
   </main>
 
