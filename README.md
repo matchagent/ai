@@ -31,8 +31,6 @@ aimatchagent/
 │   │   ├── cases/[slug].astro
 │   │   └── data/          # JSON API エンドポイント
 │   └── content.config.ts  # Zod スキーマ定義
-├── functions/api/
-│   └── contact.ts         # お問い合わせフォーム
 ├── .agents/skills/        # 全エージェント共通スキルドキュメント
 │   ├── add-case.md
 │   ├── astro-content.md
@@ -121,22 +119,6 @@ ALLOWED_ORIGIN=       # CORS 許可オリジン (https://ai.matchagent.workers.d
 ```
 
 Cloudflare Pages の環境変数にも同様に設定すること。
-
-## APIエンドポイント
-
-### POST /api/contact
-お問い合わせフォーム送信。
-
-**リクエスト:**
-```json
-{
-  "name": "田中太郎",
-  "email": "tanaka@example.com",
-  "company": "株式会社サンプル",
-  "type": "inquiry",
-  "message": "お問い合わせ内容"
-}
-```
 
 ## コンテンツ管理
 
