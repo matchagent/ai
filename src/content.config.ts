@@ -22,6 +22,7 @@ const cases = defineCollection({
     metric_value: z.number(),
     metric_unit: z.string(),
     metric_verified: z.boolean(),
+    source_url: z.string().url().optional(),
     is_sponsored: z.boolean().default(false),
     date: z.date(),
     excerpt: z.string().max(120),

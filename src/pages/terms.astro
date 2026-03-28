@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+---
+
+<BaseLayout
+  title="利用規約"
+  description="AIケースラボの利用規約です。掲載情報の免責事項、著作権、禁止事項についてご確認ください。"
+>
+  <Header />
+
+  <main class="pb-16">
+    <div class="max-w-3xl mx-auto px-4 py-12">
+      <h1 class="text-3xl font-bold text-gray-900 mb-2">利用規約</h1>
+      <p class="text-sm text-gray-500 mb-10">最終更新日: 2026年3月28日</p>
+
+      <div class="space-y-10 text-gray-700 leading-relaxed">
+
+        <section>
+          <h2 class="text-xl font-bold text-gray-900 mb-3">第1条（適用）</h2>
+          <p>
+            本規約は、AIケースラボ（以下「当サービス」）が提供するウェブサイト上のすべてのコンテンツおよびサービスの利用に適用されます。
+            本サービスを利用した時点で、本規約に同意したものとみなします。
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-gray-900 mb-3">第2条（免責事項）</h2>
+          <ul class="list-disc list-inside space-y-2">
+            <li>
+              当サービスに掲載する導入事例の効果数値は、情報提供を目的としたものであり、
+              同等の効果を保証するものではありません。
+            </li>
+            <li>
+              「自己申告」と表示された事例の数値は、口コミ・インタビュー等に基づくものであり、
+              当サービスがその正確性・完全性を検証したものではありません。
+            </li>
+            <li>
+              「公式出典あり」と表示された事例であっても、掲載時点の情報であり、
+              その後変更・削除される場合があります。
+            </li>
+            <li>
+              当サービスの利用により生じた損害について、当サービスは一切の責任を負いません。
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-gray-900 mb-3">第3条（掲載情報の正確性）</h2>
+          <p>
+            当サービスは掲載情報の正確性維持に努めますが、情報の完全性・最新性・有用性を保証しません。
+            掲載内容はあくまで参考情報としてご利用ください。
+            重要な経営判断を行う際は、必ず一次情報を直接ご確認ください。
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-gray-900 mb-3">第4条（著作権）</h2>
+          <p>
+            当サービス上のコンテンツ（文章・デザイン・構成等）の著作権は当サービスに帰属します。
+            無断転載・複製・商業利用を禁じます。
+            引用する場合は出典を明記してください。
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-gray-900 mb-3">第5条（禁止事項）</h2>
+          <p>利用者は以下の行為を行ってはなりません。</p>
+          <ul class="list-disc list-inside space-y-2 mt-2">
+            <li>当サービスのサーバーに過大な負荷をかける行為</li>
+            <li>当サービスのコンテンツを無断で転載・改変する行為</li>
+            <li>当サービスを通じて虚偽の情報を流布する行為</li>
+            <li>法令または公序良俗に反する行為</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-gray-900 mb-3">第6条（規約の変更）</h2>
+          <p>
+            当サービスは、必要に応じて本規約を変更することがあります。
+            変更後も継続して本サービスを利用した場合、変更後の規約に同意したものとみなします。
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-gray-900 mb-3">第7条（準拠法）</h2>
+          <p>本規約の解釈および適用は、日本法に準拠するものとします。</p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>

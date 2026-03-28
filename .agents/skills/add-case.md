@@ -22,6 +22,7 @@ company_size: "mid"               # small / mid / large
 metric_value: 30                  # 効果の数値
 metric_unit: "%削減"              # 効果の単位
 metric_verified: true             # 検証済みか（下記「検証基準」参照）
+source_url: "https://example.com/press-release"  # 出典URL（省略可。metric_verified: true の場合は可能な限り記載）
 is_sponsored: false               # スポンサード記事か
 date: "2025-01-15"
 excerpt: "事例の概要（1〜2文）"
