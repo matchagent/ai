@@ -87,11 +87,12 @@ src/content/
 ## ビルド & デプロイフロー
 
 ```
-git push
-  └─ (手動) npm run deploy
-       ├─ npm run build  → Astro が ./dist/ を生成
-       └─ wrangler pages deploy ./dist/
-            └─ Cloudflare Pages へアップロード
+コード修正
+  └─ npm run check  → 型チェック（必須。エラーがあれば修正してから続行）
+       └─ (手動) npm run deploy
+            ├─ npm run build  → Astro が ./dist/ を生成
+            └─ wrangler pages deploy ./dist/
+                 └─ Cloudflare Pages へアップロード
 ```
 
 ## マルチエージェント開発構成

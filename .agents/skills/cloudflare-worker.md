@@ -117,3 +117,10 @@ return new Response(
 1. `Env` インターフェースに追加
 2. `.env.example` に追加
 3. Cloudflare Pages のダッシュボードに設定
+
+## 確認コマンド
+
+```bash
+npm run check   # 型チェック（編集後に必ず実行）
+npm run build   # ビルド確認
+```
