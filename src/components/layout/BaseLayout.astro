@@ -4,25 +4,21 @@ import '../../styles/global.css';
 interface Props {
   title: string;
   description: string;
-  image?: string;
   type?: 'website' | 'article';
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
-  canonical?: string;
 }
 
-const { 
-  title, 
-  description, 
-  image = '/og-image.png', 
+const {
+  title,
+  description,
   type = 'website',
   jsonLd,
-  canonical
 } = Astro.props;
 
 const siteUrl = 'https://ai.matchagent.workers.dev';
 const fullTitle = `${title} | AIケースラボ`;
-const fullImage = image.startsWith('http') ? image : `${siteUrl}${image}`;
-const canonicalUrl = canonical || `${siteUrl}${Astro.url.pathname}`;
+const fullImage = `${siteUrl}/og-image.png`;
+const canonicalUrl = `${siteUrl}${Astro.url.pathname}`;
 ---
 
 <!DOCTYPE html>

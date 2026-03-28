@@ -164,15 +164,6 @@ export default function CaseFilter({ cases }: CaseFilterProps) {
     entertainment: '娯楽業',
   };
 
-  const domainLabels: Record<string, string> = {
-    sales: '営業',
-    production: '生産・製造',
-    hr: '人事',
-    accounting: '会計',
-    customer_support: 'カスタマーサポート',
-    logistics: '物流',
-  };
-
   return (
     <div>
       <div className="bg-gray-50 p-4 rounded-lg mb-6">

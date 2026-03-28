@@ -10,7 +10,6 @@ interface SearchItem {
 
 interface SearchBoxProps {
   items: SearchItem[];
-  placeholder?: string;
 }
 
 const industryLabels: Record<string, string> = {
@@ -25,7 +24,7 @@ const industryLabels: Record<string, string> = {
   entertainment: '娯楽業',
 };
 
-export default function SearchBox({ items, placeholder = '事例を検索...' }: SearchBoxProps) {
+export default function SearchBox({ items }: SearchBoxProps) {
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
 
@@ -57,7 +56,7 @@ export default function SearchBox({ items, placeholder = '事例を検索...' }:
             setIsOpen(true);
           }}
           onFocus={() => setIsOpen(true)}
-          placeholder={placeholder}
+          placeholder="事例を検索..."
           className="w-full px-4 py-3 pl-12 pr-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
         />
         <svg
