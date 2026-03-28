@@ -20,7 +20,7 @@ const {
 } = Astro.props;
 
 const siteUrl = 'https://ai.matchagent.workers.dev';
-const fullTitle = `${title} | AIマッチエージェント`;
+const fullTitle = `${title} | AIケースラボ`;
 const fullImage = image.startsWith('http') ? image : `${siteUrl}${image}`;
 const canonicalUrl = canonical || `${siteUrl}${Astro.url.pathname}`;
 ---
@@ -40,7 +40,7 @@ const canonicalUrl = canonical || `${siteUrl}${Astro.url.pathname}`;
   <meta property="og:image" content={fullImage} />
   <meta property="og:type" content={type} />
   <meta property="og:url" content={canonicalUrl} />
-  <meta property="og:site_name" content="AIマッチエージェント" />
+  <meta property="og:site_name" content="AIケースラボ" />
   <meta property="og:locale" content="ja_JP" />
   
   <!-- Twitter Card -->
