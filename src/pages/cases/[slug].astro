@@ -254,16 +254,43 @@ const breadcrumbJsonLd = {
 
       <article>
         <!-- Tags -->
-        <div class="flex flex-wrap gap-2 mb-8">
+        <div class="flex flex-wrap gap-2 mb-6">
           {data.problem_tags.map(tag => (
-            <span class="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded">
+            <span class="inline-flex items-center gap-1.5 text-sm text-slate-700 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-full transition-colors border border-slate-200">
+              <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/>
+              </svg>
               {tag}
             </span>
           ))}
         </div>
 
+        <!-- Key Facts Box -->
+        <div class="bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 rounded-xl p-5 mb-8">
+          <div class="flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+            <h4 class="font-semibold text-slate-700">この事例のポイント</h4>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="bg-white rounded-lg p-3 border border-slate-200">
+              <div class="text-xs text-slate-500 mb-1">導入効果</div>
+              <div class="text-lg font-bold text-green-600">+{formattedValue}{data.metric_unit}</div>
+            </div>
+            <div class="bg-white rounded-lg p-3 border border-slate-200">
+              <div class="text-xs text-slate-500 mb-1">業種</div>
+              <div class="text-sm font-semibold text-slate-700">{industryLabels[data.industry]}</div>
+            </div>
+            <div class="bg-white rounded-lg p-3 border border-slate-200">
+              <div class="text-xs text-slate-500 mb-1">導入分野</div>
+              <div class="text-sm font-semibold text-slate-700">{domainLabels[data.domain]}</div>
+            </div>
+          </div>
+        </div>
+
         <!-- Content -->
-        <div class="prose prose-lg max-w-none">
+        <div class="prose prose-lg max-w-none case-content">
           <Content />
         </div>
 
@@ -317,3 +344,95 @@ const breadcrumbJsonLd = {
 
   <Footer />
 </BaseLayout>
+
+<script>
+  // セクション見出しにアイコンを動的に追加
+  document.addEventListener('DOMContentLoaded', () => {
+    const h2Elements = document.querySelectorAll('.case-content h2');
+    
+    h2Elements.forEach(h2 => {
+      const text = h2.textContent?.trim() || '';
+      
+      if (text.includes('Before')) {
+        h2.innerHTML = `<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-red-100 text-red-600 mr-2 text-base">⚠</span>${h2.innerHTML}`;
+        h2.classList.add('border-red-200');
+      } else if (text.includes('AI導入内容') || text.includes('導入内容')) {
+        h2.innerHTML = `<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 mr-2 text-base">⚙</span>${h2.innerHTML}`;
+        h2.classList.add('border-blue-200');
+      } else if (text.includes('After')) {
+        h2.innerHTML = `<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600 mr-2 text-base">✓</span>${h2.innerHTML}`;
+        h2.classList.add('border-green-200');
+      }
+    });
+  });
+</script>
+
+<style is:global>
+  /* ケース詳細ページのカスタムスタイル */
+  .case-content {
+    line-height: 1.85;
+    letter-spacing: 0.01em;
+  }
+  
+  .case-content h2 {
+    margin-top: 3rem !important;
+    margin-bottom: 1.25rem !important;
+    padding-bottom: 0.75rem !important;
+    border-bottom: 2px solid #e5e7eb;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #1f2937 !important;
+    display: flex;
+    align-items: center;
+  }
+  
+  .case-content h2.border-red-200 {
+    border-color: #fecaca !important;
+  }
+  
+  .case-content h2.border-blue-200 {
+    border-color: #bfdbfe !important;
+  }
+  
+  .case-content h2.border-green-200 {
+    border-color: #bbf7d0 !important;
+  }
+  
+  .case-content h3 {
+    margin-top: 2rem !important;
+    margin-bottom: 0.75rem !important;
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #374151 !important;
+  }
+  
+  .case-content p {
+    margin-bottom: 1.25rem !important;
+  }
+  
+  /* 強調テキストのハイライト */
+  .case-content strong {
+    color: #111827;
+    font-weight: 600;
+  }
+  
+  /* リストのスタイル改善 */
+  .case-content ul {
+    margin-bottom: 1.25rem !important;
+  }
+  
+  .case-content li {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* リンクのスタイル */
+  .case-content a {
+    color: #2563eb;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  
+  .case-content a:hover {
+    color: #1d4ed8;
+  }
+</style>
