@@ -21,7 +21,7 @@ problem_tags: ["在庫管理", "自動化"]
 company_size: "mid"               # small / mid / large
 metric_value: 30                  # 効果の数値
 metric_unit: "%削減"              # 効果の単位
-metric_verified: true             # 検証済みか
+metric_verified: true             # 検証済みか（下記「検証基準」参照）
 is_sponsored: false               # スポンサード記事か
 date: "2025-01-15"
 excerpt: "事例の概要（1〜2文）"
@@ -53,6 +53,13 @@ excerpt: "事例の概要（1〜2文）"
 
 （学びと今後の展開）
 ```
+
+## 検証基準 (metric_verified)
+
+| 値 | 条件 |
+|----|------|
+| `true` | 企業のプレスリリース・公式発表・IR資料など、公開された一次情報に数値の出典がある |
+| `false` | 口コミ・インタビュー・自己申告のみで、公式な出典が確認できない |
 
 ## 確認コマンド
 

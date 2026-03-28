@@ -231,10 +231,22 @@ const breadcrumbJsonLd = {
               </span>
             </div>
             <div>
-              <div class="text-sm text-gray-500 mb-1">検証状態</div>
-              <span class={`font-medium ${data.metric_verified ? 'text-green-600' : 'text-gray-400'}`}>
-                {data.metric_verified ? '✓ 検証済み' : '検証未完了'}
-              </span>
+              <div class="text-sm text-gray-500 mb-1">数値の信頼性</div>
+              {data.metric_verified ? (
+                <span class="inline-flex items-center gap-1 font-medium text-green-600" title="企業のプレスリリース・公式発表など一次情報に出典あり">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  公式出典あり
+                </span>
+              ) : (
+                <span class="inline-flex items-center gap-1 font-medium text-gray-400" title="口コミ・自己申告のみで公式な出典が確認できません">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                  自己申告
+                </span>
+              )}
             </div>
           </div>
         </div>
@@ -253,6 +265,21 @@ const breadcrumbJsonLd = {
         <!-- Content -->
         <div class="prose prose-lg max-w-none">
           <Content />
+        </div>
+
+        <!-- 数値の信頼性注記 -->
+        <div class={`mt-8 p-4 rounded-lg text-sm ${data.metric_verified ? 'bg-green-50 border border-green-200 text-green-800' : 'bg-gray-50 border border-gray-200 text-gray-500'}`}>
+          {data.metric_verified ? (
+            <>
+              <span class="font-medium">公式出典あり</span>
+              <span class="ml-2">この事例の効果数値は、企業のプレスリリースまたは公式発表に基づいています。</span>
+            </>
+          ) : (
+            <>
+              <span class="font-medium">自己申告</span>
+              <span class="ml-2">この事例の効果数値は口コミ・インタビュー等による自己申告であり、公式な出典は確認されていません。</span>
+            </>
+          )}
         </div>
 
         <!-- Date -->
