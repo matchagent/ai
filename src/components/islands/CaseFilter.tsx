@@ -161,6 +161,12 @@ export default function CaseFilter({ cases, initialIndustry = 'all', initialComp
       window.location.href = `/cases/${industry}/${companySize}`;
     } else if (industry !== 'all') {
       window.location.href = `/cases/${industry}`;
+    } else if (companySize !== 'all' && domain !== 'all') {
+      window.location.href = `/cases/size/${companySize}/${domain}`;
+    } else if (companySize !== 'all') {
+      window.location.href = `/cases/size/${companySize}`;
+    } else if (domain !== 'all') {
+      window.location.href = `/cases/domain/${domain}`;
     } else {
       setSelectedIndustry(industry);
       setSelectedCompanySize(companySize);
