@@ -5,6 +5,7 @@ interface Case {
   title: string;
   industry: string;
   domain: string;
+  company_size: string;
   metric_value: number;
   metric_unit: string;
   excerpt: string;
@@ -39,6 +40,13 @@ const DOMAINS = [
   { value: 'accounting', label: '会計' },
   { value: 'customer_support', label: 'カスタマーサポート' },
   { value: 'logistics', label: '物流' },
+];
+
+const COMPANY_SIZES = [
+  { value: 'all', label: '全ての規模' },
+  { value: 'small', label: '中小企業' },
+  { value: 'mid', label: '中堅企業' },
+  { value: 'large', label: '大企業' },
 ];
 
 // 業種アイコン（SVG）
@@ -141,16 +149,16 @@ const getMetricColor = (value: number): string => {
 export default function CaseFilter({ cases }: CaseFilterProps) {
   const [selectedIndustry, setSelectedIndustry] = useState('all');
   const [selectedDomain, setSelectedDomain] = useState('all');
-  const [minMetric, setMinMetric] = useState(0);
+  const [selectedCompanySize, setSelectedCompanySize] = useState('all');
 
   const filteredCases = useMemo(() => {
     return cases.filter((caseItem) => {
       const industryMatch = selectedIndustry === 'all' || caseItem.industry === selectedIndustry;
       const domainMatch = selectedDomain === 'all' || caseItem.domain === selectedDomain;
-      const metricMatch = caseItem.metric_value >= minMetric;
-      return industryMatch && domainMatch && metricMatch;
+      const companySizeMatch = selectedCompanySize === 'all' || caseItem.company_size === selectedCompanySize;
+      return industryMatch && domainMatch && companySizeMatch;
     });
-  }, [cases, selectedIndustry, selectedDomain, minMetric]);
+  }, [cases, selectedIndustry, selectedDomain, selectedCompanySize]);
 
   const industryLabels: Record<string, string> = {
     manufacturing: '製造業',
@@ -187,6 +195,23 @@ export default function CaseFilter({ cases }: CaseFilterProps) {
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
+              企業規模で絞り込み
+            </label>
+            <select
+              value={selectedCompanySize}
+              onChange={(e) => setSelectedCompanySize(e.target.value)}
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            >
+              {COMPANY_SIZES.map((size) => (
+                <option key={size.value} value={size.value}>
+                  {size.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
               領域で絞り込み
             </label>
             <select
@@ -200,25 +225,6 @@ export default function CaseFilter({ cases }: CaseFilterProps) {
                 </option>
               ))}
             </select>
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              最小効果: {minMetric}%
-            </label>
-            <input
-              type="range"
-              min="0"
-              max="50"
-              step="5"
-              value={minMetric}
-              onChange={(e) => setMinMetric(parseInt(e.target.value, 10))}
-              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
-            />
-            <div className="flex justify-between text-xs text-gray-500 mt-1">
-              <span>0%</span>
-              <span>50%</span>
-            </div>
           </div>
         </div>
 
@@ -334,7 +340,7 @@ export default function CaseFilter({ cases }: CaseFilterProps) {
             onClick={() => {
               setSelectedIndustry('all');
               setSelectedDomain('all');
-              setMinMetric(0);
+              setSelectedCompanySize('all');
             }}
             className="mt-4 text-blue-600 hover:text-blue-800 font-medium"
           >
