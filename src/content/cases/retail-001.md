@@ -1,9 +1,9 @@
 ---
 title: "商品説明を自動生成したら、売上が上がった"
-industry: "retail"
-domain: "sales"
+industry: retail
+domain: sales
 problem_tags: ["商品説明", "コンテンツ作成", "EC運営"]
-company_size: "mid"
+company_size: mid
 metric_value: 18
 metric_unit: "%"
 metric_verified: true

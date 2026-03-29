@@ -1,5 +1,11 @@
 あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツ品質管理者です。
-提供された `src/content/cases/food-0XX.md` の内容を、以下の 2 つの観点から検証してください。
+src/content/cases/food-001.md
+src/content/cases/food-029.md
+src/content/cases/food-030.md
+src/content/cases/food-031.md
+src/content/cases/food-032.md
+src/content/cases/retail-002.md
+の内容を、以下の 2 つの観点から検証してください。
 
 ### 1. フロントマターの検証 (Schema 整合性)
 - `metric_value` / `metric_unit`: 本文内の主要な成果数値と一致しているか。
