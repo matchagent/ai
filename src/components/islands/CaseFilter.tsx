@@ -154,19 +154,23 @@ export default function CaseFilter({ cases, initialIndustry = 'all', initialComp
   const [selectedDomain, setSelectedDomain] = useState(initialDomain);
   const [selectedCompanySize, setSelectedCompanySize] = useState(initialCompanySize);
 
+  const buildUrl = (industry: string, companySize: string, domain: string): string | null => {
+    if (industry !== 'all') {
+      if (companySize !== 'all' && domain !== 'all') return `/cases/${industry}/${companySize}/${domain}`;
+      if (companySize !== 'all') return `/cases/${industry}/${companySize}`;
+      if (domain !== 'all') return `/cases/${industry}/domain/${domain}`;
+      return `/cases/${industry}`;
+    }
+    if (companySize !== 'all' && domain !== 'all') return `/cases/size/${companySize}/${domain}`;
+    if (companySize !== 'all') return `/cases/size/${companySize}`;
+    if (domain !== 'all') return `/cases/domain/${domain}`;
+    return null;
+  };
+
   const navigate = (industry: string, companySize: string, domain: string) => {
-    if (industry !== 'all' && companySize !== 'all' && domain !== 'all') {
-      window.location.href = `/cases/${industry}/${companySize}/${domain}`;
-    } else if (industry !== 'all' && companySize !== 'all') {
-      window.location.href = `/cases/${industry}/${companySize}`;
-    } else if (industry !== 'all') {
-      window.location.href = `/cases/${industry}`;
-    } else if (companySize !== 'all' && domain !== 'all') {
-      window.location.href = `/cases/size/${companySize}/${domain}`;
-    } else if (companySize !== 'all') {
-      window.location.href = `/cases/size/${companySize}`;
-    } else if (domain !== 'all') {
-      window.location.href = `/cases/domain/${domain}`;
+    const url = buildUrl(industry, companySize, domain);
+    if (url) {
+      window.location.href = url;
     } else {
       setSelectedIndustry(industry);
       setSelectedCompanySize(companySize);
