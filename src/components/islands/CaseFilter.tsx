@@ -38,6 +38,7 @@ const INDUSTRIES = [
 const DOMAINS = [
   { value: 'all', label: '全ての領域' },
   { value: 'sales', label: '営業' },
+  { value: 'marketing', label: 'マーケティング' },
   { value: 'production', label: '生産・製造' },
   { value: 'hr', label: '人事' },
   { value: 'accounting', label: '会計' },

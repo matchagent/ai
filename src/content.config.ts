@@ -8,7 +8,7 @@ const INDUSTRIES = [
 ] as const;
 
 const DOMAINS = [
-  'sales', 'production', 'hr', 'accounting', 'customer_support', 'logistics'
+  'sales', 'marketing', 'production', 'hr', 'accounting', 'customer_support', 'logistics'
 ] as const;
 
 const cases = defineCollection({

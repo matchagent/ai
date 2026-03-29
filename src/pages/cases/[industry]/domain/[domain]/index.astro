@@ -7,7 +7,7 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   const industries = ['manufacturing', 'retail', 'logistics', 'construction', 'legal', 'food', 'hotel', 'realestate', 'entertainment'];
-  const domains = ['sales', 'production', 'hr', 'accounting', 'customer_support', 'logistics'];
+  const domains = ['sales', 'marketing', 'production', 'hr', 'accounting', 'customer_support', 'logistics'];
   return industries.flatMap(industry =>
     domains.map(domain => ({ params: { industry, domain } }))
   );
@@ -29,6 +29,7 @@ const industryLabels: Record<string, string> = {
 
 const domainLabels: Record<string, string> = {
   sales: '営業',
+  marketing: 'マーケティング',
   production: '生産・製造',
   hr: '人事',
   accounting: '会計',

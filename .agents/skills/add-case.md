@@ -33,7 +33,7 @@ excerpt: "事例の概要（1〜2文）"
 `manufacturing` / `retail` / `logistics` / `construction` / `legal` / `food` / `hotel` / `real_estate` / `entertainment`
 
 ## ドメインコード
-`sales` / `production` / `hr` / `accounting` / `customer_support` / `logistics`
+`sales` / `marketing` / `production` / `hr` / `accounting` / `customer_support` / `logistics`
 
 ## 本文構成例
 

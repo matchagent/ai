@@ -8,6 +8,7 @@ import { getCollection } from 'astro:content';
 export async function getStaticPaths() {
   return [
     { params: { domain: 'sales' } },
+    { params: { domain: 'marketing' } },
     { params: { domain: 'production' } },
     { params: { domain: 'hr' } },
     { params: { domain: 'accounting' } },
@@ -20,6 +21,7 @@ const { domain } = Astro.params;
 
 const domainLabels: Record<string, string> = {
   sales: '営業',
+  marketing: 'マーケティング',
   production: '生産・製造',
   hr: '人事',
   accounting: '会計',

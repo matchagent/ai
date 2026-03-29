@@ -7,7 +7,7 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   const companySizes = ['small', 'mid', 'large'];
-  const domains = ['sales', 'production', 'hr', 'accounting', 'customer_support', 'logistics'];
+  const domains = ['sales', 'marketing', 'production', 'hr', 'accounting', 'customer_support', 'logistics'];
   return companySizes.flatMap(company_size =>
     domains.map(domain => ({ params: { company_size, domain } }))
   );
@@ -23,6 +23,7 @@ const companySizeLabels: Record<string, string> = {
 
 const domainLabels: Record<string, string> = {
   sales: '営業',
+  marketing: 'マーケティング',
   production: '生産・製造',
   hr: '人事',
   accounting: '会計',

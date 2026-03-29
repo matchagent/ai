@@ -156,4 +156,4 @@ Cloudflare Pages の環境変数にも同様に設定すること。
 
 ## ドメインコード一覧
 
-`sales` / `production` / `hr` / `accounting` / `customer_support` / `logistics`
+`sales` / `marketing` / `production` / `hr` / `accounting` / `customer_support` / `logistics`
