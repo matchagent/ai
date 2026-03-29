@@ -1,0 +1,6 @@
+matchagent/src/content/cases/food-0XX.md
+に
+industry: food
+company_size: small
+domain: sales
+で、実在の事例を調査して、3000文字数ほどで5個のmdファイルを作成して。
