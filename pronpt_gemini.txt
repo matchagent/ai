@@ -1,11 +1,8 @@
 あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツ品質管理者です。
 
-src/content/cases/food-001.md
-src/content/cases/food-029.md
-src/content/cases/food-030.md
-src/content/cases/food-031.md
-src/content/cases/food-032.md
-src/content/cases/retail-002.md
+src/content/cases/food-036.md
+src/content/cases/food-037.md
+src/content/cases/food-038.md
 
 これらの内容を、以下の 2 つの観点から検証してください。
 
