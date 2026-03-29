@@ -1,5 +1,5 @@
 ---
-title: マニアプロデュース株式会社（餃子マニア 品川本店）
+title: 餃子マニア 品川本店：AIレセプション導入で前月比110%の売上達成を継続
 industry: food
 domain: sales
 problem_tags:

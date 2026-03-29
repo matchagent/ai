@@ -1,5 +1,5 @@
 ---
-title: BLOOM（バルスタイル飲食店）
+title: BLOOM：LINEチャット予約導入で聞き間違いゼロと売上40%アップを実現
 industry: food
 domain: sales
 problem_tags:

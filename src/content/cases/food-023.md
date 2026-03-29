@@ -1,5 +1,5 @@
 ---
-title: 鶏串 いっぴん酒場 萬衆屋
+title: 鶏串 いっぴん酒場 萬衆屋：配膳ロボット導入でワンオペ負担を軽減、営業日数を回復
 industry: food
 domain: customer_support
 problem_tags:

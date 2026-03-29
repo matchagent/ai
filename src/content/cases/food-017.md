@@ -1,5 +1,5 @@
 ---
-title: かごの屋 清水谷高校前店
+title: かごの屋 清水谷高校前店：ebicaとAIレセプション導入で売上10%向上を実現
 domain: customer_support
 industry: food
 problem_tags:

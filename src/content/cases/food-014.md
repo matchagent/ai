@@ -1,5 +1,5 @@
 ---
-title: 餃子マニア（マニアプロデュース株式会社）
+title: 餃子マニア：AI電話受付「AIレセプション」導入で予約組数が1.47倍に増加
 domain: customer_support
 industry: food
 problem_tags:

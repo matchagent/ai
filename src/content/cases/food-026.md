@@ -1,5 +1,5 @@
 ---
-title: キリンビール（氷結®）
+title: キリンビール：生成AIペルソナ活用で「氷結®」の商品開発工数を大幅削減
 industry: food
 domain: marketing
 problem_tags:
@@ -9,7 +9,7 @@ problem_tags:
   - インタビュー分析の工数
 company_size: large
 metric_value: 50
-metric_unit: "%調査時間削減見込み"
+metric_unit: "時間調査工数削減"
 metric_verified: true
 source_url: https://www.kirinholdings.com/jp/newsroom/release/2023/1219_02.html
 is_sponsored: false

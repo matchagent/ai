@@ -1,5 +1,5 @@
 ---
-title: 回転寿し まつりや 山鼻店
+title: 回転寿し まつりや 山鼻店：小型配膳ロボット導入で人件費10%削減と席回転率向上を実現
 domain: customer_support
 industry: food
 problem_tags:

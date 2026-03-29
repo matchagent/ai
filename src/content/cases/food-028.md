@@ -1,5 +1,5 @@
 ---
-title: 日本ケンタッキー・フライド・チキン（KFC）
+title: 日本KFC：SNS分析ツール導入で複数メディアの反響を可視化、レポート作成を80%時短
 industry: food
 domain: marketing
 problem_tags:

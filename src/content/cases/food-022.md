@@ -1,5 +1,5 @@
 ---
-title: 株式会社セカンドアロー（焼肉くるとん 代官山店）
+title: 焼肉くるとん 代官山店：ebicaとPOS連携導入で当日予約・ウォークインを最適化
 industry: food
 domain: sales
 problem_tags:

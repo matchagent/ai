@@ -1,5 +1,5 @@
 ---
-title: 焼肉 ホルモン光 松任店
+title: 焼肉 ホルモン光 松任店：配膳ロボットBellaBot導入で深夜帯の残業ゼロを実現
 domain: customer_support
 industry: food
 problem_tags:

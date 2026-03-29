@@ -1,5 +1,5 @@
 ---
-title: delifucious
+title: delifucious：ポケトーク導入で外国人客との接客が円滑化、オーダー数1.5倍を実現
 domain: customer_support
 industry: food
 problem_tags:

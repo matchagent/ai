@@ -1,7 +1,7 @@
 ---
-title: 鶏串 いっぴん酒場 萬衆屋
-domain: customer_support
+title: 鶏串 いっぴん酒場 萬衆屋：配膳ロボットでワンオペの負担軽減、週6日営業を再開
 industry: food
+domain: customer_support
 problem_tags:
   - 人手不足
   - ワンオペ
@@ -9,7 +9,7 @@ problem_tags:
   - 営業日数削減
 company_size: small
 metric_value: 20
-metric_unit: "%"
+metric_unit: "%営業日数増加"
 metric_verified: true
 source_url: https://dfarobotics.com/topics/y4spesb3b/
 is_sponsored: false

@@ -1,5 +1,5 @@
 ---
-title: レストランイイジマ
+title: レストランイイジマ：AI電話予約「トレタ予約番」導入で予約数が30%アップ
 domain: customer_support
 industry: food
 problem_tags:
@@ -9,7 +9,7 @@ problem_tags:
   - ピーク時対応
 company_size: small
 metric_value: 30
-metric_unit: "%"
+metric_unit: "%予約数アップ"
 metric_verified: true
 source_url: https://toreta.in/case/toreta-daicho/1411/
 is_sponsored: false

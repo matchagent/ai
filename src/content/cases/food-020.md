@@ -1,5 +1,5 @@
 ---
-title: 幸楽苑ホールディングス
+title: 幸楽苑：楽天AIとの連携でパーソナライズ販促を導入、客数12.5%向上を達成
 domain: sales
 industry: food
 problem_tags:

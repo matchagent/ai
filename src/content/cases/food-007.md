@@ -7,7 +7,7 @@ problem_tags:
   - 配膳業務負担
   - 採用難
 company_size: small
-metric_value: 1
+metric_value: 1.5
 metric_unit: "人分業務代替"
 metric_verified: true
 source_url: https://www.softbankrobotics.com/jp/product/delivery/cases/kasaku/

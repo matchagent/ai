@@ -1,5 +1,5 @@
 ---
-title: 伊藤園（お〜いお茶 カテキン緑茶）
+title: 伊藤園：生成AIモデルをテレビCMに起用、制作コスト50%削減を実現
 industry: food
 domain: marketing
 problem_tags:

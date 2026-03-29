@@ -1,5 +1,5 @@
 ---
-title: SANRASA（サンラサー）
+title: SANRASA：ウェブ予約システム導入で電話対応から解放、売上20%アップを達成
 industry: food
 domain: sales
 problem_tags:

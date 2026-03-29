@@ -1,5 +1,5 @@
 ---
-title: スターバックスコーヒー ジャパン
+title: スターバックスコーヒー ジャパン：AIプラットフォーム「Deep Brew」で客単価15%向上を実現
 domain: sales
 industry: food
 problem_tags:
@@ -10,7 +10,7 @@ problem_tags:
 company_size: large
 metric_value: 15
 metric_unit: "%客単価向上"
-metric_verified: true
+metric_verified: false
 source_url: https://hackai.cyand.co.jp/article/ai-inshoku/
 is_sponsored: false
 date: 2023-06-01

@@ -1,7 +1,7 @@
 ---
-title: 株式会社あきんどスシロー
-domain: sales
+title: あきんどスシロー：AI需要予測と「デジロー」導入で食品ロス50%削減と客単価向上を両立
 industry: food
+domain: sales
 problem_tags:
   - 客単価向上
   - 食品ロス削減
@@ -10,7 +10,7 @@ problem_tags:
 company_size: large
 metric_value: 3
 metric_unit: "%客単価向上"
-metric_verified: true
+metric_verified: false
 source_url: https://neural-opt.com/restaurant-ai-cases/
 is_sponsored: false
 date: 2023-09-01
