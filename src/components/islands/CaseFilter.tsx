@@ -17,6 +17,9 @@ interface Case {
 
 interface CaseFilterProps {
   cases: Case[];
+  initialIndustry?: string;
+  initialCompanySize?: string;
+  initialDomain?: string;
 }
 
 const INDUSTRIES = [
@@ -146,10 +149,36 @@ const getMetricColor = (value: number): string => {
   return 'text-gray-600 bg-gray-50 border-gray-200';
 };
 
-export default function CaseFilter({ cases }: CaseFilterProps) {
-  const [selectedIndustry, setSelectedIndustry] = useState('all');
-  const [selectedDomain, setSelectedDomain] = useState('all');
-  const [selectedCompanySize, setSelectedCompanySize] = useState('all');
+export default function CaseFilter({ cases, initialIndustry = 'all', initialCompanySize = 'all', initialDomain = 'all' }: CaseFilterProps) {
+  const [selectedIndustry, setSelectedIndustry] = useState(initialIndustry);
+  const [selectedDomain, setSelectedDomain] = useState(initialDomain);
+  const [selectedCompanySize, setSelectedCompanySize] = useState(initialCompanySize);
+
+  const navigate = (industry: string, companySize: string, domain: string) => {
+    if (industry !== 'all' && companySize !== 'all' && domain !== 'all') {
+      window.location.href = `/cases/${industry}/${companySize}/${domain}`;
+    } else if (industry !== 'all' && companySize !== 'all') {
+      window.location.href = `/cases/${industry}/${companySize}`;
+    } else if (industry !== 'all') {
+      window.location.href = `/cases/${industry}`;
+    } else {
+      setSelectedIndustry(industry);
+      setSelectedCompanySize(companySize);
+      setSelectedDomain(domain);
+    }
+  };
+
+  const handleIndustryChange = (industry: string) => {
+    navigate(industry, selectedCompanySize, selectedDomain);
+  };
+
+  const handleCompanySizeChange = (companySize: string) => {
+    navigate(selectedIndustry, companySize, selectedDomain);
+  };
+
+  const handleDomainChange = (domain: string) => {
+    navigate(selectedIndustry, selectedCompanySize, domain);
+  };
 
   const filteredCases = useMemo(() => {
     return cases.filter((caseItem) => {
@@ -182,7 +211,7 @@ export default function CaseFilter({ cases }: CaseFilterProps) {
             </label>
             <select
               value={selectedIndustry}
-              onChange={(e) => setSelectedIndustry(e.target.value)}
+              onChange={(e) => handleIndustryChange(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             >
               {INDUSTRIES.map((ind) => (
@@ -199,7 +228,7 @@ export default function CaseFilter({ cases }: CaseFilterProps) {
             </label>
             <select
               value={selectedCompanySize}
-              onChange={(e) => setSelectedCompanySize(e.target.value)}
+              onChange={(e) => handleCompanySizeChange(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             >
               {COMPANY_SIZES.map((size) => (
@@ -216,7 +245,7 @@ export default function CaseFilter({ cases }: CaseFilterProps) {
             </label>
             <select
               value={selectedDomain}
-              onChange={(e) => setSelectedDomain(e.target.value)}
+              onChange={(e) => handleDomainChange(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             >
               {DOMAINS.map((dom) => (
