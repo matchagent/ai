@@ -12,7 +12,6 @@ metric_value: 80
 metric_unit: "%レポート作成時間削減"
 metric_verified: true
 source_url: https://sns.userlocal.jp/document/casestudy/kfc/
-is_sponsored: false
 date: 2022-10-01
 excerpt: KFCがSocial InsightでSNS分析を実施。複数SNSを横断した発話量・エンゲージメント可視化により、創業記念キャンペーンの効果検証とオーガニック投稿による話題継続を実現。レポート作成時間を80%削減。
 ---

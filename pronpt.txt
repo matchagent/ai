@@ -1,27 +1,22 @@
-matchagent/src/content/cases/food-040.md
-matchagent/src/content/cases/food-041.md
+https://paramo.sh/case-studies/skilletz-cafe/
+https://www.verdictfoodservice.com/news/deliverect-ai-agent-library/
 
-に
+を出典として、
 
+matchagent/src/content/cases/food-042.md
+matchagent/src/content/cases/food-043.md
+
+を、
 industry: food
 domain: marketing
-で、アメリカでDify,n8n,OpenClaw(Moltbot、Clawdbot)等のAIエージェントを使用した実在の事例を調査して、それを出典として、3000文字数ほどでmdファイルを作成して欲しい。
+で、3000文字数ほどのmdファイルを作成して。
 
-# 出典選定について
-• 一次情報（プレスリリース、企業公式、導入事例ページ、公式ニュース記事、公式インタビュー）を優先
-• 具体的な店名がない事例は除外
-• URLは必ず事前に検証（curl -I または FetchURL でアクセス確認）
-• 404の場合は代替URLを探すか、別の事例を選定
+文体や文章の流れは
 
-# 事前確認プロセスについて
-① 事例候補の調査
-　　↓
-② 出典URLの生存確認（FetchURL）
-　　↓
-③ 内容の精読（実際の数値・効果を確認）
-　　↓
-④ 記事作成
+/home/masasikatano/Documents/matchagent/src/content/cases/food-002.md
 
-という流れで作成して、
+を参考にして。
+
+作成後に、
 npm run check
 を行って。

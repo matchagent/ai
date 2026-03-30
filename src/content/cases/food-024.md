@@ -12,7 +12,6 @@ metric_value: 20
 metric_unit: "%売上向上"
 metric_verified: true
 source_url: https://toreta.in/contents/dx/restaurant-dx-case/
-is_sponsored: false
 date: 2024-01-01
 excerpt: 東新宿のスタンド型スパイスカレー店がウェブ予約システムを導入。電話対応から解放され1日売上20%アップを達成。予約データの蓄積でリピーター施策も強化。
 ---

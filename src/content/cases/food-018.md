@@ -12,7 +12,6 @@ metric_value: 15
 metric_unit: "%客単価向上"
 metric_verified: false
 source_url: https://hackai.cyand.co.jp/article/ai-inshoku/
-is_sponsored: false
 date: 2023-06-01
 excerpt: スターバックスがAIプラットフォーム「Deep Brew」でパーソナライズドレコメンドを実現。推奨の的中率60%超、客単価15%向上、リピート率20%増加を達成。
 ---

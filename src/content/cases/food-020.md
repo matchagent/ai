@@ -13,7 +13,6 @@ metric_value: 12.5
 metric_unit: "%客数向上"
 metric_verified: true
 source_url: https://www.watch.impress.co.jp/docs/news/1166858.html
-is_sponsored: false
 date: 2019-06-01
 excerpt: 創業70年近い老舗チェーンが、楽天ポイントの1億会員基盤と画像認識AI「UmaAI」を統合。アナログな「勘」の経営から脱却し、2ヶ月で客数12.5%増・売上11.1%増の劇的成長を実現。
 ---

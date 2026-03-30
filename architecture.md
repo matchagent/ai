@@ -62,7 +62,7 @@ src/content/
     {industry}-{seq}.md
       frontmatter: title, industry, domain, problem_tags[],
                    company_size, metric_value, metric_unit,
-                   metric_verified, is_sponsored,
+                   metric_verified,
                    date, excerpt
       body: 事例詳細本文
 ```

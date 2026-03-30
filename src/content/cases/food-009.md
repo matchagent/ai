@@ -11,7 +11,6 @@ metric_value: 50
 metric_unit: "%オーダー数増加"
 metric_verified: true
 source_url: https://pocketalk.jp/column/allcases/case-study/toranomon
-is_sponsored: false
 date: 2023-11-01
 excerpt: 虎ノ門横丁の小規模ラーメン店がポケトークを導入。外国人客との雑談が可能になりオーダー数は1.5倍に増加。スタッフ間の多言語コミュニケーションも円滑化した。
 ---

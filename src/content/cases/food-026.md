@@ -12,7 +12,6 @@ metric_value: 50
 metric_unit: "時間調査工数削減"
 metric_verified: true
 source_url: https://www.kirinholdings.com/jp/newsroom/release/2023/1219_02.html
-is_sponsored: false
 date: 2023-12-19
 excerpt: キリンビールが氷結®ブランドの新商品開発に生成AIペルソナの検証を開始。インタビュー調査に要していた平均50時間の工数を大幅に削減し、スピーディな商品開発を目指す。
 ---

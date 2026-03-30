@@ -11,7 +11,6 @@ metric_value: 33
 metric_unit: "%人員削減"
 metric_verified: true
 source_url: https://dfarobotics.com/topics/x86q756yqeb/
-is_sponsored: false
 date: 2022-12-01
 excerpt: 平日ホール1名のラーメン店がKettyBotを導入。深夜帯の営業人数を3人から2人に削減し、ホールスタッフのワンオペ営業も可能になった。
 ---

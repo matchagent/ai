@@ -14,16 +14,16 @@
 
 ```yaml
 ---
+id: food-002                      # ファイル名と一致させる
 title: "事例タイトル"
 industry: "manufacturing"         # 業種コード (下記参照)
 domain: "production"              # ドメインコード (下記参照)
 problem_tags: ["在庫管理", "自動化"]
 company_size: "mid"               # small / mid / large
 metric_value: 30                  # 効果の数値
-metric_unit: "%削減"              # 効果の単位
+metric_unit: "%向上"              # 効果の単位
 metric_verified: true             # 検証済みか（下記「検証基準」参照）
-source_url: "https://example.com/press-release"  # 出典URL（省略可。metric_verified: true の場合は可能な限り記載）
-is_sponsored: false               # スポンサード記事か
+source_url: "https://example.com/press-release"  # metric_verified: true の場合は必須
 date: "2025-01-15"
 excerpt: "事例の概要（1〜2文）"
 ---
@@ -35,32 +35,42 @@ excerpt: "事例の概要（1〜2文）"
 ## ドメインコード
 `sales` / `marketing` / `production` / `hr` / `accounting` / `customer_support` / `logistics`
 
-## 本文構成例
+## 本文構成
 
 ```markdown
-## 背景・課題
+## Before
 
-（企業の状況と課題を記述）
+（AI導入前の業務課題・状況を記述。定量的な問題規模があれば数値を含める）
 
-## 導入したAIソリューション
+## AI導入内容
 
-（具体的な解決策を記述）
+（導入したAIソリューションの全体像と仕組みを記述。必要に応じてサブセクション `###` で構成を分ける）
 
-## 導入効果
+## After
 
-（定量的・定性的な効果を記述）
-
-## まとめ
-
-（学びと今後の展開）
+（導入後の定量的・定性的な成果を記述。metric_value/metric_unit に対応する数値変化を必ず含める）
 ```
+
+### 文体・品質基準
+
+- 1セクションあたり3〜5段落以上の詳細な記述
+- `metric_value` に対応する数値は `## After` に明記する（例: `2.7% → 12%`）
+- 業界固有の背景・構造的課題から書き起こし、読者がAI導入の必然性を理解できるようにする
+- `## AI導入内容` は技術スタック・データフロー・フィードバックループまで掘り下げる
 
 ## 検証基準 (metric_verified)
 
 | 値 | 条件 |
 |----|------|
-| `true` | 企業のプレスリリース・公式発表・IR資料など、公開された一次情報に数値の出典がある |
-| `false` | 口コミ・インタビュー・自己申告のみで、公式な出典が確認できない |
+| `true` | 出典（プレスリリース・公式発表・IR資料など）に **該当の数値が明記されている** |
+| `false` | 出典に数値の記載がない、または出典自体が確認できない |
+
+**ハルシネーション防止チェックリスト** (`metric_verified: true` にする前に確認):
+1. `source_url` のページを実際に参照した
+2. `metric_value` + `metric_unit` の組み合わせが出典内に明記されている
+3. 数値を推測・要約・計算で導いていない
+
+上記3条件をすべて満たす場合のみ `true`。満たさない場合は `false`。
 
 ## 確認コマンド
 

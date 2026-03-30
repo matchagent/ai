@@ -12,7 +12,6 @@ metric_value: 30
 metric_unit: "%予約数アップ"
 metric_verified: true
 source_url: https://toreta.in/case/toreta-daicho/1411/
-is_sponsored: false
 date: 2021-12-01
 excerpt: 水戸市の洋食レストラン。トレタ予約番（AI電話予約）導入で、1時間あたりの予約受付が10件→13件に増加し、予約数が3割アップ。
 ---

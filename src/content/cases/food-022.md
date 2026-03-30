@@ -12,7 +12,6 @@ metric_value: 110
 metric_unit: "%売上回復（導入当初比）"
 metric_verified: true
 source_url: https://www.ebica.jp/casestudy/second-arrow/
-is_sponsored: false
 date: 2024-06-01
 excerpt: 人気韓国料理店がebicaとAIレセプション、POS連携を導入。電話対応を自動化し、当日予約とウォークインの最適化で月により110%〜120%の来店客数回復を達成。
 ---

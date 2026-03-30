@@ -12,7 +12,6 @@ metric_value: 3
 metric_unit: "%客単価向上"
 metric_verified: false
 source_url: https://neural-opt.com/restaurant-ai-cases/
-is_sponsored: false
 date: 2023-09-01
 excerpt: スシローがAI需要予測と完全オーダー制「デジロー」を導入。食品ロス約50%削減と客単価3%向上を同時達成し、廃棄と売上の両立を実現。
 ---

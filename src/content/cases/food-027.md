@@ -12,7 +12,6 @@ metric_value: 50
 metric_unit: "%制作コスト削減"
 metric_verified: true
 source_url: https://www.itoen.co.jp/news/article/64855/
-is_sponsored: false
 date: 2024-03-01
 excerpt: 伊藤園が生成AIで作成したモデルを「お〜いお茶 カテキン緑茶」のテレビCMに起用。制作コスト50%削減とリスク管理の観点から注目を集めた先駆的な取り組み。
 ---

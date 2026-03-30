@@ -12,7 +12,6 @@ metric_value: 20
 metric_unit: "%営業日数増加"
 metric_verified: true
 source_url: https://dfarobotics.com/topics/y4spesb3b/
-is_sponsored: false
 date: 2023-06-01
 excerpt: 35席の居酒屋でスタッフ1名のワンオペ。KEENON T8配膳ロボット導入で週5日→週6日営業を実現し、身体的負担を軽減。
 ---

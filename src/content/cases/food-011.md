@@ -12,7 +12,6 @@ metric_value: 73
 metric_unit: "%電話問い合わせ削減"
 metric_verified: true
 source_url: https://www.tifana.ai/article/aifaqsystem-article-518
-is_sponsored: false
 date: 2024-06-01
 excerpt: 新宿の海鮮バル。LINE公式アカウントへのAIチャットボット導入で、電話問い合わせを73%削減。多言語対応でインバウンド客の予約獲得も向上。
 ---

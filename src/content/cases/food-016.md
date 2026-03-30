@@ -12,7 +12,6 @@ metric_value: 10
 metric_unit: "%人件費削減"
 metric_verified: true
 source_url: https://dfarobotics.com/topics/0wcgld56sz/
-is_sponsored: false
 date: 2023-03-01
 excerpt: 札幌の回転寿司店がKEENON T8を導入。正社員57名の中規模企業運営店で、残業時間減少により人件費1割削減。1名少ない人数でも運営可能に。
 ---

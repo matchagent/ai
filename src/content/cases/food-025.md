@@ -12,7 +12,6 @@ metric_value: 40
 metric_unit: "%売上向上"
 metric_verified: true
 source_url: https://www.linebiz.com/jp/case-study/bloom/
-is_sponsored: false
 date: 2023-01-01
 excerpt: 2〜3人で運営するバルスタイルの小規模飲食店がLINEチャット予約を導入。手が空いたタイミングで予約対応が可能になり売上30-40%アップ、聞き間違いもゼロに。
 ---

@@ -12,7 +12,6 @@ interface Case {
   date: string;
   problem_tags: string[];
   metric_verified?: boolean;
-  is_sponsored?: boolean;
 }
 
 interface CaseCardProps {
@@ -209,11 +208,6 @@ export default function CaseCard({ caseItem }: CaseCardProps) {
               </div>
             </div>
             
-            {caseItem.is_sponsored && (
-              <span className="text-xs bg-yellow-400 text-yellow-900 px-2 py-1 rounded-full font-medium shadow-sm">
-                スポンサー
-              </span>
-            )}
           </div>
         </div>
         

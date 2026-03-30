@@ -9,7 +9,6 @@
    - 課題タグ (配列)
    - 企業規模 (small / mid / large)
    - 効果指標の値・単位・検証済みかどうか
-   - スポンサードかどうか
    - 事例詳細本文
 
 2. `src/content/cases/` に新しい Markdown ファイルを作成する
@@ -27,7 +26,6 @@
    metric_value: 0
    metric_unit: ""
    metric_verified: false
-   is_sponsored: false
    date: "YYYY-MM-DD"
    excerpt: ""
    ---
