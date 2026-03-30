@@ -39,7 +39,7 @@ const COMPANY_SIZES = [
   { value: 'all', label: '全ての規模' },
   { value: 'small', label: '少人数（1〜10名）' },
   { value: 'mid', label: '中規模（11〜100名）' },
-  { value: 'large', label: '大規模（101名以上）' },
+  { value: 'large', label: '大企業（101名以上）' },
 ];
 
 // 業種ラベル（ナビゲーション用）

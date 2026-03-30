@@ -129,7 +129,7 @@ const companySizeBadgeColors: Record<string, string> = {
 
 // 企業規模ラベル
 const companySizeLabels: Record<string, string> = {
-  small: '小規模',
+  small: '少人数',
   mid: '中規模',
   large: '大企業',
 };

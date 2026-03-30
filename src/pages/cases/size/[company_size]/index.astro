@@ -18,7 +18,7 @@ const { company_size } = Astro.params;
 const companySizeLabels: Record<string, string> = {
   small: '少人数（1〜10名）',
   mid: '中規模（11〜100名）',
-  large: '大規模（101名以上）',
+  large: '大企業（101名以上）',
 };
 
 const allCases = await getCollection('cases');
