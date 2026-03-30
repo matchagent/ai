@@ -22,35 +22,35 @@ const companySizeLabels: Record<string, string> = {
 };
 
 const allCases = await getCollection('cases');
-
 const casesData = allCases.map(c => ({
   slug: c.id,
   title: c.data.title,
   industry: c.data.industry,
   domain: c.data.domain,
   company_size: c.data.company_size,
-  metric_value: c.data.metric_value,
-  metric_unit: c.data.metric_unit,
+  metric_value: c.data.metric_value ?? 0,
+  metric_unit: c.data.metric_unit ?? '',
   excerpt: c.data.excerpt,
   date: c.data.date.toISOString(),
-  problem_tags: c.data.problem_tags,
+  problem_tags: c.data.problem_tags ?? [],
   metric_verified: c.data.metric_verified,
 }));
 
 const sizeLabel = companySizeLabels[company_size];
 const pageTitle = `${sizeLabel.replace(/（.*）/, '')}のAI導入事例`;
+const description = `${sizeLabel}向けのAI導入事例を掲載。`;
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: pageTitle,
-  description: `${sizeLabel}向けのAI導入事例をご紹介。`,
+  description,
 };
 ---
 
 <BaseLayout
   title={pageTitle}
-  description={`${sizeLabel}向けのAI導入事例をご紹介。`}
+  description={description}
   jsonLd={jsonLd}
 >
   <Header />
@@ -76,7 +76,7 @@ const jsonLd = {
 
           {/* 説明文 */}
           <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-            {sizeLabel}向けのAI導入事例を掲載。<br class="hidden sm:block"/>
+            {description}<br class="hidden sm:block"/>
             同規模の企業の成功事例から、あなたのビジネスに最適なAI活用法を見つけられます。
           </p>
         </div>

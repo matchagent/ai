@@ -47,18 +47,17 @@ const domainLabels: Record<string, string> = {
 };
 
 const allCases = await getCollection('cases');
-
 const casesData = allCases.map(c => ({
   slug: c.id,
   title: c.data.title,
   industry: c.data.industry,
   domain: c.data.domain,
   company_size: c.data.company_size,
-  metric_value: c.data.metric_value,
-  metric_unit: c.data.metric_unit,
+  metric_value: c.data.metric_value ?? 0,
+  metric_unit: c.data.metric_unit ?? '',
   excerpt: c.data.excerpt,
   date: c.data.date.toISOString(),
-  problem_tags: c.data.problem_tags,
+  problem_tags: c.data.problem_tags ?? [],
   metric_verified: c.data.metric_verified,
 }));
 
@@ -66,18 +65,19 @@ const industryLabel = industryLabels[industry];
 const sizeLabel = companySizeLabels[company_size];
 const domainLabel = domainLabels[domain];
 const pageTitle = `${industryLabel}・${sizeLabel.replace(/（.*）/, '')}・${domainLabel}のAI導入事例`;
+const description = `${industryLabel}・${sizeLabel}・${domainLabel}向けのAI導入事例を掲載。`;
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: pageTitle,
-  description: `${industryLabel}・${sizeLabel}・${domainLabel}向けのAI導入事例をご紹介。`,
+  description,
 };
 ---
 
 <BaseLayout
   title={pageTitle}
-  description={`${industryLabel}・${sizeLabel}・${domainLabel}向けのAI導入事例をご紹介。`}
+  description={description}
   jsonLd={jsonLd}
 >
   <Header />
@@ -94,23 +94,22 @@ const jsonLd = {
           <span class="mx-2">/</span>
           <a href={`/cases/${industry}`} class="hover:text-blue-600 transition-colors">{industryLabel}</a>
           <span class="mx-2">/</span>
-          <a href={`/cases/${industry}/${company_size}`} class="hover:text-blue-600 transition-colors">{sizeLabel}</a>
+          <a href={`/cases/${industry}/${company_size}`} class="hover:text-blue-600 transition-colors">{sizeLabel.replace(/（.*）/, '')}</a>
           <span class="mx-2">/</span>
           <span class="text-gray-900">{domainLabel}</span>
         </nav>
 
         <div class="text-center mb-12">
           {/* メインタイトル */}
-          <h1 class="text-3xl md:text-4xl font-bold tracking-wide leading-tight bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent mb-6">
+          <h1 class="text-2xl md:text-3xl font-bold tracking-wide leading-tight bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent mb-6">
             {pageTitle}
           </h1>
 
           {/* 説明文 */}
           <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-            {industryLabel}・{sizeLabel}・{domainLabel}向けのAI導入事例を掲載。<br class="hidden sm:block"/>
+            {description}<br class="hidden sm:block"/>
             同業他社の成功事例から、あなたのビジネスに最適なAI活用法を見つけられます。
           </p>
-
         </div>
 
         <CaseFilter cases={casesData} initialIndustry={industry} initialCompanySize={company_size} initialDomain={domain} client:only="react" />

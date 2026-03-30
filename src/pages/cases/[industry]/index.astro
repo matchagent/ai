@@ -6,7 +6,6 @@ import CaseFilter from '../../../components/islands/CaseFilter.tsx';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  // 直接配列を定義（Cloudflareビルド時のスコープ問題を回避）
   return [
     { params: { industry: 'manufacturing' } },
     { params: { industry: 'retail' } },
@@ -35,39 +34,39 @@ const industryLabels: Record<string, string> = {
 };
 
 const allCases = await getCollection('cases');
-
 const casesData = allCases.map(c => ({
   slug: c.id,
   title: c.data.title,
   industry: c.data.industry,
   domain: c.data.domain,
   company_size: c.data.company_size,
-  metric_value: c.data.metric_value,
-  metric_unit: c.data.metric_unit,
+  metric_value: c.data.metric_value ?? 0,
+  metric_unit: c.data.metric_unit ?? '',
   excerpt: c.data.excerpt,
   date: c.data.date.toISOString(),
-  problem_tags: c.data.problem_tags,
+  problem_tags: c.data.problem_tags ?? [],
   metric_verified: c.data.metric_verified,
 }));
 
 const industryLabel = industryLabels[industry];
 const pageTitle = `${industryLabel}のAI導入事例`;
+const description = `${industryLabel}向けのAI導入事例を掲載。`;
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: pageTitle,
-  description: `${industryLabel}向けのAI導入事例をご紹介。売上向上や業務効率化を実現した具体的な事例を掲載しています。`,
+  description,
 };
 ---
 
-<BaseLayout 
+<BaseLayout
   title={pageTitle}
-  description={`${industryLabel}向けのAI導入事例をご紹介。売上向上や業務効率化を実現した具体的な事例を掲載しています。`}
+  description={description}
   jsonLd={jsonLd}
 >
   <Header />
-  
+
   <main>
     {/* ヒーローセクション背景 */}
     <div class="bg-gradient-to-b from-blue-50 via-white to-white">
@@ -89,7 +88,7 @@ const jsonLd = {
 
           {/* 説明文 */}
           <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-            {industryLabel}向けのAI導入事例を掲載。<br class="hidden sm:block"/>
+            {description}<br class="hidden sm:block"/>
             同業他社の成功事例から、あなたのビジネスに最適なAI活用法を見つけられます。
           </p>
         </div>
