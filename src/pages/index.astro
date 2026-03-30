@@ -2,21 +2,22 @@
 import BaseLayout from '../components/layout/BaseLayout.astro';
 import Header from '../components/layout/Header.astro';
 import Footer from '../components/layout/Footer.astro';
-import CaseCard from '../components/case/CaseCard.astro';
-import SearchBox from '../components/islands/SearchBox.tsx';
+import CaseFilter from '../components/islands/CaseFilter.tsx';
 import { getCollection } from 'astro:content';
 
 const allCases = await getCollection('cases');
-const featuredCases = allCases
-  .filter(c => c.data.metric_verified)
-  .sort((a, b) => b.data.metric_value - a.data.metric_value)
-  .slice(0, 6);
 
-const searchItems = allCases.map(c => ({
+// Islandコンポーネントに渡すためシリアライズ可能なデータに変換
+const casesData = allCases.map(c => ({
   slug: c.id,
   title: c.data.title,
-  excerpt: c.data.excerpt,
   industry: c.data.industry,
+  domain: c.data.domain,
+  company_size: c.data.company_size,
+  metric_value: c.data.metric_value,
+  metric_unit: c.data.metric_unit,
+  excerpt: c.data.excerpt,
+  date: c.data.date.toISOString(),
   problem_tags: c.data.problem_tags,
 }));
 
@@ -25,113 +26,31 @@ const jsonLd = {
   '@type': 'WebSite',
   name: 'AIケースラボ',
   url: 'https://ai.matchagent.workers.dev',
-  description: 'AI導入事例とパートナーマッチングで、あなたのビジネスを加速させます。',
+  description: '9業種のAI導入事例を検索・比較できるデータベースです。業種・ドメイン・導入効果でフィルタリングして、あなたのビジネスに最適な事例を見つけられます。',
 };
 ---
 
-<BaseLayout 
-  title="トップページ" 
-  description="AI導入事例とパートナーマッチングで、あなたのビジネスを加速させます。9業種のAI導入事例から、最適なAI開発パートナーを見つけられます。"
+<BaseLayout
+  title="AI導入事例一覧"
+  description="9業種のAI導入事例を検索・比較できるデータベースです。業種・ドメイン・導入効果でフィルタリングして、あなたのビジネスに最適な事例を見つけられます。"
   jsonLd={jsonLd}
 >
   <Header />
-  
-  <main>
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-blue-600 to-indigo-700 text-white py-20">
-      <div class="max-w-4xl mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold mb-6">
-          AI導入で売上向上を実現
+
+  <main class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          AI導入事例一覧
         </h1>
-        <p class="text-xl md:text-2xl text-blue-100 mb-8">
-          9業種の導入事例と、最適なAI開発パートナーマッチング
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          9業種、{allCases.length}件以上のAI導入事例を掲載。
+          業種や領域、効果で絞り込んで、あなたのビジネスに最適な事例を見つけられます。
         </p>
-        <div class="mb-8">
-          <SearchBox items={searchItems} client:only="react" />
-        </div>
-        <div class="flex flex-wrap justify-center gap-4">
-          <a 
-            href="/cases"
-            class="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
-          >
-            事例を見る
-          </a>
-        </div>
       </div>
-    </section>
 
-    <!-- Stats Section -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          <div>
-            <div class="text-3xl md:text-4xl font-bold text-blue-600">9</div>
-            <div class="text-gray-600 mt-2">対応業種</div>
-          </div>
-          <div>
-            <div class="text-3xl md:text-4xl font-bold text-blue-600">100+</div>
-            <div class="text-gray-600 mt-2">導入事例</div>
-          </div>
-          <div>
-            <div class="text-3xl md:text-4xl font-bold text-blue-600">50+</div>
-            <div class="text-gray-600 mt-2">開発パートナー</div>
-          </div>
-          <div>
-            <div class="text-3xl md:text-4xl font-bold text-blue-600">95%</div>
-            <div class="text-gray-600 mt-2">満足度</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured Cases -->
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex items-center justify-between mb-8">
-          <h2 class="text-2xl md:text-3xl font-bold text-gray-900">注目の導入事例</h2>
-          <a href="/cases" class="text-blue-600 hover:text-blue-800 font-medium">
-            すべて見る →
-          </a>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featuredCases.map(caseItem => (
-            <CaseCard case={caseItem} />
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- Industries Section -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-12">
-          対応業種
-        </h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          {[
-            { id: 'manufacturing', name: '製造業', icon: '🏭' },
-            { id: 'retail', name: '小売・EC業', icon: '🛍️' },
-            { id: 'logistics', name: '物流・運輸', icon: '🚚' },
-            { id: 'construction', name: '建設業', icon: '🏗️' },
-            { id: 'legal', name: '士業', icon: '⚖️' },
-            { id: 'food', name: '飲食業', icon: '🍽️' },
-            { id: 'hotel', name: '宿泊業', icon: '🏨' },
-            { id: 'realestate', name: '不動産業', icon: '🏠' },
-            { id: 'entertainment', name: '娯楽業', icon: '🎭' },
-          ].map(industry => (
-            <a
-              href={`/cases/${industry.id}`}
-              class="bg-white p-6 rounded-xl border border-gray-200 text-center hover:shadow-lg transition-shadow"
-            >
-              <div class="text-4xl mb-3">{industry.icon}</div>
-              <div class="font-medium text-gray-900">{industry.name}</div>
-            </a>
-          ))}
-        </div>
-      </div>
-    </section>
-
-
+      <CaseFilter cases={casesData} client:only="react" />
+    </div>
   </main>
 
   <Footer />

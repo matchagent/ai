@@ -18,16 +18,17 @@
 
 ```
 src/pages/
-  index.astro          → トップページ (静的)
+  index.astro          → トップページ = 事例一覧 (CaseFilter を Islands として埋め込み)
   cases/
-    index.astro        → 事例一覧 (CaseFilter を Islands として埋め込み)
     [slug].astro       → 事例詳細 (静的、ビルド時生成)
     [industry]/
       index.astro      → 業種別事例一覧 (静的)
   data/
     cases.json.ts      → JSON API (ビルド時生成)
   about.astro
-  contact.astro
+
+public/
+  _redirects           → /cases → / 301リダイレクト (Cloudflare Pages)
 
 src/components/
   layout/

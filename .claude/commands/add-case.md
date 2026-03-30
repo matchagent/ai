@@ -5,7 +5,7 @@
 1. ユーザーから以下の情報を収集する（不足している場合は確認する）:
    - タイトル
    - 業種 (manufacturing / retail / logistics / construction / legal / food / hotel / real_estate / entertainment)
-   - ドメイン (sales / production / hr / accounting / customer_support / logistics)
+   - ドメイン (sales / marketing / production / hr / accounting / customer_support / logistics)
    - 課題タグ (配列)
    - 企業規模 (small / mid / large)
    - 効果指標の値・単位・検証済みかどうか

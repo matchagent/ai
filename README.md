@@ -27,10 +27,12 @@ aimatchagent/
 │   ├── content/
 │   │   └── cases/         # 導入事例 (Markdown)
 │   ├── pages/
-│   │   ├── index.astro
-│   │   ├── cases/[slug].astro
-│   │   └── data/          # JSON API エンドポイント
+│   │   ├── index.astro            # トップページ = 事例一覧 (CaseFilter Islands)
+│   │   ├── cases/[slug].astro     # 事例詳細
+│   │   └── data/                  # JSON API エンドポイント
 │   └── content.config.ts  # Zod スキーマ定義
+├── public/
+│   └── _redirects         # /cases → / 301リダイレクト
 ├── .agents/skills/        # 全エージェント共通スキルドキュメント
 │   ├── add-case.md
 │   ├── astro-content.md

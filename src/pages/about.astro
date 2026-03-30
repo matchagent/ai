@@ -33,7 +33,7 @@ const industries = [
 
 <BaseLayout 
   title="サービス説明" 
-  description="AIケースラボは、AI導入事例とパートナーマッチングで企業のAI導入を支援するプラットフォームです。"
+  description="AIケースラボは、9業種のAI導入事例を業種・ドメイン・導入効果で検索・比較できる事例データベースです。"
   jsonLd={jsonLd}
 >
   <Header />
@@ -56,8 +56,8 @@ const industries = [
           サービス説明
         </h1>
         <p class="text-xl text-white/90 max-w-2xl">
-          AIケースラボは、「◯◯したら、売上が上がった」というAI導入事例を9業種で網羅し、
-          AIオーケストレーター開発会社と発注企業をマッチングするプラットフォームです。
+          AIケースラボは、「◯◯したら、売上が上がった」というAI導入事例を9業種で網羅した事例データベースです。
+          業種・ドメイン・導入効果で絞り込み、あなたのビジネスに近い事例を見つけられます。
         </p>
       </div>
     </div>
@@ -89,9 +89,9 @@ const industries = [
               <div class="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center text-purple-600 mb-4 group-hover:scale-110 transition-transform">
                 <Fragment set:html={featureIcons.robot} />
               </div>
-              <h3 class="font-bold text-lg mb-2 text-gray-900">AIマッチング</h3>
+              <h3 class="font-bold text-lg mb-2 text-gray-900">多軸フィルタリング</h3>
               <p class="text-gray-600 text-sm leading-relaxed">
-                Claude APIを活用したインテリジェントなマッチングで、最適なパートナーをご紹介。
+                業種・ドメイン・企業規模・導入効果の4軸で絞り込み。自社に近い事例をすぐに見つけられます。
               </p>
             </div>
           </div>
@@ -103,9 +103,9 @@ const industries = [
               <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center text-green-600 mb-4 group-hover:scale-110 transition-transform">
                 <Fragment set:html={featureIcons.shield} />
               </div>
-              <h3 class="font-bold text-lg mb-2 text-gray-900">審査制のパートナー</h3>
+              <h3 class="font-bold text-lg mb-2 text-gray-900">出典付きの信頼性</h3>
               <p class="text-gray-600 text-sm leading-relaxed">
-                実績と技術力を審査したパートナーのみを掲載。品質の高い開発を保証します。
+                効果数値はプレスリリース・公式発表などの出典を確認済みのものを明示。根拠のある事例だけを掲載します。
               </p>
             </div>
           </div>
@@ -197,11 +197,11 @@ const industries = [
       <section class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-8 md:p-12 text-center text-white">
         <h2 class="text-2xl md:text-3xl font-bold mb-4">あなたのビジネスにもAI導入を</h2>
         <p class="text-white/90 mb-8 max-w-2xl mx-auto">
-          9業種の導入事例を見て、最適なAI開発パートナーを見つけましょう。
+          9業種・100件以上のAI導入事例から、あなたのビジネスに近い事例を探してみましょう。
         </p>
         <div class="flex flex-wrap justify-center gap-4">
           <a 
-            href="/cases" 
+            href="/"
             class="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
           >
             事例を見る
