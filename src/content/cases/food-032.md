@@ -8,7 +8,7 @@ problem_tags:
   - クーポン効率化
 company_size: small
 metric_value: 300
-metric_unit: '%'
+metric_unit: '%来店者数'
 metric_verified: true
 source_url: https://snsschool.net/column/industry-restaurant/success
 date: 2025-03-20

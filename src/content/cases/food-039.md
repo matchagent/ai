@@ -8,7 +8,7 @@ problem_tags:
   - 効率的なプロモーション
 company_size: small
 metric_value: 150
-metric_unit: '%'
+metric_unit: '%売上増'
 metric_verified: true
 source_url: https://influfect.com/case/631/
 date: 2025-03-15
