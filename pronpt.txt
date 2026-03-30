@@ -1,28 +1,22 @@
 1.調査
 ```
-中国語圏で少人数(1-10名)の規模の飲食業で、dify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名が記載されている事例を調査して。
+ベトナム語圏で少人数(1-10名)の規模の飲食業で、dify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名が記載されている事例を調査して。
 ```
 
 1-5.調査の裏付け(無い場合)
 ```
-「车达」三明治店
-葛记饺子
-ChatEATsy（搵食易）
-美心薈（Eatizen）
+Kopi Senja
 の事例が掲載されているURLを教えて。
 ```
 
 2.作成
 ```
-https://marketingrizzz.com/case-studies/a-case-study-in-restaurant-growth-automation/
-https://www.makeitfuture.com/case-studies/from-specialty-coffee-to-business-automation
-https://platinum.ai/blog/ai-case-study-local-bakery
+「Looking into how artificial intelligence supports operational improvem
+    ts in Southeast Asia's expanding enterprises: evidence from case studies」
 
 を出典として、
 
-matchagent/src/content/cases/food-044.md
-matchagent/src/content/cases/food-045.md
-matchagent/src/content/cases/food-046.md
+matchagent/src/content/cases/food-051.md
 
 を、
 industry: food
