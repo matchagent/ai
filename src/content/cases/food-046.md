@@ -1,7 +1,7 @@
 ---
 id: food-046
 title: The Rolling Pin：ChatGPTでSNS・メールマーケティング自動化、週10時間節約
-industry: food
+industry: retail
 domain: marketing
 problem_tags:
   - SNS運用

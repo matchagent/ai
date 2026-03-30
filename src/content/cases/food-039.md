@@ -1,6 +1,6 @@
 ---
 title: 鈴木栄光堂｜インフルエンサーAIマッチングでリニューアル商品の認知度向上と売上150%達成
-industry: food
+industry: retail
 domain: marketing
 problem_tags:
   - 認知度向上

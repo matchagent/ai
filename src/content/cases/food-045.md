@@ -1,7 +1,7 @@
 ---
 id: food-045
 title: Blu.Coffee：Make.comで顧客リターゲティング自動化、手作業90%削減
-industry: food
+industry: retail
 domain: marketing
 problem_tags:
   - 顧客リテンション
