@@ -1,10 +1,20 @@
-https://paramo.sh/case-studies/skilletz-cafe/
-https://www.verdictfoodservice.com/news/deliverect-ai-agent-library/
+1.調査
+```
+英語圏で少人数(1-10名)の規模の飲食業で、dify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名が記載されている事例を調査して。
+```
+
+
+2.作成
+```
+https://marketingrizzz.com/case-studies/a-case-study-in-restaurant-growth-automation/
+https://www.makeitfuture.com/case-studies/from-specialty-coffee-to-business-automation
+https://platinum.ai/blog/ai-case-study-local-bakery
 
 を出典として、
 
-matchagent/src/content/cases/food-042.md
-matchagent/src/content/cases/food-043.md
+matchagent/src/content/cases/food-044.md
+matchagent/src/content/cases/food-045.md
+matchagent/src/content/cases/food-046.md
 
 を、
 industry: food
@@ -20,3 +30,26 @@ domain: marketing
 作成後に、
 npm run check
 を行って。
+```
+
+
+3.検証
+```
+あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツ品質管理者です。
+
+src/content/cases/food-040.md
+
+の内容を、以下の 3 つの観点から検証してください。
+
+### 1. フロントマターの検証 (Schema 整合性)
+- `metric_value` / `metric_unit`: 本文内の主要な成果数値と一致しているか。
+
+### 2. 出典との整合性の検証
+- 出典元の内容と記事内容の整合性があるか。
+
+### 3. 内容の具体性と専門性
+- AI技術の名称や仕組み（例: CNN, 需要予測モデル, エッジAIなど）が具体的に記述されているか。
+- 特定の企業名やサービス名が具体的に出ているか（架空の事例や、他事例と混同していないか）。
+
+検証の結果、修正が必要な箇所があれば、修正してください。
+```

@@ -2,13 +2,13 @@
 id: food-020
 title: 幸楽苑：楽天AI×画像認識で「おもてなしのデジタル化」、客数12.5%増を達成
 industry: food
-domain: sales
+domain: marketing
 problem_tags:
   - 顧客データ活用
   - リピーター獲得
   - パーソナライズ販促
   - 客数向上
-company_size: mid
+company_size: large
 metric_value: 12.5
 metric_unit: "%客数向上"
 metric_verified: true
