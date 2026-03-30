@@ -1,17 +1,15 @@
-matchagent/src/content/cases/food-036.md
-matchagent/src/content/cases/food-037.md
-matchagent/src/content/cases/food-038.md
+matchagent/src/content/cases/food-040.md
 
 に
 
 industry: food
-company_size: small
+company_size: small (少人数(1〜10名))
 domain: marketing
-で、シンガポールの実在の事例を調査して、それを出典として、3000文字数ほどで3個のmdファイルを作成して欲しい。
+で、Dify,n8n,OpenClaw(Moltbot、Clawdbot)等のAIエージェントを使用した実在の事例を調査して、それを出典として、3000文字数ほどでmdファイルを作成して欲しい。
 
 # 出典選定について
-• シンガポールの一次情報（プレスリリース、企業公式、導入事例ページ、公式ニュース記事、公式インタビュー）を優先
-• 具体的な事業体名がない事例は除外
+• 一次情報（プレスリリース、企業公式、導入事例ページ、公式ニュース記事、公式インタビュー）を優先
+• 具体的な店名がない事例は除外
 • URLは必ず事前に検証（curl -I または FetchURL でアクセス確認）
 • 404の場合は代替URLを探すか、別の事例を選定
 

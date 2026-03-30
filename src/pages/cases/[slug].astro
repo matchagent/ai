@@ -366,6 +366,26 @@ const breadcrumbJsonLd = {
       }
     });
   });
+  
+  // モバイル用: テーブルセルにヘッダー名をdata-label属性として設定
+  document.addEventListener('DOMContentLoaded', () => {
+    const tables = document.querySelectorAll('.case-content table');
+    
+    tables.forEach(table => {
+      const headers = table.querySelectorAll('thead th');
+      const headerTexts = Array.from(headers).map(th => th.textContent?.trim() || '');
+      
+      const rows = table.querySelectorAll('tbody tr');
+      rows.forEach(row => {
+        const cells = row.querySelectorAll('td');
+        cells.forEach((cell, index) => {
+          if (headerTexts[index]) {
+            cell.setAttribute('data-label', headerTexts[index]);
+          }
+        });
+      });
+    });
+  });
 </script>
 
 <style is:global>
@@ -435,5 +455,258 @@ const breadcrumbJsonLd = {
   
   .case-content a:hover {
     color: #1d4ed8;
+  }
+  
+  /* テーブルのスタイル改善 */
+  .case-content table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1.5rem 0 !important;
+    font-size: 0.95rem !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* ヘッダー行 */
+  .case-content thead {
+    background: linear-gradient(to right, #1e293b, #334155) !important;
+  }
+  
+  .case-content th {
+    padding: 0.875rem 1rem !important;
+    text-align: left !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    text-transform: uppercase !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.05em !important;
+    border: none !important;
+  }
+  
+  /* ボディ行 - zebra stripe */
+  .case-content tbody tr:nth-child(even) {
+    background-color: #f8fafc !important;
+  }
+  
+  .case-content tbody tr:nth-child(odd) {
+    background-color: #ffffff !important;
+  }
+  
+  .case-content tbody tr:hover {
+    background-color: #e0f2fe !important;
+    transition: background-color 0.15s ease !important;
+  }
+  
+  .case-content td {
+    padding: 0.875rem 1rem !important;
+    border: none !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    vertical-align: top !important;
+  }
+  
+  .case-content tbody tr:last-child td {
+    border-bottom: none !important;
+  }
+  
+  /* 数値セルの右寄せ・太字 */
+  .case-content td:nth-child(2),
+  .case-content td:nth-child(3),
+  .case-content td:nth-child(4) {
+    text-align: right !important;
+  }
+  
+  /* 改善率・パーセンテージの強調 */
+  .case-content td:last-child {
+    text-align: right !important;
+    font-weight: 600 !important;
+  }
+  
+  /* %を含むセル（改善率）を緑色で強調 */
+  .case-content td:last-child:has-text("%"),
+  .case-content td:last-child:contains("%") {
+    color: #16a34a !important;
+  }
+  
+  /* 実際のコンテンツに基づいて強調パターン */
+  .case-content td:last-child {
+    color: #16a34a !important;
+    font-weight: 700 !important;
+  }
+  
+  /* 指標名・KPI名のセルを太字に */
+  .case-content td:first-child {
+    font-weight: 600 !important;
+    color: #1e293b !important;
+  }
+  
+  /* セル内のコードブロック調整 */
+  .case-content td code {
+    background-color: #f1f5f9 !important;
+    padding: 0.125rem 0.375rem !important;
+    border-radius: 4px !important;
+    font-size: 0.85em !important;
+    color: #475569 !important;
+  }
+  
+  /* コードブロック（<pre>）のスタイル改善 */
+  .case-content pre {
+    margin: 1.5rem 0 !important;
+    padding: 1.25rem 1.5rem !important;
+    background: linear-gradient(to bottom, #1e293b, #0f172a) !important;
+    border-radius: 10px !important;
+    overflow-x: auto !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  }
+  
+  .case-content pre code {
+    display: block !important;
+    font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, Consolas, monospace !important;
+    font-size: 0.875rem !important;
+    line-height: 1.7 !important;
+    color: #e2e8f0 !important;
+    background: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+  
+  /* インラインコードとブロックコードの区別 */
+  .case-content :not(pre) > code {
+    background-color: #f1f5f9 !important;
+    padding: 0.125rem 0.375rem !important;
+    border-radius: 4px !important;
+    font-size: 0.875em !important;
+    color: #334155 !important;
+    font-weight: 500 !important;
+  }
+  
+  /* スクロールバーのスタイリング */
+  .case-content pre::-webkit-scrollbar {
+    height: 8px !important;
+    width: 8px !important;
+  }
+  
+  .case-content pre::-webkit-scrollbar-track {
+    background: #0f172a !important;
+    border-radius: 0 0 10px 10px !important;
+  }
+  
+  .case-content pre::-webkit-scrollbar-thumb {
+    background: #475569 !important;
+    border-radius: 4px !important;
+  }
+  
+  .case-content pre::-webkit-scrollbar-thumb:hover {
+    background: #64748b !important;
+  }
+  
+  /* モバイル対応: 小さい画面で横スクロール可能に */
+  @media (max-width: 640px) {
+    .case-content pre {
+      padding: 1rem !important;
+      border-radius: 8px !important;
+    }
+    
+    .case-content pre code {
+      font-size: 0.8125rem !important;
+    }
+  }
+  
+  /* ========================================
+     モバイル用: テーブルをカードレイアウトに変換
+     ======================================== */
+  @media (max-width: 640px) {
+    /* テーブルをカードコンテナに変換 */
+    .case-content table {
+      display: block !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      border: none !important;
+      overflow: visible !important;
+    }
+    
+    /* ヘッダーを非表示（各カード内に表示するため） */
+    .case-content thead {
+      display: none !important;
+    }
+    
+    /* ボディを縦積みに */
+    .case-content tbody {
+      display: block !important;
+    }
+    
+    /* 各行をカードに */
+    .case-content tbody tr {
+      display: block !important;
+      background: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      border-radius: 12px !important;
+      margin-bottom: 0.75rem !important;
+      padding: 1rem !important;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+    }
+    
+    .case-content tbody tr:hover {
+      background: #ffffff !important;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+      transform: translateY(-2px) !important;
+      transition: all 0.2s ease !important;
+    }
+    
+    /* セルをブロック要素に */
+    .case-content td {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      padding: 0.5rem 0 !important;
+      border: none !important;
+      border-bottom: 1px solid #f1f5f9 !important;
+      text-align: left !important;
+    }
+    
+    .case-content td:last-child {
+      border-bottom: none !important;
+    }
+    
+    /* ヘッダー列名を data-label として表示 */
+    .case-content td::before {
+      content: attr(data-label);
+      font-weight: 600 !important;
+      color: #64748b !important;
+      font-size: 0.75rem !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.025em !important;
+    }
+    
+    /* 数値・改善率のスタイル調整 */
+    .case-content td:nth-child(2),
+    .case-content td:nth-child(3),
+    .case-content td:nth-child(4) {
+      text-align: right !important;
+    }
+    
+    /* 最終列（改善率）を強調 */
+    .case-content td:last-child {
+      color: #16a34a !important;
+      font-weight: 700 !important;
+    }
+    
+    /* 最初の列（KPI名）を大きく */
+    .case-content td:first-child {
+      font-size: 1rem !important;
+      font-weight: 600 !important;
+      color: #1e293b !important;
+      padding-bottom: 0.75rem !important;
+      margin-bottom: 0.5rem !important;
+      border-bottom: 2px solid #e2e8f0 !important;
+    }
+    
+    /* 1列のみのテーブル（単純なリスト）は別スタイル */
+    .case-content td:first-child:last-child {
+      border-bottom: none !important;
+      padding-bottom: 0.5rem !important;
+      margin-bottom: 0 !important;
+    }
   }
 </style>
