@@ -1,5 +1,4 @@
 ---
-id: food-030
 title: 築地すし好：AI翻訳機「ポケトーク」でインバウンド集客を強化し外国人客対応を効率化
 industry: food
 domain: marketing

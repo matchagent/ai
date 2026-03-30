@@ -1,5 +1,4 @@
 ---
-id: food-031
 title: 幸楽苑：AI配膳ロボット「K-1号」で非接触接客を実現し集客力向上
 industry: food
 domain: customer_support

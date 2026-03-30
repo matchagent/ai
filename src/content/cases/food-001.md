@@ -1,5 +1,4 @@
 ---
-id: food-001
 title: Ravi's Food Delivery Empire：AIツールで8ヶ月で収益10倍、インド家庭料理サービスから3拠点展開へ
 industry: food
 domain: marketing

@@ -1,5 +1,4 @@
 ---
-id: food-044
 title: Baci Restaurant：n8n×AI自動化でデジタル不在から8か月で売上95%成長
 industry: food
 domain: marketing

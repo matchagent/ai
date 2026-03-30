@@ -1,5 +1,4 @@
 ---
-id: food-002
 title: くら寿司：AI需要予測システム「AI-KURA」で食品ロス75%削減
 industry: food
 domain: production

@@ -1,5 +1,4 @@
 ---
-id: food-050
 title: Kopi Senja：n8nとAIエージェントでマーケティング自動化し顧客エンゲージメント向上
 industry: retail
 domain: marketing

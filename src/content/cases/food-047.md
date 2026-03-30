@@ -1,5 +1,4 @@
 ---
-id: food-047
 title: 车达三明治（チェダーサンドイッチ）：ChatGPT+Midjourneyで個人店のマーケティングを全面AI化
 industry: food
 domain: marketing

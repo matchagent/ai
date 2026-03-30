@@ -1,5 +1,4 @@
 ---
-id: food-004
 title: ローソン：AI発注システム「AI.CO」で食品ロス削減、全14,000店に展開
 industry: food
 domain: logistics

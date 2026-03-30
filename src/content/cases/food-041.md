@@ -1,5 +1,4 @@
 ---
-id: food-041
 title: Goomer：n8nワークフロー自動化で200以上の業務フローを効率化したフードオーダープラットフォーム
 industry: food
 domain: production

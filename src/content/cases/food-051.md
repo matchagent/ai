@@ -1,5 +1,4 @@
 ---
-id: food-051
 title: "FreshBite Café：ChatGPT×Tidioでマーケティング工数50%削減"
 industry: food
 domain: marketing

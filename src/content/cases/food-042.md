@@ -1,5 +1,4 @@
 ---
-id: food-042
 title: Skillet'z Cafe：OpenClawでマーケティング〜POS連携を一元自動化
 industry: food
 domain: marketing

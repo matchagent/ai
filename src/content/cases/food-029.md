@@ -1,5 +1,4 @@
 ---
-id: food-029
 title: 鳥貴族：AI電話応対システム「AIレセプション」で予約獲得効率を劇的に向上
 industry: food
 domain: marketing

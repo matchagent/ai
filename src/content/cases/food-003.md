@@ -1,5 +1,4 @@
 ---
-id: food-003
 title: キユーピー：AI原料検査装置で食品の安全・安心を革新、検査速度2.5倍を実現
 industry: food
 domain: production

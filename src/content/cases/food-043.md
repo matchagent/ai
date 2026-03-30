@@ -1,5 +1,4 @@
 ---
-id: food-043
 title: KFCオランダ：n8n×DeliverectのAIエージェントでデジタルキャンペーンを完全自動化
 industry: food
 domain: marketing

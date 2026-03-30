@@ -1,5 +1,4 @@
 ---
-id: food-048
 title: 葛记饺子：NFC×AIで加盟店の口コミマーケティングを自動化
 industry: food
 domain: marketing

@@ -1,5 +1,4 @@
 ---
-id: food-049
 title: 焼肉Like（香港）：AI駆動の全チャネルマーケティングで顧客エンゲージメント向上
 industry: food
 domain: marketing

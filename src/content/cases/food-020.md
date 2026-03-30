@@ -1,5 +1,4 @@
 ---
-id: food-020
 title: 幸楽苑：楽天AI×画像認識で「おもてなしのデジタル化」、客数12.5%増を達成
 industry: food
 domain: marketing

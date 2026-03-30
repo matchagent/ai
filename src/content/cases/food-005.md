@@ -1,5 +1,4 @@
 ---
-id: food-005
 title: すかいらーくグループ：生成AIで接客品質を可視化、「いらあり」プロジェクトで顧客体験を革新
 industry: food
 domain: customer_support

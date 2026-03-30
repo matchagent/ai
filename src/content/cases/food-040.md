@@ -1,5 +1,4 @@
 ---
-id: food-040
 title: Room Cafe：AI支援マーケティングで週20時間の業務効率化を実現した1人カフェ
 industry: food
 domain: marketing
