@@ -4,49 +4,17 @@ import Header from '../../../components/layout/Header.astro';
 import Footer from '../../../components/layout/Footer.astro';
 import CaseFilter from '../../../components/islands/CaseFilter.tsx';
 import { getCollection } from 'astro:content';
+import { INDUSTRY_KEYS, industryLabels } from '../../../utils/caseConstants';
+import { mapCaseEntry } from '../../../utils/getCasesData';
 
 export async function getStaticPaths() {
-  return [
-    { params: { industry: 'manufacturing' } },
-    { params: { industry: 'retail' } },
-    { params: { industry: 'logistics' } },
-    { params: { industry: 'construction' } },
-    { params: { industry: 'legal' } },
-    { params: { industry: 'food' } },
-    { params: { industry: 'hotel' } },
-    { params: { industry: 'realestate' } },
-    { params: { industry: 'entertainment' } },
-  ];
+  return INDUSTRY_KEYS.map(industry => ({ params: { industry } }));
 }
 
 const { industry } = Astro.params;
 
-const industryLabels: Record<string, string> = {
-  manufacturing: '製造業',
-  retail: '小売・EC業',
-  logistics: '物流・運輸',
-  construction: '建設業',
-  legal: '士業',
-  food: '飲食業',
-  hotel: '宿泊業',
-  realestate: '不動産業',
-  entertainment: '娯楽業',
-};
-
 const allCases = await getCollection('cases');
-const casesData = allCases.map(c => ({
-  slug: c.id,
-  title: c.data.title,
-  industry: c.data.industry,
-  domain: c.data.domain,
-  company_size: c.data.company_size,
-  metric_value: c.data.metric_value ?? 0,
-  metric_unit: c.data.metric_unit ?? '',
-  excerpt: c.data.excerpt,
-  date: c.data.date.toISOString(),
-  problem_tags: c.data.problem_tags ?? [],
-  metric_verified: c.data.metric_verified,
-}));
+const casesData = allCases.map(mapCaseEntry);
 
 const industryLabel = industryLabels[industry];
 const pageTitle = `${industryLabel}のAI導入事例`;

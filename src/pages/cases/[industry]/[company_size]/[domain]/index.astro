@@ -4,68 +4,28 @@ import Header from '../../../../../components/layout/Header.astro';
 import Footer from '../../../../../components/layout/Footer.astro';
 import CaseFilter from '../../../../../components/islands/CaseFilter.tsx';
 import { getCollection } from 'astro:content';
+import { INDUSTRY_KEYS, COMPANY_SIZE_KEYS, DOMAIN_KEYS, industryLabels, companySizeLabels, companySizeFullLabels, domainLabels } from '../../../../../utils/caseConstants';
+import { mapCaseEntry } from '../../../../../utils/getCasesData';
 
 export async function getStaticPaths() {
-  const industries = ['manufacturing', 'retail', 'logistics', 'construction', 'legal', 'food', 'hotel', 'realestate', 'entertainment'];
-  const companySizes = ['small', 'mid', 'large'];
-  const domains = ['sales', 'marketing', 'production', 'hr', 'accounting', 'customer_support', 'logistics'];
-  return industries.flatMap(industry =>
-    companySizes.flatMap(company_size =>
-      domains.map(domain => ({ params: { industry, company_size, domain } }))
+  return INDUSTRY_KEYS.flatMap(industry =>
+    COMPANY_SIZE_KEYS.flatMap(company_size =>
+      DOMAIN_KEYS.map(domain => ({ params: { industry, company_size, domain } }))
     )
   );
 }
 
 const { industry, company_size, domain } = Astro.params;
 
-const industryLabels: Record<string, string> = {
-  manufacturing: '製造業',
-  retail: '小売・EC業',
-  logistics: '物流・運輸',
-  construction: '建設業',
-  legal: '士業',
-  food: '飲食業',
-  hotel: '宿泊業',
-  realestate: '不動産業',
-  entertainment: '娯楽業',
-};
-
-const companySizeLabels: Record<string, string> = {
-  small: '少人数（1〜10名）',
-  mid: '中規模（11〜100名）',
-  large: '大企業（101名以上）',
-};
-
-const domainLabels: Record<string, string> = {
-  sales: '営業',
-  marketing: 'マーケティング',
-  production: '生産・製造',
-  hr: '人事',
-  accounting: '会計',
-  customer_support: 'カスタマーサポート',
-  logistics: '物流',
-};
-
 const allCases = await getCollection('cases');
-const casesData = allCases.map(c => ({
-  slug: c.id,
-  title: c.data.title,
-  industry: c.data.industry,
-  domain: c.data.domain,
-  company_size: c.data.company_size,
-  metric_value: c.data.metric_value ?? 0,
-  metric_unit: c.data.metric_unit ?? '',
-  excerpt: c.data.excerpt,
-  date: c.data.date.toISOString(),
-  problem_tags: c.data.problem_tags ?? [],
-  metric_verified: c.data.metric_verified,
-}));
+const casesData = allCases.map(mapCaseEntry);
 
 const industryLabel = industryLabels[industry];
 const sizeLabel = companySizeLabels[company_size];
+const sizeLabelFull = companySizeFullLabels[company_size];
 const domainLabel = domainLabels[domain];
-const pageTitle = `${industryLabel}の${sizeLabel.replace(/（.*）/, '')}の${domainLabel}のAI導入事例`;
-const description = `${industryLabel}の${sizeLabel.replace(/（.*）/, '')}の${domainLabel}向けのAI導入事例を掲載。`;
+const pageTitle = `${industryLabel}の${sizeLabel}の${domainLabel}のAI導入事例`;
+const description = `${industryLabel}の${sizeLabelFull}の${domainLabel}向けのAI導入事例を掲載。`;
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -94,7 +54,7 @@ const jsonLd = {
           <span class="mx-2">/</span>
           <a href={`/cases/${industry}`} class="hover:text-blue-600 transition-colors">{industryLabel}</a>
           <span class="mx-2">/</span>
-          <a href={`/cases/${industry}/${company_size}`} class="hover:text-blue-600 transition-colors">{sizeLabel.replace(/（.*）/, '')}</a>
+          <a href={`/cases/${industry}/${company_size}`} class="hover:text-blue-600 transition-colors">{sizeLabel}</a>
           <span class="mx-2">/</span>
           <span class="text-gray-900">{domainLabel}</span>
         </nav>

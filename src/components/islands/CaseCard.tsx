@@ -1,4 +1,14 @@
 import type { ReactNode } from 'react';
+import {
+  industryGradients,
+  industryBadgeColors,
+  industryLabels,
+  companySizeBadgeColors,
+  companySizeLabels,
+  domainBadgeColors,
+  domainLabels,
+  getMetricColor,
+} from '../../utils/caseConstants';
 
 interface Case {
   slug: string;
@@ -18,7 +28,7 @@ interface CaseCardProps {
   caseItem: Case;
 }
 
-// 業種アイコン
+// 業種アイコン（ReactNode: CaseCard 専用）
 const industryIcons: Record<string, ReactNode> = {
   manufacturing: (
     <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -81,95 +91,12 @@ const industryIcons: Record<string, ReactNode> = {
   ),
 };
 
-// 業種グラデーション
-const industryGradients: Record<string, string> = {
-  manufacturing: 'from-blue-500 to-blue-600',
-  retail: 'from-purple-500 to-purple-600',
-  logistics: 'from-orange-500 to-orange-600',
-  construction: 'from-yellow-500 to-yellow-600',
-  legal: 'from-red-500 to-red-600',
-  food: 'from-green-500 to-green-600',
-  hotel: 'from-pink-500 to-pink-600',
-  realestate: 'from-indigo-500 to-indigo-600',
-  entertainment: 'from-teal-500 to-teal-600',
-};
-
-// 業種バッジ色
-const industryBadgeColors: Record<string, string> = {
-  manufacturing: 'bg-blue-100 text-blue-800',
-  retail: 'bg-purple-100 text-purple-800',
-  logistics: 'bg-orange-100 text-orange-800',
-  construction: 'bg-yellow-100 text-yellow-800',
-  legal: 'bg-red-100 text-red-800',
-  food: 'bg-green-100 text-green-800',
-  hotel: 'bg-pink-100 text-pink-800',
-  realestate: 'bg-indigo-100 text-indigo-800',
-  entertainment: 'bg-teal-100 text-teal-800',
-};
-
-// 業種ラベル
-const industryLabels: Record<string, string> = {
-  manufacturing: '製造業',
-  retail: '小売・EC業',
-  logistics: '物流・運輸',
-  construction: '建設業',
-  legal: '士業',
-  food: '飲食業',
-  hotel: '宿泊業',
-  realestate: '不動産業',
-  entertainment: '娯楽業',
-};
-
-// 企業規模バッジ色
-const companySizeBadgeColors: Record<string, string> = {
-  small: 'bg-orange-100 text-orange-800',
-  mid: 'bg-blue-100 text-blue-800',
-  large: 'bg-purple-100 text-purple-800',
-};
-
-// 企業規模ラベル
-const companySizeLabels: Record<string, string> = {
-  small: '少人数',
-  mid: '中規模',
-  large: '大企業',
-};
-
-// 領域バッジ色
-const domainBadgeColors: Record<string, string> = {
-  sales: 'bg-indigo-100 text-indigo-800',
-  marketing: 'bg-pink-100 text-pink-800',
-  production: 'bg-teal-100 text-teal-800',
-  hr: 'bg-cyan-100 text-cyan-800',
-  accounting: 'bg-amber-100 text-amber-800',
-  customer_support: 'bg-rose-100 text-rose-800',
-  logistics: 'bg-lime-100 text-lime-800',
-};
-
-// 領域ラベル
-const domainLabels: Record<string, string> = {
-  sales: '営業',
-  marketing: 'マーケティング',
-  production: '生産・製造',
-  hr: '人事',
-  accounting: '経理・財務',
-  customer_support: 'カスタマーサポート',
-  logistics: '物流・在庫',
-};
-
-// メトリクス色分け
-const getMetricColor = (value: number): string => {
-  if (value >= 50) return 'text-green-600 bg-green-50 border-green-200';
-  if (value >= 20) return 'text-blue-600 bg-blue-50 border-blue-200';
-  if (value >= 10) return 'text-indigo-600 bg-indigo-50 border-indigo-200';
-  return 'text-gray-600 bg-gray-50 border-gray-200';
-};
-
 export default function CaseCard({ caseItem }: CaseCardProps) {
   const gradientClass = industryGradients[caseItem.industry] || 'from-gray-500 to-gray-600';
   const badgeColorClass = industryBadgeColors[caseItem.industry] || 'bg-gray-100 text-gray-800';
   const metricColorClass = getMetricColor(caseItem.metric_value);
-  const formattedValue = caseItem.metric_value % 1 === 0 
-    ? caseItem.metric_value.toString() 
+  const formattedValue = caseItem.metric_value % 1 === 0
+    ? caseItem.metric_value.toString()
     : caseItem.metric_value.toFixed(1);
 
   return (
@@ -188,7 +115,7 @@ export default function CaseCard({ caseItem }: CaseCardProps) {
               <rect width="100" height="100" fill={`url(#pattern-${caseItem.slug})`}/>
             </svg>
           </div>
-          
+
           {/* アイコンとバッジ */}
           <div className="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
             <div className="flex items-center gap-3">
@@ -207,22 +134,22 @@ export default function CaseCard({ caseItem }: CaseCardProps) {
                 </span>
               </div>
             </div>
-            
+
           </div>
         </div>
-        
+
         {/* カード本文 */}
         <div className="p-5">
           {/* タイトル */}
           <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
             {caseItem.title}
           </h3>
-          
+
           {/* 概要 */}
           <p className="text-sm text-gray-600 mb-4 line-clamp-2 leading-relaxed">
             {caseItem.excerpt}
           </p>
-          
+
           {/* メトリクス表示 */}
           <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg border ${metricColorClass} mb-4`}>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -236,7 +163,7 @@ export default function CaseCard({ caseItem }: CaseCardProps) {
               </svg>
             )}
           </div>
-          
+
           {/* タグ */}
           <div className="flex flex-wrap gap-1.5 mb-3">
             {caseItem.problem_tags.slice(0, 3).map((tag) => (
@@ -245,7 +172,7 @@ export default function CaseCard({ caseItem }: CaseCardProps) {
               </span>
             ))}
           </div>
-          
+
           {/* フッター */}
           <div className="flex items-center justify-between pt-3 border-t border-gray-100">
             <span className="text-xs text-gray-400">

@@ -4,52 +4,25 @@ import Header from '../../../../../components/layout/Header.astro';
 import Footer from '../../../../../components/layout/Footer.astro';
 import CaseFilter from '../../../../../components/islands/CaseFilter.tsx';
 import { getCollection } from 'astro:content';
+import { COMPANY_SIZE_KEYS, DOMAIN_KEYS, companySizeLabels, companySizeFullLabels, domainLabels } from '../../../../../utils/caseConstants';
+import { mapCaseEntry } from '../../../../../utils/getCasesData';
 
 export async function getStaticPaths() {
-  const companySizes = ['small', 'mid', 'large'];
-  const domains = ['sales', 'marketing', 'production', 'hr', 'accounting', 'customer_support', 'logistics'];
-  return companySizes.flatMap(company_size =>
-    domains.map(domain => ({ params: { company_size, domain } }))
+  return COMPANY_SIZE_KEYS.flatMap(company_size =>
+    DOMAIN_KEYS.map(domain => ({ params: { company_size, domain } }))
   );
 }
 
 const { company_size, domain } = Astro.params;
 
-const companySizeLabels: Record<string, string> = {
-  small: '少人数（1〜10名）',
-  mid: '中規模（11〜100名）',
-  large: '大企業（101名以上）',
-};
-
-const domainLabels: Record<string, string> = {
-  sales: '営業',
-  marketing: 'マーケティング',
-  production: '生産・製造',
-  hr: '人事',
-  accounting: '会計',
-  customer_support: 'カスタマーサポート',
-  logistics: '物流',
-};
-
 const allCases = await getCollection('cases');
-const casesData = allCases.map(c => ({
-  slug: c.id,
-  title: c.data.title,
-  industry: c.data.industry,
-  domain: c.data.domain,
-  company_size: c.data.company_size,
-  metric_value: c.data.metric_value ?? 0,
-  metric_unit: c.data.metric_unit ?? '',
-  excerpt: c.data.excerpt,
-  date: c.data.date.toISOString(),
-  problem_tags: c.data.problem_tags ?? [],
-  metric_verified: c.data.metric_verified,
-}));
+const casesData = allCases.map(mapCaseEntry);
 
 const sizeLabel = companySizeLabels[company_size];
+const sizeLabelFull = companySizeFullLabels[company_size];
 const domainLabel = domainLabels[domain];
-const pageTitle = `${sizeLabel.replace(/（.*）/, '')}の${domainLabel}のAI導入事例`;
-const description = `${sizeLabel.replace(/（.*）/, '')}の${domainLabel}向けのAI導入事例を掲載。`;
+const pageTitle = `${sizeLabel}の${domainLabel}のAI導入事例`;
+const description = `${sizeLabelFull}の${domainLabel}向けのAI導入事例を掲載。`;
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -76,7 +49,7 @@ const jsonLd = {
           <span class="mx-2">/</span>
           <a href="/cases" class="hover:text-blue-600 transition-colors">導入事例</a>
           <span class="mx-2">/</span>
-          <a href={`/cases/size/${company_size}`} class="hover:text-blue-600 transition-colors">{sizeLabel.replace(/（.*）/, '')}</a>
+          <a href={`/cases/size/${company_size}`} class="hover:text-blue-600 transition-colors">{sizeLabel}</a>
           <span class="mx-2">/</span>
           <span class="text-gray-900">{domainLabel}</span>
         </nav>

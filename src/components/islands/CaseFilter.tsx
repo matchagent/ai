@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import CaseCard from './CaseCard';
 import type { Case } from './CaseCard';
+import { INDUSTRIES, DOMAINS, COMPANY_SIZES } from '../../utils/caseConstants';
 
 export type { Case };
 
@@ -10,50 +11,6 @@ interface CaseFilterProps {
   initialCompanySize?: string;
   initialDomain?: string;
 }
-
-const INDUSTRIES = [
-  { value: 'all', label: '全ての業種' },
-  { value: 'manufacturing', label: '製造業' },
-  { value: 'retail', label: '小売・EC業' },
-  { value: 'logistics', label: '物流・運輸' },
-  { value: 'construction', label: '建設業' },
-  { value: 'legal', label: '士業' },
-  { value: 'food', label: '飲食業' },
-  { value: 'hotel', label: '宿泊業' },
-  { value: 'realestate', label: '不動産業' },
-  { value: 'entertainment', label: '娯楽業' },
-];
-
-const DOMAINS = [
-  { value: 'all', label: '全ての領域' },
-  { value: 'sales', label: '営業' },
-  { value: 'marketing', label: 'マーケティング' },
-  { value: 'production', label: '生産・製造' },
-  { value: 'hr', label: '人事' },
-  { value: 'accounting', label: '会計' },
-  { value: 'customer_support', label: 'カスタマーサポート' },
-  { value: 'logistics', label: '物流' },
-];
-
-const COMPANY_SIZES = [
-  { value: 'all', label: '全ての規模' },
-  { value: 'small', label: '少人数（1〜10名）' },
-  { value: 'mid', label: '中規模（11〜100名）' },
-  { value: 'large', label: '大企業（101名以上）' },
-];
-
-// 業種ラベル（ナビゲーション用）
-const industryLabels: Record<string, string> = {
-  manufacturing: '製造業',
-  retail: '小売・EC業',
-  logistics: '物流・運輸',
-  construction: '建設業',
-  legal: '士業',
-  food: '飲食業',
-  hotel: '宿泊業',
-  realestate: '不動産業',
-  entertainment: '娯楽業',
-};
 
 export default function CaseFilter({ cases, initialIndustry = 'all', initialCompanySize = 'all', initialDomain = 'all' }: CaseFilterProps) {
   const [selectedIndustry, setSelectedIndustry] = useState(initialIndustry);

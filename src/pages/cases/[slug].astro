@@ -3,6 +3,15 @@ import BaseLayout from '../../components/layout/BaseLayout.astro';
 import Header from '../../components/layout/Header.astro';
 import Footer from '../../components/layout/Footer.astro';
 import { getCollection, render } from 'astro:content';
+import {
+  industryLabels,
+  domainLabels,
+  companySizeLabels,
+  companySizeFullLabels,
+  industryGradients,
+  industryBadgeColors,
+  getMetricColor,
+} from '../../utils/caseConstants';
 
 export async function getStaticPaths() {
   const cases = await getCollection('cases');
@@ -16,34 +25,6 @@ const { caseItem } = Astro.props;
 const { Content } = await render(caseItem);
 const { data } = caseItem;
 
-const industryLabels: Record<string, string> = {
-  manufacturing: '製造業',
-  retail: '小売・EC業',
-  logistics: '物流・運輸',
-  construction: '建設業',
-  legal: '士業',
-  food: '飲食業',
-  hotel: '宿泊業',
-  realestate: '不動産業',
-  entertainment: '娯楽業',
-};
-
-const domainLabels: Record<string, string> = {
-  sales: '営業',
-  marketing: 'マーケティング',
-  production: '生産・製造',
-  hr: '人事',
-  accounting: '会計',
-  customer_support: 'カスタマーサポート',
-  logistics: '物流',
-};
-
-const companySizeLabels: Record<string, string> = {
-  small: '少人数',
-  mid: '中規模',
-  large: '大企業',
-};
-
 // 業種アイコン（SVG）
 const industryIcons: Record<string, string> = {
   manufacturing: `<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg>`,
@@ -55,40 +36,6 @@ const industryIcons: Record<string, string> = {
   hotel: `<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 22h20"/><path d="M4 22V9a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v13"/><path d="M9 22v-4h6v4"/><path d="M8 6h8"/><path d="M12 6v-3"/></svg>`,
   realestate: `<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>`,
   entertainment: `<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10v3"/><path d="M6 6v11"/><path d="M10 3v18"/><path d="M14 8v7"/><path d="M18 5v13"/><path d="M22 10v3"/></svg>`,
-};
-
-// 業種グラデーション
-const industryGradients: Record<string, string> = {
-  manufacturing: 'from-blue-500 to-blue-600',
-  retail: 'from-purple-500 to-purple-600',
-  logistics: 'from-orange-500 to-orange-600',
-  construction: 'from-yellow-500 to-yellow-600',
-  legal: 'from-red-500 to-red-600',
-  food: 'from-green-500 to-green-600',
-  hotel: 'from-pink-500 to-pink-600',
-  realestate: 'from-indigo-500 to-indigo-600',
-  entertainment: 'from-teal-500 to-teal-600',
-};
-
-// 業種バッジ色
-const industryBadgeColors: Record<string, string> = {
-  manufacturing: 'bg-blue-100 text-blue-800',
-  retail: 'bg-purple-100 text-purple-800',
-  logistics: 'bg-orange-100 text-orange-800',
-  construction: 'bg-yellow-100 text-yellow-800',
-  legal: 'bg-red-100 text-red-800',
-  food: 'bg-green-100 text-green-800',
-  hotel: 'bg-pink-100 text-pink-800',
-  realestate: 'bg-indigo-100 text-indigo-800',
-  entertainment: 'bg-teal-100 text-teal-800',
-};
-
-// メトリクス色分け
-const getMetricColor = (value: number): string => {
-  if (value >= 50) return 'text-green-600 bg-green-50 border-green-200';
-  if (value >= 20) return 'text-blue-600 bg-blue-50 border-blue-200';
-  if (value >= 10) return 'text-indigo-600 bg-indigo-50 border-indigo-200';
-  return 'text-gray-600 bg-gray-50 border-gray-200';
 };
 
 const gradientClass = industryGradients[data.industry] || 'from-gray-500 to-gray-600';
@@ -230,9 +177,7 @@ const breadcrumbJsonLd = {
             <div>
               <div class="text-sm text-gray-500 mb-1">企業規模</div>
               <a href={`/cases/size/${data.company_size}`} class="font-medium text-gray-900 hover:text-blue-600 transition-colors">
-                {data.company_size === 'small' && '少人数（1〜10名）'}
-                {data.company_size === 'mid' && '中規模（11〜100名）'}
-                {data.company_size === 'large' && '大企業（101名以上）'}
+                {companySizeFullLabels[data.company_size]}
               </a>
             </div>
             <div>

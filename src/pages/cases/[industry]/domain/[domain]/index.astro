@@ -4,53 +4,19 @@ import Header from '../../../../../components/layout/Header.astro';
 import Footer from '../../../../../components/layout/Footer.astro';
 import CaseFilter from '../../../../../components/islands/CaseFilter.tsx';
 import { getCollection } from 'astro:content';
+import { INDUSTRY_KEYS, DOMAIN_KEYS, industryLabels, domainLabels } from '../../../../../utils/caseConstants';
+import { mapCaseEntry } from '../../../../../utils/getCasesData';
 
 export async function getStaticPaths() {
-  const industries = ['manufacturing', 'retail', 'logistics', 'construction', 'legal', 'food', 'hotel', 'realestate', 'entertainment'];
-  const domains = ['sales', 'marketing', 'production', 'hr', 'accounting', 'customer_support', 'logistics'];
-  return industries.flatMap(industry =>
-    domains.map(domain => ({ params: { industry, domain } }))
+  return INDUSTRY_KEYS.flatMap(industry =>
+    DOMAIN_KEYS.map(domain => ({ params: { industry, domain } }))
   );
 }
 
 const { industry, domain } = Astro.params;
 
-const industryLabels: Record<string, string> = {
-  manufacturing: '製造業',
-  retail: '小売・EC業',
-  logistics: '物流・運輸',
-  construction: '建設業',
-  legal: '士業',
-  food: '飲食業',
-  hotel: '宿泊業',
-  realestate: '不動産業',
-  entertainment: '娯楽業',
-};
-
-const domainLabels: Record<string, string> = {
-  sales: '営業',
-  marketing: 'マーケティング',
-  production: '生産・製造',
-  hr: '人事',
-  accounting: '会計',
-  customer_support: 'カスタマーサポート',
-  logistics: '物流',
-};
-
 const allCases = await getCollection('cases');
-const casesData = allCases.map(c => ({
-  slug: c.id,
-  title: c.data.title,
-  industry: c.data.industry,
-  domain: c.data.domain,
-  company_size: c.data.company_size,
-  metric_value: c.data.metric_value ?? 0,
-  metric_unit: c.data.metric_unit ?? '',
-  excerpt: c.data.excerpt,
-  date: c.data.date.toISOString(),
-  problem_tags: c.data.problem_tags ?? [],
-  metric_verified: c.data.metric_verified,
-}));
+const casesData = allCases.map(mapCaseEntry);
 
 const industryLabel = industryLabels[industry];
 const domainLabel = domainLabels[domain];
