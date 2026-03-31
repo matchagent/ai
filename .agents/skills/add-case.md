@@ -14,7 +14,6 @@
 
 ```yaml
 ---
-id: food-002                      # ファイル名と一致させる
 title: "事例タイトル"
 industry: "manufacturing"         # 業種コード (下記参照)
 domain: "production"              # ドメインコード (下記参照)
@@ -29,8 +28,10 @@ excerpt: "事例の概要（1〜2文）"
 ---
 ```
 
+> `id` フィールドは不要。Astro Content Collections がファイル名から自動設定する。
+
 ## 業種コード
-`manufacturing` / `retail` / `logistics` / `construction` / `legal` / `food` / `hotel` / `real_estate` / `entertainment`
+`manufacturing` / `retail` / `logistics` / `construction` / `legal` / `food` / `hotel` / `realestate` / `entertainment`
 
 ## ドメインコード
 `sales` / `marketing` / `production` / `hr` / `accounting` / `customer_support` / `logistics`

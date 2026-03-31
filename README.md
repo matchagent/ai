@@ -19,17 +19,29 @@ AI導入事例のキュレーションプラットフォーム。業種・ドメ
 aimatchagent/
 ├── src/
 │   ├── components/
-│   │   ├── case/          # 事例カード・メトリクス・業種バッジ
+│   │   ├── case/          # 事例カード・業種バッジ
 │   │   ├── islands/       # インタラクティブ React コンポーネント
-│   │   │   ├── CaseFilter.tsx     # 業種/ドメイン/指標でフィルタリング
-│   │   │   └── SearchBox.tsx      # 事例検索
+│   │   │   ├── CaseCard.tsx       # 事例カード
+│   │   │   └── CaseFilter.tsx     # 業種/ドメイン/企業規模でフィルタリング
 │   │   └── layout/        # BaseLayout / Header / Footer
 │   ├── content/
 │   │   └── cases/         # 導入事例 (Markdown)
 │   ├── pages/
 │   │   ├── index.astro            # トップページ = 事例一覧 (CaseFilter Islands)
-│   │   ├── cases/[slug].astro     # 事例詳細
-│   │   └── data/                  # JSON API エンドポイント
+│   │   ├── about.astro            # サービス説明
+│   │   ├── terms.astro            # 利用規約
+│   │   └── cases/
+│   │       ├── [slug].astro                              # 事例詳細
+│   │       ├── [industry]/index.astro                    # 業種別一覧
+│   │       ├── [industry]/[company_size]/index.astro     # 業種×規模別一覧
+│   │       ├── [industry]/[company_size]/[domain]/index.astro  # 業種×規模×ドメイン別一覧
+│   │       ├── [industry]/domain/[domain]/index.astro    # 業種×ドメイン別一覧
+│   │       ├── size/[company_size]/index.astro           # 規模別一覧
+│   │       ├── size/[company_size]/[domain]/index.astro  # 規模×ドメイン別一覧
+│   │       └── domain/[domain]/index.astro               # ドメイン別一覧
+│   ├── utils/
+│   │   ├── caseConstants.ts  # ラベル・色・静的パス用定数
+│   │   └── getCasesData.ts   # コレクションエントリのデータ変換
 │   └── content.config.ts  # Zod スキーマ定義
 ├── public/
 │   └── _redirects         # /cases → / 301リダイレクト
@@ -153,10 +165,11 @@ Cloudflare Pages の環境変数にも同様に設定すること。
 - **入力バリデーション**: API境界では必ず Zod または手動バリデーションを実施
 - **fetch**: 外部API呼び出しは必ず `AbortController` でタイムアウトを設定
 - **CORS**: `ALLOWED_ORIGIN` 環境変数で制御。`*` は使用禁止
+- **パスエイリアス**: `@/*` = `src/*`。相対パスではなく `@/` を使用すること（例: `@/components/layout/BaseLayout.astro`）
 
 ## 業種コード一覧
 
-`manufacturing` / `retail` / `logistics` / `construction` / `legal` / `food` / `hotel` / `real_estate` / `entertainment`
+`manufacturing` / `retail` / `logistics` / `construction` / `legal` / `food` / `hotel` / `realestate` / `entertainment`
 
 ## ドメインコード一覧
 

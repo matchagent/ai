@@ -19,13 +19,20 @@
 ```
 src/pages/
   index.astro          → トップページ = 事例一覧 (CaseFilter を Islands として埋め込み)
+  about.astro          → サービス説明
+  terms.astro          → 利用規約
   cases/
-    [slug].astro       → 事例詳細 (静的、ビルド時生成)
+    [slug].astro                              → 事例詳細 (静的、ビルド時生成)
     [industry]/
-      index.astro      → 業種別事例一覧 (静的)
-  data/
-    cases.json.ts      → JSON API (ビルド時生成)
-  about.astro
+      index.astro                             → 業種別一覧
+      [company_size]/
+        index.astro                           → 業種×規模別一覧
+        [domain]/index.astro                  → 業種×規模×ドメイン別一覧
+      domain/[domain]/index.astro             → 業種×ドメイン別一覧
+    size/[company_size]/
+      index.astro                             → 規模別一覧
+      [domain]/index.astro                    → 規模×ドメイン別一覧
+    domain/[domain]/index.astro               → ドメイン別一覧
 
 public/
   _redirects           → /cases → / 301リダイレクト (Cloudflare Pages)
@@ -36,13 +43,18 @@ src/components/
     Header.astro       → ナビゲーション
     Footer.astro
   case/
-    CaseCard.astro     → 事例カード (一覧表示用)
-    CaseMetric.astro   → 指標バッジ (効果値の表示)
+    CaseCard.astro     → 事例カード (Astro ラッパー)
     IndustryBadge.astro → 業種バッジ
-  islands/             → client:load で hydrate される React コンポーネント
-    CaseFilter.tsx     → 業種/ドメイン/指標フィルタ + 検索
-    SearchBox.tsx      → テキスト検索
+  islands/             → client:only="react" で hydrate される React コンポーネント
+    CaseCard.tsx       → 事例カード (React)
+    CaseFilter.tsx     → 業種/ドメイン/企業規模フィルタ
+
+src/utils/
+  caseConstants.ts     → ラベル・色・静的パス生成用定数・getMetricColor
+  getCasesData.ts      → mapCaseEntry() コレクションエントリのデータ変換
 ```
+
+> **パスエイリアス**: `tsconfig.json` で `@/*` → `src/*` を設定済み。import は必ず `@/` を使用する。
 
 ## バックエンド (Cloudflare Pages Functions)
 

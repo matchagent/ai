@@ -12,4 +12,4 @@
 
 注意:
 - `.env` の環境変数は Cloudflare Pages のダッシュボードで管理する
-- `ANTHROPIC_API_KEY` / `SUPABASE_URL` / `SUPABASE_ANON_KEY` / `PUBLIC_SITE_URL` / `ALLOWED_ORIGIN` が設定済みであることを確認すること
+- `SUPABASE_URL` / `SUPABASE_ANON_KEY` / `PUBLIC_SITE_URL` / `ALLOWED_ORIGIN` が設定済みであることを確認すること
