@@ -12,7 +12,7 @@ metric_unit: "倍収益増加"
 metric_verified: true
 source_url: https://www.xenotix.co.in/blog/small-business-ai-revolution-indian-success-stories-tools/
 date: 2025-08-21
-excerpt: インド・プネーのティフィンサービスが月額₹3,500のAIツール投資で8ヶ月で収益10倍。ChatGPT Plus、Canva Pro、WhatsApp Business APIで1人から3拠点・500食/日に成長。
+excerpt: インド・プネーの家庭料理サービスが月額₹3,500のAIツール投資で8ヶ月で収益10倍。ChatGPT Plus、Canva Pro、WhatsApp Business APIで1人から3拠点・500食/日に成長。
 ---
 
 ## Before
