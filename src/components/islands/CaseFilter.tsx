@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import CaseCard from './CaseCard';
 import type { Case } from './CaseCard';
-import { INDUSTRIES, DOMAINS, COMPANY_SIZES } from '../../utils/caseConstants';
+import { INDUSTRIES, DOMAINS, COMPANY_SIZES } from '@/utils/caseConstants';
 
 export type { Case };
 

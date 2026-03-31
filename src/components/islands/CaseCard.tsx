@@ -8,7 +8,7 @@ import {
   domainBadgeColors,
   domainLabels,
   getMetricColor,
-} from '../../utils/caseConstants';
+} from '@/utils/caseConstants';
 
 interface Case {
   slug: string;
