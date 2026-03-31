@@ -52,6 +52,11 @@ src/components/
 src/utils/
   caseConstants.ts     → ラベル・色・静的パス生成用定数・getMetricColor
   getCasesData.ts      → mapCaseEntry() コレクションエントリのデータ変換
+
+src/data/
+  insights.ts          → 業種×規模×ドメイン別の実践提案コンテンツ
+                         キー形式: '{industry}-{company_size}-{domain}'
+                         getInsight() で取得し、一覧ページ・詳細ページ下部に表示
 ```
 
 > **パスエイリアス**: `tsconfig.json` で `@/*` → `src/*` を設定済み。import は必ず `@/` を使用する。

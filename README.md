@@ -42,11 +42,14 @@ aimatchagent/
 │   ├── utils/
 │   │   ├── caseConstants.ts  # ラベル・色・静的パス用定数
 │   │   └── getCasesData.ts   # コレクションエントリのデータ変換
+│   ├── data/
+│   │   └── insights.ts       # 業種×規模×ドメイン別の実践提案コンテンツ
 │   └── content.config.ts  # Zod スキーマ定義
 ├── public/
 │   └── _redirects         # /cases → / 301リダイレクト
 ├── .agents/skills/        # 全エージェント共通スキルドキュメント
 │   ├── add-case.md
+│   ├── add-insight.md
 │   ├── astro-content.md
 │   └── cloudflare-worker.md
 ├── .claude/
@@ -139,6 +142,10 @@ Cloudflare Pages の環境変数にも同様に設定すること。
 ### 事例を追加する
 `src/content/cases/` に Markdown ファイルを追加する。
 スキルファイル `.agents/skills/add-case.md` を参照。
+
+### 実践提案（insight）を追加・編集する
+`src/data/insights.ts` の `insights` オブジェクトに `{industry}-{company_size}-{domain}` をキーとして追加する。
+スキルファイル `.agents/skills/add-insight.md` を参照。
 
 ### metric_verified の定義
 
