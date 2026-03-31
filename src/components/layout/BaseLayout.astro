@@ -50,6 +50,15 @@ const canonicalUrl = `${siteUrl}${Astro.url.pathname}`;
     <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
   )}
   
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXZG3974FB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HXZG3974FB');
+  </script>
+
   <slot name="head" />
 </head>
 <body class="min-h-screen bg-white text-gray-900">
