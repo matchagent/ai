@@ -67,7 +67,11 @@ const jsonLd = {
           <h1 class="text-2xl md:text-3xl font-bold tracking-wide leading-tight bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent mb-6">
             {pageTitle}
           </h1>
-
+          {/* 説明文 */}
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+            {description}<br class="hidden sm:block"/>
+            同業他社の成功事例から、あなたのビジネスに最適なAI活用法を見つけられます。
+          </p>
         </div>
 
         <CaseFilter cases={casesData} initialIndustry={industry} initialCompanySize={company_size} initialDomain={domain} client:only="react" />
