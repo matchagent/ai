@@ -2,6 +2,8 @@
 import BaseLayout from '@/components/layout/BaseLayout.astro';
 import Header from '@/components/layout/Header.astro';
 import Footer from '@/components/layout/Footer.astro';
+import ShareButtons from '@/components/case/ShareButtons.astro';
+import CopyLinkButton from '@/components/islands/CopyLinkButton';
 import { getCollection, render } from 'astro:content';
 import {
   industryLabels,
@@ -33,6 +35,9 @@ const gradientClass = industryGradients[data.industry] || 'from-gray-500 to-gray
 const badgeColorClass = industryBadgeColors[data.industry] || 'bg-gray-100 text-gray-800';
 const metricColorClass = getMetricColor(data.metric_value);
 const formattedValue = data.metric_value % 1 === 0 ? data.metric_value.toString() : data.metric_value.toFixed(1);
+
+const shareUrl = `https://ai.matchagent.workers.dev/cases/${caseItem.id}`;
+const shareText = `${data.title} — +${formattedValue}${data.metric_unit}の改善事例 #AI導入 #AIケースラボ`;
 const iconSvg = industryIconSvgs[data.industry] || '';
 
 const jsonLd = {
@@ -282,8 +287,15 @@ const breadcrumbJsonLd = {
           </div>
         )}
 
+        <!-- Share -->
+        <div class="mt-10 pt-8 border-t border-gray-200">
+          <ShareButtons url={shareUrl} title={data.title} text={shareText}>
+            <CopyLinkButton url={shareUrl} client:only="react" />
+          </ShareButtons>
+        </div>
+
         <!-- Date -->
-        <div class="mt-12 pt-8 border-t border-gray-200">
+        <div class="mt-8 pt-8 border-t border-gray-200">
           <div class="flex items-center justify-between">
             <p class="text-sm text-gray-500">
               公開日: {data.date.toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' })}
