@@ -1,7 +1,7 @@
 // 業種・ドメイン・企業規模の静的パス生成用キー配列
 export const INDUSTRY_KEYS = [
   'manufacturing', 'retail', 'logistics', 'construction',
-  'legal', 'food', 'hotel', 'realestate', 'entertainment',
+  'legal', 'food', 'hotel', 'realestate', 'entertainment', 'repair',
 ] as const;
 
 export const DOMAIN_KEYS = [
@@ -21,6 +21,7 @@ export const industryLabels: Record<string, string> = {
   hotel: '宿泊業',
   realestate: '不動産業',
   entertainment: '娯楽業',
+  repair: '修理・メンテナンス業',
 };
 
 // ドメインラベル
@@ -59,6 +60,7 @@ export const industryGradients: Record<string, string> = {
   hotel: 'from-pink-500 to-pink-600',
   realestate: 'from-indigo-500 to-indigo-600',
   entertainment: 'from-teal-500 to-teal-600',
+  repair: 'from-stone-500 to-stone-600',
 };
 
 // 業種バッジ色
@@ -72,6 +74,7 @@ export const industryBadgeColors: Record<string, string> = {
   hotel: 'bg-pink-100 text-pink-800',
   realestate: 'bg-indigo-100 text-indigo-800',
   entertainment: 'bg-teal-100 text-teal-800',
+  repair: 'bg-stone-100 text-stone-800',
 };
 
 // 企業規模バッジ色
@@ -112,6 +115,7 @@ export const INDUSTRIES = [
   { value: 'hotel', label: '宿泊業' },
   { value: 'realestate', label: '不動産業' },
   { value: 'entertainment', label: '娯楽業' },
+  { value: 'repair', label: '修理・メンテナンス業' },
 ];
 
 export const DOMAINS = [

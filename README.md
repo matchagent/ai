@@ -176,7 +176,7 @@ Cloudflare Pages の環境変数にも同様に設定すること。
 
 ## 業種コード一覧
 
-`manufacturing` / `retail` / `logistics` / `construction` / `legal` / `food` / `hotel` / `realestate` / `entertainment`
+`manufacturing` / `retail` / `logistics` / `construction` / `legal` / `food` / `hotel` / `realestate` / `entertainment` / `repair`
 
 ## ドメインコード一覧
 

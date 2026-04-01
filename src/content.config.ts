@@ -4,7 +4,7 @@ import { z } from 'zod';
 
 const INDUSTRIES = [
   'manufacturing', 'retail', 'logistics', 'construction',
-  'legal', 'food', 'hotel', 'realestate', 'entertainment'
+  'legal', 'food', 'hotel', 'realestate', 'entertainment', 'repair'
 ] as const;
 
 const DOMAINS = [
