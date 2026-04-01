@@ -2,8 +2,9 @@
 ```
 韓国語圏で少人数(1-10名)の規模の飲食業で、dify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名が記載されている事例を調査して。
 日本で少人数(1-10名)の規模の飲食業で、dify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名が記載されている事例を調査して。
-業態や職種を問わず、dify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名や会社名が記載されている事例を調査して。
+業態や職種を問わず、日本でdify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用している、厳密な意味で実在店舗名や会社名が記載されている事例を調査して。
 
+企業名、業種、主な内容、出典URLを一覧にして sample.txt で保存して。
 
 英語圏で時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
 中国語圏での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
@@ -21,8 +22,6 @@
 香港での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
 
 日本での時計製造業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
-
-
 ```
 
 1-5.調査の裏付け(無い場合)
@@ -41,9 +40,9 @@ Breitling（スイス）
 
 2.作成
 ```
-• https://n8n.io/case-studies/flow-ai/
+• https://jp.ricoh.com/news/stories/articles/ai-citizen-development-dify
 を出典として、
-matchagent/src/content/cases/realestate-001.md
+matchagent/src/content/cases/manufacturing-005.md
 
 で、3000文字数ほどのmdファイルを作成して。
 
@@ -59,21 +58,13 @@ npm run check
 ```
 
 ```
-• https://n8n.io/case-studies/beglobal/
+• https://engineering.reiwatravel.co.jp/blog/Advent-Calendar-20251224
 を出典として、
-matchagent/src/content/cases/retail-008.md
+matchagent/src/content/cases/hotel-001.md
 
-• https://n8n.io/case-studies/itnt-media-group/
+• https://engineering.mercari.com/blog/entry/20251213-862c05648c/
 を出典として、
-matchagent/src/content/cases/food-052.md
-
-• https://n8n.io/case-studies/bordr/
-を出典として、
-matchagent/src/content/cases/legal-001.md
-
-• https://n8n.io/case-studies/flow-ai/
-を出典として、
-matchagent/src/content/cases/realestate-001.md
+matchagent/src/content/cases/retail-018.md
 
 で、それぞれ3000文字数ほどのmdファイルを作成して。
 
