@@ -1,5 +1,6 @@
 ---
 import '../../styles/global.css';
+import ScrollToTop from '../islands/ScrollToTop';
 
 interface Props {
   title: string;
@@ -63,5 +64,6 @@ const canonicalUrl = `${siteUrl}${Astro.url.pathname}`;
 </head>
 <body class="min-h-screen bg-white text-gray-900">
   <slot />
+  <ScrollToTop client:only="react" />
 </body>
 </html>
