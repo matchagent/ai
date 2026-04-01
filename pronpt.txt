@@ -22,13 +22,27 @@
 スイスでの時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
 香港での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
 
-日本での時計製造業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+日本での不動産業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+日本での娯楽業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
 ```
 
 1-5.調査の裏付け(無い場合)
 ```
 
 のAI導入事例が掲載されているURLを教えて。
+```
+
+1-6.調査結果のリスト保存
+```
+その調査結果を下記の4行の形式にして、
+```
+[会社名]
+[AIの活用内容]
+[効果・成果]
+[そのAI導入事例が掲載されている厳密なURL]
+```
+realestate.txt
+で保存して。
 ```
 
 2.作成
@@ -148,8 +162,14 @@ npm run check
 ```
 あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツ品質管理者です。
 
-src/content/cases/legal-002.md
-src/content/cases/legal-003.md
+src/content/cases/hotel-001.md
+src/content/cases/hotel-003.md
+src/content/cases/hotel-004.md
+src/content/cases/hotel-005.md
+src/content/cases/hotel-006.md
+src/content/cases/hotel-007.md
+src/content/cases/hotel-008.md
+src/content/cases/hotel-010.md
 
 の内容を、以下の 観点から検証してください。
 
