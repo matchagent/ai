@@ -1,8 +1,8 @@
-import type { ReactNode } from 'react';
 import {
   industryGradients,
   industryBadgeColors,
   industryLabels,
+  industryIconSvgs,
   companySizeBadgeColors,
   companySizeLabels,
   domainBadgeColors,
@@ -27,69 +27,6 @@ interface Case {
 interface CaseCardProps {
   caseItem: Case;
 }
-
-// 業種アイコン（ReactNode: CaseCard 専用）
-const industryIcons: Record<string, ReactNode> = {
-  manufacturing: (
-    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>
-      <path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/>
-    </svg>
-  ),
-  retail: (
-    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
-      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-    </svg>
-  ),
-  logistics: (
-    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <rect width="16" height="13" x="4" y="3" rx="2"/>
-      <path d="M8 21h8"/><path d="M12 17v4"/><path d="m9 9 2 2 4-4"/>
-    </svg>
-  ),
-  construction: (
-    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"/>
-      <path d="M14 2v6h6"/><path d="M2 15h10"/><path d="m5 12-3 3 3 3"/>
-    </svg>
-  ),
-  legal: (
-    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path d="m12 19 7-7 3 3-7 7-3-3z"/>
-      <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
-      <path d="m2 2 7.5 8.6"/><path d="M22 22l-5.5-5.5"/>
-    </svg>
-  ),
-  food: (
-    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
-      <path d="M7 2v20"/>
-      <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
-    </svg>
-  ),
-  hotel: (
-    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path d="M2 22h20"/>
-      <path d="M4 22V9a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v13"/>
-      <path d="M9 22v-4h6v4"/>
-      <path d="M8 6h8"/>
-      <path d="M12 6v-3"/>
-    </svg>
-  ),
-  realestate: (
-    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/>
-      <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-    </svg>
-  ),
-  entertainment: (
-    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path d="M2 10v3"/><path d="M6 6v11"/><path d="M10 3v18"/>
-      <path d="M14 8v7"/><path d="M18 5v13"/><path d="M22 10v3"/>
-    </svg>
-  ),
-};
 
 export default function CaseCard({ caseItem }: CaseCardProps) {
   const gradientClass = industryGradients[caseItem.industry] || 'from-gray-500 to-gray-600';
@@ -120,7 +57,9 @@ export default function CaseCard({ caseItem }: CaseCardProps) {
           <div className="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center text-white">
-                {industryIcons[caseItem.industry]}
+                <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"
+                  dangerouslySetInnerHTML={{ __html: industryIconSvgs[caseItem.industry] ?? '' }}
+                />
               </div>
               <div className="flex flex-wrap gap-1.5">
                 <span className={`inline-block text-xs font-medium px-2.5 py-0.5 rounded ${badgeColorClass}`}>
