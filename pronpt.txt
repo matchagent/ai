@@ -103,32 +103,18 @@ matchagent/src/content/cases/retail-014.md
 matchagent/src/content/cases/retail-015.md
 
 
-• https://www.parco.co.jp/blog/detail/?id=678
-を出典として、
-
-パルコ
-matchagent/src/content/cases/retail-016.md
-
-
 • https://xtrend.nikkei.com/atcl/contents/18/01194/00003/
 を出典として、
 
 ヤマダデンキ
-matchagent/src/content/cases/retail-017.md
-
-
-• https://exawizards.com/archives/28482/
-を出典として、
-
-日本調剤
-matchagent/src/content/cases/retail-018.md
+matchagent/src/content/cases/retail-016.md
 
 
 • https://corporate.walmart.com/news/2025/06/24/walmart-unveils-new-ai-powered-tools-to-empower-1-5-million-associates
 を出典として、
 
 ウォルマート
-matchagent/src/content/cases/retail-019.md
+matchagent/src/content/cases/retail-017.md
 
 
 で、それぞれ3000文字数ほどのmdファイルを作成して。
@@ -149,7 +135,7 @@ npm run check
 ```
 あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツ品質管理者です。
 
-src/content/cases/retail-013.md
+src/content/cases/retail-017.md
 
 の内容を、以下の 観点から検証してください。
 
