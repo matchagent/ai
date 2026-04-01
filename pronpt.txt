@@ -1,27 +1,137 @@
 1.調査
 ```
-ベトナム語圏で少人数(1-10名)の規模の飲食業で、dify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名が記載されている事例を調査して。
+韓国語圏で少人数(1-10名)の規模の飲食業で、dify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名が記載されている事例を調査して。
+日本で少人数(1-10名)の規模の飲食業で、dify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名が記載されている事例を調査して。
+業態や職種を問わず、dify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名や会社名が記載されている事例を調査して。
+
+
+英語圏で時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+中国語圏での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+ドイツ語圏での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+日本語圏での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+フランス語圏での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+韓国語圏での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+ベトナム語圏での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+タイ語圏での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+シンガポールでの時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+インドネシア語圏での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+アラビア語圏での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+カナダでの時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+スイスでの時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+香港での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+
+日本での時計製造業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+
+
 ```
 
 1-5.調査の裏付け(無い場合)
 ```
-Kopi Senja
-の事例が掲載されているURLを教えて。
+hair atelier HANA
+不純喫茶ドープ
+カフェ・ド・ノール
+The3rd.shibuya/Kamakura
+のAI導入事例が掲載されているURLを教えて。
+
+Sangamon Watches Repair Center（アメリカ）
+Breitling（スイス）
+のAI導入事例が掲載されているURLを教えて。
+
 ```
 
 2.作成
 ```
-「Looking into how artificial intelligence supports operational improvem
-    ts in Southeast Asia's expanding enterprises: evidence from case studies」
+• https://n8n.io/case-studies/flow-ai/
+を出典として、
+matchagent/src/content/cases/realestate-001.md
 
+で、3000文字数ほどのmdファイルを作成して。
+
+文体や文章の流れは
+
+/home/masasikatano/Documents/matchagent/src/content/cases/food-002.md
+
+を参考にして。
+
+作成後に、
+npm run check
+を行って。
+```
+
+```
+• https://n8n.io/case-studies/beglobal/
+を出典として、
+matchagent/src/content/cases/retail-008.md
+
+• https://n8n.io/case-studies/itnt-media-group/
+を出典として、
+matchagent/src/content/cases/food-052.md
+
+• https://n8n.io/case-studies/bordr/
+を出典として、
+matchagent/src/content/cases/legal-001.md
+
+• https://n8n.io/case-studies/flow-ai/
+を出典として、
+matchagent/src/content/cases/realestate-001.md
+
+で、それぞれ3000文字数ほどのmdファイルを作成して。
+
+文体や文章の流れは
+
+/home/masasikatano/Documents/matchagent/src/content/cases/food-002.md
+
+を参考にして。
+
+作成後に、
+npm run check
+を行って。
+```
+
+```
+• https://www.ai-shift.co.jp/3809
 を出典として、
 
-matchagent/src/content/cases/food-051.md
+カインズ
+matchagent/src/content/cases/retail-014.md
 
-を、
-industry: food
-domain: marketing
-で、3000文字数ほどのmdファイルを作成して。
+
+• https://toyokeizai.net/articles/-/761340
+を出典として、
+
+しまむら
+matchagent/src/content/cases/retail-015.md
+
+
+• https://www.parco.co.jp/blog/detail/?id=678
+を出典として、
+
+パルコ
+matchagent/src/content/cases/retail-016.md
+
+
+• https://xtrend.nikkei.com/atcl/contents/18/01194/00003/
+を出典として、
+
+ヤマダデンキ
+matchagent/src/content/cases/retail-017.md
+
+
+• https://exawizards.com/archives/28482/
+を出典として、
+
+日本調剤
+matchagent/src/content/cases/retail-018.md
+
+
+• https://corporate.walmart.com/news/2025/06/24/walmart-unveils-new-ai-powered-tools-to-empower-1-5-million-associates
+を出典として、
+
+ウォルマート
+matchagent/src/content/cases/retail-019.md
+
+
+で、それぞれ3000文字数ほどのmdファイルを作成して。
 
 文体や文章の流れは
 
@@ -39,19 +149,13 @@ npm run check
 ```
 あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツ品質管理者です。
 
-src/content/cases/food-040.md
+src/content/cases/retail-013.md
 
-の内容を、以下の 3 つの観点から検証してください。
+の内容を、以下の 観点から検証してください。
 
-### 1. フロントマターの検証 (Schema 整合性)
-- `metric_value` / `metric_unit`: 本文内の主要な成果数値と一致しているか。
-
-### 2. 出典との整合性の検証
-- 出典元の内容と記事内容の整合性があるか。
-
-### 3. 内容の具体性と専門性
+### 内容の具体性と専門性
 - AI技術の名称や仕組み（例: CNN, 需要予測モデル, エッジAIなど）が具体的に記述されているか。
-- 特定の企業名やサービス名が具体的に出ているか（架空の事例や、他事例と混同していないか）。
+- 特定の企業名やサービス名が具体的に出ている場合、そのサービスが具体的に何をしているか具体的に記述されているか。
 
 検証の結果、修正が必要な箇所があれば、修正してください。
 ```
