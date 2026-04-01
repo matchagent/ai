@@ -2,10 +2,11 @@
 ```
 韓国語圏で少人数(1-10名)の規模の飲食業で、dify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名が記載されている事例を調査して。
 日本で少人数(1-10名)の規模の飲食業で、dify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名が記載されている事例を調査して。
-業態や職種を問わず、日本でdify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用している、厳密な意味で実在店舗名や会社名が記載されている事例を調査して。
+宿泊業でdify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用している、厳密な意味で実在店舗名、会社名、屋号が記載されている事例を調査して。
 
 企業名、業種、主な内容、出典URLを一覧にして sample.txt で保存して。
 
+風俗業で、AIを使用している、厳密な意味で実在会社名、会社名、屋号、個人名が記載されている事例を調査して。
 英語圏で時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
 中国語圏での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
 ドイツ語圏での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
@@ -26,16 +27,8 @@
 
 1-5.調査の裏付け(無い場合)
 ```
-hair atelier HANA
-不純喫茶ドープ
-カフェ・ド・ノール
-The3rd.shibuya/Kamakura
-のAI導入事例が掲載されているURLを教えて。
 
-Sangamon Watches Repair Center（アメリカ）
-Breitling（スイス）
 のAI導入事例が掲載されているURLを教えて。
-
 ```
 
 2.作成
@@ -58,13 +51,42 @@ npm run check
 ```
 
 ```
-• https://engineering.reiwatravel.co.jp/blog/Advent-Calendar-20251224
+• https://engineering.reiwatravel.co.jp/blog/newt-ml-llm
 を出典として、
-matchagent/src/content/cases/hotel-001.md
+matchagent/src/content/cases/hotel-002.md
 
-• https://engineering.mercari.com/blog/entry/20251213-862c05648c/
+• https://www.works-i.com/research/project/futureofwork/automation02/detail007.html
+• https://atmoph.com/ja/ourusers/henn_na_hotel
 を出典として、
-matchagent/src/content/cases/retail-018.md
+matchagent/src/content/cases/hotel-003.md
+
+• https://prtimes.jp/main/html/rd/p/000000094.000025663.html
+を出典として、
+matchagent/src/content/cases/hotel-004.md
+
+• https://corp.rakuten.co.jp/news/press/2025/0922_01.html
+を出典として、
+matchagent/src/content/cases/hotel-005.md
+
+• https://www.microsoft.com/ja-jp/customers/story/1745181603188532421-recruit-co-ltd-azure-professional-services-ja-japan
+を出典として、
+matchagent/src/content/cases/hotel-006.md
+
+• https://www.travelvoice.jp/20230929-154270
+を出典として、
+matchagent/src/content/cases/hotel-007.md
+
+• https://www.recruit.co.jp/newsroom/pressrelease/2025/0226_15516.html
+を出典として、
+matchagent/src/content/cases/hotel-008.md
+
+• https://www.cas.go.jp/jp/seisaku/digitaldenen/menubook/2023/1021.html
+を出典として、
+matchagent/src/content/cases/hotel-009.md
+
+• https://prtimes.jp/main/html/rd/p/000000029.000047676.html
+を出典として、
+matchagent/src/content/cases/hotel-010.md
 
 で、それぞれ3000文字数ほどのmdファイルを作成して。
 
@@ -126,7 +148,8 @@ npm run check
 ```
 あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツ品質管理者です。
 
-src/content/cases/retail-017.md
+src/content/cases/legal-002.md
+src/content/cases/legal-003.md
 
 の内容を、以下の 観点から検証してください。
 
