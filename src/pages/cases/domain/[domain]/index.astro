@@ -3,9 +3,8 @@ import BaseLayout from '@/components/layout/BaseLayout.astro';
 import Header from '@/components/layout/Header.astro';
 import Footer from '@/components/layout/Footer.astro';
 import CaseFilter from '@/components/islands/CaseFilter.tsx';
-import { getCollection } from 'astro:content';
 import { DOMAIN_KEYS, domainLabels } from '@/utils/caseConstants';
-import { mapCaseEntry } from '@/utils/getCasesData';
+import { getSortedCases } from '@/utils/getCasesData';
 
 export async function getStaticPaths() {
   return DOMAIN_KEYS.map(domain => ({ params: { domain } }));
@@ -13,8 +12,7 @@ export async function getStaticPaths() {
 
 const { domain } = Astro.params;
 
-const allCases = await getCollection('cases');
-const casesData = allCases.map(mapCaseEntry);
+const casesData = await getSortedCases();
 
 const domainLabel = domainLabels[domain];
 const pageTitle = `${domainLabel}のAI導入事例`;

@@ -3,23 +3,9 @@ import BaseLayout from '@/components/layout/BaseLayout.astro';
 import Header from '@/components/layout/Header.astro';
 import Footer from '@/components/layout/Footer.astro';
 import CaseFilter from '@/components/islands/CaseFilter.tsx';
-import { getCollection } from 'astro:content';
+import { getSortedCases } from '@/utils/getCasesData';
 
-const allCases = await getCollection('cases');
-
-// Islandコンポーネントに渡すためシリアライズ可能なデータに変換
-const casesData = allCases.map(c => ({
-  slug: c.id,
-  title: c.data.title,
-  industry: c.data.industry,
-  domain: c.data.domain,
-  company_size: c.data.company_size,
-  metric_value: c.data.metric_value,
-  metric_unit: c.data.metric_unit,
-  excerpt: c.data.excerpt,
-  date: c.data.date.toISOString(),
-  problem_tags: c.data.problem_tags,
-}));
+const casesData = await getSortedCases();
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -66,7 +52,7 @@ const jsonLd = {
               <div class="text-sm text-gray-500 mt-1">業種</div>
             </div>
             <div class="bg-white rounded-xl px-6 py-4 shadow-md border border-gray-100">
-              <div class="text-3xl md:text-4xl font-bold text-blue-600">{allCases.length}+</div>
+              <div class="text-3xl md:text-4xl font-bold text-blue-600">{casesData.length}+</div>
               <div class="text-sm text-gray-500 mt-1">導入事例</div>
             </div>
             <div class="bg-white rounded-xl px-6 py-4 shadow-md border border-gray-100">

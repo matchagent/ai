@@ -1,4 +1,12 @@
+import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
+
+export async function getSortedCases() {
+  const allCases = await getCollection('cases');
+  return allCases
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+    .map(mapCaseEntry);
+}
 
 export function mapCaseEntry(c: CollectionEntry<'cases'>) {
   return {
