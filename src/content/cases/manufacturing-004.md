@@ -4,7 +4,6 @@ industry: manufacturing
 domain: production
 tech_tags:
   - RAG
-  - AIエージェント
 company_size: large
 metric_value: 50
 metric_unit: "%以上の開発遅延原因が要件定義"

@@ -3,7 +3,7 @@ title: レオパレス21：AIアバター「アバトレ」で営業研修を革
 industry: realestate
 domain: hr
 tech_tags:
-  - 予測AI
+  - RAG
 company_size: large
 metric_value: 1800
 metric_unit: "時間/年 削減見込み"

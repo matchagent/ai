@@ -3,7 +3,7 @@ title: 東急リバブル：生成AIチャット「Tellus Talk」でパーソナ
 industry: realestate
 domain: customer_support
 tech_tags:
-  - 予測AI
+  - RAG
 company_size: large
 metric_value: 914
 metric_unit: "万PV/月（サイト訪問量）"

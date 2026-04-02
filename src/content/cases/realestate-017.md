@@ -3,7 +3,7 @@ title: JR九州：estieマーケット調査で不動産開発の市場分析を
 domain: sales
 industry: realestate
 tech_tags:
-  - 予測AI
+  - 言語AI
 company_size: large
 metric_value: 30
 metric_unit: "分で3日分の分析完了"

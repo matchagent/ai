@@ -7,7 +7,7 @@ tech_tags:
 company_size: large
 metric_value: 1
 metric_unit: "件の研究開発プロジェクト（自然言語指示で動作するロボットアーム）"
-source_url_verified: false
+source_url_verified: true
 source_url: https://xtech.nikkei.com/atcl/nxt/column/18/02590/100400002/
 date: 2023-10-10
 excerpt: 認知科学の「行為の7段階理論」を生成AIで再現し、自然言語指示でタスクを実行する「相棒型ロボット」の実現に向けた研究開発を京都大学等と共同で進行中。

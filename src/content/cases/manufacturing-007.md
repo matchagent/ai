@@ -3,7 +3,7 @@ title: エナジーウィズ：exaBase生成AIで知財部門が月間120時間/
 industry: manufacturing
 domain: hr
 tech_tags:
-  - 画像AI
+  - RAG
 company_size: mid
 metric_value: 120
 metric_unit: "時間/人・月の業務削減"

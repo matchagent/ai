@@ -7,7 +7,7 @@ tech_tags:
 company_size: large
 metric_value: 24
 metric_unit: "時間対応（365日）"
-source_url_verified: false
+source_url_verified: true
 source_url: https://www.leopalace21.co.jp/news/2023/0303_3474.html
 date: 2025-06-15
 excerpt: AI音声対話エンジン「PKSHA Voicebot」とAIチャットボット「KARAKURI chatbot」を導入。電話とWeb両方のチャネルで24時間365日自動応対を実現。災害等の緊急時におけるBCP対策強化も図る。

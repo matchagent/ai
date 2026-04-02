@@ -3,7 +3,7 @@ title: JFEスチール：IBM Watsonで制御故障復旧支援システムを構
 industry: manufacturing
 domain: production
 tech_tags:
-  - 画像AI
+  - 言語AI
 company_size: large
 metric_value: 20
 metric_unit: "%以上のダウンタイム短縮"

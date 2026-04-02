@@ -1,5 +1,5 @@
 ---
-title: GAテクノロジーズ：AI不動産投資「RENOSY」が売上・買取実績で2年連続全国No.1
+title: GAテクノロジーズ：AI不動産投資「RENOSY」
 domain: sales
 industry: realestate
 tech_tags:

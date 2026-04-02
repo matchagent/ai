@@ -4,7 +4,6 @@ industry: manufacturing
 domain: production
 tech_tags:
   - RAG
-  - AIエージェント
 company_size: large
 metric_value: 90
 metric_unit: "%以上の診断精度"

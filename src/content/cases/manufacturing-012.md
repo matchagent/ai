@@ -3,7 +3,7 @@ title: パナソニックコネクト：自社向けAIアシスタントConnectA
 industry: manufacturing
 domain: hr
 tech_tags:
-  - 画像AI
+  - RAG
 company_size: large
 metric_value: 186000
 metric_unit: "時間/年の労働時間削減"
