@@ -17,7 +17,7 @@
 title: "事例タイトル"
 industry: "manufacturing"         # 業種コード (下記参照)
 domain: "production"              # ドメインコード (下記参照)
-tech_tags: []                         # CNN / RAG / AIエージェント から該当するものを列挙。なければ空配列
+tech_tags: []                         # 下記「tech_tags 一覧」から該当するものを列挙。なければ空配列
 company_size: "mid"               # small / mid / large
 metric_value: 30                  # 効果の数値
 metric_unit: "%向上"              # 効果の単位
@@ -111,6 +111,19 @@ excerpt: "事例の概要（1〜2文）"
 2. `source_url` が架空・推測・補完したURLではない
 
 上記2条件をすべて満たす場合のみ `true`。満たさない場合は `false`。
+
+## tech_tags 一覧
+
+| カテゴリ | タグ値 |
+|----------|--------|
+| 画像AI | `Stable Diffusion背景生成` / `GAN画像変換` / `外観検査` / `画像診断` |
+| 予測AI | `需要予測` / `ダイナミックプライシング` / `レコメンド` / `異常検知` |
+| 言語AI | `ChatGPT顧客対応` / `LLM文章生成` / `翻訳` / `チャットボット` |
+| AIエージェント | `n8n自動化` / `ワークフローエージェント` |
+| 音声AI | `電話予約AI` / `音声合成` / `ポケトーク翻訳` |
+| RAG | `RAG` |
+
+カテゴリ名自体（`画像AI` など）も使用可能。
 
 ## 確認コマンド
 

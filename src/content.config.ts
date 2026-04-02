@@ -17,7 +17,20 @@ const cases = defineCollection({
     title: z.string(),
     industry: z.enum(INDUSTRIES),
     domain: z.enum(DOMAINS),
-    tech_tags: z.array(z.enum(['画像AI', '言語AI', '音声AI', '予測AI', 'RAG', 'AIエージェント'])),
+    tech_tags: z.array(z.enum([
+    // 画像AI
+    '画像AI', 'Stable Diffusion背景生成', 'GAN画像変換', '外観検査', '画像診断',
+    // 予測AI
+    '予測AI', '需要予測', 'ダイナミックプライシング', 'レコメンド', '異常検知',
+    // 言語AI
+    '言語AI', 'ChatGPT顧客対応', 'LLM文章生成', '翻訳', 'チャットボット',
+    // AIエージェント
+    'AIエージェント', 'n8n自動化', 'ワークフローエージェント',
+    // 音声AI
+    '音声AI', '電話予約AI', '音声合成', 'ポケトーク翻訳',
+    // RAG
+    'RAG',
+  ])),
     company_size: z.enum(['small', 'mid', 'large']),
     metric_value: z.number(),
     metric_unit: z.string(),

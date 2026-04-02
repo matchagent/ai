@@ -6,7 +6,7 @@
    - タイトル
    - 業種 (manufacturing / retail / logistics / construction / legal / food / hotel / realestate / entertainment)
    - ドメイン (sales / marketing / production / hr / accounting / customer_support / logistics)
-   - 技術タグ (CNN / RAG / AIエージェント から該当するものを選ぶ。なければ空配列)
+   - 技術タグ (画像AI: Stable Diffusion背景生成/GAN画像変換/外観検査/画像診断、予測AI: 需要予測/ダイナミックプライシング/レコメンド/異常検知、言語AI: ChatGPT顧客対応/LLM文章生成/翻訳/チャットボット、AIエージェント: n8n自動化/ワークフローエージェント、音声AI: 電話予約AI/音声合成/ポケトーク翻訳、RAG。なければ空配列)
    - 企業規模 (small / mid / large)
    - 効果指標の値・単位・検証済みかどうか
    - 事例詳細本文
