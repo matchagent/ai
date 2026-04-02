@@ -9,7 +9,7 @@ metric_value: 10
 metric_unit: "倍の提案作成能力"
 source_url_verified: true
 source_url: https://n8n.io/case-studies/beglobal/
-date: 2026-01-01
+date: 2025-01-01
 excerpt: 10万点の商品カタログから最適な企業ギフトを選定し提案書を作成する業務をAI自動化。提案作成時間が数時間から数分に短縮され、年間作成可能な提案数が50件から約500件に拡大。
 ---
 

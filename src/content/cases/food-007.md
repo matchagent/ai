@@ -9,7 +9,7 @@ metric_value: 1.5
 metric_unit: "人分業務代替"
 source_url_verified: true
 source_url: https://www.softbankrobotics.com/jp/product/delivery/cases/kasaku/
-date: 2022-10-01
+date: 2024-06-12
 excerpt: 席数20の個人経営居酒屋がKeenbot T8を導入。アルバイト1.5人分に匹敵する業務代替効果を実現し、慢性的な人手不足と採用難を解消した。
 ---
 

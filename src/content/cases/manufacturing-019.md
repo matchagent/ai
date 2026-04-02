@@ -9,7 +9,7 @@ metric_value: 20
 metric_unit: "%以上のダウンタイム短縮"
 source_url_verified: true
 source_url: https://www.ibm.com/jp-ja/case-studies/jfe-steel
-date: 2018-09-01
+date: 2023-01-01
 excerpt: IBM Watson ExplorerとWatson Natural Language Classifierを活用し、過去の作業日報や故障報告書から類似事象と対処法を即座に提示。全国6カ所の製鉄所・製造所に展開しダウンタイムを大幅短縮。
 ---
 

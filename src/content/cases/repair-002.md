@@ -9,7 +9,7 @@ metric_value: 200
 metric_unit: "万円/月の赤字改善"
 source_url_verified: true
 source_url: https://www.bridge-sols.jp/2018/10/16/%E7%B5%8C%E6%B8%88%E7%94%A3%E6%A5%AD%E7%9C%81%E4%B8%AD%E5%B0%8F%E4%BC%81%E6%A5%ADit%E7%B5%8C%E5%96%B6%E5%8A%9B%E5%A4%A7%E8%B3%9E%E5%84%AA%E7%A7%80%E8%B3%9Eit%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%8D%E3%83%BC%E3%82%BF%E5%8D%94%E4%BC%9A%E4%BC%9A%E9%95%B7%E8%B3%9E%E5%8F%97%E8%B3%9E-2013%E5%B9%B4-%E6%94%AF%E6%8F%B4%E4%BA%8B%E4%BE%8B-%E5%85%B1%E6%A0%84%E7%94%A3%E6%A5%AD%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%A7%98/
-date: 2025-06-15
+date: 2018-10-16
 excerpt: 超高級時計の修理を手がける共栄産業が、バーコードによるICT工程管理を導入。修理待ちの在庫整理、納期による色分けラベル、道具の定位置管理により、月200～400万円の赤字だった修理部門を黒字化し、経済産業省IT経営実践認定企業に選出された。
 ---
 

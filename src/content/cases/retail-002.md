@@ -9,7 +9,7 @@ metric_value: 230
 metric_unit: '%'
 source_url_verified: true
 source_url: https://snsschool.net/column/industry-restaurant/success
-date: 2025-03-25
+date: 2026-01-29
 excerpt: 国産天然はちみつ専門店がInstagram AI分析を導入。ビジュアル最適化とキャプション改善でフォロワー9,000人増、月間リーチ2.3倍、EC誘導2倍を達成。
 ---
 

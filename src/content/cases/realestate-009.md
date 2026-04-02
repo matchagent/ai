@@ -9,7 +9,7 @@ metric_value: 1800
 metric_unit: "時間/年 削減見込み"
 source_url_verified: true
 source_url: https://www.leopalace21.co.jp/news/2025/0624.html
-date: 2025-06-15
+date: 2025-06-24
 excerpt: AVITA社のAIロープレ支援サービス「アバトレ」を導入。生成AIアバターとのロールプレイングで新卒・若手社員が自律的に営業スキルを習得。年間最大1,800時間の業務時間削減と質の高い教育機会の継続的提供を実現。
 ---
 

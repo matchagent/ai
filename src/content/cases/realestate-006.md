@@ -9,7 +9,7 @@ metric_value: 914
 metric_unit: "万PV/月（サイト訪問量）"
 source_url_verified: true
 source_url: https://www.livable.co.jp/corp/release/2025/20250327.html
-date: 2025-06-15
+date: 2025-03-27
 excerpt: Claude-3.5 Sonnetを採用した生成AI対話型チャットサービス。月平均914万PVの接客対象ページに導入し、購入・売却に関する個別ニーズに応じた最適解を24時間提供。離脱率改善とコンバージョン増加を目指す。
 ---
 

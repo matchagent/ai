@@ -9,7 +9,7 @@ metric_value: 40
 metric_unit: "年分の衝撃データ"
 source_url_verified: true
 source_url: https://www.casio.co.jp/topics/article/2025/K-097/
-date: 2025-06-13
+date: 2025-01-01
 excerpt: G-SHOCKの新作開発に生成AIを初導入。40年分の衝撃データを学習させ、デザイナーとAIの共創で樹脂なしのフルメタル耐衝撃構造を実現した。
 ---
 

@@ -9,7 +9,7 @@ metric_value: 0
 metric_unit: "%の見逃し率"
 source_url_verified: true
 source_url: https://vrr.cec-ltd.co.jp/case/wiseimaging_toyota02/
-date: 2019-12-04
+date: 2024-01-01
 excerpt: シーイーシーのDeep Learning画像検査システム「WiseImaging」を導入。フロントハブの磁気探傷検査で見逃し率0%、過検出率8%を達成し、2名の省人化を実現。
 ---
 

@@ -9,7 +9,7 @@ metric_value: 2.5
 metric_unit: "倍検査速度向上"
 source_url_verified: true
 source_url: https://www.kewpie.com/newsrelease/2020/1913/
-date: 2025-06-15
+date: 2020-08-01
 excerpt: AI画像解析技術で原料検査を自動化し、検査速度2.5倍向上を実現。良品学習型アルゴリズムにより高精度な不良品検出を可能にした。
 ---
 

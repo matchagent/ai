@@ -9,7 +9,7 @@ metric_value: 87
 metric_unit: '%'
 source_url_verified: true
 source_url: https://albert.ai/wp-content/uploads/2017/04/Dole-Case-Study_FINAL_4.6.2017.pdf
-date: 2025-03-29
+date: 2017-04-06
 excerpt: シンガポールに本社を置くDole Asia Holdingsが、AIマーケティングプラットフォームAlbertを活用し、フィリピン市場でのフルーツカクテル製品の販売を87%増加させた。
 ---
 

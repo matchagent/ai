@@ -9,7 +9,7 @@ metric_value: 3
 metric_unit: "販売チャネル統合"
 source_url_verified: true
 source_url: https://www.nikkei.com/article/DGXZQOUB170W40X11C22A0000000/
-date: 2026-04-02
+date: 2022-10-29
 excerpt: 2019年に業界初の変動価格制を導入。パーク体験価値の適正化と混雑緩和を目指し、ウェブ・コンビニ・旅行会社の3チャネルを一元管理。
 ---
 

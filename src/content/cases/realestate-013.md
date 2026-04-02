@@ -9,7 +9,7 @@ metric_value: 350
 metric_unit: "台 AIカメラ導入数（丸の内エリア）"
 source_url_verified: true
 source_url: https://www.mec.co.jp/news/detail/2023/04/11_mec230411_jisedai
-date: 2025-06-15
+date: 2023-04-11
 excerpt: AI画像解析、警備ロボット、配送ロボットを統合した次世代型施設運営モデルを大手町・丸の内・有楽町エリアで展開。執務室内フードデリバリー、IoT設備点検、AI画像解析による警備等、Society5.0の未来社会像に近い取り組みを本格化。
 ---
 

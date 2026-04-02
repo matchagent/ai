@@ -9,7 +9,7 @@ metric_value: 4300
 metric_unit: "人がDifyを業務活用"
 source_url_verified: true
 source_url: https://jp.ricoh.com/news/stories/articles/ai-citizen-development-dify
-date: 2025-06-15
+date: 2025-01-01
 excerpt: ノーコード生成AIプラットフォーム「Dify」を導入し、約4300人の社員が業務に活用。審査業務の自動化や業界情報収集の効率化を実現し、現場主体のDX文化を醸成。
 ---
 

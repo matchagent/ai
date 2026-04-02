@@ -9,7 +9,7 @@ metric_value: 83
 metric_unit: "%背景前処理時間削減"
 source_url_verified: true
 source_url: https://www.preferred.jp/ja/news/pr20210312
-date: 2026-04-02
+date: 2021-03-12
 excerpt: 実写写真からアニメ調背景を自動生成する「Scenify」を実験映像『URVAN』で活用。背景美術の前処理時間を約1/6に短縮し、クリエイターは創作業務に集中可能に。
 ---
 

@@ -9,7 +9,7 @@ metric_value: 400
 metric_unit: "法人顧問先"
 source_url_verified: true
 source_url: https://www.mjs.co.jp/products/case/takamoto/
-date: 2020-11-12
+date: 2024-01-01
 excerpt: 千葉県市川市の高本税理士事務所がMJSの会計システムを活用。創業33年で法人顧問先400社超を抱え、経理の合理化とテレワークを推進。相続税申告累計1万4,000件の実績を支えるIT基盤を構築。
 ---
 

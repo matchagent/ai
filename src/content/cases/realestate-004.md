@@ -9,7 +9,7 @@ metric_value: 21920
 metric_unit: "時間/年 工数削減"
 source_url_verified: true
 source_url: https://prtimes.jp/main/html/rd/p/000000034.000024241.html
-date: 2025-06-15
+date: 2019-11-05
 excerpt: 画像分類AI、物体検出AI、RPAを組み合わせた業務自動化。物件資料自動作成・帯替えで年間20,000時間、資料自動取得RPAで年間1,920時間の削減。宅地区割り設計の自動化も世界初の技術として特許出願中。
 ---
 

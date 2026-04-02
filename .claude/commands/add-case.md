@@ -26,7 +26,7 @@
    metric_value: 0
    metric_unit: ""
    source_url_verified: false
-   date: "YYYY-MM-DD"
+   date: "YYYY-MM-DD"    # source_url のページが公開された日付
    excerpt: ""
    ---
    ```

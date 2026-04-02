@@ -9,7 +9,7 @@ metric_value: 1
 metric_unit: "システム（特許取得済み）"
 source_url_verified: true
 source_url: https://www.tokyu-fudosan-hd.co.jp/news/companies/pdf/3052.pdf
-date: 2025-06-15
+date: 2023-01-01
 excerpt: 建物のひび割れ（クラック）をAI画像解析で自動検出・診断する「CRACK SCANNER」。特許第7124995号を取得。建物検査業務の効率化と客観的な診断品質の向上を実現。不動産管理・売買時の建物状況把握に活用。
 ---
 

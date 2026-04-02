@@ -9,7 +9,7 @@ metric_value: 6
 metric_unit: "台まで同時接続拡張"
 source_url_verified: true
 source_url: https://www.biprogy.com/pdf/news/info_200817_iot_tenken.pdf
-date: 2025-06-15
+date: 2020-08-17
 excerpt: 日本ユニシスの「まるっと点検」にスマートグラス版リポーターとコミュニケーター機能拡張を追加。ハンズフリーでの点検結果登録や遠隔支援をAzure上の同一クラウドで統合提供し、ビル・工場・社会インフラの設備点検DXを加速。
 ---
 

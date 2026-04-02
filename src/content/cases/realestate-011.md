@@ -9,7 +9,7 @@ metric_value: 56
 metric_unit: "万戸 管理戸数対応"
 source_url_verified: true
 source_url: https://prtimes.jp/main/html/rd/p/000000052.000025663.html
-date: 2025-06-15
+date: 2023-03-03
 excerpt: カラクリ社のAIチャットボット「KARAKURI chatbot」とFAQツール「KARAKURI smartFAQ」を導入。全国約56万戸の入居者問い合わせに24時間365日対応。
 ---
 

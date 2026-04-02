@@ -9,7 +9,7 @@ metric_value: 30000
 metric_unit: "モデル対応"
 source_url_verified: true
 source_url: https://www.wav.tech/
-date: 2025-11-25
+date: 2024-01-01
 excerpt: 香港発のAI時計認証機関。100万枚以上の高倍率画像で訓練した深層学習モデルと3万モデルのデータベースで、微米レベルの偽造検出を実現。NFTブロックチェーンレポートで認証結果の永続的透明性を確保。
 ---
 

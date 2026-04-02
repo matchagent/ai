@@ -9,7 +9,7 @@ metric_value: 95
 metric_unit: "%電子申告導入率"
 source_url_verified: true
 source_url: https://www.fas-calm.co.jp/case/aoyagi.html
-date: 2008-01-01
+date: 2024-01-01
 excerpt: 神奈川県横浜市の青柳真美税理士事務所がサーバーシステムと財務・税務ソフトを導入。法人・個人ともに電子申告95%を達成し、3名体制でスピーディなデータ共有と業務効率化を実現。
 ---
 

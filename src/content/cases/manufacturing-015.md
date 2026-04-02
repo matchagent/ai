@@ -9,7 +9,7 @@ metric_value: 70
 metric_unit: "%の計画立案時間削減"
 source_url_verified: true
 source_url: https://www.nichireifoods.co.jp/news/2025/info_id43989/
-date: 2025-10-15
+date: 2025-01-01
 excerpt: 日立製作所との協創で開発したAIシステムにより、包装氷の生産・輸送・在庫計画を自動化。約200万通りの組み合わせから最適解を抽出し、計画立案時間を約70%削減。
 ---
 

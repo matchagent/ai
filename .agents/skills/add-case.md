@@ -23,7 +23,7 @@ metric_value: 30                  # 効果の数値
 metric_unit: "%向上"              # 効果の単位
 source_url_verified: true         # source_url のページが実際に存在することを確認済みか（下記「検証基準」参照）
 source_url: "https://example.com/press-release"  # source_url_verified: true の場合は必須
-date: "2025-01-15"
+date: "2025-01-15"                # source_url のページが公開された日付
 excerpt: "事例の概要（1〜2文）"
 ---
 ```
@@ -98,6 +98,13 @@ excerpt: "事例の概要（1〜2文）"
 - `metric_value` に対応する数値は `## After` に明記する（例: `2.7% → 12%`）
 - 業界固有の背景・構造的課題から書き起こし、読者がAI導入の必然性を理解できるようにする
 - `## AI導入内容` は技術スタック・データフロー・フィードバックループまで掘り下げる
+
+## date の設定基準
+
+`date` は `source_url` のページが公開された日付を設定する。
+
+- `source_url_verified: true` の場合: WebFetch でアクセスし、ページから公開日を確認して設定する
+- `source_url_verified: false` の場合: 事例が公開されたと推定される日付を設定する
 
 ## 検証基準 (source_url_verified)
 

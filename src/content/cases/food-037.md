@@ -9,7 +9,7 @@ metric_value: 30
 metric_unit: '%'
 source_url_verified: true
 source_url: https://www.tabsquare.ai/
-date: 2025-03-29
+date: 2020-09-25
 excerpt: 2012年シンガポールでINSEAD卒業生が創業したAIレストランソリューション。Jollibee Singaporeで平均注文額30%増、Sushi Teiでテーブル回転率35%向上を実現。
 ---
 

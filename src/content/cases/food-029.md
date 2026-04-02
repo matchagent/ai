@@ -9,7 +9,7 @@ metric_value: 4.5
 metric_unit: "倍ネット予約増加"
 source_url_verified: true
 source_url: https://www.ebica.jp/news/press/torikizoku-aireception/
-date: 2025-06-15
+date: 2023-05-16
 excerpt: AIスタッフ「さゆり」が24時間365日電話予約に対応。先行導入21店舗でネット予約が4.5倍、電話予約が1.5倍に増加。月間1万件超の電話応対をAI化し、スタッフは接客に集中可能に。
 ---
 

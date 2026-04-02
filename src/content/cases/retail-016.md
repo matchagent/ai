@@ -9,7 +9,7 @@ metric_value: 2
 metric_unit: "倍EC売上目標（5年後）"
 source_url_verified: true
 source_url: https://xtrend.nikkei.com/atcl/contents/18/01194/00003/
-date: 2026-04-01
+date: 2025-07-02
 excerpt: Google P-MAXでネット広告をセルフ運用。AIが入札から配信を自動化し、データから新需要を発掘。EC売上5年で2倍増へ向けて成長加速。
 ---
 

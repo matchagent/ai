@@ -9,7 +9,7 @@ metric_value: 1
 metric_unit: "位 不動産投資物件売上・買取実績"
 source_url_verified: true
 source_url: https://prtimes.jp/main/html/rd/p/000000411.000021066.html
-date: 2025-06-15
+date: 2026-03-31
 excerpt: AI不動産投資サービス「RENOSY」が東京商工リサーチ調査で投資用マンション・アパートの売上実績と買取実績の両方で2年連続全国No.1を獲得。AIによる物件図面自動読取り、家賃予測、面談支援で迅速かつ最適な資産形成を実現。
 ---
 

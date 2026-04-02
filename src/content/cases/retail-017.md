@@ -9,7 +9,7 @@ metric_value: 67
 metric_unit: "%シフト計画時間削減"
 source_url_verified: true
 source_url: https://corporate.walmart.com/news/2025/06/24/walmart-unveils-new-ai-powered-tools-to-empower-1-5-million-associates
-date: 2026-04-01
+date: 2025-06-24
 excerpt: 150万人の店舗スタッフ向けにAIツール群を展開。シフト計画時間を90分→30分に削減し、44言語対応のリアルタイム翻訳など店舗業務を変革。
 ---
 

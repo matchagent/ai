@@ -9,7 +9,7 @@ metric_value: 295
 metric_unit: "人日/月の業務時間削減"
 source_url_verified: true
 source_url: https://exawizards.com/exabase/gpt/case/30894/
-date: 2025-09-26
+date: 2025-09-17
 excerpt: 全社員を巻き込んだ生成AIチャレンジコンテストで425件の応募を獲得。月間約295人日分の業務時間削減を実現し、9割以上の社員が継続利用に意欲を示す組織文化変革を達成。
 ---
 

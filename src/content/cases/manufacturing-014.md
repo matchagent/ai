@@ -9,7 +9,7 @@ metric_value: 90
 metric_unit: "%以上の診断精度"
 source_url_verified: true
 source_url: https://www.hitachi.co.jp/products/infrastructure/connective-industries/contents/casestudy/02/index.html
-date: 2024-04-01
+date: 2023-01-01
 excerpt: ダイキン堺製作所臨海工場で「工場の設備故障診断を支援するAIエージェント」の試験運用を開始。ベテラン技術者の暗黙知をAIに学習させ、回答精度90%以上・回答時間10秒以内を達成。
 ---
 

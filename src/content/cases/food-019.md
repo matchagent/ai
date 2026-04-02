@@ -9,7 +9,7 @@ metric_value: 3
 metric_unit: "%客単価向上"
 source_url_verified: true
 source_url: https://toyokeizai.net/articles/-/841576
-date: 2023-09-01
+date: 2024-12-02
 excerpt: スシローがAI需要予測と完全オーダー制「デジロー」を導入。食品ロス約50%削減と客単価3%向上を同時達成し、廃棄と売上の両立を実現。
 ---
 

@@ -9,7 +9,7 @@ metric_value: 120
 metric_unit: "時間/人・月の業務削減"
 source_url_verified: true
 source_url: https://exawizards.com/exabase/gpt/case/30695/
-date: 2025-08-18
+date: 2025-08-14
 excerpt: 知財部門で生成AIを本格活用。膨大な特許文献の読解・要約を数分で完了させ、月間120時間/人を超える業務効率化を達成。全社的な生産性可視化も実現。
 ---
 

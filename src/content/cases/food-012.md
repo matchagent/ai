@@ -9,7 +9,7 @@ metric_value: 1.5
 metric_unit: "倍"
 source_url_verified: true
 source_url: https://pocketalk.jp/column/allcases/case-study/toranomon
-date: 2023-11-01
+date: 2023-11-17
 excerpt: 虎ノ門横丁の創作フィッシュバーガー専門店。ポケトークAI翻訳機で外国人客とのコミュニケーションが円滑化し、オーダー数が1.5倍に増加。
 ---
 

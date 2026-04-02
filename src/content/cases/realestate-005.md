@@ -9,7 +9,7 @@ metric_value: 2500
 metric_unit: "人 導入対象社員数"
 source_url_verified: true
 source_url: https://www.mitsuifudosan.co.jp/corporate/news/2023/1010/
-date: 2025-06-15
+date: 2023-10-10
 excerpt: Azure OpenAI Service GPT-4を活用した社内専用AIチャットツール。全従業員約2,500人を対象に運用開始。文章要約・翻訳・アイデア出し等の日常業務を効率化し、17種の汎用プロンプト集を実装。
 ---
 

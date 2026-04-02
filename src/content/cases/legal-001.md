@@ -9,7 +9,7 @@ metric_value: 100
 metric_unit: "Kドル規模のビジネス構築"
 source_url_verified: true
 source_url: https://n8n.io/case-studies/bordr/
-date: 2026-01-01
+date: 2025-01-01
 excerpt: 夫婦2人で運営するポルトガル移住支援サービスがn8nで業務を自動化。複数サービス（Stripe・Airtable・Postmark等）を統合し、税務番号申請の受付から書類交付までを自動化。数ヶ月で6桁収益ビジネスに成長。
 ---
 

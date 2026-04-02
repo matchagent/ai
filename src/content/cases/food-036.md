@@ -9,7 +9,7 @@ metric_value: 610
 metric_unit: '億データポイント'
 source_url_verified: true
 source_url: https://www.aipalette.com/
-date: 2025-03-29
+date: 2020-09-25
 excerpt: 2018年創業のシンガポール発スタートアップが、24カ国・18言語のデータを分析するAIプラットフォームでNestléやKelloggなどの商品開発を支援。シリーズA1で570万ドルを調達。
 ---
 

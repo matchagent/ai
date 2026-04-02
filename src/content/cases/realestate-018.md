@@ -9,7 +9,7 @@ metric_value: 50
 metric_unit: "%消費電力削減（秋期）"
 source_url_verified: true
 source_url: https://www.tokai-com.co.jp/news/pdf/2020/20210119.pdf
-date: 2025-06-15
+date: 2021-01-19
 excerpt: 東京建物八重洲ビルでAI空調制御の実証実験を実施。65個の無線センサーと39台の空調機をAIで群管理し、夏期の温度ムラを解消、秋期には同規模フロア比で約5割の消費電力削減を達成した。
 ---
 

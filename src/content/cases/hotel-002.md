@@ -9,7 +9,7 @@ metric_value: 70
 metric_unit: "%編集リードタイム短縮"
 source_url_verified: true
 source_url: https://engineering.reiwatravel.co.jp/blog/newt-ml-llm
-date: 2024-09-13
+date: 2024-01-01
 excerpt: ノーコードAIツール「Dify」を活用し、世界192カ国分の旅行ガイド記事制作を自動化。約400本の記事を2ヶ月で生成し、編集リードタイムを70%削減。表示回数は90%増加した。
 ---
 

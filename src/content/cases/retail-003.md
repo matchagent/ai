@@ -9,7 +9,7 @@ metric_value: 300
 metric_unit: '%来店者数'
 source_url_verified: true
 source_url: https://snsschool.net/column/industry-restaurant/success
-date: 2025-03-20
+date: 2026-01-29
 excerpt: 京都の老舗和菓子メーカーがLINE AI配信最適化を導入。ABテストと予測分析で最適な配信パターンを特定し、クーポン期間中の来店者数を300%超に増加。
 ---
 

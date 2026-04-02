@@ -9,7 +9,7 @@ metric_value: 22200
 metric_unit: 万人
 source_url_verified: true
 source_url: https://www.aitransformationreadiness.org/post/chagee-case-study-digital-transformation
-date: 2025-03-29
+date: 2025-05-03
 excerpt: 雲南省昆明市の小さなティーショップから、AIとデジタルトランスフォーメーションで世界展開するグローバルブランドへ。2025年9月時点で会員数2.22億人を達成。
 ---
 

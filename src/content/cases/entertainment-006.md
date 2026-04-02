@@ -9,7 +9,7 @@ metric_value: 3
 metric_unit: "分のショートアニメ制作"
 source_url_verified: true
 source_url: https://www.itmedia.co.jp/news/articles/2302/03/news141.html
-date: 2026-04-02
+date: 2023-02-03
 excerpt: 映像全カットの背景画に画像生成AIを活用した3分間のショートムービー。WIT STUDIO、rinnaと共同でアニメ背景美術の最新技術補助の可能性を実験的に検証。
 ---
 

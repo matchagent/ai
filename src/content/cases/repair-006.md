@@ -9,7 +9,7 @@ metric_value: 99.9
 metric_unit: "%偽物検出精度"
 source_url_verified: true
 source_url: https://www.proficientmarketinsights.com/market-reports/luxury-authentication-service-market-4077
-date: 2024-05-01
+date: 2025-09-08
 excerpt: シンガポール認証ハブでAI支援画像認識と専門家検品を融合。時計・宝石・高級ファッションの真贋判定を自動化し、偽物検出率99.9%、累計6万時間の専門家研修を実現。
 ---
 

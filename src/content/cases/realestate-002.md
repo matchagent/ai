@@ -9,7 +9,7 @@ metric_value: 5.34
 metric_unit: "% MER（誤差率中央値）"
 source_url_verified: true
 source_url: https://www.mf-realty.jp/news/2019/20191216_02.html
-date: 2025-06-15
+date: 2019-12-16
 excerpt: 33年連続全国売買仲介取扱件数No.1の成約事例をAIが学習。全国18都道府県・約30,000棟のマンションを対象に、首都圏でMER4.89%、全国でMER5.34%という高水準の査定精度を達成。
 ---
 

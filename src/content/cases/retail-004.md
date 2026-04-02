@@ -9,7 +9,7 @@ metric_value: 150
 metric_unit: '%売上増'
 source_url_verified: true
 source_url: https://influfect.com/case/631/
-date: 2025-03-15
+date: 2022-05-18
 excerpt: 老舗お菓子メーカーがAIインフルエンサーマッチングを導入。ターゲット層に最適なインフルエンサーを選定し、リニューアル商品の売上150%増加を達成。
 ---
 

@@ -9,7 +9,7 @@ metric_value: 50
 metric_unit: "%通話時間短縮（目標）"
 source_url_verified: true
 source_url: https://www.ai-shift.co.jp/3809
-date: 2026-04-01
+date: 2023-11-01
 excerpt: AI Shiftと協働し、生成AIチャットボットと通話要約システムの実証実験を開始。FAQ自動生成と在庫検索の迅速化でオペレーター負担軽減を目指す。
 ---
 

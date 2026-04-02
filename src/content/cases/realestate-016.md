@@ -9,7 +9,7 @@ metric_value: 99
 metric_unit: "%広告素材のCG置換実績を持つ技術"
 source_url_verified: true
 source_url: https://www.tokyu-land.co.jp/news/2022/000765.html
-date: 2025-06-15
+date: 2022-01-01
 excerpt: アクセンチュアソングの世界最高峰CGI技術を活用し、分譲マンション「BRANZ」のデジタルツインを制作。モデルルーム見学に遜色ない体験価値をデジタルで提供し、標準的なモデルルームによる環境負荷低減と販売拠点の集約化を実現。
 ---
 

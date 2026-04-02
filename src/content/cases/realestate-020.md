@@ -9,7 +9,7 @@ metric_value: 10
 metric_unit: "件前後をAIが選別提案"
 source_url_verified: true
 source_url: https://sre-group.co.jp/news/2023/230213.html
-date: 2025-06-15
+date: 2023-02-13
 excerpt: 不動産業界初のセレンディピティ型お部屋探し「Serendipity Living Search」を提供開始。数問のアンケートで嗜好パターンをAIが分析し、ユーザー自身が気づいていない潜在的ニーズに合致する賃貸物件を提案する。
 ---
 

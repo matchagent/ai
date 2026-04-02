@@ -9,7 +9,7 @@ metric_value: 1
 metric_unit: "生成AI活用事例公開"
 source_url_verified: true
 source_url: https://www.itmedia.co.jp/news/articles/2312/12/news175.html
-date: 2026-04-02
+date: 2023-12-12
 excerpt: Stable DiffusionやChatGPT、VOICEVOX、GitHub Copilotなどをゲーム開発に本格活用。タイトル画面案、キャラクターイメージ、背景素材の作成効率化を実現。
 ---
 

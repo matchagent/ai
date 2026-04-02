@@ -9,7 +9,7 @@ metric_value: 60
 metric_unit: "秒 最短査定時間"
 source_url_verified: true
 source_url: https://www.stepon.co.jp/uri/ai-satei/
-date: 2025-06-15
+date: 2024-01-01
 excerpt: 全国展開する住友不動産販売の膨大な成約データをAIが学習。マンションに加え、従来困難だった戸建て・土地の自動査定にも対応し、最短60秒で高精度な査定価格を提示。
 ---
 

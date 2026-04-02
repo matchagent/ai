@@ -9,7 +9,7 @@ metric_value: 30
 metric_unit: "分で3日分の分析完了"
 source_url_verified: true
 source_url: https://prtimes.jp/main/html/rd/p/000000146.000040115.html
-date: 2025-06-15
+date: 2025-04-02
 excerpt: estieの不動産データ分析基盤を導入し、オフィス・物流倉庫の市場調査をDX化。仲介会社からの属人化した情報収集から脱却し、コンプス資料作成を3日から30分に短縮。意思決定の精度とスピードを両立させた。
 ---
 

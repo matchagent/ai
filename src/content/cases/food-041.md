@@ -9,7 +9,7 @@ metric_value: 200
 metric_unit: "自動化ワークフロー数"
 source_url_verified: true
 source_url: https://miichisoft.com/en/3-workflow-automation-platforms-n8n-dify-or-make/
-date: 2025-08-28
+date: 2025-08-22
 excerpt: ブラジルのフードオーダープラットフォームGoomerがn8nを導入し、注文受付からCRM同期まで200以上のワークフローを自動化。需要急増期にも安定的な運用を実現し、高額システム投資を回避した。
 ---
 

@@ -9,7 +9,7 @@ metric_value: 75
 metric_unit: "%廃棄率削減"
 source_url_verified: true
 source_url: https://www.kurasushi.co.jp/author/004211.html
-date: 2025-06-15
+date: 2024-06-01
 excerpt: ICタグで全皿を追跡し、AIが15分単位で需要予測。回転寿司の廃棄率を12%から2.7%に削減し、年間数億円のコスト削減を実現。
 ---
 

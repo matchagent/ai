@@ -9,7 +9,7 @@ metric_value: 5
 metric_unit: "万ダウンロード突破"
 source_url_verified: true
 source_url: https://www.itmedia.co.jp/aiplus/articles/2507/31/news087.html
-date: 2026-04-02
+date: 2025-08-01
 excerpt: Stability AIとパートナーシップを結び、画像生成AIでカードを作成する「神魔狩りのツクヨミ」をリリース。コミュニティ投票で選ばれたAI生成カードを公式採用する新しい共創モデルを実現。
 ---
 

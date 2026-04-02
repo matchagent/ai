@@ -9,7 +9,7 @@ metric_value: 130
 metric_unit: "時間/月業務削減"
 source_url_verified: true
 source_url: https://exawizards.com/works/27151/
-date: 2023-12-01
+date: 2024-06-17
 excerpt: イオンデジタルアカデミー主導で3カ月で全業態90社・約1000人に展開。ホールディングス人事部ではコード生成・翻訳で月70時間削減、人事部全体で月130時間の業務削減を達成。
 ---
 

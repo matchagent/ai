@@ -9,7 +9,7 @@ metric_value: 125
 metric_unit: "年分の経験データ"
 source_url_verified: true
 source_url: https://www.lepolehorloger.fr/
-date: 2024-08-15
+date: 2024-01-01
 excerpt: フランスの時計修理専門企業がアルゴリズムと職人の経験を融合。ブランド・年式・モデルに基づく自動見積もりと写真付き進捗管理で、業界の透明性を向上。
 ---
 

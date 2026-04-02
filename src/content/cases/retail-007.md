@@ -9,7 +9,7 @@ metric_value: 100
 metric_unit: '%'
 source_url_verified: true
 source_url: https://www.jiji.com/jc/article?k=2026011500387&g=jnb
-date: 2025-03-29
+date: 2026-01-15
 excerpt: 中国広州の生鮮食品小売店が、AIダイナミックプライシングを導入し「日没までに売り切る」モデルを実現。廃棄ロスをゼロにしつつ、顧客数を150%増加させた。
 ---
 

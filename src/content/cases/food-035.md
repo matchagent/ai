@@ -9,7 +9,7 @@ metric_value: 31048
 metric_unit: 店舗
 source_url_verified: true
 source_url: https://investor.lkcoffee.com/
-date: 2025-03-29
+date: 2024-01-01
 excerpt: 2017年創業の小さなコーヒースタートアップが、WeChatミニプログラムとAI駆動のソーシャルマーケティングで中国最大のコーヒーチェーンに急成長。2025年末時点で3万店舗を突破。
 ---
 

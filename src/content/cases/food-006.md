@@ -9,7 +9,7 @@ metric_value: 10
 metric_unit: "%月商向上"
 source_url_verified: true
 source_url: https://ivry.jp/case/daidocoro-yoha/
-date: 2024-03-01
+date: 2024-10-08
 excerpt: 2〜4名で運営する古民家おばん菜店がAI電話予約サービスを導入。月150件の着電のうち5割以上を自動化し、調理・接客に集中できる環境を実現。月商は10〜15%向上。
 ---
 

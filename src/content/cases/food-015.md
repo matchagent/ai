@@ -9,7 +9,7 @@ metric_value: 1
 metric_unit: "人分業務代替"
 source_url_verified: true
 source_url: https://dfarobotics.com/topics/drz2ytvuua1b/
-date: 2023-06-01
+date: 2023-06-29
 excerpt: 132席の大型焼肉店がBellaBotを導入。スタッフ最大20名の中規模店で、配膳ロボットが1人分の業務を代替し深夜帯の残業をゼロに。
 ---
 

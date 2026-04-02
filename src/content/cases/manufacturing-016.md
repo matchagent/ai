@@ -9,7 +9,7 @@ metric_value: 1
 metric_unit: "件の実証成功（世界初の商業的人型ロボット自動車製造展開）"
 source_url_verified: true
 source_url: https://www.jetro.go.jp/biznews/2024/08/3adca438f1592414.html
-date: 2024-08-14
+date: 2024-08-01
 excerpt: 米スタートアップFigure製の最新型人型ロボット「フィギュア02」を用いて、車のシャーシ部品組立作業を実現。BMW iファクトリーへの多目的ロボット統合に向けた知見を獲得。
 ---
 

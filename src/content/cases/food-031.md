@@ -9,7 +9,7 @@ metric_value: 50
 metric_unit: "%スタッフ移動距離削減"
 source_url_verified: true
 source_url: https://prtimes.jp/main/html/rd/p/000000074.000029714.html
-date: 2025-06-15
+date: 2020-08-20
 excerpt: ラーメン業界初のAI配膳ロボット「K-1号」を導入。非接触型配膳でコロナ対策と人手不足解消を同時に実現。スタッフは接客に集中でき、家族連れの来店動機にも貢献。
 ---
 

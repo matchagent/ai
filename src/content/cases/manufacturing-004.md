@@ -9,7 +9,7 @@ metric_value: 50
 metric_unit: "%以上の開発遅延原因が要件定義"
 source_url_verified: true
 source_url: https://www.seiko-sol.co.jp/products/ai_platform/lp/
-date: 2025-04-01
+date: 2024-01-01
 excerpt: セイコーグループのシステム開発子会社が、社内有識者のノウハウを学習したAIレビューで、要件定義の品質向上と開発スピードの両立を実現。
 ---
 

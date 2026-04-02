@@ -9,7 +9,7 @@ metric_value: 10
 metric_unit: "時間/週の業務削減"
 source_url_verified: true
 source_url: https://platinum.ai/blog/ai-case-study-local-bakery
-date: 2025-07-14
+date: 2025-07-15
 excerpt: 地元ベーカリー「The Rolling Pin」のオーナーSarahがChatGPTを活用し、SNS投稿の企画とメール対応を自動化。週10時間の業務時間を削減し、創作活動に集中できる環境を取り戻した。
 ---
 

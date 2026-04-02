@@ -9,7 +9,7 @@ metric_value: 10
 metric_unit: "%売上向上"
 source_url_verified: true
 source_url: https://www.ebica.jp/casestudy/kr-food-service/
-date: 2023-10-01
+date: 2024-01-26
 excerpt: 和食レストラン「かごの屋」がebicaとAIレセプションを導入。1店舗60名の中規模店で電話対応月8時間削減、導入店と未導入店で売上10%差を実現。
 ---
 

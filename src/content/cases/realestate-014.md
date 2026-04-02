@@ -9,7 +9,7 @@ metric_value: 20
 metric_unit: "%空調電力量削減"
 source_url_verified: true
 source_url: https://www.sumitomo-rd.co.jp/uploads/20260128_release_syoenesystem-Ai-Glies.pdf
-date: 2025-06-15
+date: 2026-01-28
 excerpt: 新築分譲マンションで国内初となる空調特化型省エネシステム「Ai-Glies」を導入。不快指数連動制御とピークカット機能で空調電力量を約15%～20%削減し、管理組合の管理費負担軽減に貢献。
 ---
 

@@ -9,7 +9,7 @@ metric_value: 30
 metric_unit: "%発注誤差改善"
 source_url_verified: true
 source_url: https://www.lawson.co.jp/company/activity/environment/preservation/waste/
-date: 2025-06-15
+date: 2023-01-01
 excerpt: 全国14,000店舗でAI発注システム「AI.CO」を展開し、需要予測精度を向上。発注誤差を30%改善し、食品ロス削減を実現。
 ---
 

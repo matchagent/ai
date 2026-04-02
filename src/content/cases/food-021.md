@@ -9,7 +9,7 @@ metric_value: 110
 metric_unit: "%売上達成（前月比）"
 source_url_verified: true
 source_url: https://www.ebica.jp/casestudy/mania-produce/
-date: 2023-09-01
+date: 2023-09-13
 excerpt: ミシュラン掲載の人気中華店がebicaとAIレセプションを導入。電話予約の92%をAIが自動対応し、前月比110%の売上レコードを毎月更新。
 ---
 

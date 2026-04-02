@@ -9,7 +9,7 @@ metric_value: 1.98
 metric_unit: "% MER（マンション版誤差率中央値）"
 source_url_verified: true
 source_url: https://www.livable.co.jp/corp/release/2024/20240305_02.html
-date: 2025-06-15
+date: 2024-03-05
 excerpt: 東急リバブルとRistが共同開発したAI査定システムが特許取得（第7437560号）。マンション版MER1.98%、土地戸建版MER3.88%という業界トップレベルの精度を達成。査定業務の標準化と生産性向上を実現。
 ---
 

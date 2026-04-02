@@ -9,7 +9,7 @@ metric_value: 40
 metric_unit: "校以上の地域スポンサー連携"
 source_url_verified: true
 source_url: https://paramo.sh/case-studies/skilletz-cafe/
-date: 2026-03-30
+date: 2025-01-01
 excerpt: 小規模タピオカ店がOpenClawを中核にSNS投稿から学校スポンサー、DoorDash紛争処理、メニュー同期まで5業務を自動化。専門SaaS不要でオールインワン運営を実現。
 ---
 

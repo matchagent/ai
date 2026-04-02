@@ -9,7 +9,7 @@ metric_value: 1
 metric_unit: "専門研究所新設"
 source_url_verified: true
 source_url: https://www.cyberagent.co.jp/news/detail/id=29393
-date: 2026-04-02
+date: 2024-10-04
 excerpt: AI Labとゲーム事業部が共同で「ゲームAI Lab」を新設。生成AI技術の研究開発と社会実装を推進し、ゲーム開発の新世代ワークフロー構築を目指す。
 ---
 

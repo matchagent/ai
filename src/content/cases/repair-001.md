@@ -9,7 +9,7 @@ metric_value: 99
 metric_unit: "%判定精度"
 source_url_verified: true
 source_url: https://www.wav.tech/zh
-date: 2025-05-24
+date: 2024-01-01
 excerpt: 100万枚以上の時計画像で学習したAIと30年の経験を持つ職人が協働。高精度な時計認証と修理サービスを提供し、香港の時計市場に信頼性をもたらす。
 ---
 

@@ -9,7 +9,7 @@ metric_value: 1.47
 metric_unit: "倍"
 source_url_verified: true
 source_url: https://www.ebica.jp/casestudy/mania-produce/
-date: 2024-07-01
+date: 2023-09-13
 excerpt: 中華専門の小規模レストラングループ。ebicaのAIレセプション導入で電話予約の92%を自動化し、予約組数が1.47倍に増加。
 ---
 

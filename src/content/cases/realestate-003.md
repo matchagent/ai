@@ -9,7 +9,7 @@ metric_value: 24
 metric_unit: "時間対応（365日）"
 source_url_verified: true
 source_url: https://lab.iyell.jp/special/seminar/event-report4/
-date: 2025-06-15
+date: 2024-10-10
 excerpt: GPT-4を活用した生成AIチャットサービス。物件検索、間取り図解説、住宅ローンシミュレーションまで自然言語で対応。不動産取引の「知りたいこと」にいつでも答える新しい顧客体験を実現。
 ---
 

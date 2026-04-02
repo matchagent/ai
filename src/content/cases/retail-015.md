@@ -9,7 +9,7 @@ metric_value: 1
 metric_unit: "体生成AIモデル起用"
 source_url_verified: true
 source_url: https://toyokeizai.net/articles/-/761340
-date: 2026-04-01
+date: 2024-06-14
 excerpt: 新店舗オープンに合わせ生成AIモデル「瑠菜」を起用。SNS上で賛否両論を巻き起こし、Z世代へのブランド認知拡大と話題性創出に成功。
 ---
 

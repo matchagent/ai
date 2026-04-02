@@ -9,7 +9,7 @@ metric_value: 54
 metric_unit: "%顧客リテンション向上"
 source_url_verified: true
 source_url: https://www.makeitfuture.com/case-studies/from-specialty-coffee-to-business-automation
-date: 2025-06-01
+date: 2025-01-01
 excerpt: スペシャルティコーヒーブランドBlu.CoffeeがMake.comを活用し、ShopifyやHubSpot CRMと連携したマーケティング・業務自動化で顧客リテンションを54%向上、手作業を90%削減した。
 ---
 

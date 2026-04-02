@@ -9,7 +9,7 @@ metric_value: 2000
 metric_unit: "プランからAIが厳選"
 source_url_verified: true
 source_url: https://www.daiwahouse.co.jp/about/release/house/20250930095425.html
-date: 2025-06-15
+date: 2025-09-30
 excerpt: 燈株式会社と共同開発した「AIプランコンシェルジュ ver.1」を全国の戸建住宅営業現場に導入。2,000以上のプランの中から敷地条件や住まいの要望に応じた最適プランを数秒でスコアリングし、営業担当者の提案力向上と顧客体験の革新を実現。
 ---
 

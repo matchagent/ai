@@ -9,7 +9,7 @@ metric_value: 60
 metric_unit: "秒で500件のメッセージ送信"
 source_url_verified: true
 source_url: https://n8n.io/case-studies/flow-ai/
-date: 2026-01-01
+date: 2025-01-01
 excerpt: 元ソフトウェアエンジニアが創業した不動産テックスタートアップがn8nで音声駆動AIアウトリーチエンジンを構築。500件のメール・SMS送信を手作業で1週間かかる作業を、AIエージェントへの音声指示で60秒以内に完了。
 ---
 

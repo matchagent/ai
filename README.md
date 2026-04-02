@@ -147,6 +147,17 @@ Cloudflare Pages の環境変数にも同様に設定すること。
 `src/data/insights.ts` の `insights` オブジェクトに `{industry}-{company_size}-{domain}` をキーとして追加する。
 スキルファイル `.agents/skills/add-insight.md` を参照。
 
+### date の定義
+
+`date` は `source_url` に設定したページが公開された日付を設定する。
+
+| 値 | 条件 |
+|----|------|
+| `source_url_verified: true` の場合 | `source_url` ページの公開日を WebFetch で確認して設定 |
+| `source_url_verified: false` の場合 | 事例が公開されたと推定される日付を設定 |
+
+事例を追加・編集する際は `source_url` のページから公開日を確認し、`date` に設定すること。
+
 ### source_url_verified の定義
 
 `source_url_verified` は `source_url` に設定したURLが実際に存在するかを示すフラグ。架空URLによるハルシネーションを防ぐ目的で使用する。

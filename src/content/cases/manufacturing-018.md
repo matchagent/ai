@@ -9,7 +9,7 @@ metric_value: 4
 metric_unit: "億円/年の労務費削減累積効果（vs2015）"
 source_url_verified: true
 source_url: https://www.meti.go.jp/shingikai/mono_info_service/digital_jinzai/pdf/014_04_00.pdf
-date: 2023-11-13
+date: 2024-01-01
 excerpt: 創業80年の自動車部品メーカーが、蓄積した膨大なカイゼン事例から生成AIでノウハウを抽出。「カイゼンGAI」と「AI製造部長」を開発し、現場のカイゼン民主化と人材育成を推進。
 ---
 
