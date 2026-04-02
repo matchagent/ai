@@ -2,14 +2,12 @@
 title: Kopi Senja：n8nとAIエージェントでマーケティング自動化し顧客エンゲージメント向上
 industry: retail
 domain: marketing
-problem_tags:
-  - 顧客コミュニケーション
-  - レビュー管理
-  - マーケティング自動化
+tech_tags:
+  - AIエージェント
 company_size: small
 metric_value: 20
 metric_unit: "%オープンレート向上"
-metric_verified: true
+source_url_verified: true
 source_url: https://growwai.id/mengatur-otomasi-marketing-untuk-ukm-di-n8n-dengan-mudah/
 date: 2025-08-09
 excerpt: Kopi Senjaがn8nとGemini APIでマーケティング自動化。オープンレート20%向上、レビュー対応24時間→2時間短縮。

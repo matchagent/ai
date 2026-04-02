@@ -2,14 +2,12 @@
 title: 幸楽苑：AI配膳ロボット「K-1号」で非接触接客を実現し集客力向上
 industry: food
 domain: customer_support
-problem_tags:
-  - 非接触対応
-  - 人手不足
-  - スタッフ負担軽減
+tech_tags:
+  - 音声AI
 company_size: large
 metric_value: 50
 metric_unit: "%スタッフ移動距離削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://prtimes.jp/main/html/rd/p/000000074.000029714.html
 date: 2025-06-15
 excerpt: ラーメン業界初のAI配膳ロボット「K-1号」を導入。非接触型配膳でコロナ対策と人手不足解消を同時に実現。スタッフは接客に集中でき、家族連れの来店動機にも貢献。

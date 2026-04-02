@@ -2,14 +2,12 @@
 title: Goomer：n8nワークフロー自動化で200以上の業務フローを効率化したフードオーダープラットフォーム
 industry: food
 domain: production
-problem_tags:
-  - 業務プロセスの複雑化
-  - データサイロ化
-  - スケーラビリティ
+tech_tags:
+  - AIエージェント
 company_size: large
 metric_value: 200
 metric_unit: "自動化ワークフロー数"
-metric_verified: true
+source_url_verified: true
 source_url: https://miichisoft.com/en/3-workflow-automation-platforms-n8n-dify-or-make/
 date: 2025-08-28
 excerpt: ブラジルのフードオーダープラットフォームGoomerがn8nを導入し、注文受付からCRM同期まで200以上のワークフローを自動化。需要急増期にも安定的な運用を実現し、高額システム投資を回避した。

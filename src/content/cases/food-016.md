@@ -2,15 +2,12 @@
 title: 回転寿し まつりや 山鼻店：小型配膳ロボット導入で人件費10%削減と席回転率向上を実現
 domain: customer_support
 industry: food
-problem_tags:
-  - 人手不足
-  - 席回転率低下
-  - 残業削減
-  - 配膳業務負担
+tech_tags:
+  - 音声AI
 company_size: mid
 metric_value: 10
 metric_unit: "%人件費削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://dfarobotics.com/topics/0wcgld56sz/
 date: 2023-03-01
 excerpt: 札幌の回転寿司店がKEENON T8を導入。正社員57名の中規模企業運営店で、残業時間減少により人件費1割削減。1名少ない人数でも運営可能に。

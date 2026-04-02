@@ -19,7 +19,7 @@ export function mapCaseEntry(c: CollectionEntry<'cases'>) {
     metric_unit: c.data.metric_unit ?? '',
     excerpt: c.data.excerpt,
     date: c.data.date.toISOString(),
-    problem_tags: c.data.problem_tags ?? [],
-    metric_verified: c.data.metric_verified,
+    tech_tags: c.data.tech_tags ?? [],
+    source_url_verified: c.data.source_url_verified,
   };
 }

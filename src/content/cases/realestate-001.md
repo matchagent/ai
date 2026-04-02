@@ -2,14 +2,12 @@
 title: Flow AI：音声制御AIエンジンで不動産アウトリーチを数時間から60秒に短縮
 industry: realestate
 domain: marketing
-problem_tags:
-  - 顧客フォローアップ自動化
-  - コンプライアンス対応
-  - 大規模メッセージング
+tech_tags:
+  - AIエージェント
 company_size: small
 metric_value: 60
 metric_unit: "秒で500件のメッセージ送信"
-metric_verified: true
+source_url_verified: true
 source_url: https://n8n.io/case-studies/flow-ai/
 date: 2026-01-01
 excerpt: 元ソフトウェアエンジニアが創業した不動産テックスタートアップがn8nで音声駆動AIアウトリーチエンジンを構築。500件のメール・SMS送信を手作業で1週間かかる作業を、AIエージェントへの音声指示で60秒以内に完了。

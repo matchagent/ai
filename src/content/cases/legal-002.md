@@ -2,15 +2,12 @@
 title: 高本税理士事務所：MJS会計システムで経理合理化し400社超を支援
 industry: legal
 domain: accounting
-problem_tags:
-  - 経理の合理化
-  - テレワーク化
-  - 顧問先増加対応
-  - 相続業務効率化
+tech_tags:
+  - RAG
 company_size: mid
 metric_value: 400
 metric_unit: "法人顧問先"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.mjs.co.jp/products/case/takamoto/
 date: 2020-11-12
 excerpt: 千葉県市川市の高本税理士事務所がMJSの会計システムを活用。創業33年で法人顧問先400社超を抱え、経理の合理化とテレワークを推進。相続税申告累計1万4,000件の実績を支えるIT基盤を構築。

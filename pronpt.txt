@@ -116,32 +116,37 @@ npm run check
 ```
 
 ```
-• https://www.ai-shift.co.jp/3809
+• https://www.sumitomo-rd.co.jp/uploads/20260128_release_syoenesystem-Ai-Glies.pdf
 を出典として、
+matchagent/src/content/cases/realestate-014.md
 
-カインズ
-matchagent/src/content/cases/retail-014.md
-
-
-• https://toyokeizai.net/articles/-/761340
+• https://www.biprogy.com/pdf/news/info_200817_iot_tenken.pdf
 を出典として、
+matchagent/src/content/cases/realestate-015.md
 
-しまむら
-matchagent/src/content/cases/retail-015.md
-
-
-• https://xtrend.nikkei.com/atcl/contents/18/01194/00003/
+• https://www.tokyu-land.co.jp/news/2022/000765.html
 を出典として、
+matchagent/src/content/cases/realestate-016.md
 
-ヤマダデンキ
-matchagent/src/content/cases/retail-016.md
-
-
-• https://corporate.walmart.com/news/2025/06/24/walmart-unveils-new-ai-powered-tools-to-empower-1-5-million-associates
+• https://prtimes.jp/main/html/rd/p/000000146.000040115.html
 を出典として、
+matchagent/src/content/cases/realestate-017.md
 
-ウォルマート
-matchagent/src/content/cases/retail-017.md
+• https://www.tokai-com.co.jp/news/pdf/2020/20210119.pdf
+を出典として、
+matchagent/src/content/cases/realestate-018.md
+
+• https://www.daiwahouse.co.jp/about/release/house/20250930095425.html
+を出典として、
+matchagent/src/content/cases/realestate-019.md
+
+• https://sre-group.co.jp/news/2023/230213.html
+を出典として、
+matchagent/src/content/cases/realestate-020.md
+
+• https://prtimes.jp/main/html/rd/p/000000411.000021066.html
+を出典として、
+matchagent/src/content/cases/realestate-021.md
 
 
 で、それぞれ3000文字数ほどのmdファイルを作成して。
@@ -162,14 +167,14 @@ npm run check
 ```
 あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツ品質管理者です。
 
-src/content/cases/hotel-001.md
-src/content/cases/hotel-003.md
-src/content/cases/hotel-004.md
-src/content/cases/hotel-005.md
-src/content/cases/hotel-006.md
-src/content/cases/hotel-007.md
-src/content/cases/hotel-008.md
-src/content/cases/hotel-010.md
+src/content/cases/realestate-014.md
+src/content/cases/realestate-015.md
+src/content/cases/realestate-016.md
+src/content/cases/realestate-017.md
+src/content/cases/realestate-018.md
+src/content/cases/realestate-019.md
+src/content/cases/realestate-020.md
+src/content/cases/realestate-021.md
 
 の内容を、以下の 観点から検証してください。
 

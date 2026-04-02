@@ -2,14 +2,12 @@
 title: セブン-イレブン：AI発注システム＋生成AI基盤で発注業務40%効率化
 industry: retail
 domain: logistics
-problem_tags:
-  - 発注業務効率化
-  - 品切れ防止
-  - 在庫管理
+tech_tags:
+  - 予測AI
 company_size: large
 metric_value: 40
 metric_unit: "%発注業務時間削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://sustainability.sej.co.jp/action/000107/
 date: 2023-12-01
 excerpt: AI発注システムで発注業務時間を40%削減。13種類のLLMを使い分ける生成AI基盤では議事録作成を40分→10分に短縮。全社展開で業務効率を徹底追求。

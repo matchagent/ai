@@ -2,15 +2,12 @@
 title: Baci Restaurant：n8n×AI自動化でデジタル不在から8か月で売上95%成長
 industry: food
 domain: marketing
-problem_tags:
-  - SNS運用
-  - オンラインブッキング
-  - メールマーケティング
-  - デジタル化
+tech_tags:
+  - AIエージェント
 company_size: mid
 metric_value: 95
 metric_unit: "%売上成長"
-metric_verified: true
+source_url_verified: true
 source_url: https://marketingrizzz.com/case-studies/a-case-study-in-restaurant-growth-automation/
 date: 2025-11-16
 excerpt: Crown Melbourne内の老舗イタリアンレストランがn8nを活用したAIワークフロー自動化でメールマーケティングとSNS運用を自動化。8か月で売上95%増、月250件のオンラインブッキングを実現。

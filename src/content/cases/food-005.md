@@ -2,14 +2,12 @@
 title: すかいらーくグループ：生成AIで接客品質を可視化、「いらあり」プロジェクトで顧客体験を革新
 industry: food
 domain: customer_support
-problem_tags:
-  - 接客品質向上
-  - 生成AI
-  - 店舗DX
+tech_tags:
+  - 言語AI
 company_size: large
 metric_value: 98
 metric_unit: "%開発期間短縮"
-metric_verified: true
+source_url_verified: true
 source_url: https://cloud.google.com/blog/ja/topics/customers/generative-ai-utilization-in-the-skylark-group
 date: 2025-06-15
 excerpt: Google Cloud Geminiを活用し店舗の挨拶品質をAIで客観的計測。プロトタイプ開発期間を98%短縮し、接客品質の可視化を実現。

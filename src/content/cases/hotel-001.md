@@ -2,14 +2,12 @@
 title: 令和トラベル：Retool×AIでハワイ子会社の業務システムを内製化
 industry: hotel
 domain: sales
-problem_tags:
-  - 業務システム老朽化
-  - 手配業務の効率化
-  - ガバナンス強化
+tech_tags:
+  - 言語AI
 company_size: large
 metric_value: 2
 metric_unit: "ヶ月で業務システムMVPを構築"
-metric_verified: true
+source_url_verified: true
 source_url: https://engineering.reiwatravel.co.jp/blog/Advent-Calendar-20251224
 date: 2025-12-24
 excerpt: Retoolでハワイ子会社の業務システムを内製化。アナログな予約手配をクラウド化し、ガバナンス強化と業務効率化の基盤を構築。

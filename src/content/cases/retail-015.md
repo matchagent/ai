@@ -2,14 +2,12 @@
 title: しまむら：生成AIファッションモデル「瑠菜」で新店舗PRを話題化
 domain: marketing
 industry: retail
-problem_tags:
-  - SNS集客
-  - ブランド認知拡大
-  - デジタルマーケティング
+tech_tags:
+  - 画像AI
 company_size: large
 metric_value: 1
 metric_unit: "体生成AIモデル起用"
-metric_verified: true
+source_url_verified: true
 source_url: https://toyokeizai.net/articles/-/761340
 date: 2026-04-01
 excerpt: 新店舗オープンに合わせ生成AIモデル「瑠菜」を起用。SNS上で賛否両論を巻き起こし、Z世代へのブランド認知拡大と話題性創出に成功。

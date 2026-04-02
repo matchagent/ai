@@ -2,14 +2,12 @@
 title: シチズンマシナリー：AI見積支援サービスで工作機械ユーザーの生産性向上
 industry: manufacturing
 domain: production
-problem_tags:
-  - 見積作成の属人化
-  - 熟練者の負担
-  - 過去データの活用不足
+tech_tags:
+  - 予測AI
 company_size: large
 metric_value: 99
 metric_unit: "%精度の見積もり"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.citizen.co.jp/release/news/detail/2025/20250709.html
 date: 2025-07-09
 excerpt: 時計部品加工で培った技術を活かし、AIが過去の図面から最適な見積もりを作成。旋盤加工の見積もり作成時間を大幅短縮し、中小部品加工業の生産性向上に貢献。

@@ -2,14 +2,12 @@
 title: ローソン：AI発注システム「AI.CO」で食品ロス削減、全14,000店に展開
 industry: food
 domain: logistics
-problem_tags:
-  - 食品ロス削減
-  - 需要予測
-  - 発注最適化
+tech_tags:
+  - 画像AI
 company_size: large
 metric_value: 30
 metric_unit: "%発注誤差改善"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.lawson.co.jp/company/activity/environment/preservation/waste/
 date: 2025-06-15
 excerpt: 全国14,000店舗でAI発注システム「AI.CO」を展開し、需要予測精度を向上。発注誤差を30%改善し、食品ロス削減を実現。

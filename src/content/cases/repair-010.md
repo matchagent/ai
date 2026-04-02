@@ -2,14 +2,12 @@
 title: クリヴァ：AIビジョンで時計部品の微細欠陥検出を実現
 industry: repair
 domain: production
-problem_tags:
-  - 品質管理
-  - 検品効率化
-  - 専門家不足
+tech_tags:
+  - 画像AI
 company_size: mid
 metric_value: 75
 metric_unit: "%調整時間削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.msm.ch/lintelligence-artificielle-pour-lindustrie-a-b382cbbde24b56c3ae509a7bc4ae698f/
 date: 2024-12-09
 excerpt: ニューロサイエンスベースのAI画像検査技術で、時計製造の品質管理を革新。ジュネーブ縞の微細な傷も検出し、調整時間75%削減、不良率を実質ゼロに。

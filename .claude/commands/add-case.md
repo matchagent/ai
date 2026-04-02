@@ -6,7 +6,7 @@
    - タイトル
    - 業種 (manufacturing / retail / logistics / construction / legal / food / hotel / realestate / entertainment)
    - ドメイン (sales / marketing / production / hr / accounting / customer_support / logistics)
-   - 課題タグ (配列)
+   - 技術タグ (CNN / RAG / AIエージェント から該当するものを選ぶ。なければ空配列)
    - 企業規模 (small / mid / large)
    - 効果指標の値・単位・検証済みかどうか
    - 事例詳細本文
@@ -21,11 +21,11 @@
    title: ""
    industry: ""
    domain: ""
-   problem_tags: []
+   tech_tags: []
    company_size: ""
    metric_value: 0
    metric_unit: ""
-   metric_verified: false
+   source_url_verified: false
    date: "YYYY-MM-DD"
    excerpt: ""
    ---

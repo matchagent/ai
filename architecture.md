@@ -78,9 +78,9 @@ functions/api/
 src/content/
   cases/          ← Markdown (.md)
     {industry}-{seq}.md
-      frontmatter: title, industry, domain, problem_tags[],
+      frontmatter: title, industry, domain, tech_tags[],
                    company_size, metric_value, metric_unit,
-                   metric_verified,
+                   source_url_verified,
                    date, excerpt
       body: 事例詳細本文
 ```

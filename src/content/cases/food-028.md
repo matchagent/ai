@@ -2,15 +2,12 @@
 title: 日本KFC：SNS分析ツール導入で複数メディアの反響を可視化、レポート作成を80%時短
 industry: food
 domain: marketing
-problem_tags:
-  - SNSキャンペーン反響の可視化
-  - 複数メディア横断分析
-  - レポート作成工数
-  - オーガニック投稿設計
+tech_tags:
+  - 予測AI
 company_size: large
 metric_value: 80
 metric_unit: "%レポート作成時間削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://sns.userlocal.jp/document/casestudy/kfc/
 date: 2022-10-01
 excerpt: KFCがSocial InsightでSNS分析を実施。複数SNSを横断した発話量・エンゲージメント可視化により、創業記念キャンペーンの効果検証とオーガニック投稿による話題継続を実現。レポート作成時間を80%削減。

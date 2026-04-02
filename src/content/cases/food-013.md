@@ -2,15 +2,12 @@
 title: レストランイイジマ：AI電話予約「トレタ予約番」導入で予約数が30%アップ
 domain: customer_support
 industry: food
-problem_tags:
-  - 電話予約
-  - 予約管理
-  - 業務効率化
-  - ピーク時対応
+tech_tags:
+  - 言語AI
 company_size: small
 metric_value: 30
 metric_unit: "%予約数アップ"
-metric_verified: true
+source_url_verified: true
 source_url: https://toreta.in/case/toreta-daicho/1411/
 date: 2021-12-01
 excerpt: 水戸市の洋食レストラン。トレタ予約番（AI電話予約）導入で、1時間あたりの予約受付が10件→13件に増加し、予約数が3割アップ。

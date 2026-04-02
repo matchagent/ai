@@ -2,14 +2,12 @@
 title: JTB：AIアナリストforツーリズムで観光プロモーションを最適化、PDCAサイクルを高速化
 industry: hotel
 domain: marketing
-problem_tags:
-  - データ分析の専門人材不足
-  - サイト運用の属人化
-  - コンバージョン率の向上
+tech_tags:
+  - 画像AI
 company_size: large
 metric_value: 15
 metric_unit: "分の1分析工数削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.travelvoice.jp/20230929-154270
 date: 2023-09-29
 excerpt: 観光産業特化型ウェブ解析ツール「AIアナリストforツーリズム」を提供。Googleアナリティクス連携で専門知識がなくても直感的にサイト状況を把握可能。ガーラ湯沢、あまがさき観光局などでPDCAサイクルの高速化を実現。

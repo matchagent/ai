@@ -2,15 +2,12 @@
 title: Blu.Coffee：Make.comで顧客リターゲティング自動化、手作業90%削減
 industry: retail
 domain: marketing
-problem_tags:
-  - 顧客リテンション
-  - 注文処理
-  - マーケティング自動化
-  - 業務効率化
+tech_tags:
+  - AIエージェント
 company_size: small
 metric_value: 54
 metric_unit: "%顧客リテンション向上"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.makeitfuture.com/case-studies/from-specialty-coffee-to-business-automation
 date: 2025-06-01
 excerpt: スペシャルティコーヒーブランドBlu.CoffeeがMake.comを活用し、ShopifyやHubSpot CRMと連携したマーケティング・業務自動化で顧客リテンションを54%向上、手作業を90%削減した。

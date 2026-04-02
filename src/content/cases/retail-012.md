@@ -2,14 +2,12 @@
 title: ローソン：AI・都市OS活用の未来型コンビニ「Real×Tech LAWSON」で顧客体験革新
 industry: retail
 domain: marketing
-problem_tags:
-  - 顧客体験向上
-  - 店舗運営効率化
-  - 商品レコメンド
+tech_tags:
+  - AIエージェント
 company_size: large
 metric_value: 30
 metric_unit: "%オペレーション削減目標"
-metric_verified: true
+source_url_verified: true
 source_url: https://xtech.nikkei.com/atcl/nxt/column/18/00001/10822/
 date: 2025-06-23
 excerpt: AIカメラとデジタルサイネージで商品レコメンド。KDDIと協働し「Real×Tech LAWSON」で2030年に売上30%拡大・オペレーション30%削減を目指す。

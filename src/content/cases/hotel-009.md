@@ -2,14 +2,12 @@
 title: 大阪観光局：生成AIチャットボット「Kotozna laMondo」で多言語観光案内を無人化、利用率1.5倍に
 industry: hotel
 domain: customer_support
-problem_tags:
-  - 人手不足による多言語対応の限界
-  - 観光客の集中（オーバーツーリズム）
-  - 観光情報の非効率的な配信
+tech_tags:
+  - 音声AI
 company_size: mid
 metric_value: 1.5
 metric_unit: "倍利用増"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.cas.go.jp/jp/seisaku/digitaldenen/menubook/2023/1021.html
 date: 2023-10-21
 excerpt: 日本初の生成系AIチャットボット「Kotozna laMondo」を大阪観光案内所に導入。700を超える観光スポット情報を多言語で提供し、利用は1.5倍に増加。観光客の訪問分散と効率的な情報発信を実現。

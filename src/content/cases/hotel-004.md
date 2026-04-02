@@ -2,14 +2,12 @@
 title: 星野リゾート：生成AI「KARAKURI assist」で予約センター対応力を強化、新人早期戦力化を実現
 industry: hotel
 domain: customer_support
-problem_tags:
-  - メール対応の属人化
-  - 新人育成の時間
-  - 拠点拡大に伴う人材確保
+tech_tags:
+  - 音声AI
 company_size: large
 metric_value: 80
 metric_unit: "%正答率目標"
-metric_verified: true
+source_url_verified: true
 source_url: https://prtimes.jp/main/html/rd/p/000000094.000025663.html
 date: 2024-08-06
 excerpt: 生成AIオペレーター支援ツール「KARAKURI assist」を導入。5,000を超えるテンプレートをAIが検索・提案し、2024年4月入社の新人が早い段階でベテラン並みの対応を実現。定型的な質問の自動返信では正答率80%を目標に掲げる。

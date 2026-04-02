@@ -2,15 +2,12 @@
 title: 餃子マニア：AI電話受付「AIレセプション」導入で予約組数が1.47倍に増加
 domain: customer_support
 industry: food
-problem_tags:
-  - 電話予約
-  - グルメサイト管理
-  - 送客手数料
-  - 業務効率化
+tech_tags:
+  - 予測AI
 company_size: small
 metric_value: 1.47
 metric_unit: "倍"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.ebica.jp/casestudy/mania-produce/
 date: 2024-07-01
 excerpt: 中華専門の小規模レストラングループ。ebicaのAIレセプション導入で電話予約の92%を自動化し、予約組数が1.47倍に増加。

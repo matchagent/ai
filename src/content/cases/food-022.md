@@ -2,15 +2,12 @@
 title: 焼肉くるとん 代官山店：ebicaとPOS連携導入で当日予約・ウォークインを最適化
 industry: food
 domain: sales
-problem_tags:
-  - 電話問合せ対応
-  - 予約管理業務
-  - ウォークイン管理
-  - 業務効率化
+tech_tags:
+  - 画像AI
 company_size: mid
 metric_value: 110
 metric_unit: "%売上回復（導入当初比）"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.ebica.jp/casestudy/second-arrow/
 date: 2024-06-01
 excerpt: 人気韓国料理店がebicaとAIレセプション、POS連携を導入。電話対応を自動化し、当日予約とウォークインの最適化で月により110%〜120%の来店客数回復を達成。

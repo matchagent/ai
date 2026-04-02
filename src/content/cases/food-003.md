@@ -2,14 +2,12 @@
 title: キユーピー：AI原料検査装置で食品の安全・安心を革新、検査速度2.5倍を実現
 industry: food
 domain: production
-problem_tags:
-  - 品質検査
-  - 原料検査
-  - 省人化
+tech_tags:
+  - 画像AI
 company_size: large
 metric_value: 2.5
 metric_unit: "倍検査速度向上"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.kewpie.com/newsrelease/2020/1913/
 date: 2025-06-15
 excerpt: AI画像解析技術で原料検査を自動化し、検査速度2.5倍向上を実現。良品学習型アルゴリズムにより高精度な不良品検出を可能にした。

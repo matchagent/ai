@@ -2,15 +2,12 @@
 title: キリンビール：生成AIペルソナ活用で「氷結®」の商品開発工数を大幅削減
 industry: food
 domain: marketing
-problem_tags:
-  - 顧客理解の深化
-  - ペルソナ設定の属人化
-  - 商品開発期間の長期化
-  - インタビュー分析の工数
+tech_tags:
+  - 音声AI
 company_size: large
 metric_value: 50
 metric_unit: "時間調査工数削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.kirinholdings.com/jp/newsroom/release/2023/1219_02.html
 date: 2023-12-19
 excerpt: キリンビールが氷結®ブランドの新商品開発に生成AIペルソナの検証を開始。インタビュー調査に要していた平均50時間の工数を大幅に削減し、スピーディな商品開発を目指す。

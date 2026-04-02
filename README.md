@@ -147,18 +147,18 @@ Cloudflare Pages の環境変数にも同様に設定すること。
 `src/data/insights.ts` の `insights` オブジェクトに `{industry}-{company_size}-{domain}` をキーとして追加する。
 スキルファイル `.agents/skills/add-insight.md` を参照。
 
-### metric_verified の定義
+### source_url_verified の定義
 
-`metric_verified` は効果測定値（数値）の出典信頼性を示すフラグ。
+`source_url_verified` は `source_url` に設定したURLが実際に存在するかを示すフラグ。架空URLによるハルシネーションを防ぐ目的で使用する。
 
 | 値 | 条件 |
 |----|------|
-| `true` | 出典（プレスリリース・公式発表・IR資料など）に **該当の数値が明記されている** |
-| `false` | 出典に数値の記載がない、または出典自体が確認できない |
+| `true` | `source_url` に WebFetch でアクセスし、ページが実際に存在することを確認済み |
+| `false` | `source_url` が未設定、アクセス不可、または架空の可能性がある |
 
-**ハルシネーション防止**: `metric_verified: true` にするのは、`source_url` の出典ページを実際に確認し、`metric_value` と `metric_unit` の組み合わせが出典内に明記されている場合のみ。数値が推測・要約・計算によるものは `false` にすること。
+**ハルシネーション防止**: `source_url_verified: true` にするのは、`source_url` に WebFetch で実際にアクセスしてページの存在を確認した場合のみ。URLを推測・補完・生成した場合は `false` にすること。
 
-`metric_verified: true` の場合、`source_url` に出典URLを必ず設定すること。
+`source_url_verified: true` の場合、`source_url` に出典URLを必ず設定すること。
 
 事例を追加・編集する際は必ずこの基準に従って設定すること。
 

@@ -2,14 +2,12 @@
 title: WAV：AI画像認識とブロックチェーンで時計真贋判定の精度と効率性を向上
 industry: repair
 domain: production
-problem_tags:
-  - 真贋判定
-  - 品質管理
-  - 効率化
+tech_tags:
+  - 画像AI
 company_size: large
 metric_value: 99
 metric_unit: "%判定精度"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.wav.tech/zh
 date: 2025-05-24
 excerpt: 100万枚以上の時計画像で学習したAIと30年の経験を持つ職人が協働。高精度な時計認証と修理サービスを提供し、香港の時計市場に信頼性をもたらす。

@@ -2,14 +2,12 @@
 title: W.A.V.：深層学習とブロックチェーンで時計認証の新基準を確立
 industry: repair
 domain: customer_support
-problem_tags:
-  - 偽物検出
-  - 品質管理
-  - データ信頼性
+tech_tags:
+  - 画像AI
 company_size: small
 metric_value: 30000
 metric_unit: "モデル対応"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.wav.tech/
 date: 2025-11-25
 excerpt: 香港発のAI時計認証機関。100万枚以上の高倍率画像で訓練した深層学習モデルと3万モデルのデータベースで、微米レベルの偽造検出を実現。NFTブロックチェーンレポートで認証結果の永続的透明性を確保。

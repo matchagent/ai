@@ -2,15 +2,12 @@
 title: delifucious：ポケトーク導入で外国人客との接客が円滑化、オーダー数1.5倍を実現
 domain: customer_support
 industry: food
-problem_tags:
-  - 多言語対応
-  - 外国人客対応
-  - 接客品質
-  - オーダー促進
+tech_tags:
+  - 言語AI
 company_size: small
 metric_value: 1.5
 metric_unit: "倍"
-metric_verified: true
+source_url_verified: true
 source_url: https://pocketalk.jp/column/allcases/case-study/toranomon
 date: 2023-11-01
 excerpt: 虎ノ門横丁の創作フィッシュバーガー専門店。ポケトークAI翻訳機で外国人客とのコミュニケーションが円滑化し、オーダー数が1.5倍に増加。

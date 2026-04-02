@@ -2,15 +2,12 @@
 title: The Rolling Pin：ChatGPTでSNS・メールマーケティング自動化、週10時間節約
 industry: retail
 domain: marketing
-problem_tags:
-  - SNS運用
-  - メール対応
-  - コンテンツ作成
-  - 時間不足
+tech_tags:
+  - 言語AI
 company_size: small
 metric_value: 10
 metric_unit: "時間/週の業務削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://platinum.ai/blog/ai-case-study-local-bakery
 date: 2025-07-14
 excerpt: 地元ベーカリー「The Rolling Pin」のオーナーSarahがChatGPTを活用し、SNS投稿の企画とメール対応を自動化。週10時間の業務時間を削減し、創作活動に集中できる環境を取り戻した。

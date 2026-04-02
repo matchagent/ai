@@ -2,14 +2,12 @@
 title: 築地すし好：AI翻訳機「ポケトーク」でインバウンド集客を強化し外国人客対応を効率化
 industry: food
 domain: marketing
-problem_tags:
-  - 多言語対応
-  - 外国人客対応
-  - スタッフの語学力不足
+tech_tags:
+  - 言語AI
 company_size: large
 metric_value: 70
 metric_unit: "言語対応可能"
-metric_verified: true
+source_url_verified: true
 source_url: https://pocketalk.jp/column/allcases/case-study/sushiyoshi
 date: 2025-06-15
 excerpt: AI自動翻訳機「ポケトーク」を41店舗に導入。70以上の言語に対応し、外国人客の来店数増加とスタッフの語学力向上を実現。アレルギー情報など細かな要望も正確に伝達可能に。

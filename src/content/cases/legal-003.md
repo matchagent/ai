@@ -2,15 +2,12 @@
 title: 青柳真美税理士事務所：JOIN財務システムと達人シリーズで小規模事務所の業務をスピード化
 industry: legal
 domain: accounting
-problem_tags:
-  - 電子申告対応
-  - データ共有の効率化
-  - 入力業務負担軽減
-  - 小規模事務所のIT化
+tech_tags:
+  - 予測AI
 company_size: small
 metric_value: 95
 metric_unit: "%電子申告導入率"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.fas-calm.co.jp/case/aoyagi.html
 date: 2008-01-01
 excerpt: 神奈川県横浜市の青柳真美税理士事務所がサーバーシステムと財務・税務ソフトを導入。法人・個人ともに電子申告95%を達成し、3名体制でスピーディなデータ共有と業務効率化を実現。

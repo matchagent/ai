@@ -2,14 +2,12 @@
 title: メルカリ：n8n Enterprise PoCで月4万回の業務自動化を実現
 industry: retail
 domain: marketing
-problem_tags:
-  - 業務プロセスの可視化
-  - 自動化プラットフォームの選定
-  - AIツールの定着化
+tech_tags:
+  - AIエージェント
 company_size: large
 metric_value: 40000
 metric_unit: "回/月の自動化実行数"
-metric_verified: true
+source_url_verified: true
 source_url: https://engineering.mercari.com/blog/entry/20251213-862c05648c/
 date: 2025-12-13
 excerpt: n8n EnterpriseのPoCを組織横断で推進。週1.3万回・月4万回の自動化実行を達成し、QAやマーケティングなど多部署の業務効率化に成功。

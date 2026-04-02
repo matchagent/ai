@@ -2,14 +2,12 @@
 title: Ader Watches：AI「Aderbot」で5世紀の時計知見を民主化し市場参加者を支援
 industry: repair
 domain: customer_support
-problem_tags:
-  - 知識の属人化
-  - 市場情報へのアクセス
-  - 鑑定支援
+tech_tags:
+  - AIエージェント
 company_size: small
 metric_value: 500
 metric_unit: "年分の知識データベース化"
-metric_verified: true
+source_url_verified: true
 source_url: https://presseagence.fr/paris-geoffroy-ader-lintelligence-artificielle-ne-remplace-pas-lexpert-elle-est-un-nouvel-outil/
 date: 2025-02-04
 excerpt: パリの時計鑑定専門企業が創業者30年の知見をAI化。5世紀分の時計史を学習した「Aderbot」で、鑑定士からコレクターまで専門知識を民主化。

@@ -2,14 +2,13 @@
 title: 楽天トラベル：AIエージェント「楽天トラベルAIホテル探索」で宿選びを支援
 industry: hotel
 domain: sales
-problem_tags:
-  - 宿泊施設選びの煩雑さ
-  - 多様なユーザー要望への対応
-  - 予約体験の向上
+tech_tags:
+  - RAG
+  - AIエージェント
 company_size: large
 metric_value: 30
 metric_unit: "軒までAIが提案"
-metric_verified: true
+source_url_verified: true
 source_url: https://corp.rakuten.co.jp/news/press/2025/0922_01.html
 date: 2025-09-22
 excerpt: 自然言語を理解するAIエージェントを提供開始。国内最大規模のクチコミや予約トレンドを分析し、ユーザーのニーズに合わせて最大30軒の最適な宿泊施設を提案。地図表示や比較機能で理想の宿が見つけやすくなった。

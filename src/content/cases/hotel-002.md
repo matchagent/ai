@@ -2,14 +2,12 @@
 title: 令和トラベル：Difyで旅行ガイド記事を400本量産、編集工数70%削減
 industry: hotel
 domain: marketing
-problem_tags:
-  - コンテンツ制作のリソース不足
-  - 旅行情報の鮮度維持
-  - 人手依存の業務体制
+tech_tags:
+  - 画像AI
 company_size: large
 metric_value: 70
 metric_unit: "%編集リードタイム短縮"
-metric_verified: true
+source_url_verified: true
 source_url: https://engineering.reiwatravel.co.jp/blog/newt-ml-llm
 date: 2024-09-13
 excerpt: ノーコードAIツール「Dify」を活用し、世界192カ国分の旅行ガイド記事制作を自動化。約400本の記事を2ヶ月で生成し、編集リードタイムを70%削減。表示回数は90%増加した。

@@ -2,15 +2,12 @@
 title: UMIバル 新宿店：AIチャットボット導入で電話問い合わせを73%削減
 industry: food
 domain: customer_support
-problem_tags:
-  - 電話対応
-  - インバウンド対応
-  - 予約管理
-  - スタッフ負担
+tech_tags:
+  - 画像AI
 company_size: small
 metric_value: 73
 metric_unit: "%電話問い合わせ削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.tifana.ai/article/aifaqsystem-article-518
 date: 2024-06-01
 excerpt: 新宿の海鮮バル。LINE公式アカウントへのAIチャットボット導入で、電話問い合わせを73%削減。多言語対応でインバウンド客の予約獲得も向上。

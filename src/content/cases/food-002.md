@@ -2,14 +2,12 @@
 title: くら寿司：AI需要予測システム「AI-KURA」で食品ロス75%削減
 industry: food
 domain: production
-problem_tags:
-  - 食品ロス削減
-  - 需要予測
-  - 品質管理
+tech_tags:
+  - 予測AI
 company_size: large
 metric_value: 75
 metric_unit: "%廃棄率削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.kurasushi.co.jp/author/004211.html
 date: 2025-06-15
 excerpt: ICタグで全皿を追跡し、AIが15分単位で需要予測。回転寿司の廃棄率を12%から2.7%に削減し、年間数億円のコスト削減を実現。

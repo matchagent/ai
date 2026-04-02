@@ -2,14 +2,12 @@
 title: Sangamon Watches Repair Center：ChatGPT活用で時計修理顧客との接点を拡大
 industry: repair
 domain: marketing
-problem_tags:
-  - 顧客獲得
-  - デジタルマーケティング
-  - 地域密着型サービス
+tech_tags:
+  - 言語AI
 company_size: small
 metric_value: 35
 metric_unit: "%問い合わせ増加"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.microbrandwatchesbusiness.com/post/from-chatgpt-to-watch-repair-how-ai-is-connecting-customers-to-experts
 date: 2025-02-12
 excerpt: アメリカ・イリノイ州の時計修理専門店がChatGPTなどのAIツールを活用し、ヴィンテージ時計や高級時計の修理を求める顧客との新たな接点を構築。デジタル時代の専門サービス発見プロセスに適応し、地域を超えた顧客層の獲得に成功。

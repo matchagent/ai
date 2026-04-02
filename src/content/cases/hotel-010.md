@@ -2,14 +2,12 @@
 title: 長崎県庁：AVA TravelのAI旅行プラン生成機能でパーソナライズ観光を実現
 industry: hotel
 domain: customer_support
-problem_tags:
-  - 旅行プラン作成の手間
-  - 観光情報の分散
-  - パーソナライズされた提案の欠如
+tech_tags:
+  - 画像AI
 company_size: mid
 metric_value: 400
 metric_unit: "件超の観光スポットをAI学習"
-metric_verified: true
+source_url_verified: true
 source_url: https://prtimes.jp/main/html/rd/p/000000029.000047676.html
 date: 2025-03-24
 excerpt: AVA Travelの生成AIを長崎県公式観光サイト「ながさき旅ネット」に導入。400件超の観光スポットをAIが事前学習し、ユーザーの好みに合わせたパーソナル旅行プランを瞬時に生成。観光DX推進のモデルケースとなる。

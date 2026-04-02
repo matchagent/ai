@@ -2,14 +2,12 @@
 title: ITNT Media Group：n8nで構築したAIマーケティング基盤が顧客売上を20%増加
 industry: retail
 domain: marketing
-problem_tags:
-  - SNS運用自動化
-  - SEO最適化
-  - コンテンツ制作効率化
+tech_tags:
+  - AIエージェント
 company_size: small
 metric_value: 20
 metric_unit: "%売上増加（4ヶ月）"
-metric_verified: true
+source_url_verified: true
 source_url: https://n8n.io/case-studies/itnt-media-group/
 date: 2026-01-01
 excerpt: 1989年創業のマーケティングエージェンシーがn8nでAI駆動の自動化基盤を構築。飲食店を含む顧客のSEO分析→商品強化→AI画像生成→SNS投稿を自動化し、月商$100万の顧客が4ヶ月で$120万に成長。

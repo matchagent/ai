@@ -2,14 +2,12 @@
 title: みつばちのーと｜Instagram AI分析でフォロワー9,000人増＆リーチ2.3倍達成
 industry: retail
 domain: marketing
-problem_tags:
-  - SNS集客
-  - ブランド認知拡大
-  - EC売上向上
+tech_tags:
+  - 言語AI
 company_size: small
 metric_value: 230
 metric_unit: '%'
-metric_verified: true
+source_url_verified: true
 source_url: https://snsschool.net/column/industry-restaurant/success
 date: 2025-03-25
 excerpt: 国産天然はちみつ専門店がInstagram AI分析を導入。ビジュアル最適化とキャプション改善でフォロワー9,000人増、月間リーチ2.3倍、EC誘導2倍を達成。

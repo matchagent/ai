@@ -2,14 +2,12 @@
 title: "FreshBite Café：ChatGPT×Tidioでマーケティング工数50%削減"
 industry: food
 domain: marketing
-problem_tags:
-  - マーケティング自動化
-  - SNS運用
-  - 顧客対応
+tech_tags:
+  - 言語AI
 company_size: small
 metric_value: 50
 metric_unit: "%工数削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.cambridge.org/engage/api-gateway/coe/assets/orp/resource/item/68450b3d1a8f9bdab5d4aa32/original/looking-into-how-artificial-intelligence-supports-operational-improvements-in-southeast-asia-s-expanding-enterprises-evidence-from-case-studies.pdf
 date: 2026-03-30
 excerpt: シンガポール郊外の健康志向カフェがChatGPTとTidioを組み合わせて顧客対応を自動化。マーケティングコンテンツ制作時間を50%削減し、SNSフォロワーを25%増加させた小規模飲食店のAI活用事例。

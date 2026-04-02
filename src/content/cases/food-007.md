@@ -2,14 +2,12 @@
 title: "お出汁・酒肴・佳さく：配膳ロボットKeenbot T8で個人店の人手不足を解消"
 industry: food
 domain: customer_support
-problem_tags:
-  - 人手不足
-  - 配膳業務負担
-  - 採用難
+tech_tags:
+  - 画像AI
 company_size: small
 metric_value: 1.5
 metric_unit: "人分業務代替"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.softbankrobotics.com/jp/product/delivery/cases/kasaku/
 date: 2022-10-01
 excerpt: 席数20の個人経営居酒屋がKeenbot T8を導入。アルバイト1.5人分に匹敵する業務代替効果を実現し、慢性的な人手不足と採用難を解消した。

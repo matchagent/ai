@@ -2,14 +2,12 @@
 title: Ravi's Food Delivery Empire：AIツールで8ヶ月で収益10倍、インド家庭料理サービスから3拠点展開へ
 industry: food
 domain: marketing
-problem_tags:
-  - 顧客獲得
-  - マーケティング効率化
-  - スケール限界
+tech_tags:
+  - 言語AI
 company_size: small
 metric_value: 10
 metric_unit: "倍収益増加"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.xenotix.co.in/blog/small-business-ai-revolution-indian-success-stories-tools/
 date: 2025-08-21
 excerpt: インド・プネーの家庭料理サービスが月額₹3,500のAIツール投資で8ヶ月で収益10倍。ChatGPT Plus、Canva Pro、WhatsApp Business APIで1人から3拠点・500食/日に成長。

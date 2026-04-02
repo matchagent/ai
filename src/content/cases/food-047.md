@@ -2,14 +2,12 @@
 title: 车达三明治（チェダーサンドイッチ）：ChatGPT+Midjourneyで個人店のマーケティングを全面AI化
 industry: food
 domain: marketing
-problem_tags:
-  - 顧客獲得
-  - ブランディング
-  - コンテンツ制作
+tech_tags:
+  - AIエージェント
 company_size: small
 metric_value: 20
 metric_unit: "件の小红书（シャオホンシュー）店舗訪問ノート"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.digitaling.com/articles/945356.html
 date: 2023-06-29
 excerpt: 中国・福建の個人経営サンドイッチ店がChatGPTとMidjourneyでマーケティングを全面AI化。予算ゼロで20件の小红书ノートを獲得し来客増を実現。

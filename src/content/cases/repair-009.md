@@ -2,14 +2,12 @@
 title: トレンビ：AI鑑定アプリ「クルービ」で中古高級品市場の信頼性を革新
 industry: repair
 domain: customer_support
-problem_tags:
-  - 偽物鑑定
-  - 専門家不足
-  - 取引効率化
+tech_tags:
+  - 画像AI
 company_size: mid
 metric_value: 97
 metric_unit: "%偽物検出精度"
-metric_verified: true
+source_url_verified: true
 source_url: https://mkr.acrofan.com/article_sub3.php?number=408335
 date: 2025-10-29
 excerpt: 10万件の正規品・偽物データで学習したAI鑑定システム「クルービ」で偽物検出精度97%を達成。AIと人間の2段階ハイブリッド鑑定で、専門知識がない中古パートナーでも高品質な検品が可能になった。

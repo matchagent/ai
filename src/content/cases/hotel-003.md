@@ -2,14 +2,12 @@
 title: 変なホテル：AIロボットによる無人運営で生産性4倍、144室を7人で運営
 industry: hotel
 domain: customer_support
-problem_tags:
-  - 人手不足
-  - チェックイン業務の効率化
-  - 人件費削減
+tech_tags:
+  - 音声AI
 company_size: large
 metric_value: 4
 metric_unit: "倍生産性向上"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.works-i.com/research/project/futureofwork/automation02/detail007.html
 date: 2023-01-25
 excerpt: AIロボットによる接客を世界初導入。144室規模のホテルを7人で運営し、生産性を4倍に向上。通常30人必要な規模を3分の1の人員で実現した。

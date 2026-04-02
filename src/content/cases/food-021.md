@@ -2,15 +2,12 @@
 title: 餃子マニア 品川本店：AIレセプション導入で前月比110%の売上達成を継続
 industry: food
 domain: sales
-problem_tags:
-  - 予約管理の煩雑さ
-  - 電話対応負担
-  - グルメサイト依存
-  - 送客手数料
+tech_tags:
+  - 音声AI
 company_size: mid
 metric_value: 110
 metric_unit: "%売上達成（前月比）"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.ebica.jp/casestudy/mania-produce/
 date: 2023-09-01
 excerpt: ミシュラン掲載の人気中華店がebicaとAIレセプションを導入。電話予約の92%をAIが自動対応し、前月比110%の売上レコードを毎月更新。

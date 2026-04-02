@@ -2,14 +2,12 @@
 title: 鈴木栄光堂｜インフルエンサーAIマッチングでリニューアル商品の認知度向上と売上150%達成
 industry: retail
 domain: marketing
-problem_tags:
-  - 認知度向上
-  - インフルエンサー選定
-  - 効率的なプロモーション
+tech_tags:
+  - 予測AI
 company_size: small
 metric_value: 150
 metric_unit: '%売上増'
-metric_verified: true
+source_url_verified: true
 source_url: https://influfect.com/case/631/
 date: 2025-03-15
 excerpt: 老舗お菓子メーカーがAIインフルエンサーマッチングを導入。ターゲット層に最適なインフルエンサーを選定し、リニューアル商品の売上150%増加を達成。

@@ -2,14 +2,12 @@
 title: ファミリーマート：人型AIアシスタント＋生成AIで店舗業務を最大50%効率化
 industry: retail
 domain: customer_support
-problem_tags:
-  - 店舗運営効率化
-  - SV業務負担
-  - 業務マニュアル検索
+tech_tags:
+  - 言語AI
 company_size: large
 metric_value: 50
 metric_unit: "%業務時間削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.family.co.jp/company/news_releases/2024/20240802_01.html
 date: 2024-08-02
 excerpt: 約7,000店舗に人型AIアシスタントを導入。生成AIによる業務マニュアルの音声検索で本部業務を最大50%効率化。SVからの問い合わせ対応も自動化。

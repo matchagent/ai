@@ -2,14 +2,12 @@
 title: "鮎ラーメン＋：ポケトークで外国人客との接客深化、オーダー数が1.5倍に"
 industry: food
 domain: customer_support
-problem_tags:
-  - 多言語対応
-  - インバウンド接客
-  - スタッフコミュニケーション
+tech_tags:
+  - 画像AI
 company_size: small
 metric_value: 50
 metric_unit: "%オーダー数増加"
-metric_verified: true
+source_url_verified: true
 source_url: https://pocketalk.jp/column/allcases/case-study/toranomon
 date: 2023-11-01
 excerpt: 虎ノ門横丁の小規模ラーメン店がポケトークを導入。外国人客との雑談が可能になりオーダー数は1.5倍に増加。スタッフ間の多言語コミュニケーションも円滑化した。

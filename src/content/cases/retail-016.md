@@ -2,14 +2,12 @@
 title: ヤマダデンキ：Google P-MAXで広告セルフ化しEC売上2倍増を目指す
 domain: marketing
 industry: retail
-problem_tags:
-  - EC売上拡大
-  - 広告運用最適化
-  - マーケティング内製化
+tech_tags:
+  - 予測AI
 company_size: large
 metric_value: 2
 metric_unit: "倍EC売上目標（5年後）"
-metric_verified: true
+source_url_verified: true
 source_url: https://xtrend.nikkei.com/atcl/contents/18/01194/00003/
 date: 2026-04-01
 excerpt: Google P-MAXでネット広告をセルフ運用。AIが入札から配信を自動化し、データから新需要を発掘。EC売上5年で2倍増へ向けて成長加速。

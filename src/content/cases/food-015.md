@@ -2,15 +2,12 @@
 title: 焼肉 ホルモン光 松任店：配膳ロボットBellaBot導入で深夜帯の残業ゼロを実現
 domain: customer_support
 industry: food
-problem_tags:
-  - 人手不足
-  - 深夜帯人員確保
-  - 配膳業務負担
-  - 残業削減
+tech_tags:
+  - 音声AI
 company_size: mid
 metric_value: 1
 metric_unit: "人分業務代替"
-metric_verified: true
+source_url_verified: true
 source_url: https://dfarobotics.com/topics/drz2ytvuua1b/
 date: 2023-06-01
 excerpt: 132席の大型焼肉店がBellaBotを導入。スタッフ最大20名の中規模店で、配膳ロボットが1人分の業務を代替し深夜帯の残業をゼロに。

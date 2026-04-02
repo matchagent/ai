@@ -2,15 +2,12 @@
 title: 伊藤園：生成AIモデルをテレビCMに起用、制作コスト50%削減を実現
 industry: food
 domain: marketing
-problem_tags:
-  - 広告制作コスト
-  - 撮影スケジュール調整
-  - タレントリスク管理
-  - 制作期間の短縮
+tech_tags:
+  - 音声AI
 company_size: large
 metric_value: 50
 metric_unit: "%制作コスト削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.itoen.co.jp/news/article/64855/
 date: 2024-03-01
 excerpt: 伊藤園が生成AIで作成したモデルを「お〜いお茶 カテキン緑茶」のテレビCMに起用。制作コスト50%削減とリスク管理の観点から注目を集めた先駆的な取り組み。

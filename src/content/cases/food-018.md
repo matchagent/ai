@@ -2,15 +2,12 @@
 title: スターバックスコーヒー ジャパン：AIプラットフォーム「Deep Brew」で客単価15%向上を実現
 domain: marketing
 industry: food
-problem_tags:
-  - 客単価向上
-  - アップセル
-  - リピート率向上
-  - 混雑時間帯分散
+tech_tags:
+  - 音声AI
 company_size: large
 metric_value: 15
 metric_unit: "%客単価向上"
-metric_verified: true
+source_url_verified: true
 source_url: https://forbesjapan.com/articles/detail/86430
 date: 2023-06-01
 excerpt: スターバックスがAIプラットフォーム「Deep Brew」でパーソナライズドレコメンドを実現。推奨の的中率60%超、客単価15%向上、リピート率20%増加を達成。

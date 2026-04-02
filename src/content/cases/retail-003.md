@@ -2,14 +2,12 @@
 title: 京みずは｜LINE AIクーポン配信で来店者数300%超達成
 industry: retail
 domain: marketing
-problem_tags:
-  - 来店率向上
-  - LINE配信最適化
-  - クーポン効率化
+tech_tags:
+  - 言語AI
 company_size: small
 metric_value: 300
 metric_unit: '%来店者数'
-metric_verified: true
+source_url_verified: true
 source_url: https://snsschool.net/column/industry-restaurant/success
 date: 2025-03-20
 excerpt: 京都の老舗和菓子メーカーがLINE AI配信最適化を導入。ABテストと予測分析で最適な配信パターンを特定し、クーポン期間中の来店者数を300%超に増加。

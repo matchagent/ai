@@ -2,15 +2,12 @@
 title: SANRASA：ウェブ予約システム導入で電話対応から解放、売上20%アップを達成
 industry: food
 domain: sales
-problem_tags:
-  - 予約管理の非効率
-  - 電話対応負担
-  - 売上機会損失
-  - 口コミ拡散
+tech_tags:
+  - 言語AI
 company_size: small
 metric_value: 20
 metric_unit: "%売上向上"
-metric_verified: true
+source_url_verified: true
 source_url: https://toreta.in/contents/dx/restaurant-dx-case/
 date: 2024-01-01
 excerpt: 東新宿のスタンド型スパイスカレー店がウェブ予約システムを導入。電話対応から解放され1日売上20%アップを達成。予約データの蓄積でリピーター施策も強化。

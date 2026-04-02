@@ -2,14 +2,12 @@
 title: じゃらんnet：Azure OpenAI Serviceで対話型UIを2週間で構築、生成AIによる宿探しを実現
 industry: hotel
 domain: sales
-problem_tags:
-  - 検索機能の限界
-  - ユーザー意図の把握困難
-  - セキュアな生成AI活用
+tech_tags:
+  - 言語AI
 company_size: large
 metric_value: 2
 metric_unit: "週間で開発完了"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.microsoft.com/ja-jp/customers/story/1745181603188532421-recruit-co-ltd-azure-professional-services-ja-japan
 date: 2023-05-29
 excerpt: Azure OpenAI Serviceを活用し、わずか2週間で対話型UIを構築。自然言語で宿探しができる生成AI機能を実装。レスポンス速度はChatGPTの3分の1で、データのインターネット公開も不要なセキュアな環境を実現。

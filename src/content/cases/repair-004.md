@@ -2,14 +2,12 @@
 title: Le Pôle Horloger：アルゴリズムによる自動見積もりで時計修理の透明性と効率性を向上
 industry: repair
 domain: customer_support
-problem_tags:
-  - 見積もりの非効率性
-  - 情報の非対称性
-  - 顧客の信頼性確保
+tech_tags:
+  - 予測AI
 company_size: mid
 metric_value: 125
 metric_unit: "年分の経験データ"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.lepolehorloger.fr/
 date: 2024-08-15
 excerpt: フランスの時計修理専門企業がアルゴリズムと職人の経験を融合。ブランド・年式・モデルに基づく自動見積もりと写真付き進捗管理で、業界の透明性を向上。

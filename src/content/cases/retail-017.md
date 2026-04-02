@@ -2,14 +2,12 @@
 title: ウォルマート：150万人店舗スタッフ向けAIツール群で業務効率を変革
 domain: logistics
 industry: retail
-problem_tags:
-  - 多言語対応
-  - 店舗業務効率化
-  - 在庫管理
+tech_tags:
+  - 予測AI
 company_size: large
 metric_value: 67
 metric_unit: "%シフト計画時間削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://corporate.walmart.com/news/2025/06/24/walmart-unveils-new-ai-powered-tools-to-empower-1-5-million-associates
 date: 2026-04-01
 excerpt: 150万人の店舗スタッフ向けにAIツール群を展開。シフト計画時間を90分→30分に削減し、44言語対応のリアルタイム翻訳など店舗業務を変革。

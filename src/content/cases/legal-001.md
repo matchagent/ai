@@ -2,14 +2,12 @@
 title: Bordr：n8n自動化でポルトガル移住サポート業務をスケールし$100Kビジネス構築
 industry: legal
 domain: customer_support
-problem_tags:
-  - 書類申請自動化
-  - 顧客ステータス管理
-  - マルチサービス連携
+tech_tags:
+  - AIエージェント
 company_size: small
 metric_value: 100
 metric_unit: "Kドル規模のビジネス構築"
-metric_verified: true
+source_url_verified: true
 source_url: https://n8n.io/case-studies/bordr/
 date: 2026-01-01
 excerpt: 夫婦2人で運営するポルトガル移住支援サービスがn8nで業務を自動化。複数サービス（Stripe・Airtable・Postmark等）を統合し、税務番号申請の受付から書類交付までを自動化。数ヶ月で6桁収益ビジネスに成長。

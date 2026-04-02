@@ -2,14 +2,12 @@
 title: Room Cafe：AI支援マーケティングで週20時間の業務効率化を実現した1人カフェ
 industry: food
 domain: marketing
-problem_tags:
-  - マンパワー不足
-  - マーケティング工数
-  - 顧客対応
+tech_tags:
+  - 言語AI
 company_size: small
 metric_value: 20
 metric_unit: "時間/週の業務削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://cnalifestyle.channelnewsasia.com/dining/room-cafe-loyang-pasir-ris-home-based-business-575381
 date: 2026-01-09
 excerpt: シンガポールの1人運営ホームカフェが、Instagramコンテンツ生成やWhatsApp自動返信などAI支援ツールを導入。週20時間相当の反復作業を削減し、料理と接客に集中できる体制を構築。

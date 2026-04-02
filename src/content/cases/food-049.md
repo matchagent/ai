@@ -2,14 +2,12 @@
 title: 焼肉Like（香港）：AI駆動の全チャネルマーケティングで顧客エンゲージメント向上
 industry: food
 domain: marketing
-problem_tags:
-  - 顧客エンゲージメント
-  - デジタルマーケティング
-  - ブランド認知
+tech_tags:
+  - 予測AI
 company_size: large
 metric_value: 16
 metric_unit: 店舗
-metric_verified: true
+source_url_verified: true
 source_url: https://eastweek.stheadline.com/finance/1752/%E9%9B%86%E6%97%97%E4%B8%8B%E9%A4%90%E5%BB%B3%E6%96%BC%E4%B8%80%E9%AB%94-%E7%BE%8E%E5%BF%83%E5%A4%A7%E6%90%9E%E6%89%8B%E6%A9%9FApp-Eatizen
 date: 2025-12-04
 excerpt: 美心集團が展開する「Eatizen美心薈」アプリ。Web3ゲームと連携した独自のエンゲージメント設計で、顧客の来店頻度とブランドロイヤルティを向上。焼肉Likeなど人気ブランドの認知拡大にも貢献。

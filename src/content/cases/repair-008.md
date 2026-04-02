@@ -2,14 +2,12 @@
 title: バイバー：ディープラーニング「AIレンズ」で名時計検品の誤検証0件を達成
 industry: repair
 domain: customer_support
-problem_tags:
-  - 偽物鑑定
-  - 検品品質管理
-  - 取引信頼性
+tech_tags:
+  - 言語AI
 company_size: large
 metric_value: 3000
 metric_unit: "億ウォン累計取引額"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.ddaily.co.kr/page/view/2026032515521482084
 date: 2026-03-26
 excerpt: 数十万件の名時計データで学習したディープラーニング「AIレンズ」で検品を支援。累計取引額3000億ウォン、誤検証0件を達成し、業界初の「偽物時300%補償」政策を実現。

@@ -2,14 +2,12 @@
 title: 葛记饺子：NFC×AIで加盟店の口コミマーケティングを自動化
 industry: food
 domain: marketing
-problem_tags:
-  - 口コミ運用
-  - 加盟店支援
-  - 新規顧客獲得
+tech_tags:
+  - 言語AI
 company_size: large
 metric_value: 35
 metric_unit: "%单店新客占比"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.xiaoyizc.com/105.html
 date: 2025-10-01
 excerpt: 中国の餃子チェーン「葛记饺子」が50店舗にNFC×AIシステムを導入。顧客がスマートフォンをかざすだけでAIが探店笔记や好評を自動生成し、加盟店の点评ランキングを首页に押し上げ、单店新客占比35%を達成した。

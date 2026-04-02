@@ -2,14 +2,12 @@
 title: Breitling：Salesforce Net Zero Cloudでカーボン排出データ管理を自動化
 industry: manufacturing
 domain: accounting
-problem_tags:
-  - カーボン会計
-  - データ管理
-  - サステナビリティ経営
+tech_tags:
+  - 予測AI
 company_size: large
 metric_value: 50
 metric_unit: "%データ入力時間削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.capgemini.com/ch-en/news/client-stories/breitling-automates-carbon-emissions-data-management-with-the-salesforce-net-zero-cloud-solution/
 date: 2025-04-02
 excerpt: 1884年創業の高級時計メーカーがSalesforce Net Zero Cloudを導入し、カーボン排出データの収集・計算・レポート作成を自動化。複数情報源からの手動データ入力を廃止し、カーボンニュートラル達成に向けたデータ基盤を確立。

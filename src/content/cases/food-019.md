@@ -2,15 +2,12 @@
 title: あきんどスシロー：AI需要予測と「デジロー」導入で食品ロス50%削減と客単価向上を両立
 industry: food
 domain: sales
-problem_tags:
-  - 客単価向上
-  - 食品ロス削減
-  - デジタル注文
-  - 追加注文機会損失
+tech_tags:
+  - 音声AI
 company_size: large
 metric_value: 3
 metric_unit: "%客単価向上"
-metric_verified: true
+source_url_verified: true
 source_url: https://toyokeizai.net/articles/-/841576
 date: 2023-09-01
 excerpt: スシローがAI需要予測と完全オーダー制「デジロー」を導入。食品ロス約50%削減と客単価3%向上を同時達成し、廃棄と売上の両立を実現。

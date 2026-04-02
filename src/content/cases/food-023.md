@@ -2,15 +2,12 @@
 title: 鶏串 いっぴん酒場 萬衆屋：配膳ロボット導入でワンオペ負担を軽減、営業日数を回復
 industry: food
 domain: customer_support
-problem_tags:
-  - 人手不足
-  - ワンオペ運営
-  - 配膳業務負担
-  - 営業日数削減
+tech_tags:
+  - 画像AI
 company_size: small
 metric_value: 20
 metric_unit: "%営業日数増加（週5日→週6日）"
-metric_verified: true
+source_url_verified: true
 source_url: https://dfarobotics.com/topics/y4spesb3b/
 date: 2023-06-01
 excerpt: 35席の個人経営居酒屋がKEENON T8配膳ロボットを導入。ワンオペ運営を実現し週5日→週6日営業を回復。下げ膳の身体的負担を劇的に軽減した。

@@ -2,14 +2,12 @@
 title: KFCオランダ：n8n×DeliverectのAIエージェントでデジタルキャンペーンを完全自動化
 industry: food
 domain: marketing
-problem_tags:
-  - デジタルプロモーション
-  - キャンペーン自動化
-  - 顧客体験
+tech_tags:
+  - AIエージェント
 company_size: large
 metric_value: 100
 metric_unit: "%プロモーション自動化（検出〜配布）"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.verdictfoodservice.com/news/deliverect-ai-agent-library/
 date: 2025-12-11
 excerpt: KFCオランダがDeliverectのAIエージェントライブラリとn8nを連携。オンライントレジャーハントキャンペーンの報酬発行からアプリ内反映まで人手介在なく自動化した。

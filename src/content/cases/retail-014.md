@@ -2,14 +2,12 @@
 title: カインズ：生成AIチャットボットと通話要約でコールセンター業務効率化を実証
 domain: customer_support
 industry: retail
-problem_tags:
-  - コールセンター効率化
-  - 情報検索時間削減
-  - 通話後事務作業削減
+tech_tags:
+  - 言語AI
 company_size: large
 metric_value: 50
 metric_unit: "%通話時間短縮（目標）"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.ai-shift.co.jp/3809
 date: 2026-04-01
 excerpt: AI Shiftと協働し、生成AIチャットボットと通話要約システムの実証実験を開始。FAQ自動生成と在庫検索の迅速化でオペレーター負担軽減を目指す。

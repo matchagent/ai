@@ -2,14 +2,12 @@
 title: 熱海市役所：生成AIでインバウンド対応を効率化、マーケティング分析工数を最大15分の1に削減
 industry: hotel
 domain: marketing
-problem_tags:
-  - インバウンドデータ分析の困難さ
-  - 多言語対応の品質・コスト
-  - 限られたリソースでの情報発信
+tech_tags:
+  - 音声AI
 company_size: mid
 metric_value: 15
 metric_unit: "分の1分析工数削減"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.recruit.co.jp/newsroom/pressrelease/2025/0226_15516.html
 date: 2025-02-26
 excerpt: じゃらんリサーチセンターと共同で生成AI活用実証実験。台湾・香港・アメリカ市場の分析、多言語対応、情報発信をAIで効率化。マーケティング分析は15分の1、旅ナカデータ分析は4分の1、翻訳作業は12分の1の工数削減を達成。

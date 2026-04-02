@@ -2,14 +2,12 @@
 title: "台所ようは：AI電話予約で少人数運営の電話負担を半減、月商10%向上"
 industry: food
 domain: customer_support
-problem_tags:
-  - 予約受付自動化
-  - 人手不足
-  - 業務負担軽減
+tech_tags:
+  - 画像AI
 company_size: small
 metric_value: 10
 metric_unit: "%月商向上"
-metric_verified: true
+source_url_verified: true
 source_url: https://ivry.jp/case/daidocoro-yoha/
 date: 2024-03-01
 excerpt: 2〜4名で運営する古民家おばん菜店がAI電話予約サービスを導入。月150件の着電のうち5割以上を自動化し、調理・接客に集中できる環境を実現。月商は10〜15%向上。

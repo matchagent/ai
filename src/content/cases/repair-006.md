@@ -2,14 +2,12 @@
 title: ヴェスティア・コレクティブ：AI支援画像認識で高級時計の偽物検出率99.9%を達成
 industry: repair
 domain: customer_support
-problem_tags:
-  - 偽物鑑定
-  - スケーラビリティ
-  - 専門家不足
+tech_tags:
+  - 画像AI
 company_size: large
 metric_value: 99.9
 metric_unit: "%偽物検出精度"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.proficientmarketinsights.com/market-reports/luxury-authentication-service-market-4077
 date: 2024-05-01
 excerpt: シンガポール認証ハブでAI支援画像認識と専門家検品を融合。時計・宝石・高級ファッションの真贋判定を自動化し、偽物検出率99.9%、累計6万時間の専門家研修を実現。

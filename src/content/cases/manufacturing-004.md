@@ -2,14 +2,13 @@
 title: セイコーソリューションズ：「Seiko Futureworks」で要件定義レビューの属人化を解消
 industry: manufacturing
 domain: production
-problem_tags:
-  - 要件定義の品質ばらつき
-  - 有識者の引退リスク
-  - レビュー待ちのボトルネック
+tech_tags:
+  - RAG
+  - AIエージェント
 company_size: large
 metric_value: 50
 metric_unit: "%以上の開発遅延原因が要件定義"
-metric_verified: true
+source_url_verified: true
 source_url: https://www.seiko-sol.co.jp/products/ai_platform/lp/
 date: 2025-04-01
 excerpt: セイコーグループのシステム開発子会社が、社内有識者のノウハウを学習したAIレビューで、要件定義の品質向上と開発スピードの両立を実現。
