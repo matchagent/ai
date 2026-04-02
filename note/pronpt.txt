@@ -26,14 +26,9 @@
 日本での娯楽業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
 ```
 
-1-5.調査の裏付け(無い場合)
+1-5.調査と結果のリスト保存
 ```
-
-のAI導入事例が掲載されているURLを教えて。
-```
-
-1-6.調査結果のリスト保存
-```
+物流・運輸業で、AIを使用している、厳密な意味で実在会社名、会社名、屋号、個人名が記載されている事例を調査して、
 その調査結果を下記の4行の形式にして、
 ```
 [会社名]
@@ -41,113 +36,39 @@
 [効果・成果]
 [そのAI導入事例が掲載されている厳密なURL]
 ```
-realestate.txt
+note/logistics.txt
 で保存して。
 ```
 
 2.作成
 ```
-• https://jp.ricoh.com/news/stories/articles/ai-citizen-development-dify
+• https://prtimes.jp/main/html/rd/p/000000531.000023740.html
 を出典として、
-matchagent/src/content/cases/manufacturing-005.md
+matchagent/src/content/cases/logistics-001.md
 
-で、3000文字数ほどのmdファイルを作成して。
-
-文体や文章の流れは
-
-/home/masasikatano/Documents/matchagent/src/content/cases/food-002.md
-
-を参考にして。
-
-作成後に、
-npm run check
-を行って。
-```
-
-```
-• https://engineering.reiwatravel.co.jp/blog/newt-ml-llm
+• https://prtimes.jp/main/html/rd/p/000000347.000004374.html
 を出典として、
-matchagent/src/content/cases/hotel-002.md
+matchagent/src/content/cases/logistics-002.md
 
-• https://www.works-i.com/research/project/futureofwork/automation02/detail007.html
-• https://atmoph.com/ja/ourusers/henn_na_hotel
+• https://www.suntory.co.jp/news/article/13925.html
 を出典として、
-matchagent/src/content/cases/hotel-003.md
+matchagent/src/content/cases/logistics-003.md
 
-• https://prtimes.jp/main/html/rd/p/000000094.000025663.html
+• https://prtimes.jp/main/html/rd/p/000000014.000040467.html
 を出典として、
-matchagent/src/content/cases/hotel-004.md
+matchagent/src/content/cases/logistics-004.md
 
-• https://corp.rakuten.co.jp/news/press/2025/0922_01.html
+• https://prtimes.jp/main/html/rd/p/000000165.000021229.html
 を出典として、
-matchagent/src/content/cases/hotel-005.md
+matchagent/src/content/cases/logistics-005.md
 
-• https://www.microsoft.com/ja-jp/customers/story/1745181603188532421-recruit-co-ltd-azure-professional-services-ja-japan
+• https://prtimes.jp/main/html/rd/p/000000100.000019139.html
 を出典として、
-matchagent/src/content/cases/hotel-006.md
+matchagent/src/content/cases/logistics-006.md
 
-• https://www.travelvoice.jp/20230929-154270
+• https://prtimes.jp/main/html/rd/p/000000006.000128340.html
 を出典として、
-matchagent/src/content/cases/hotel-007.md
-
-• https://www.recruit.co.jp/newsroom/pressrelease/2025/0226_15516.html
-を出典として、
-matchagent/src/content/cases/hotel-008.md
-
-• https://www.cas.go.jp/jp/seisaku/digitaldenen/menubook/2023/1021.html
-を出典として、
-matchagent/src/content/cases/hotel-009.md
-
-• https://prtimes.jp/main/html/rd/p/000000029.000047676.html
-を出典として、
-matchagent/src/content/cases/hotel-010.md
-
-で、それぞれ3000文字数ほどのmdファイルを作成して。
-
-文体や文章の流れは
-
-/home/masasikatano/Documents/matchagent/src/content/cases/food-002.md
-
-を参考にして。
-
-作成後に、
-npm run check
-を行って。
-```
-
-```
-• https://www.sumitomo-rd.co.jp/uploads/20260128_release_syoenesystem-Ai-Glies.pdf
-を出典として、
-matchagent/src/content/cases/realestate-014.md
-
-• https://www.biprogy.com/pdf/news/info_200817_iot_tenken.pdf
-を出典として、
-matchagent/src/content/cases/realestate-015.md
-
-• https://www.tokyu-land.co.jp/news/2022/000765.html
-を出典として、
-matchagent/src/content/cases/realestate-016.md
-
-• https://prtimes.jp/main/html/rd/p/000000146.000040115.html
-を出典として、
-matchagent/src/content/cases/realestate-017.md
-
-• https://www.tokai-com.co.jp/news/pdf/2020/20210119.pdf
-を出典として、
-matchagent/src/content/cases/realestate-018.md
-
-• https://www.daiwahouse.co.jp/about/release/house/20250930095425.html
-を出典として、
-matchagent/src/content/cases/realestate-019.md
-
-• https://sre-group.co.jp/news/2023/230213.html
-を出典として、
-matchagent/src/content/cases/realestate-020.md
-
-• https://prtimes.jp/main/html/rd/p/000000411.000021066.html
-を出典として、
-matchagent/src/content/cases/realestate-021.md
-
+matchagent/src/content/cases/logistics-007.md
 
 で、それぞれ3000文字数ほどのmdファイルを作成して。
 
@@ -167,14 +88,18 @@ npm run check
 ```
 あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツ品質管理者です。
 
-src/content/cases/realestate-014.md
-src/content/cases/realestate-015.md
-src/content/cases/realestate-016.md
-src/content/cases/realestate-017.md
-src/content/cases/realestate-018.md
-src/content/cases/realestate-019.md
-src/content/cases/realestate-020.md
-src/content/cases/realestate-021.md
+src/content/cases/construction-001.md
+src/content/cases/construction-002.md
+src/content/cases/construction-003.md
+src/content/cases/construction-004.md
+
+src/content/cases/logistics-001.md
+src/content/cases/logistics-002.md
+src/content/cases/logistics-003.md
+src/content/cases/logistics-004.md
+src/content/cases/logistics-005.md
+src/content/cases/logistics-006.md
+src/content/cases/logistics-007.md
 
 の内容を、以下の 観点から検証してください。
 
