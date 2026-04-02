@@ -13,15 +13,15 @@ export const COMPANY_SIZE_KEYS = ['small', 'mid', 'large'] as const;
 // 業種ラベル
 export const industryLabels: Record<string, string> = {
   manufacturing: '製造業',
-  retail: '小売・EC業',
-  logistics: '物流・運輸',
+  retail: '小売(EC)業',
+  logistics: '物流(運輸)業',
   construction: '建設業',
   legal: '士業',
   food: '飲食業',
   hotel: '宿泊業',
   realestate: '不動産業',
   entertainment: '娯楽業',
-  repair: '修理・メンテナンス業',
+  repair: '修理(メンテナンス)業',
 };
 
 // ドメインラベル
@@ -121,15 +121,15 @@ export const getMetricColor = (value: number): string => {
 export const INDUSTRIES = [
   { value: 'all', label: '全ての業種' },
   { value: 'manufacturing', label: '製造業' },
-  { value: 'retail', label: '小売・EC業' },
-  { value: 'logistics', label: '物流・運輸' },
+  { value: 'retail', label: '小売(EC)業' },
+  { value: 'logistics', label: '物流(運輸)業' },
   { value: 'construction', label: '建設業' },
   { value: 'legal', label: '士業' },
   { value: 'food', label: '飲食業' },
   { value: 'hotel', label: '宿泊業' },
   { value: 'realestate', label: '不動産業' },
   { value: 'entertainment', label: '娯楽業' },
-  { value: 'repair', label: '修理・メンテナンス業' },
+  { value: 'repair', label: '修理(メンテナンス)業' },
 ];
 
 export const DOMAINS = [
