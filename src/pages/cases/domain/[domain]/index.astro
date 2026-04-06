@@ -14,6 +14,9 @@ const { domain } = Astro.params;
 
 const casesData = await getSortedCases();
 
+// フィルタリングして件数を確認
+const filteredCases = casesData.filter(c => c.domain === domain);
+
 const domainLabel = domainLabels[domain];
 const pageTitle = `${domainLabel}のAI導入事例`;
 const description = `${domainLabel}向けのAI導入事例を掲載。`;
@@ -23,6 +26,12 @@ const jsonLd = {
   '@type': 'CollectionPage',
   name: pageTitle,
   description,
+  url: `https://ai.matchagent.workers.dev/cases/domain/${domain}/`,
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'AIケースラボ',
+    url: 'https://ai.matchagent.workers.dev',
+  },
 };
 ---
 
@@ -31,6 +40,9 @@ const jsonLd = {
   description={description}
   jsonLd={jsonLd}
 >
+  {filteredCases.length === 0 && (
+    <meta slot="head" name="robots" content="noindex, follow" />
+  )}
   <Header />
 
   <main>

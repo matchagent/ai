@@ -19,6 +19,11 @@ const { industry, company_size, domain } = Astro.params;
 
 const casesData = await getSortedCases();
 
+// フィルタリングして件数を確認
+const filteredCases = casesData.filter(
+  c => c.industry === industry && c.company_size === company_size && c.domain === domain
+);
+
 const industryLabel = industryLabels[industry];
 const sizeLabel = companySizeLabels[company_size];
 const sizeLabelFull = companySizeFullLabels[company_size];
@@ -33,6 +38,12 @@ const jsonLd = {
   '@type': 'CollectionPage',
   name: pageTitle,
   description,
+  url: `https://ai.matchagent.workers.dev/cases/${industry}/${company_size}/${domain}/`,
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'AIケースラボ',
+    url: 'https://ai.matchagent.workers.dev',
+  },
 };
 ---
 
@@ -41,6 +52,9 @@ const jsonLd = {
   description={description}
   jsonLd={jsonLd}
 >
+  {filteredCases.length === 0 && (
+    <meta slot="head" name="robots" content="noindex, follow" />
+  )}
   <Header />
 
   <main>

@@ -13,6 +13,11 @@ const jsonLd = {
   name: 'AIケースラボ',
   url: 'https://ai.matchagent.workers.dev',
   description: '9業種のAI導入事例を検索・比較できるデータベースです。業種・ドメイン・導入効果でフィルタリングして、あなたのビジネスに最適な事例を見つけられます。',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: 'https://ai.matchagent.workers.dev/?q={search_term_string}',
+    'query-input': 'required name=search_term_string',
+  },
 };
 ---
 

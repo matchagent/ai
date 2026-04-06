@@ -51,6 +51,9 @@ const canonicalUrl = `${siteUrl}${Astro.url.pathname}`;
     <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
   )}
   
+  <!-- RSS Feed -->
+  <link rel="alternate" type="application/rss+xml" title="AIケースラボ" href="/rss.xml" />
+  
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXZG3974FB"></script>
   <script is:inline>
