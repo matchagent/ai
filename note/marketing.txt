@@ -1,0 +1,63 @@
+Popl
+ZapierとOpenAIを使用したリード管理とメール自動分類システム。HubSpotフォームからのデモリクエストを自動処理し、スパムを除外して営業機会を特定。100以上のワークフローを構築し、年間$20,000のコスト削減を実現
+https://zapier.com/blog/ai-workflows/
+
+ActiveCampaign
+Zapierを使用したAI対応オンボーディング自動化システム。ユーザーの言語タグに基づいて自動的に適切なライブオンボーディングセッションに登録し、パーソナライズされたフォローアップを実施。ウェビナー出席率が440%向上、早期離脱が15%減少、初回90日間の製品導入率が2倍に増加
+https://zapier.com/blog/ai-workflows/
+
+Brizy
+ZapierとOpenAI、Intercomを組み合わせたオンボーディング・サポート自動化システム。ユーザー情報に基づいてパーソナライズされたオンボーディングメッセージを自動生成し、サポートチケットをAIで分類して対応。初回応答時間が40%短縮
+https://zapier.com/blog/ai-orchestration-use-cases/
+
+Webtoon Entertainment (Nasdaq: WBTN)
+LangGraphを使用した「WEBTOON Comprehension AI (WCAI)」エージェントワークフローシステム。マーケティング、翻訳、レコメンデーションチーム向けにコンテンツ理解とメタデータ抽出を自動化。コンテンツチームの作業負荷が70%以上削減され、戦略的・クリエイティブなコンテンツプロモーション業務に集中可能に
+https://blog.langchain.com/customers-webtoon/
+
+Huel
+n8nを使用したAIファーストの企業文化構築。ChatGPTやClaudeなどのAIツールを業務プロセスに安全かつ制御された方法で統合。AIを活用した社内ワークフロー自動化により業務効率を大幅に向上
+https://n8n.io/case-studies/
+
+Vodafone
+n8nを使用した脅威インテリジェンスの自動化システムを構築。年間£2.2百万（約4億円）のコスト削減を実現。セキュリティ脅威情報の収集・分析・対応プロセスを自動化し、脅威検出から対応までの時間を大幅に短縮
+https://n8n.io/case-studies/
+
+Stepstone
+n8nを使用して200以上のミッションクリティカルなワークフローを実行。データソースの統合を従来の25倍の速度で実現（最大2時間で各種API接続が完了）。採用プラットフォームのデータ統合と自動化により、新しいデータソースへの対応速度が飛躍的に向上
+https://n8n.io/case-studies/
+
+Delivery Hero
+n8nを使用した単一のIT運用ワークフローで月間200時間を節約。食品配車プラットフォームのIT運用プロセスを自動化し、エンジニアリングリソースを戦略的なプロジェクトに再配分することで業務効率を大幅に向上
+https://n8n.io/case-studies/
+
+Bordr
+n8nを使用してポルトガル税番号（NIF）取得サービスのオーダー処理を完全自動化。注文受付からデータ入力、パートナー事務所との連携、書類生成、顧客への進捗更新までエンドツーエンドで自動化。カスタマーサポートや運用スタッフを追加雇用することなく6桁ドルの収益規模にスケール
+https://n8n.io/case-studies/
+
+Sommo (アメリカ)
+Makeを使用してAI搭載のSoftware Requirement Specification (SRS) Generatorを1日で構築。ウェブサイト訪問者からアプリアイデアを収集し、ChatGPTで詳細なソフトウェア要件を生成。月間500〜800件の追加リードを獲得（コンバージョン率3%）、アクティブなウェブサイトユーザーが5倍に増加
+https://www.make.com/en/blog/success-stories-make-it-in-lead-gen-marketing
+
+Skai (アメリカ)
+Makeを使用してソリューション開発チームを構築。営業チームのPoC自動化・統合リクエストに対応し、開発者を使わずにカスタム自動化を数日で構築。年間70以上のPoC自動化・カスタム統合を提供し、四半期ごとの旗艦プロジェクトで最大$100Kのエンタープライズ契約を獲得
+https://www.make.com/en/blog/success-stories-make-it-in-sales
+
+ARETI (アメリカ、Ascent Media傘下)
+Make Gridを使用してClickUpベースのシステムを可視化し、営業デモを革新。複雑なバックエンド自動化ワークフローを視覚的に顧客に提示し、Makeのシナリオ間の接続を明確に示す。導入2ヶ月以内に$60,000〜$100,000の収益を直接創出
+https://www.make.com/en/blog/success-stories-make-it-in-sales
+
+Circula (ドイツ)
+Makeを使用してHubSpotとAirtableを統合し、リードデータをリアルタイムで同期。営業レポートの自動配信によりSDRとAEが迅速に行動可能に。営業チームのデータハンドオフがスムーズになり、4年間で1,987%の成長率を達成
+https://www.make.com/en/blog/success-stories-make-it-in-sales
+
+PRLab (オランダ)
+ZapierとAIを使用したリードスコアリング・選定システム。サイト訪問回数、クリックしたコンテンツ、メールエンゲージメントに基づいてリードを自動スコアリング。NQL（未成熟）とMQL（営業対象）に自動分類し、Pipedriveへの自動登録とパーソナライズされたフォローアップメールを実施。無駄なリード追跡を排除し、営業チームの生産性を向上
+https://zapier.com/blog/ai-orchestration-use-cases/
+
+Luella (アメリカ)
+ZapierとOpenAIを使用したカスタマー自動ベッティングシステム。チャットボットで初期情報を収集し、OpenAIでリスクとトーンを評価、ドメイン評価データを取得。問題があれば自動的に丁寧に拒否し、問題なければSlackに送信してワンクリック承認。数十件のリスクユーザーを自動スクリーニングし、営業チームが適切な顧客に集中可能に
+https://zapier.com/blog/ai-orchestration-use-cases/
+
+Klarna
+LangSmithとLangGraphを使用したAIアシスタントでカスタマー解決を高速化。カスタマーサポート業務をAIエージェントで自動化し、顧客対応の質と速度を向上
+https://www.langchain.com/customers
