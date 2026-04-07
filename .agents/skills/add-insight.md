@@ -27,7 +27,7 @@ interface Insight {
 '{industry}-{company_size}-{domain}'
 ```
 
-- `industry`: `manufacturing` / `retail` / `logistics` / `construction` / `legal` / `food` / `hotel` / `realestate` / `entertainment`
+- `industry`: `mfg` / `rtl` / `log` / `const` / `leg` / `food` / `htl` / `re` / `ent` / `rep`
 - `company_size`: `small` / `mid` / `large`
 - `domain`: `sales` / `marketing` / `production` / `hr` / `accounting` / `customer_support` / `logistics`
 

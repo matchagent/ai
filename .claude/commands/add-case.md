@@ -4,7 +4,7 @@
 
 1. ユーザーから以下の情報を収集する（不足している場合は確認する）:
    - タイトル
-   - 業種 (manufacturing / retail / logistics / construction / legal / food / hotel / realestate / entertainment)
+   - 業種 (mfg / rtl / log / const / leg / food / htl / re / ent / rep)
    - ドメイン (sales / marketing / production / hr / accounting / customer_support / logistics)
    - 技術タグ (画像AI: Stable Diffusion背景生成/GAN画像変換/外観検査/画像診断、予測AI: 需要予測/ダイナミックプライシング/レコメンド/異常検知、言語AI: ChatGPT顧客対応/LLM文章生成/翻訳/チャットボット、AIエージェント: n8n自動化/ワークフローエージェント、音声AI: 電話予約AI/音声合成/ポケトーク翻訳、RAG。なければ空配列)
    - 企業規模 (small / mid / large)

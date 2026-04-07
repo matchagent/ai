@@ -18,12 +18,12 @@ import { getCollection, getEntry } from 'astro:content';
 const allCases = await getCollection('cases');
 
 // フィルタリング
-const manufacturingCases = await getCollection('cases', ({ data }) =>
-  data.industry === 'manufacturing'
+const mfgCases = await getCollection('cases', ({ data }) =>
+  data.industry === 'mfg'
 );
 
 // 単件取得
-const case1 = await getEntry('cases', 'manufacturing-001');
+const case1 = await getEntry('cases', 'mfg-001');
 ---
 ```
 
