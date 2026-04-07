@@ -1,6 +1,6 @@
 ---
 title: セイコーソリューションズ：「Seiko Futureworks」で要件定義レビューの属人化を解消
-industry: manufacturing
+industry: mfg
 domain: production
 tech_tags:
   - RAG

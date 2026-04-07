@@ -1,6 +1,6 @@
 ---
 title: イオン：全業態90社・約1000人に生成AI導入、月間130時間の業務削減を実現
-industry: retail
+industry: rtl
 domain: hr
 tech_tags:
   - RAG

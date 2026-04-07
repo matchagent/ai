@@ -1,6 +1,6 @@
 ---
 title: Delivery Hero：n8n自動化でアカウント回復時間を43%短縮、月200時間の業務損失を防止
-industry: logistics
+industry: log
 domain: customer_support
 tech_tags:
   - AIエージェント

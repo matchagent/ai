@@ -1,6 +1,6 @@
 ---
 title: 楽天トラベル：AIエージェント「楽天トラベルAIホテル探索」で宿選びを支援
-industry: hotel
+industry: htl
 domain: sales
 tech_tags:
   - RAG

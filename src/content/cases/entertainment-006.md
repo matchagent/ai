@@ -1,6 +1,6 @@
 ---
 title: Netflix×WIT STUDIO×rinna：画像生成AIで背景美術を補助した実験アニメ「犬と少年」
-industry: entertainment
+industry: ent
 domain: production
 tech_tags:
   - 画像AI

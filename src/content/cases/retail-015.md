@@ -1,7 +1,7 @@
 ---
 title: しまむら：生成AIファッションモデル「瑠菜」で新店舗PRを話題化
 domain: marketing
-industry: retail
+industry: rtl
 tech_tags:
   - 画像AI
 company_size: large

@@ -1,6 +1,6 @@
 ---
 title: USJ：ダイナミック・プライシング導入でパーク価値向上と入場者平準化を実現
-industry: entertainment
+industry: ent
 domain: sales
 tech_tags:
   - 予測AI

@@ -1,6 +1,6 @@
 ---
 title: フジパン：生成AIチャレンジコンテストで月間295人日分の業務時間削減
-industry: manufacturing
+industry: mfg
 domain: hr
 tech_tags:
   - 言語AI

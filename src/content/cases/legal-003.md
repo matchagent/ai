@@ -1,6 +1,6 @@
 ---
 title: 青柳真美税理士事務所：JOIN財務システムと達人シリーズで小規模事務所の業務をスピード化
-industry: legal
+industry: leg
 domain: accounting
 tech_tags:
   - 予測AI

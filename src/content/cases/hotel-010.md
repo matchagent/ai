@@ -1,6 +1,6 @@
 ---
 title: 長崎県庁：AVA TravelのAI旅行プラン生成機能でパーソナライズ観光を実現
-industry: hotel
+industry: htl
 domain: customer_support
 tech_tags:
   - 画像AI

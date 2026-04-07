@@ -1,6 +1,6 @@
 ---
 title: ヴェスティア・コレクティブ：AI支援画像認識で高級時計の偽物検出率99.9%を達成
-industry: repair
+industry: rep
 domain: customer_support
 tech_tags:
   - 画像AI

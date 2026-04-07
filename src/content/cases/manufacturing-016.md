@@ -1,6 +1,6 @@
 ---
 title: BMWグループ：人型二足歩行ロボット「フィギュア02」で自動車部品組立の実証に成功
-industry: manufacturing
+industry: mfg
 domain: production
 tech_tags:
   - 画像AI

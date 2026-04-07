@@ -1,7 +1,7 @@
 ---
 title: 住友不動産：新築分譲マンションで国内初「Ai-Glies」空調省エネシステムを導入
 domain: production
-industry: realestate
+industry: re
 tech_tags:
   - 予測AI
 company_size: large

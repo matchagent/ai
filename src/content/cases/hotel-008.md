@@ -1,6 +1,6 @@
 ---
 title: 熱海市役所：生成AIでインバウンド対応を効率化、マーケティング分析工数を最大15分の1に削減
-industry: hotel
+industry: htl
 domain: marketing
 tech_tags:
   - 音声AI

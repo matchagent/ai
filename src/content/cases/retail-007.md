@@ -1,7 +1,7 @@
 ---
 title: 銭大媽（Qian Damei）｜AIダイナミックプライシングで食品廃棄ゼロと顧客増を両立
 domain: production
-industry: retail
+industry: rtl
 company_size: small
 tech_tags:
   - 予測AI

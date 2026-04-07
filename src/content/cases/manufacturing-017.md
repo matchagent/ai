@@ -1,6 +1,6 @@
 ---
 title: オムロンサイニックエックス：生成AIをロボット制御に応用し「行為の7段階理論」を実装
-industry: manufacturing
+industry: mfg
 domain: production
 tech_tags:
   - 言語AI

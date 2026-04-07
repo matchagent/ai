@@ -1,7 +1,7 @@
 ---
 title: ヤマダデンキ：Google P-MAXで広告セルフ化しEC売上2倍増を目指す
 domain: marketing
-industry: retail
+industry: rtl
 tech_tags:
   - 予測AI
 company_size: large

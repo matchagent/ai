@@ -1,6 +1,6 @@
 ---
 title: BeGlobal：AI自動化で商業提案書作成を10倍高速化し年間50件から500件へ
-industry: retail
+industry: rtl
 domain: marketing
 tech_tags:
   - AIエージェント

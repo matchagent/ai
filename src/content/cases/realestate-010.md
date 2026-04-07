@@ -1,6 +1,6 @@
 ---
 title: 住友不動産販売：「ステップAI査定」で戸建・土地を含む高精度な自動査定を実現
-industry: realestate
+industry: re
 domain: sales
 tech_tags:
   - 予測AI

@@ -1,6 +1,6 @@
 ---
 title: レベルファイブ：「イナズマイレブン」「妖怪ウォッチ」で画像生成AIを業務活用
-industry: entertainment
+industry: ent
 domain: production
 tech_tags:
   - 画像AI

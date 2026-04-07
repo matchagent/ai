@@ -1,6 +1,6 @@
 ---
 title: ブルックリン：AI需要予測でパン廃棄大幅削減、製造リーダーの勘からデータ駆動へ
-industry: retail
+industry: rtl
 domain: sales
 tech_tags:
   - 予測AI

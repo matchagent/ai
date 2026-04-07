@@ -1,6 +1,6 @@
 ---
 title: 変なホテル：AIロボットによる無人運営で生産性4倍、144室を7人で運営
-industry: hotel
+industry: htl
 domain: customer_support
 tech_tags:
   - 音声AI

@@ -3,8 +3,8 @@ import { glob } from 'astro/loaders';
 import { z } from 'zod';
 
 const INDUSTRIES = [
-  'manufacturing', 'retail', 'logistics', 'construction',
-  'legal', 'food', 'hotel', 'realestate', 'entertainment', 'repair'
+  'mfg', 'rtl', 'log', 'const',
+  'leg', 'food', 'htl', 're', 'ent', 'rep'
 ] as const;
 
 const DOMAINS = [

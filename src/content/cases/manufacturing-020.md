@@ -1,6 +1,6 @@
 ---
 title: Cisco：TACエンジニア向けGenAIアシスタントで対応品質と速度を向上
-industry: manufacturing
+industry: mfg
 domain: customer_support
 tech_tags:
   - 言語AI

@@ -1,6 +1,6 @@
 ---
 title: トレンビ：AI鑑定アプリ「クルービ」で中古高級品市場の信頼性を革新
-industry: repair
+industry: rep
 domain: customer_support
 tech_tags:
   - 画像AI

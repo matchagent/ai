@@ -1,6 +1,6 @@
 ---
 title: コロプラ：画像生成AI搭載カードゲーム「神魔狩りのツクヨミ」で新たなユーザー体験創出
-industry: entertainment
+industry: ent
 domain: production
 tech_tags:
   - 画像AI

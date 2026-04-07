@@ -1,6 +1,6 @@
 ---
 title: 花王：和歌山工場でAIによるプラント異常予兆検知システムを構築
-industry: manufacturing
+industry: mfg
 domain: production
 tech_tags:
   - 予測AI

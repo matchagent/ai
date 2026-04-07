@@ -1,6 +1,6 @@
 ---
 title: JTB：AIアナリストforツーリズムで観光プロモーションを最適化、PDCAサイクルを高速化
-industry: hotel
+industry: htl
 domain: marketing
 tech_tags:
   - 画像AI

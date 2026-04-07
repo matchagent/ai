@@ -1,6 +1,6 @@
 ---
 title: 東急リバブル：生成AIチャット「Tellus Talk」でパーソナライズされた不動産相談を実現
-industry: realestate
+industry: re
 domain: customer_support
 tech_tags:
   - RAG

@@ -1,6 +1,6 @@
 ---
 title: みつばちのーと｜Instagram AI分析でフォロワー9,000人増＆リーチ2.3倍達成
-industry: retail
+industry: rtl
 domain: marketing
 tech_tags:
   - 言語AI

@@ -1,6 +1,6 @@
 ---
 title: 横河電機・JSR：世界初のAI自律制御で化学プラントを35日間連続制御
-industry: manufacturing
+industry: mfg
 domain: production
 tech_tags:
   - 予測AI

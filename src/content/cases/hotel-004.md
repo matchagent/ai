@@ -1,6 +1,6 @@
 ---
 title: 星野リゾート：生成AI「KARAKURI assist」で予約センター対応力を強化、新人早期戦力化を実現
-industry: hotel
+industry: htl
 domain: customer_support
 tech_tags:
   - 音声AI

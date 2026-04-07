@@ -1,6 +1,6 @@
 ---
 title: Kopi Senja：n8nとAIエージェントでマーケティング自動化し顧客エンゲージメント向上
-industry: retail
+industry: rtl
 domain: marketing
 tech_tags:
   - AIエージェント

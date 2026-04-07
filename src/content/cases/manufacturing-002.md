@@ -1,6 +1,6 @@
 ---
 title: カシオ：生成AIによるジェネレーティブデザインでG-SHOCKの新たな造形美を実現
-industry: manufacturing
+industry: mfg
 domain: production
 tech_tags:
   - 画像AI

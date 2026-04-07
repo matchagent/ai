@@ -1,6 +1,6 @@
 ---
 title: セブン-イレブン：AI発注システム＋生成AI基盤で発注業務40%効率化
-industry: retail
+industry: rtl
 domain: logistics
 tech_tags:
   - 予測AI

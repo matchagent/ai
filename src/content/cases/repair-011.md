@@ -1,6 +1,6 @@
 ---
 title: W.A.V.：深層学習とブロックチェーンで時計認証の新基準を確立
-industry: repair
+industry: rep
 domain: customer_support
 tech_tags:
   - 画像AI

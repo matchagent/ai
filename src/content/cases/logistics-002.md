@@ -1,6 +1,6 @@
 ---
 title: 佐川急便：深層学習OCRで配送伝票入力作業を月8,400時間削減
-industry: logistics
+industry: log
 domain: logistics
 tech_tags:
   - 画像AI

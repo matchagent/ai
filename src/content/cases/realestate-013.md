@@ -1,6 +1,6 @@
 ---
 title: 三菱地所：AI・ロボット・IoTで次世代型施設運営モデルを実現、Society5.0に貢献
-industry: realestate
+industry: re
 domain: production
 tech_tags:
   - 画像AI

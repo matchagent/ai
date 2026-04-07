@@ -1,6 +1,6 @@
 ---
 title: C.H. Robinson：AIメール処理システムで1日600時間の業務自動化
-industry: logistics
+industry: log
 domain: logistics
 tech_tags:
   - AIエージェント

@@ -1,6 +1,6 @@
 ---
 title: Le Pôle Horloger：アルゴリズムによる自動見積もりで時計修理の透明性と効率性を向上
-industry: repair
+industry: rep
 domain: customer_support
 tech_tags:
   - 予測AI

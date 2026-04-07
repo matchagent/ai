@@ -1,6 +1,6 @@
 ---
 title: The Rolling Pin：ChatGPTでSNS・メールマーケティング自動化、週10時間節約
-industry: retail
+industry: rtl
 domain: marketing
 tech_tags:
   - 言語AI

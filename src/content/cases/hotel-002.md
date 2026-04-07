@@ -1,6 +1,6 @@
 ---
 title: 令和トラベル：Difyで旅行ガイド記事を400本量産、編集工数70%削減
-industry: hotel
+industry: htl
 domain: marketing
 tech_tags:
   - 画像AI

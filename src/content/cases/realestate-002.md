@@ -1,6 +1,6 @@
 ---
 title: 三井不動産リアルティ：AI査定システム「リハウスAI査定」で MER5.34%の高精度を実現
-industry: realestate
+industry: re
 domain: sales
 tech_tags:
   - 予測AI

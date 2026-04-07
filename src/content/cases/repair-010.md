@@ -1,6 +1,6 @@
 ---
 title: クリヴァ：AIビジョンで時計部品の微細欠陥検出を実現
-industry: repair
+industry: rep
 domain: production
 tech_tags:
   - 画像AI

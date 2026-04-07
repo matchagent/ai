@@ -1,6 +1,6 @@
 ---
 title: シーエックスカーゴ：AI物流施設管理システム「GWES」で全拠点DXを加速
-industry: logistics
+industry: log
 domain: logistics
 tech_tags:
   - 予測AI

@@ -1,6 +1,6 @@
 ---
 title: サントリーロジスティクス：物流業界初のフォークリフト操作AI判定システム
-industry: logistics
+industry: log
 domain: logistics
 tech_tags:
   - 画像AI

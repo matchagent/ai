@@ -1,6 +1,6 @@
 ---
 title: Flow AI：音声制御AIエンジンで不動産アウトリーチを数時間から60秒に短縮
-industry: realestate
+industry: re
 domain: marketing
 tech_tags:
   - AIエージェント

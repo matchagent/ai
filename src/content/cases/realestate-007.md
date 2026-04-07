@@ -1,6 +1,6 @@
 ---
 title: 東急リバブル：クラック画像診断AIシステム「CRACK SCANNER」で建物診断を革新
-industry: realestate
+industry: re
 domain: production
 tech_tags:
   - 画像AI

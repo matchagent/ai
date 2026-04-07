@@ -1,6 +1,6 @@
 ---
 title: JFEスチール：IBM Watsonで制御故障復旧支援システムを構築しダウンタイム20%以上短縮
-industry: manufacturing
+industry: mfg
 domain: production
 tech_tags:
   - 言語AI

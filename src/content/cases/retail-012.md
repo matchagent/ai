@@ -1,6 +1,6 @@
 ---
 title: ローソン：AI・都市OS活用の未来型コンビニ「Real×Tech LAWSON」で顧客体験革新
-industry: retail
+industry: rtl
 domain: marketing
 tech_tags:
   - AIエージェント

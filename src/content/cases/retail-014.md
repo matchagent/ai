@@ -1,7 +1,7 @@
 ---
 title: カインズ：生成AIチャットボットと通話要約でコールセンター業務効率化を実証
 domain: customer_support
-industry: retail
+industry: rtl
 tech_tags:
   - 言語AI
 company_size: large

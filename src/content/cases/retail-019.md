@@ -1,6 +1,6 @@
 ---
 title: 竹隆庵岡埜：AI需要予測で和菓子の廃棄57%削減、経験依存からデータ駆動へ
-industry: retail
+industry: rtl
 domain: production
 tech_tags:
   - 予測AI

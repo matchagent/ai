@@ -1,6 +1,6 @@
 ---
 title: ITNT Media Group：n8nで構築したAIマーケティング基盤が顧客売上を20%増加
-industry: retail
+industry: rtl
 domain: marketing
 tech_tags:
   - AIエージェント

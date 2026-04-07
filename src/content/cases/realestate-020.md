@@ -1,7 +1,7 @@
 ---
 title: ハウスコム・SREHD：AIセレンディピティ型検索で潜在ニーズに合致する賃貸物件を提案
 domain: sales
-industry: realestate
+industry: re
 tech_tags:
   - 予測AI
 company_size: large

@@ -1,6 +1,6 @@
 ---
 title: パナソニックコネクト：自社向けAIアシスタントConnectAIで年間18万6千時間削減
-industry: manufacturing
+industry: mfg
 domain: hr
 tech_tags:
   - RAG

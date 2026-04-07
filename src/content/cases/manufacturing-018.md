@@ -1,6 +1,6 @@
 ---
 title: 旭鉄工：生成AIでカイゼンが民主化、「カイゼンGAI」と「AI製造部長」を開発
-industry: manufacturing
+industry: mfg
 domain: production
 tech_tags:
   - RAG

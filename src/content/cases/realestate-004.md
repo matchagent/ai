@@ -1,6 +1,6 @@
 ---
 title: オープンハウス：AI・RPAによる業務自動化で年間21,920時間の工数削減
-industry: realestate
+industry: re
 domain: production
 tech_tags:
   - 画像AI

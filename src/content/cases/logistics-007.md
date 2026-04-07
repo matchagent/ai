@@ -1,6 +1,6 @@
 ---
 title: 東京ロジファクトリー：自動フォークリフトとエレベーターのAI連携搬送を実証
-industry: logistics
+industry: log
 domain: logistics
 tech_tags:
   - 画像AI

@@ -1,6 +1,6 @@
 ---
 title: WEBTOON：LangGraphエージェントワークフローでコンテンツ理解を自動化し業務負荷70%削減
-industry: entertainment
+industry: ent
 domain: production
 tech_tags:
   - AIエージェント

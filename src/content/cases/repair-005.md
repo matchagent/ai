@@ -1,6 +1,6 @@
 ---
 title: Sangamon Watches Repair Center：ChatGPT活用で時計修理顧客との接点を拡大
-industry: repair
+industry: rep
 domain: marketing
 tech_tags:
   - 言語AI

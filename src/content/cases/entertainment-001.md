@@ -1,6 +1,6 @@
 ---
 title: 東映アニメーション×PFN：AI背景美術ツール「Scenify」で前処理時間を1/6に短縮
-industry: entertainment
+industry: ent
 domain: production
 tech_tags:
   - 画像AI

@@ -1,6 +1,6 @@
 ---
 title: メルカリ：n8n Enterprise PoCで月4万回の業務自動化を実現
-industry: retail
+industry: rtl
 domain: marketing
 tech_tags:
   - AIエージェント

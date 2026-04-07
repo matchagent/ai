@@ -1,6 +1,6 @@
 ---
 title: 電通：Skai自動化でCriteo広告のROASを163%〜294%向上
-industry: entertainment
+industry: ent
 domain: marketing
 tech_tags:
   - 予測AI

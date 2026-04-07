@@ -1,7 +1,7 @@
 ---
 title: リコー：DifyによるAI市民開発で非定型業務を効率化、全社4300人が活用
 domain: customer_support
-industry: manufacturing
+industry: mfg
 tech_tags:
   - AIエージェント
 company_size: large

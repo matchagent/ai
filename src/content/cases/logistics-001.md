@@ -1,6 +1,6 @@
 ---
 title: 出光興産：AI×最適化モデルで燃料油配車計画作成時間25%削減
-industry: logistics
+industry: log
 domain: logistics
 tech_tags:
   - 予測AI

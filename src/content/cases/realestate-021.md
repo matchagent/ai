@@ -1,7 +1,7 @@
 ---
 title: GAテクノロジーズ：AI不動産投資「RENOSY」
 domain: sales
-industry: realestate
+industry: re
 tech_tags:
   - 画像AI
 company_size: large

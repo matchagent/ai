@@ -1,6 +1,6 @@
 ---
 title: 大林組：AI画像認識「クアトロアイズ」で重機接触事故リスクを97%検知精度で防止
-industry: construction
+industry: const
 domain: production
 tech_tags:
   - 画像AI

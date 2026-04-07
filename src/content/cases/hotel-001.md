@@ -1,6 +1,6 @@
 ---
 title: 令和トラベル：Retool×AIでハワイ子会社の業務システムを内製化
-industry: hotel
+industry: htl
 domain: sales
 tech_tags:
   - 言語AI

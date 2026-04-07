@@ -1,6 +1,6 @@
 ---
 title: 東急リバブル×Rist：AI査定システムが特許取得、査定担当者と同等水準の精度を実現
-industry: realestate
+industry: re
 domain: sales
 tech_tags:
   - 予測AI

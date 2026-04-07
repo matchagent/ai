@@ -1,6 +1,6 @@
 ---
 title: Circula：Make自動化で4年間で成長率1,987%を達成、リード管理と営業報告を完全自動化
-industry: hotel
+industry: htl
 domain: sales
 tech_tags:
   - AIエージェント

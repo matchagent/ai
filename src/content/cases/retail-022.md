@@ -1,6 +1,6 @@
 ---
 title: Huel：n8n自動化で年間£100,000のSaaSコスト削減と1,000時間以上の工数削減
-industry: retail
+industry: rtl
 domain: sales
 tech_tags:
   - AIエージェント

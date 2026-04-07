@@ -1,6 +1,6 @@
 ---
 title: 高本税理士事務所：MJS会計システムで経理合理化し400社超を支援
-industry: legal
+industry: leg
 domain: accounting
 tech_tags:
   - RAG

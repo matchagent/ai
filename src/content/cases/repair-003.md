@@ -1,6 +1,6 @@
 ---
 title: Ader Watches：AI「Aderbot」で5世紀の時計知見を民主化し市場参加者を支援
-industry: repair
+industry: rep
 domain: customer_support
 tech_tags:
   - AIエージェント

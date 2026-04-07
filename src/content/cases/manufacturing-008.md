@@ -1,6 +1,6 @@
 ---
 title: 花王グループ：AIプロダクトSAPPHIREで通勤費・交通費精算を自動化
-industry: manufacturing
+industry: mfg
 domain: accounting
 tech_tags:
   - 予測AI

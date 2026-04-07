@@ -1,6 +1,6 @@
 ---
 title: トヨタ自動車：WiseImagingで磁気探傷検査を自動化し見逃し率0%を達成
-industry: manufacturing
+industry: mfg
 domain: production
 tech_tags:
   - 画像AI

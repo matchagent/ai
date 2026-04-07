@@ -1,6 +1,6 @@
 ---
 title: レオパレス21：ボイスボット・チャットボットで入居中問い合わせ対応を自動化
-industry: realestate
+industry: re
 domain: customer_support
 tech_tags:
   - 音声AI

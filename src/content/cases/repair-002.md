@@ -1,6 +1,6 @@
 ---
 title: 共栄産業：ICT工程管理で時計修理の生産性向上と赤字部門を黒字化
-industry: repair
+industry: rep
 domain: production
 tech_tags:
   - 言語AI

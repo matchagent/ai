@@ -1,6 +1,6 @@
 ---
 title: レオパレス21：入居者向けAI接客「KARAKURI」で全国56万戸の問い合わせ対応を自動化
-industry: realestate
+industry: re
 domain: customer_support
 tech_tags:
   - 言語AI

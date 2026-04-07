@@ -1,6 +1,6 @@
 ---
 title: WAV：AI画像認識とブロックチェーンで時計真贋判定の精度と効率性を向上
-industry: repair
+industry: rep
 domain: production
 tech_tags:
   - 画像AI

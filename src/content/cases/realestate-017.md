@@ -1,7 +1,7 @@
 ---
 title: JR九州：estieマーケット調査で不動産開発の市場分析を3日→30分に短縮
 domain: sales
-industry: realestate
+industry: re
 tech_tags:
   - 言語AI
 company_size: large

@@ -1,6 +1,6 @@
 ---
 title: ニチレイ・アイス：AIで包装氷の生産・輸送・在庫計画を自動化
-industry: manufacturing
+industry: mfg
 domain: production
 tech_tags:
   - 予測AI

@@ -1,6 +1,6 @@
 ---
 title: 鹿島建設：7万件の災害事例をAI解析する「K-SAFE」で新人でもベテラン同等の危険予知を実現
-industry: construction
+industry: const
 domain: production
 tech_tags:
   - RAG

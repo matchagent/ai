@@ -1,6 +1,6 @@
 ---
 title: 日本通運：協働型ピッキングロボット「ラピュタPA-AMR」で生産性2.5倍
-industry: logistics
+industry: log
 domain: logistics
 tech_tags:
   - 予測AI

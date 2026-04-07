@@ -1,6 +1,6 @@
 ---
 title: バイバー：ディープラーニング「AIレンズ」で名時計検品の誤検証0件を達成
-industry: repair
+industry: rep
 domain: customer_support
 tech_tags:
   - 言語AI

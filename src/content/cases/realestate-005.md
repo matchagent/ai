@@ -1,6 +1,6 @@
 ---
 title: 三井不動産：自社特化型AIチャット「&Chat」で全社2,500人の業務効率化を推進
-industry: realestate
+industry: re
 domain: hr
 tech_tags:
   - RAG

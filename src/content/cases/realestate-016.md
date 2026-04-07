@@ -1,7 +1,7 @@
 ---
 title: 東急不動産：世界最高峰のCGI技術で分譲マンション「BRANZ」をデジタルツイン化
 domain: sales
-industry: realestate
+industry: re
 tech_tags:
   - 画像AI
 company_size: large

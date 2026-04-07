@@ -1,6 +1,6 @@
 ---
 title: 清水建設：AIシールド掘進システムで熟練技術の2日間の計画作業を10分に短縮
-industry: construction
+industry: const
 domain: production
 tech_tags:
   - 予測AI

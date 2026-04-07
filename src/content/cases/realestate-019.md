@@ -1,7 +1,7 @@
 ---
 title: 大和ハウス工業：AIプランコンシェルジュで戸建住宅の最適プラン提案を数秒で実現
 domain: sales
-industry: realestate
+industry: re
 tech_tags:
   - RAG
 company_size: large

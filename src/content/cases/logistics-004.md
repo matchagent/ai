@@ -1,6 +1,6 @@
 ---
 title: 佐川急便：AI×電力データによる在宅予測で不在配送を約20%削減
-industry: logistics
+industry: log
 domain: logistics
 tech_tags:
   - 予測AI

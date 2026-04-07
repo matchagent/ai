@@ -1,6 +1,6 @@
 ---
 title: 京みずは｜LINE AIクーポン配信で来店者数300%超達成
-industry: retail
+industry: rtl
 domain: marketing
 tech_tags:
   - 言語AI

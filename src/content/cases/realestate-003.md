@@ -1,6 +1,6 @@
 ---
 title: 野村不動産ソリューションズ×LIFULL：生成AIチャット「ノムコムAIアドバイザー」で不動産相談を革新
-industry: realestate
+industry: re
 domain: customer_support
 tech_tags:
   - RAG

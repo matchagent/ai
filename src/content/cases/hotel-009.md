@@ -1,6 +1,6 @@
 ---
 title: 大阪観光局：生成AIチャットボット「Kotozna laMondo」で多言語観光案内を無人化、利用率1.5倍に
-industry: hotel
+industry: htl
 domain: customer_support
 tech_tags:
   - 音声AI

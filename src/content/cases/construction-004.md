@@ -1,6 +1,6 @@
 ---
 title: 大成建設：自律型鉄筋結束ロボット「T-iROBO Rebar」で鉄筋工事の20%省力化を実現
-industry: construction
+industry: const
 domain: production
 tech_tags:
   - 画像AI

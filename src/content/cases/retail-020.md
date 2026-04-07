@@ -1,6 +1,6 @@
 ---
 title: バローホールディングス：AI×気象データで来店予測精度93%、1,200店舗の在庫管理を本部主導へ
-industry: retail
+industry: rtl
 domain: logistics
 tech_tags:
   - 予測AI

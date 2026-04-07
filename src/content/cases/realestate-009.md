@@ -1,6 +1,6 @@
 ---
 title: レオパレス21：AIアバター「アバトレ」で営業研修を革新、年間最大1,800時間削減
-industry: realestate
+industry: re
 domain: hr
 tech_tags:
   - RAG

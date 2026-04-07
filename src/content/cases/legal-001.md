@@ -1,6 +1,6 @@
 ---
 title: Bordr：n8n自動化でポルトガル移住サポート業務をスケールし$100Kビジネス構築
-industry: legal
+industry: leg
 domain: customer_support
 tech_tags:
   - AIエージェント

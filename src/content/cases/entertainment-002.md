@@ -1,6 +1,6 @@
 ---
 title: サイバーエージェント：「ゲームAI Lab」新設でゲーム開発の生成AI活用を本格推進
-industry: entertainment
+industry: ent
 domain: production
 tech_tags:
   - 言語AI

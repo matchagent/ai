@@ -1,6 +1,6 @@
 ---
 title: 楽天グループ：LangChain・LangSmithで社内AIプラットフォームを構築、70事業での生産性向上を目指す
-industry: retail
+industry: rtl
 domain: customer_support
 tech_tags:
   - 言語AI

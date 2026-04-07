@@ -1,7 +1,7 @@
 ---
 title: 日本ユニシス：スマートグラス連携の「まるっと点検」で設備点検業務をDX化
 domain: production
-industry: realestate
+industry: re
 tech_tags:
   - 音声AI
 company_size: large

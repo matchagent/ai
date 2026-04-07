@@ -1,6 +1,6 @@
 ---
 title: 日立製作所・ダイキン：生成AI工場設備故障診断エージェントで精度90%以上
-industry: manufacturing
+industry: mfg
 domain: production
 tech_tags:
   - RAG

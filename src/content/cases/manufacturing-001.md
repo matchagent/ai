@@ -1,6 +1,6 @@
 ---
 title: Breitling：Salesforce Net Zero Cloudでカーボン排出データ管理を自動化
-industry: manufacturing
+industry: mfg
 domain: accounting
 tech_tags:
   - 予測AI

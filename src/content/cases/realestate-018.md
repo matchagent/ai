@@ -1,7 +1,7 @@
 ---
 title: 東京建物：AIによるオフィス空調制御で消費エネルギー約5割削減と温度ムラ解消
 domain: production
-industry: realestate
+industry: re
 tech_tags:
   - 予測AI
 company_size: large

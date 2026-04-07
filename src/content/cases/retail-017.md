@@ -1,7 +1,7 @@
 ---
 title: ウォルマート：150万人店舗スタッフ向けAIツール群で業務効率を変革
 domain: logistics
-industry: retail
+industry: rtl
 tech_tags:
   - 予測AI
 company_size: large

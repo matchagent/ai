@@ -1,6 +1,6 @@
 ---
 title: 富士通：Salesforce生成AIでサポートデスク業務を約89%短縮
-industry: manufacturing
+industry: mfg
 domain: customer_support
 tech_tags:
   - RAG

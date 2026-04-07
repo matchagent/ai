@@ -1,6 +1,6 @@
 ---
 title: じゃらんnet：Azure OpenAI Serviceで対話型UIを2週間で構築、生成AIによる宿探しを実現
-industry: hotel
+industry: htl
 domain: sales
 tech_tags:
   - 言語AI

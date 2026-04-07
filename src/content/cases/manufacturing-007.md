@@ -1,6 +1,6 @@
 ---
 title: エナジーウィズ：exaBase生成AIで知財部門が月間120時間/人の業務削減
-industry: manufacturing
+industry: mfg
 domain: hr
 tech_tags:
   - RAG

@@ -1,6 +1,6 @@
 ---
 title: ファミリーマート：人型AIアシスタント＋生成AIで店舗業務を最大50%効率化
-industry: retail
+industry: rtl
 domain: customer_support
 tech_tags:
   - 言語AI

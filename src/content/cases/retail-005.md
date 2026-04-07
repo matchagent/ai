@@ -1,6 +1,6 @@
 ---
 title: Blu.Coffee：Make.comで顧客リターゲティング自動化、手作業90%削減
-industry: retail
+industry: rtl
 domain: marketing
 tech_tags:
   - AIエージェント

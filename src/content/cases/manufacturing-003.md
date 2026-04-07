@@ -1,6 +1,6 @@
 ---
 title: シチズンマシナリー：AI見積支援サービスで工作機械ユーザーの生産性向上
-industry: manufacturing
+industry: mfg
 domain: production
 tech_tags:
   - 画像AI
