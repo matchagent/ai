@@ -24,6 +24,8 @@
 
 日本での不動産業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
 日本での娯楽業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+
+MujinのAIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
 ```
 
 1-5.調査と結果のリスト保存
@@ -42,33 +44,14 @@ note/marketing.txt
 
 2.作成
 ```
-• https://prtimes.jp/main/html/rd/p/000000531.000023740.html
+• https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2024/pdf/AIHUB-2008.pdf
 を出典として、
-matchagent/src/content/cases/logistics-001.md
+src/content/cases/manufacturing-020.md
 
-• https://prtimes.jp/main/html/rd/p/000000347.000004374.html
+• https://blog.langchain.com/customers-chrobinson/
 を出典として、
-matchagent/src/content/cases/logistics-002.md
+src/content/cases/logistics-009.md
 
-• https://www.suntory.co.jp/news/article/13925.html
-を出典として、
-matchagent/src/content/cases/logistics-003.md
-
-• https://prtimes.jp/main/html/rd/p/000000014.000040467.html
-を出典として、
-matchagent/src/content/cases/logistics-004.md
-
-• https://prtimes.jp/main/html/rd/p/000000165.000021229.html
-を出典として、
-matchagent/src/content/cases/logistics-005.md
-
-• https://prtimes.jp/main/html/rd/p/000000100.000019139.html
-を出典として、
-matchagent/src/content/cases/logistics-006.md
-
-• https://prtimes.jp/main/html/rd/p/000000006.000128340.html
-を出典として、
-matchagent/src/content/cases/logistics-007.md
 
 で、それぞれ3000文字数ほどのmdファイルを作成して。
 
@@ -86,20 +69,14 @@ npm run check
 
 3.検証
 ```
-あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツ品質管理者です。
+あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツテクニカルディレクターです。
 
-src/content/cases/construction-001.md
-src/content/cases/construction-002.md
-src/content/cases/construction-003.md
-src/content/cases/construction-004.md
-
-src/content/cases/logistics-001.md
-src/content/cases/logistics-002.md
-src/content/cases/logistics-003.md
-src/content/cases/logistics-004.md
-src/content/cases/logistics-005.md
-src/content/cases/logistics-006.md
-src/content/cases/logistics-007.md
+src/content/cases/entertainment-007.md
+src/content/cases/entertainment-008.md
+src/content/cases/retail-022.md
+src/content/cases/retail-023.md
+src/content/cases/logistics-008.md
+src/content/cases/hotel-011.md
 
 の内容を、以下の 観点から検証してください。
 
