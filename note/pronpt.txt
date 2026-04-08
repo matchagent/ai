@@ -44,13 +44,21 @@ note/marketing.txt
 
 2.作成
 ```
-• https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2024/pdf/AIHUB-2008.pdf
+• https://www.servicenow.com/jp/customers/uber.html
 を出典として、
-src/content/cases/manufacturing-020.md
+src/content/cases/log-010.md
 
-• https://blog.langchain.com/customers-chrobinson/
+• https://www.servicenow.com/jp/customers/expedia.html
 を出典として、
-src/content/cases/logistics-009.md
+src/content/cases/htl-012.md
+
+• https://www.servicenow.com/jp/customers/cathay.html
+を出典として、
+src/content/cases/log-012.md
+
+• https://www.servicenow.com/jp/customers/delta-air-lines.html
+を出典として、
+src/content/cases/log-011.md
 
 
 で、それぞれ3000文字数ほどのmdファイルを作成して。
@@ -71,12 +79,21 @@ npm run check
 ```
 あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツテクニカルディレクターです。
 
-src/content/cases/entertainment-007.md
-src/content/cases/entertainment-008.md
-src/content/cases/retail-022.md
-src/content/cases/retail-023.md
-src/content/cases/logistics-008.md
-src/content/cases/hotel-011.md
+src/content/cases/mfg-021.md
+src/content/cases/mfg-022.md
+src/content/cases/mfg-023.md
+src/content/cases/mfg-024.md
+src/content/cases/mfg-025.md
+src/content/cases/mfg-026.md
+src/content/cases/mfg-027.md
+src/content/cases/mfg-028.md
+src/content/cases/mfg-029.md
+src/content/cases/mfg-030.md
+
+src/content/cases/log-010.md
+src/content/cases/log-011.md
+src/content/cases/log-012.md
+src/content/cases/htl-012.md
 
 の内容を、以下の 観点から検証してください。
 

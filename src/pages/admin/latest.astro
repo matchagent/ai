@@ -1,0 +1,329 @@
+---
+import BaseLayout from '@/components/layout/BaseLayout.astro';
+
+// Type definitions
+type GitStatusFile = {
+  filename: string;
+  status: string;
+  statusLabel: string;
+  statusIcon: string;
+  statusType: string;
+  birthtime: string;
+  mtime: string;
+  frontmatter: {
+    title: string;
+    industry: string;
+    domain: string;
+    company_size: string;
+    tech_tags: string[];
+    source_url_verified: boolean;
+    date: string | null;
+  };
+};
+
+type GitStatusData = {
+  generatedAt: string;
+  count: number;
+  summary: {
+    untracked: number;
+    modified: number;
+    staged: number;
+    added: number;
+    deleted: number;
+  };
+  files: GitStatusFile[];
+  error?: string;
+};
+
+// Load git status data
+let gitStatusData: GitStatusData;
+
+try {
+  const data = await import('@/data/git-status.json');
+  gitStatusData = data.default as GitStatusData;
+} catch (e) {
+  gitStatusData = {
+    generatedAt: new Date().toISOString(),
+    count: 0,
+    summary: { untracked: 0, modified: 0, staged: 0, added: 0, deleted: 0 },
+    files: [],
+    error: 'git-status.jsonが見つかりません。prebuildスクリプトを実行してください。'
+  };
+}
+
+const INDUSTRY_LABELS: Record<string, string> = {
+  mfg: '製造業',
+  rtl: '小売業',
+  log: '物流・運輸業',
+  const: '建設業',
+  leg: '自治体・公共',
+  food: '食品・飲料',
+  htl: '宿泊・観光',
+  re: '不動産',
+  ent: 'エンタメ・メディア',
+  rep: '不動産（賃貸）',
+};
+
+const DOMAIN_LABELS: Record<string, string> = {
+  sales: '営業・販売',
+  marketing: 'マーケティング',
+  production: '製造・生産',
+  hr: '人事・総務',
+  accounting: '財務・経理',
+  customer_support: 'カスタマーサポート',
+  logistics: '物流・倉庫',
+};
+
+const SIZE_LABELS: Record<string, string> = {
+  small: '中小企業',
+  mid: '中堅企業',
+  large: '大企業',
+};
+
+function formatDate(dateStr: string): string {
+  const date = new Date(dateStr);
+  return date.toLocaleDateString('ja-JP', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+}
+
+function formatRelativeTime(dateStr: string): string {
+  const date = new Date(dateStr);
+  const now = new Date();
+  const diffMs = now.getTime() - date.getTime();
+  const diffMins = Math.floor(diffMs / 60000);
+  const diffHours = Math.floor(diffMs / 3600000);
+  const diffDays = Math.floor(diffMs / 86400000);
+  
+  if (diffMins < 1) return '刚刚';
+  if (diffMins < 60) return `${diffMins}分前`;
+  if (diffHours < 24) return `${diffHours}時間前`;
+  if (diffDays < 7) return `${diffDays}日前`;
+  return formatDate(dateStr);
+}
+
+const title = '最近の事例ファイル一覧';
+const description = 'Gitで未追跡または変更済みの事例ファイルを一覧表示します';
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <!-- Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-gray-900 mb-2">{title}</h1>
+      <p class="text-gray-600">
+        生成日時: {gitStatusData.generatedAt ? formatDate(gitStatusData.generatedAt) : '-'}
+      </p>
+    </div>
+
+    <!-- Error Alert -->
+    {gitStatusData.error && (
+      <div class="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+        <div class="flex items-start gap-3">
+          <span class="text-red-500 text-xl">⚠️</span>
+          <div>
+            <h3 class="font-semibold text-red-900">エラーが発生しました</h3>
+            <p class="text-red-700 mt-1">{gitStatusData.error}</p>
+            <p class="text-sm text-red-600 mt-2">
+              解決方法: <code class="bg-red-100 px-2 py-1 rounded">npm run prebuild</code> を実行してください
+            </p>
+          </div>
+        </div>
+      </div>
+    )}
+
+    <!-- Summary Cards -->
+    {gitStatusData.count > 0 && (
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
+        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+          <div class="text-2xl font-bold text-gray-900">{gitStatusData.count}</div>
+          <div class="text-sm text-gray-600">合計</div>
+        </div>
+        <div class="bg-green-50 p-4 rounded-lg shadow-sm border border-green-200">
+          <div class="text-2xl font-bold text-green-700">{gitStatusData.summary.untracked}</div>
+          <div class="text-sm text-green-600">未追跡</div>
+        </div>
+        <div class="bg-yellow-50 p-4 rounded-lg shadow-sm border border-yellow-200">
+          <div class="text-2xl font-bold text-yellow-700">{gitStatusData.summary.modified}</div>
+          <div class="text-sm text-yellow-600">変更済み</div>
+        </div>
+        <div class="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-200">
+          <div class="text-2xl font-bold text-blue-700">{gitStatusData.summary.staged}</div>
+          <div class="text-sm text-blue-600">ステージング済み</div>
+        </div>
+        <div class="bg-purple-50 p-4 rounded-lg shadow-sm border border-purple-200">
+          <div class="text-2xl font-bold text-purple-700">{gitStatusData.summary.added}</div>
+          <div class="text-sm text-purple-600">追加済み</div>
+        </div>
+      </div>
+    )}
+
+    <!-- Empty State -->
+    {gitStatusData.count === 0 && !gitStatusData.error && (
+      <div class="text-center py-12 bg-gray-50 rounded-lg">
+        <div class="text-4xl mb-4">📭</div>
+        <h3 class="text-lg font-medium text-gray-900">未確認のファイルはありません</h3>
+        <p class="text-gray-600 mt-2">
+          すべてのファイルがGitで管理されています
+        </p>
+      </div>
+    )}
+
+    <!-- File List -->
+    {gitStatusData.count > 0 && (
+      <div class="space-y-4" id="file-list">
+        {gitStatusData.files.map((file: GitStatusFile) => (
+          <div 
+            class="bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow"
+            data-filename={file.filename}
+            data-status={file.statusType}
+          >
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-4">
+                <!-- Left: Icon & Filename -->
+                <div class="flex items-start gap-3 min-w-0">
+                  <span class="text-2xl flex-shrink-0" title={file.statusLabel}>
+                    {file.statusIcon}
+                  </span>
+                  <div class="min-w-0">
+                    <div class="flex items-center gap-2 flex-wrap">
+                      <code class="text-sm bg-gray-100 px-2 py-1 rounded font-mono">
+                        {file.filename}
+                      </code>
+                      <span class:list={[
+                        'text-xs px-2 py-1 rounded-full',
+                        file.statusType === 'untracked' ? 'bg-green-100 text-green-800' :
+                        file.statusType === 'modified' ? 'bg-yellow-100 text-yellow-800' :
+                        file.statusType === 'staged' ? 'bg-blue-100 text-blue-800' :
+                        'bg-gray-100 text-gray-800'
+                      ]}>
+                        {file.statusLabel}
+                      </span>
+                      {!file.frontmatter.source_url_verified && (
+                        <span class="text-xs px-2 py-1 rounded-full bg-red-100 text-red-800" title="source_url_verifiedがfalseです">
+                          ⚠️ 未検証URL
+                        </span>
+                      )}
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mt-2 truncate">
+                      {file.frontmatter.title}
+                    </h3>
+                  </div>
+                </div>
+
+                <!-- Right: Meta info -->
+                <div class="text-right text-sm text-gray-500 flex-shrink-0">
+                  <div title={`作成: ${formatDate(file.birthtime)}`}>
+                    🆕 {formatRelativeTime(file.birthtime)}
+                  </div>
+                  <div class="mt-1" title={`更新: ${formatDate(file.mtime)}`}>
+                    ✏️ {formatRelativeTime(file.mtime)}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tags & Info -->
+              <div class="mt-4 flex flex-wrap items-center gap-2">
+                {file.frontmatter.industry !== '-' && (
+                  <span class="text-xs px-2 py-1 bg-indigo-100 text-indigo-700 rounded">
+                    {INDUSTRY_LABELS[file.frontmatter.industry] || file.frontmatter.industry}
+                  </span>
+                )}
+                {file.frontmatter.domain !== '-' && (
+                  <span class="text-xs px-2 py-1 bg-cyan-100 text-cyan-700 rounded">
+                    {DOMAIN_LABELS[file.frontmatter.domain] || file.frontmatter.domain}
+                  </span>
+                )}
+                {file.frontmatter.company_size !== '-' && (
+                  <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">
+                    {SIZE_LABELS[file.frontmatter.company_size] || file.frontmatter.company_size}
+                  </span>
+                )}
+                {file.frontmatter.tech_tags?.map((tag: string) => (
+                  <span class="text-xs px-2 py-1 bg-orange-100 text-orange-700 rounded">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <!-- Actions -->
+              <div class="mt-4 pt-4 border-t border-gray-100 flex gap-3">
+                <a 
+                  href={`/cases/${file.filename.replace('.md', '')}/`}
+                  class="text-sm text-blue-600 hover:text-blue-800 font-medium"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  事例ページを開く →
+                </a>
+                <button 
+                  class="text-sm text-gray-500 hover:text-gray-700 font-medium details-toggle"
+                  data-filename={file.filename}
+                >
+                  詳細を表示
+                </button>
+              </div>
+
+              <!-- Hidden Details -->
+              <div id={`details-${file.filename}`} class="hidden mt-4 pt-4 border-t border-gray-100">
+                <div class="bg-gray-50 rounded p-4 text-sm">
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <span class="text-gray-500">ファイル名:</span>
+                      <span class="ml-2 font-mono">{file.filename}</span>
+                    </div>
+                    <div>
+                      <span class="text-gray-500">ステータス:</span>
+                      <span class="ml-2">{file.status} ({file.statusLabel})</span>
+                    </div>
+                    <div>
+                      <span class="text-gray-500">作成日時:</span>
+                      <span class="ml-2">{formatDate(file.birthtime)}</span>
+                    </div>
+                    <div>
+                      <span class="text-gray-500">更新日時:</span>
+                      <span class="ml-2">{formatDate(file.mtime)}</span>
+                    </div>
+                    <div>
+                      <span class="text-gray-500">source_url_verified:</span>
+                      <span class:list={['ml-2', file.frontmatter.source_url_verified ? 'text-green-600' : 'text-red-600']}>
+                        {file.frontmatter.source_url_verified ? '✅ true' : '❌ false'}
+                      </span>
+                    </div>
+                    <div>
+                      <span class="text-gray-500">公開日:</span>
+                      <span class="ml-2">{file.frontmatter.date || '-'}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+
+  <script>
+    // Client-side toggle functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.details-toggle');
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const filename = button.getAttribute('data-filename');
+          if (filename) {
+            const details = document.getElementById(`details-${filename}`);
+            if (details) {
+              details.classList.toggle('hidden');
+              button.textContent = details.classList.contains('hidden') ? '詳細を表示' : '詳細を隠す';
+            }
+          }
+        });
+      });
+    });
+  </script>
+</BaseLayout>
