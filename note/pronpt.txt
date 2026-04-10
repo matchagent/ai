@@ -1,10 +1,8 @@
 1.調査
 ```
-韓国語圏で少人数(1-10名)の規模の飲食業で、dify,n8n,make,zapier,Langchain,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名が記載されている事例を調査して。
-日本で少人数(1-10名)の規模の飲食業で、dify,n8n,make,zapier,Langchain,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名が記載されている事例を調査して。
-士業でdify,n8n,make,zapier,Langgraph,OpenClaw等のAIエージェントを使用している、厳密な意味で実在店舗名、会社名、屋号が記載されている事例を調査して。
+日本語圏で少人数(1-10名)の規模で、Langchain,Langgraphを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
 
-企業名、業種、主な内容、出典URLを一覧にして sample.txt で保存して。
+dify,n8n,make,zapier,Langchain,Langgraph,OpenClaw等のAIエージェントを使用してマーケティングを行っている、厳密な意味で実在店舗名が記載されている事例を調査して。
 
 風俗業で、AIを使用している、厳密な意味で実在会社名、会社名、屋号、個人名が記載されている事例を調査して。
 英語圏で時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
@@ -23,45 +21,35 @@
 香港での時計修理業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
 
 日本での不動産業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
-日本での娯楽業で、AIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
 
 MujinのAIを使用している、厳密な意味で実在会社名が記載されている事例を調査して。
+
+企業名、業種、主な内容、出典URLを一覧にして sample.txt で保存して。
 ```
 
 1-5.調査と結果のリスト保存
 ```
-英語圏(アメリカ、カナダ、イギリス等)でマーケティング目的でdify,n8n,make,zapier,Langchain,Langgraph,OpenClaw等のAIエージェントを使用している、厳密な意味で実在店舗名、会社名、屋号が記載されている事例を調査して、
-その調査結果を下記の4行の形式にして、
+Capace cu Suflet
+Maple & Quill
+AutoFlow Media
+の事例を下記の4行の形式にして、
 ```
 [会社名]
 [AIの活用内容]
 [効果・成果]
 [そのAI導入事例が掲載されている厳密なURL]
 ```
-note/marketing.txt
+note/make.txt
 で保存して。
 ```
 
 2.作成
 ```
-• https://www.servicenow.com/jp/customers/uber.html
+• https://www.langchain.com/blog/how-minimal-built-a-multi-agent-customer-support-system-with-langgraph-langsmith
 を出典として、
-src/content/cases/log-010.md
+src/content/cases/rtl-030.md
 
-• https://www.servicenow.com/jp/customers/expedia.html
-を出典として、
-src/content/cases/htl-012.md
-
-• https://www.servicenow.com/jp/customers/cathay.html
-を出典として、
-src/content/cases/log-012.md
-
-• https://www.servicenow.com/jp/customers/delta-air-lines.html
-を出典として、
-src/content/cases/log-011.md
-
-
-で、それぞれ3000文字数ほどのmdファイルを作成して。
+で、3000文字数ほどのmdファイルを作成して。
 
 文体や文章の流れは
 
@@ -79,21 +67,8 @@ npm run check
 ```
 あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツテクニカルディレクターです。
 
-src/content/cases/mfg-021.md
-src/content/cases/mfg-022.md
-src/content/cases/mfg-023.md
-src/content/cases/mfg-024.md
-src/content/cases/mfg-025.md
-src/content/cases/mfg-026.md
-src/content/cases/mfg-027.md
-src/content/cases/mfg-028.md
-src/content/cases/mfg-029.md
-src/content/cases/mfg-030.md
-
-src/content/cases/log-010.md
-src/content/cases/log-011.md
-src/content/cases/log-012.md
-src/content/cases/htl-012.md
+src/content/cases/rtl-028.md
+src/content/cases/rtl-029.md
 
 の内容を、以下の 観点から検証してください。
 

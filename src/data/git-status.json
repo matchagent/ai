@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-08T11:09:04.694Z",
-  "count": 20,
+  "generatedAt": "2026-04-10T08:14:25.379Z",
+  "count": 7,
   "summary": {
-    "untracked": 20,
+    "untracked": 7,
     "modified": 0,
     "staged": 0,
     "added": 0,
@@ -10,282 +10,79 @@
   },
   "files": [
     {
-      "filename": "log-011.md",
+      "filename": "const-007.md",
       "status": "??",
       "statusLabel": "未追跡",
       "statusIcon": "🆕",
       "statusType": "untracked",
-      "birthtime": "2026-04-07T18:53:15.789Z",
-      "mtime": "2026-04-07T19:03:55.140Z",
+      "birthtime": "2026-04-10T08:00:10.761Z",
+      "mtime": "2026-04-10T08:00:40.082Z",
       "frontmatter": {
-        "title": "デルタ航空：ServiceNowで48時間にわずかに構築した従業員ポータルがHR変革の基盤に",
-        "industry": "log",
-        "domain": "hr",
-        "company_size": "large",
-        "tech_tags": [
-          "AIエージェント",
-          "ワークフローエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2024-01-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "mfg-030.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-07T18:52:46.973Z",
-      "mtime": "2026-04-07T19:03:40.692Z",
-      "frontmatter": {
-        "title": "積水化成品：ServiceNowで脆弱性対応を短期間に構築、年間60営業日の期間短縮を実現",
-        "industry": "mfg",
+        "title": "松江土建：「Kencopa工程AIエージェント」β版でICT活用の現場業務をさらに効率化",
+        "industry": "const",
         "domain": "production",
         "company_size": "mid",
         "tech_tags": [
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2024-01-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "log-012.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-07T18:52:42.371Z",
-      "mtime": "2026-04-07T19:04:10.041Z",
-      "frontmatter": {
-        "title": "キャセイパシフィック航空：ServiceNowでIT運用を刷新しカスタマーサティスファクション95%を達成",
-        "industry": "log",
-        "domain": "customer_support",
-        "company_size": "large",
-        "tech_tags": [
-          "言語AI",
           "AIエージェント",
-          "チャットボット"
+          "言語AI"
         ],
         "source_url_verified": true,
-        "date": "2024-05-01T00:00:00.000Z"
+        "date": "2025-12-10T00:00:00.000Z"
       }
     },
     {
-      "filename": "htl-012.md",
+      "filename": "const-006.md",
       "status": "??",
       "statusLabel": "未追跡",
       "statusIcon": "🆕",
       "statusType": "untracked",
-      "birthtime": "2026-04-07T18:52:07.473Z",
-      "mtime": "2026-04-07T19:04:19.580Z",
+      "birthtime": "2026-04-10T07:59:25.694Z",
+      "mtime": "2026-04-10T07:59:25.695Z",
       "frontmatter": {
-        "title": "Expedia Group：ServiceNowで従業員エクスペリエンスを統合、問い合わせポータルを一元化",
-        "industry": "htl",
-        "domain": "hr",
-        "company_size": "large",
-        "tech_tags": [
-          "言語AI",
-          "チャットボット"
-        ],
-        "source_url_verified": true,
-        "date": "2024-01-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "mfg-029.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-07T18:52:05.176Z",
-      "mtime": "2026-04-07T19:06:01.473Z",
-      "frontmatter": {
-        "title": "コクヨ：ServiceNowで100以上の窓口を集約、94%の従業員が「便利」と回答",
-        "industry": "mfg",
-        "domain": "hr",
-        "company_size": "large",
-        "tech_tags": [
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2023-01-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "log-010.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-07T18:51:33.324Z",
-      "mtime": "2026-04-07T19:03:47.619Z",
-      "frontmatter": {
-        "title": "Uber：ServiceNow Governance Risk and Complianceで監査対応を自動化",
-        "industry": "log",
-        "domain": "accounting",
-        "company_size": "large",
-        "tech_tags": [
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2024-01-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "mfg-028.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-07T18:51:15.641Z",
-      "mtime": "2026-04-07T19:05:27.496Z",
-      "frontmatter": {
-        "title": "日産自動車：ServiceNowでグローバルシステムを可視化、リードタイム90%短縮",
-        "industry": "mfg",
+        "title": "竹中土木：「Kencopa工程AIエージェント」PoCで施工計画のDXを推進",
+        "industry": "const",
         "domain": "production",
-        "company_size": "large",
-        "tech_tags": [
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2024-01-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "mfg-027.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-07T18:50:33.669Z",
-      "mtime": "2026-04-07T19:03:24.951Z",
-      "frontmatter": {
-        "title": "ヨコオ：ServiceNowで脆弱性対応を10分に短縮、第3の基幹システムとして確立",
-        "industry": "mfg",
-        "domain": "production",
-        "company_size": "mid",
-        "tech_tags": [
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2024-01-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "mfg-026.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-07T18:49:44.591Z",
-      "mtime": "2026-04-07T19:05:10.819Z",
-      "frontmatter": {
-        "title": "資生堂：ServiceNowでグローバルITサービスを標準化、人事業務もデジタル化",
-        "industry": "mfg",
-        "domain": "hr",
-        "company_size": "large",
-        "tech_tags": [
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2023-01-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "mfg-025.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-07T18:49:03.606Z",
-      "mtime": "2026-04-07T19:05:00.889Z",
-      "frontmatter": {
-        "title": "横河電機：ServiceNowで顧客問い合わせ対応を自動化、年間200時間の業務効率化を実現",
-        "industry": "mfg",
-        "domain": "customer_support",
-        "company_size": "large",
-        "tech_tags": [
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2023-01-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "mfg-024.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-07T18:48:21.414Z",
-      "mtime": "2026-04-07T19:04:41.351Z",
-      "frontmatter": {
-        "title": "Siemens AG：ServiceNowでグローバルビジネスサービスを変革、100万時間の自動化を達成",
-        "industry": "mfg",
-        "domain": "hr",
         "company_size": "large",
         "tech_tags": [
           "AIエージェント",
           "言語AI"
         ],
         "source_url_verified": true,
-        "date": "2024-01-01T00:00:00.000Z"
+        "date": "2026-04-05T00:00:00.000Z"
       }
     },
     {
-      "filename": "mfg-023.md",
+      "filename": "const-005.md",
       "status": "??",
       "statusLabel": "未追跡",
       "statusIcon": "🆕",
       "statusType": "untracked",
-      "birthtime": "2026-04-07T18:47:39.204Z",
-      "mtime": "2026-04-07T19:04:33.749Z",
+      "birthtime": "2026-04-10T07:58:45.605Z",
+      "mtime": "2026-04-10T08:00:39.458Z",
       "frontmatter": {
-        "title": "ASML：AI対応仮想エージェント「Violet」でITサービスを革新",
-        "industry": "mfg",
-        "domain": "customer_support",
-        "company_size": "large",
-        "tech_tags": [
-          "言語AI",
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2024-01-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "mfg-022.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-07T18:47:00.735Z",
-      "mtime": "2026-04-07T19:03:05.243Z",
-      "frontmatter": {
-        "title": "Coca-Cola HBC：ServiceNowでプロジェクト領域全体を可視化、15万時間を従業員に還元",
-        "industry": "mfg",
+        "title": "川田工業：「Kencopa工程AIエージェント」β版で工程表作成を自動化",
+        "industry": "const",
         "domain": "production",
-        "company_size": "large",
+        "company_size": "mid",
         "tech_tags": [
-          "AIエージェント"
+          "AIエージェント",
+          "言語AI"
         ],
         "source_url_verified": true,
-        "date": "2024-01-01T00:00:00.000Z"
+        "date": "2025-12-19T00:00:00.000Z"
       }
     },
     {
-      "filename": "mfg-021.md",
+      "filename": "leg-013.md",
       "status": "??",
       "statusLabel": "未追跡",
       "statusIcon": "🆕",
       "statusType": "untracked",
-      "birthtime": "2026-04-07T18:46:24.909Z",
-      "mtime": "2026-04-07T19:01:49.503Z",
+      "birthtime": "2026-04-10T07:58:06.611Z",
+      "mtime": "2026-04-10T07:58:06.613Z",
       "frontmatter": {
-        "title": "CCEP：AIと機械学習でファイナンス・シェアードサービスを変革",
-        "industry": "mfg",
+        "title": "ソリマチ：AIエージェント開発者養成講座で設計思想を「AIファースト」に転換",
+        "industry": "leg",
         "domain": "accounting",
         "company_size": "large",
         "tech_tags": [
@@ -293,127 +90,68 @@
           "言語AI"
         ],
         "source_url_verified": true,
-        "date": "2024-01-01T00:00:00.000Z"
+        "date": "2026-01-15T00:00:00.000Z"
       }
     },
     {
-      "filename": "leg-006.md",
+      "filename": "rtl-028.md",
       "status": "??",
       "statusLabel": "未追跡",
       "statusIcon": "🆕",
       "statusType": "untracked",
-      "birthtime": "2026-04-07T18:37:44.265Z",
-      "mtime": "2026-04-07T18:47:12.752Z",
+      "birthtime": "2026-04-10T07:34:07.624Z",
+      "mtime": "2026-04-10T07:37:53.157Z",
       "frontmatter": {
-        "title": "東広島市：ServiceNowでCRMを構築、市職員の内製開発で市民サービスを革新",
-        "industry": "leg",
-        "domain": "customer_support",
-        "company_size": "mid",
-        "tech_tags": [
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2024-03-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "leg-005.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-07T18:36:55.835Z",
-      "mtime": "2026-04-07T18:46:42.342Z",
-      "frontmatter": {
-        "title": "藤沢市：ServiceNow CSMで月間5000件の電話問い合わせを削減、シン・シヤクショプラットフォーム構築",
-        "industry": "leg",
-        "domain": "customer_support",
-        "company_size": "mid",
-        "tech_tags": [
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2024-09-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "leg-004.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-07T18:36:12.882Z",
-      "mtime": "2026-04-07T18:44:04.569Z",
-      "frontmatter": {
-        "title": "横浜市：ServiceNowで377万人の行政サービスをデジタル化、予算編成・子育て支援を革新",
-        "industry": "leg",
-        "domain": "customer_support",
-        "company_size": "large",
-        "tech_tags": [
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2024-04-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "rtl-026.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-07T18:35:15.038Z",
-      "mtime": "2026-04-07T18:42:21.418Z",
-      "frontmatter": {
-        "title": "Carrefour：ServiceNow「Click & Repair」で設備修理時間を短縮、店舗稼働率向上",
+        "title": "Minimal：LangChainマルチエージェントでECカスタマーサポートを80%効率化",
         "industry": "rtl",
-        "domain": "production",
-        "company_size": "large",
+        "domain": "customer_support",
+        "company_size": "small",
         "tech_tags": [
-          "AIエージェント"
+          "AIエージェント",
+          "ChatGPT顧客対応"
         ],
         "source_url_verified": true,
-        "date": "2024-01-01T00:00:00.000Z"
+        "date": "2025-01-20T00:00:00.000Z"
       }
     },
     {
-      "filename": "rtl-025.md",
+      "filename": "rtl-029.md",
       "status": "??",
       "statusLabel": "未追跡",
       "statusIcon": "🆕",
       "statusType": "untracked",
-      "birthtime": "2026-04-07T18:34:20.525Z",
-      "mtime": "2026-04-07T18:42:12.863Z",
+      "birthtime": "2026-04-10T07:30:25.786Z",
+      "mtime": "2026-04-10T07:37:53.157Z",
       "frontmatter": {
-        "title": "UCC：ServiceNowで従業員ポータルを刷新、紙申請90%削減で入社手続き時間を1/3に",
+        "title": "Gold Rush Vinyl：Zapier自動化で年2,200時間の業務時間を削減し24金レコード新事業を創出",
         "industry": "rtl",
-        "domain": "hr",
-        "company_size": "large",
+        "domain": "customer_support",
+        "company_size": "small",
         "tech_tags": [
           "AIエージェント"
         ],
         "source_url_verified": true,
-        "date": "2022-07-01T00:00:00.000Z"
+        "date": "2025-01-01T00:00:00.000Z"
       }
     },
     {
-      "filename": "rtl-024.md",
+      "filename": "rtl-027.md",
       "status": "??",
       "statusLabel": "未追跡",
       "statusIcon": "🆕",
       "statusType": "untracked",
-      "birthtime": "2026-04-07T18:33:25.809Z",
-      "mtime": "2026-04-07T18:41:45.715Z",
+      "birthtime": "2026-04-10T06:41:42.950Z",
+      "mtime": "2026-04-10T07:00:13.665Z",
       "frontmatter": {
-        "title": "Lowe's：ServiceNow HR Service Deliveryで30万人従業員のHR体験を革新",
+        "title": "Jenny's Boutique：n8nによる自律型ワークフローで業務時間を75%削減",
         "industry": "rtl",
-        "domain": "hr",
-        "company_size": "large",
+        "domain": "sales",
+        "company_size": "small",
         "tech_tags": [
           "AIエージェント"
         ],
         "source_url_verified": true,
-        "date": "2024-01-01T00:00:00.000Z"
+        "date": "2025-07-19T00:00:00.000Z"
       }
     }
   ]
