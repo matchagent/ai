@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-10T08:14:25.379Z",
-  "count": 7,
+  "generatedAt": "2026-04-10T14:07:27.681Z",
+  "count": 4,
   "summary": {
-    "untracked": 7,
+    "untracked": 4,
     "modified": 0,
     "staged": 0,
     "added": 0,
@@ -10,148 +10,83 @@
   },
   "files": [
     {
-      "filename": "const-007.md",
+      "filename": "ent-010.md",
       "status": "??",
       "statusLabel": "未追跡",
       "statusIcon": "🆕",
       "statusType": "untracked",
-      "birthtime": "2026-04-10T08:00:10.761Z",
-      "mtime": "2026-04-10T08:00:40.082Z",
+      "birthtime": "2026-04-10T12:55:23.121Z",
+      "mtime": "2026-04-10T13:06:31.179Z",
       "frontmatter": {
-        "title": "松江土建：「Kencopa工程AIエージェント」β版でICT活用の現場業務をさらに効率化",
-        "industry": "const",
-        "domain": "production",
-        "company_size": "mid",
-        "tech_tags": [
-          "AIエージェント",
-          "言語AI"
-        ],
-        "source_url_verified": true,
-        "date": "2025-12-10T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "const-006.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-10T07:59:25.694Z",
-      "mtime": "2026-04-10T07:59:25.695Z",
-      "frontmatter": {
-        "title": "竹中土木：「Kencopa工程AIエージェント」PoCで施工計画のDXを推進",
-        "industry": "const",
-        "domain": "production",
+        "title": "猎豹移动：「龙虾军团」8体のAIエージェントで市場チーム半分を代替",
+        "industry": "ent",
+        "domain": "marketing",
         "company_size": "large",
         "tech_tags": [
-          "AIエージェント",
-          "言語AI"
+          "AIエージェント"
         ],
         "source_url_verified": true,
-        "date": "2026-04-05T00:00:00.000Z"
+        "date": "2026-03-01T00:00:00.000Z"
       }
     },
     {
-      "filename": "const-005.md",
+      "filename": "mfg-031.md",
       "status": "??",
       "statusLabel": "未追跡",
       "statusIcon": "🆕",
       "statusType": "untracked",
-      "birthtime": "2026-04-10T07:58:45.605Z",
-      "mtime": "2026-04-10T08:00:39.458Z",
+      "birthtime": "2026-04-10T12:54:27.488Z",
+      "mtime": "2026-04-10T13:06:58.964Z",
       "frontmatter": {
-        "title": "川田工業：「Kencopa工程AIエージェント」β版で工程表作成を自動化",
-        "industry": "const",
+        "title": "韩一（微软製品設計師）：OpenClawで5体のAIエージェントによる個人生産性革命",
+        "industry": "mfg",
         "domain": "production",
-        "company_size": "mid",
-        "tech_tags": [
-          "AIエージェント",
-          "言語AI"
-        ],
-        "source_url_verified": true,
-        "date": "2025-12-19T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "leg-013.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-10T07:58:06.611Z",
-      "mtime": "2026-04-10T07:58:06.613Z",
-      "frontmatter": {
-        "title": "ソリマチ：AIエージェント開発者養成講座で設計思想を「AIファースト」に転換",
-        "industry": "leg",
-        "domain": "accounting",
-        "company_size": "large",
-        "tech_tags": [
-          "AIエージェント",
-          "言語AI"
-        ],
-        "source_url_verified": true,
-        "date": "2026-01-15T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "rtl-028.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-10T07:34:07.624Z",
-      "mtime": "2026-04-10T07:37:53.157Z",
-      "frontmatter": {
-        "title": "Minimal：LangChainマルチエージェントでECカスタマーサポートを80%効率化",
-        "industry": "rtl",
-        "domain": "customer_support",
         "company_size": "small",
         "tech_tags": [
-          "AIエージェント",
-          "ChatGPT顧客対応"
+          "AIエージェント"
         ],
         "source_url_verified": true,
-        "date": "2025-01-20T00:00:00.000Z"
+        "date": "2026-03-01T00:00:00.000Z"
       }
     },
     {
-      "filename": "rtl-029.md",
+      "filename": "htl-013.md",
       "status": "??",
       "statusLabel": "未追跡",
       "statusIcon": "🆕",
       "statusType": "untracked",
-      "birthtime": "2026-04-10T07:30:25.786Z",
-      "mtime": "2026-04-10T07:37:53.157Z",
+      "birthtime": "2026-04-10T12:53:22.133Z",
+      "mtime": "2026-04-10T13:06:44.734Z",
       "frontmatter": {
-        "title": "Gold Rush Vinyl：Zapier自動化で年2,200時間の業務時間を削減し24金レコード新事業を創出",
-        "industry": "rtl",
+        "title": "wanderAI：8体のAIエージェントで無人旅行社を実現",
+        "industry": "htl",
         "domain": "customer_support",
         "company_size": "small",
         "tech_tags": [
           "AIエージェント"
         ],
         "source_url_verified": true,
-        "date": "2025-01-01T00:00:00.000Z"
+        "date": "2026-03-01T00:00:00.000Z"
       }
     },
     {
-      "filename": "rtl-027.md",
+      "filename": "ent-009.md",
       "status": "??",
       "statusLabel": "未追跡",
       "statusIcon": "🆕",
       "statusType": "untracked",
-      "birthtime": "2026-04-10T06:41:42.950Z",
-      "mtime": "2026-04-10T07:00:13.665Z",
+      "birthtime": "2026-04-10T12:52:16.958Z",
+      "mtime": "2026-04-10T13:06:16.181Z",
       "frontmatter": {
-        "title": "Jenny's Boutique：n8nによる自律型ワークフローで業務時間を75%削減",
-        "industry": "rtl",
-        "domain": "sales",
+        "title": "MysticX.AI：OpenClawで2人チームがAIタロット体験を構築",
+        "industry": "ent",
+        "domain": "customer_support",
         "company_size": "small",
         "tech_tags": [
           "AIエージェント"
         ],
         "source_url_verified": true,
-        "date": "2025-07-19T00:00:00.000Z"
+        "date": "2026-03-01T00:00:00.000Z"
       }
     }
   ]

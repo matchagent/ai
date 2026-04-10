@@ -1,0 +1,44 @@
+GateGo
+デモフォーム検出、ZoomInfoで見込み客調査（年間売上$42M、従業員180名の企業情報を取得）、LinkedInで意思決定者（VP Ops）を特定、Gmailで個別アウトリーチを作成、HubSpotで案件とフォローアップシーケンスを作成する自律型AI営業エージェント（Sales Agent）を導入
+リードからファーストタッチまでの時間を2分以内に短縮し、フルパイプラインの自動化を実現
+https://tensol.ai/
+
+Clodo AI
+Gmailでのリード選別・サポートメール対応、HubSpotでの解約リスク検知、Slackでの朝のブリーフィング配信を行う運用AIエージェント（Ops Agent）を導入。夜間も自律的に動作し、翌朝までに判断が必要な項目を整理して報告
+24時間体制でのリード対応と業務自動化により、創業者が戦略的業務に集中できる環境を構築
+https://tensol.ai/
+
+Abound
+Zendesk、Slack、WhatsAppを横断したTier 1サポート対応を行うAIサポートエージェント（Support Agent）を導入。メモリ機能で過去の対応パターンを記憶し、同様の問い合わせを自動認識して解決。エラー発生時はLinearにエンジニアリングチケットを作成し、影響を受けたユーザーに能動的にメール通知
+38秒でのチケット解決、78%の自動解決率を達成。顧客対応の自動化により人員追加なしでサポート規模を拡大
+https://tensol.ai/
+
+Stacksync
+Sentryログの監視、GitHubでのCI/CDパイプライン追跡、Linearとの連携を行うAIエンジニアリングエージェント（Eng Agent）を導入。エラーレートの上昇を検知すると、スタックトレースを読み込み、根本原因を特定し、Claude Codeを起動して修正コードを作成・PRを作成
+深夜3時にデータ同期のリグレッションを検知し、特定のコミットを特定してパッチを作成。チームが目覚める前に問題を解決し、インフラストラクチャのダウンタイムを防止
+https://tensol.ai/
+
+OurFirm
+Sentryでのエラーレート監視（47イベント検知）、GitHubでのデプロイ#892との相関分析、Slackでの顧客クレーム3件発見、HubSpotでの約$12Kの収益リスク特定を行い、Slackに完全なレポートとロールバック準備を通知するAIエンジニアリングエージェント（Eng Agent）を導入
+週末の深夜4時にP0エラーを検知し、ロールバック準備完了。チームが対応する前に問題を把握し、重大なダウンタイムと収益損失を防止
+https://tensol.ai/
+
+Kodo
+競合製品のローンチ検知、LinkedInでの競合アナウンス分析、自社ロードマップとのクロスリファレンス、LinkedInでのカウンターポジショニング投稿作成、Slackの#marketingへの下書き送信を行うAIマーケティングエージェント（Marketing Agent）を導入
+チームが目覚める前にコンテンツ作成とレビュー準備が完了し、週2日分のコンテンツ作成時間を節約
+https://tensol.ai/
+
+Arda
+Tensolの顧客としてYC Tier Listに記載（詳細な活用内容は非公開）
+顧客としてTensolの利用を開始
+https://yctierlist.com/w26/tensol/
+
+Streak
+Tensolの顧客として記載。Gmail統合CRMプラットフォームを提供する会社（従業員35名）
+Tensolを利用したAI従業員の展開により業務効率化を実現
+https://tensol.ai/blog/best-openclaw-deployment-options
+
+Mutiny
+Tensolの顧客として記載。ウェブサイトパーソナライゼーションプラットフォームを提供する会社（従業員49-78名）
+Tensolを利用したAI従業員の展開により業務効率化を実現
+https://tensol.ai/blog/best-openclaw-deployment-options

@@ -1,0 +1,24 @@
+AirShelf
+OpenClawを使用したエージェンシーコマース（agentic commerce）向けAIエージェントの構築・運用
+効果・成果の具体的な数値は公開されていないが、エージェンシーコマース領域でのAI活用を推進
+https://www.techinasia.com/2-ai-giants-1-honesty-problem
+
+Tertiary Infotech Academy Pte Ltd
+OpenClawを使用した企業向けトレーニングコースの提供（"Business Transformation with OpenClaw Digital Employees"、"Mastering OpenClaw - Super Personal AI Assistant"など）
+シンガポール企業向けにOpenClawの導入・活用方法を教育し、デジタルトランスフォーメーションを支援
+https://www.tertiarycourses.com.sg/business-transformation-with-openclaw-digital-employees.html
+
+Roanak Khandelwal（個人/シンガポール経営大学MBA学生）
+就職活動の自動化のためのOpenClawエージェントの構築（Tencent Cloud主催のOpenClawインストールイベントに参加し、Telegram Bot連携を設定）
+技術的な背景がない状態でも30秒でインストールが完了し、API設定をエンジニアからサポートを受けて自動化を実現
+https://www.aol.com/articles/went-openclaw-installation-event-tencents-090457354.html
+
+Sylvia Han（個人/シンガポール在住）
+業務の生産性向上のためのOpenClawエージェントの活用（Tencent Cloudインフラを使用）
+約10分でインストールが完了し、技術への不安を克服して業務効率化を実現
+https://www.aol.com/articles/went-openclaw-installation-event-tencents-090457354.html
+
+Ainun Najib（個人/シンガポール在住のデータ・AI実践者）
+個人用AIエージェント"AI-Noon"の作成と運用（OpenClawを使用し、Mac mini上で実行。Moltbook上で多言語対応エージェントとして活動）
+Mac miniを購入してOpenClawをセットアップし、Moltbook（AIエージェント専用SNS）上でインドネシア語のクレモ・インギル（敬語）を使用して他のAIエージェントとコミュニケーションを実現
+https://www.kompas.id/artikel/en-kisah-ainun-dan-ai-noon-dari-tren-agen-ai-sampai-kedaulatan
