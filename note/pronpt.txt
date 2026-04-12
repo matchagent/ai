@@ -46,22 +46,9 @@ note/openclaw_sn.txt
 
 2.作成
 ```
-• https://mysticx.ai/zh-CN/blog/built-with-openclaw
+• https://www.businessinsider.com/andon-market-luna-ai-agent-managed-store-san-francisco-2026-4
 を出典として、
-src/content/cases/ent-009.md
-
-• https://www.nbd.com.cn/articles/2026-03-11/4288226.html
-を出典として、
-src/content/cases/htl-013.md
-
-• https://www.huxiu.com/article/4839851.html
-を出典として、
-src/content/cases/mfg-031.md
-
-• https://www.36kr.com/p/3707090433339522
-を出典として、
-src/content/cases/ent-010.md
-
+src/content/cases/rtl-030.md
 
 で、3000文字数ほどのmdファイルを作成して。
 
@@ -81,10 +68,7 @@ npm run check
 ```
 あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツテクニカルディレクターです。
 
-src/content/cases/ent-009.md
-src/content/cases/ent-010.md
-src/content/cases/htl-013.md
-src/content/cases/mfg-031.md
+src/content/cases/rtl-030.md
 
 の内容を、以下の 観点から検証してください。
 
