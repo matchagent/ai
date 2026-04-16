@@ -46,15 +46,15 @@ note/openclaw_sn.txt
 
 2.作成
 ```
-• https://www.businessinsider.com/andon-market-luna-ai-agent-managed-store-san-francisco-2026-4
+• https://newswitch.jp/p/48903
 を出典として、
-src/content/cases/rtl-030.md
+src/content/cases/mfg-032.md
 
 で、3000文字数ほどのmdファイルを作成して。
 
 文体や文章の流れは
 
-/home/masasikatano/Documents/matchagent/src/content/cases/food-002.md
+/src/content/cases/food-002.md
 
 を参考にして。
 
@@ -68,7 +68,7 @@ npm run check
 ```
 あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツテクニカルディレクターです。
 
-src/content/cases/rtl-030.md
+src/content/cases/mfg-032.md
 
 の内容を、以下の 観点から検証してください。
 

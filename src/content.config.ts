@@ -35,7 +35,10 @@ const cases = defineCollection({
     metric_value: z.number(),
     metric_unit: z.string(),
     source_url_verified: z.boolean(),
-    source_url: z.string().url().optional(),
+    source_url: z.string().optional().refine(
+      (val) => !val || URL.canParse(val),
+      { message: 'Invalid URL' }
+    ),
     date: z.date(),
     excerpt: z.string().max(120),
   }),
