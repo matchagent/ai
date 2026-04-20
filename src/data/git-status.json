@@ -1,93 +1,12 @@
 {
-  "generatedAt": "2026-04-10T14:07:27.681Z",
-  "count": 4,
+  "generatedAt": "2026-04-20T02:35:28.279Z",
+  "count": 0,
   "summary": {
-    "untracked": 4,
+    "untracked": 0,
     "modified": 0,
     "staged": 0,
     "added": 0,
     "deleted": 0
   },
-  "files": [
-    {
-      "filename": "ent-010.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-10T12:55:23.121Z",
-      "mtime": "2026-04-10T13:06:31.179Z",
-      "frontmatter": {
-        "title": "猎豹移动：「龙虾军团」8体のAIエージェントで市場チーム半分を代替",
-        "industry": "ent",
-        "domain": "marketing",
-        "company_size": "large",
-        "tech_tags": [
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2026-03-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "mfg-031.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-10T12:54:27.488Z",
-      "mtime": "2026-04-10T13:06:58.964Z",
-      "frontmatter": {
-        "title": "韩一（微软製品設計師）：OpenClawで5体のAIエージェントによる個人生産性革命",
-        "industry": "mfg",
-        "domain": "production",
-        "company_size": "small",
-        "tech_tags": [
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2026-03-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "htl-013.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-10T12:53:22.133Z",
-      "mtime": "2026-04-10T13:06:44.734Z",
-      "frontmatter": {
-        "title": "wanderAI：8体のAIエージェントで無人旅行社を実現",
-        "industry": "htl",
-        "domain": "customer_support",
-        "company_size": "small",
-        "tech_tags": [
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2026-03-01T00:00:00.000Z"
-      }
-    },
-    {
-      "filename": "ent-009.md",
-      "status": "??",
-      "statusLabel": "未追跡",
-      "statusIcon": "🆕",
-      "statusType": "untracked",
-      "birthtime": "2026-04-10T12:52:16.958Z",
-      "mtime": "2026-04-10T13:06:16.181Z",
-      "frontmatter": {
-        "title": "MysticX.AI：OpenClawで2人チームがAIタロット体験を構築",
-        "industry": "ent",
-        "domain": "customer_support",
-        "company_size": "small",
-        "tech_tags": [
-          "AIエージェント"
-        ],
-        "source_url_verified": true,
-        "date": "2026-03-01T00:00:00.000Z"
-      }
-    }
-  ]
+  "files": []
 }
