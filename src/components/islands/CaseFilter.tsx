@@ -17,6 +17,34 @@ export default function CaseFilter({ cases, initialIndustry = 'all', initialComp
   const [selectedDomain, setSelectedDomain] = useState(initialDomain);
   const [selectedCompanySize, setSelectedCompanySize] = useState(initialCompanySize);
 
+  // 他の選択状態に応じて、存在する組み合わせの選択肢のみを有効化
+  const availableIndustries = useMemo(() => {
+    const set = new Set(cases
+      .filter(c => selectedCompanySize === 'all' || c.company_size === selectedCompanySize)
+      .filter(c => selectedDomain === 'all' || c.domain === selectedDomain)
+      .map(c => c.industry)
+    );
+    return INDUSTRIES.filter(i => i.value === 'all' || i.value === selectedIndustry || set.has(i.value));
+  }, [cases, selectedCompanySize, selectedDomain, selectedIndustry]);
+
+  const availableCompanySizes = useMemo(() => {
+    const set = new Set(cases
+      .filter(c => selectedIndustry === 'all' || c.industry === selectedIndustry)
+      .filter(c => selectedDomain === 'all' || c.domain === selectedDomain)
+      .map(c => c.company_size)
+    );
+    return COMPANY_SIZES.filter(s => s.value === 'all' || s.value === selectedCompanySize || set.has(s.value));
+  }, [cases, selectedIndustry, selectedDomain, selectedCompanySize]);
+
+  const availableDomains = useMemo(() => {
+    const set = new Set(cases
+      .filter(c => selectedIndustry === 'all' || c.industry === selectedIndustry)
+      .filter(c => selectedCompanySize === 'all' || c.company_size === selectedCompanySize)
+      .map(c => c.domain)
+    );
+    return DOMAINS.filter(d => d.value === 'all' || d.value === selectedDomain || set.has(d.value));
+  }, [cases, selectedIndustry, selectedCompanySize, selectedDomain]);
+
   const buildUrl = (industry: string, companySize: string, domain: string): string | null => {
     if (industry !== 'all') {
       if (companySize !== 'all' && domain !== 'all') return `/cases/${industry}/${companySize}/${domain}`;
@@ -42,15 +70,21 @@ export default function CaseFilter({ cases, initialIndustry = 'all', initialComp
   };
 
   const handleIndustryChange = (industry: string) => {
-    navigate(industry, selectedCompanySize, selectedDomain);
+    const nextSize = availableCompanySizes.some(s => s.value === selectedCompanySize) ? selectedCompanySize : 'all';
+    const nextDomain = availableDomains.some(d => d.value === selectedDomain) ? selectedDomain : 'all';
+    navigate(industry, nextSize, nextDomain);
   };
 
   const handleCompanySizeChange = (companySize: string) => {
-    navigate(selectedIndustry, companySize, selectedDomain);
+    const nextIndustry = availableIndustries.some(i => i.value === selectedIndustry) ? selectedIndustry : 'all';
+    const nextDomain = availableDomains.some(d => d.value === selectedDomain) ? selectedDomain : 'all';
+    navigate(nextIndustry, companySize, nextDomain);
   };
 
   const handleDomainChange = (domain: string) => {
-    navigate(selectedIndustry, selectedCompanySize, domain);
+    const nextIndustry = availableIndustries.some(i => i.value === selectedIndustry) ? selectedIndustry : 'all';
+    const nextSize = availableCompanySizes.some(s => s.value === selectedCompanySize) ? selectedCompanySize : 'all';
+    navigate(nextIndustry, nextSize, domain);
   };
 
   const filteredCases = useMemo(() => {
@@ -76,7 +110,7 @@ export default function CaseFilter({ cases, initialIndustry = 'all', initialComp
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             >
               {INDUSTRIES.map((ind) => (
-                <option key={ind.value} value={ind.value}>
+                <option key={ind.value} value={ind.value} disabled={!availableIndustries.some(a => a.value === ind.value)}>
                   {ind.label}
                 </option>
               ))}
@@ -93,7 +127,7 @@ export default function CaseFilter({ cases, initialIndustry = 'all', initialComp
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             >
               {COMPANY_SIZES.map((size) => (
-                <option key={size.value} value={size.value}>
+                <option key={size.value} value={size.value} disabled={!availableCompanySizes.some(a => a.value === size.value)}>
                   {size.label}
                 </option>
               ))}
@@ -110,7 +144,7 @@ export default function CaseFilter({ cases, initialIndustry = 'all', initialComp
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             >
               {DOMAINS.map((dom) => (
-                <option key={dom.value} value={dom.value}>
+                <option key={dom.value} value={dom.value} disabled={!availableDomains.some(a => a.value === dom.value)}>
                   {dom.label}
                 </option>
               ))}

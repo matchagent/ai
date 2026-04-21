@@ -119,7 +119,7 @@ aimatchagent/
 npm install          # 依存関係インストール
 npm run dev          # 開発サーバー起動 (localhost:4321)
 npm run build        # プロダクションビルド
-npm run preview      # ビルド結果のプレビュー
+npm run preview      # ビルド結果のプレビュー (localhost:4325)
 npm run deploy       # Cloudflare Pages へデプロイ
 npm run check        # TypeScript 型チェック
 ```
@@ -131,6 +131,30 @@ npm run check        # TypeScript 型チェック
 | `npm run dev` | 開発サーバーを起動します。ファイル変更を検知して即座にブラウザを更新（HMR）します。**`@astrojs/sitemap` などのビルド時専用インテグレーションは動作しないため、`/sitemap-0.xml` などにはアクセスできません。** |
 | `npm run build` | プロダクション用の静的ファイルを `dist/` に出力します。TypeScript の型チェック（`astro check`）も同時に実行されます。`@astrojs/sitemap` による `sitemap-index.xml` / `sitemap-0.xml` の生成もこのタイミングで行われます。 |
 | `npm run preview` | `npm run build` で生成された `dist/` の内容を本番同様のサーバーで配信します。sitemap や `_redirects` など、ビルド時に生成されたファイルが正しく動作するか確認する際に使用します。 |
+
+### 主要ファイルの生成方法
+
+| ファイル | 生成元 | 生成方法 |
+|---------|--------|---------|
+| `admin/latest/` | `src/pages/admin/latest.astro` | `npm run build` で静的ページとして `dist/admin/latest/index.html` に出力されます。 |
+| `sitemap-0.xml` | `@astrojs/sitemap` | `npm run build` 時に Astro のインテグレーションが自動生成し、`dist/sitemap-0.xml` に出力されます。`astro dev` では生成されないため、確認には `npm run build && npm run preview` が必要です。 |
+
+### テスト
+
+| コマンド | 内容 |
+|---------|------|
+| `npm run test` | すべてのテストを実行します。 |
+| `npm run test:sitemap` | `sitemap-0.xml` に含まれるすべての URL を `localhost:4325` に対してフェッチし、HTTP 200 が返るかを検証します。実行前に `npm run preview` などでサーバーを起動しておく必要があります。 |
+
+`test:sitemap` の対象 URL は環境変数 `TEST_BASE_URL` で変更できます。
+
+```bash
+# デフォルト（localhost:4325）
+npm run test:sitemap
+
+# 別ポートで preview している場合
+TEST_BASE_URL=http://localhost:4321 npm run test:sitemap
+```
 
 ## 環境変数
 
