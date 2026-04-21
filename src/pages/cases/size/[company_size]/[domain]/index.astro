@@ -7,8 +7,11 @@ import { COMPANY_SIZE_KEYS, DOMAIN_KEYS, companySizeLabels, companySizeFullLabel
 import { getSortedCases } from '@/utils/getCasesData';
 
 export async function getStaticPaths() {
+  const cases = await getSortedCases();
+  const existing = new Set(cases.map(c => `${c.company_size}-${c.domain}`));
   return COMPANY_SIZE_KEYS.flatMap(company_size =>
-    DOMAIN_KEYS.map(domain => ({ params: { company_size, domain } }))
+    DOMAIN_KEYS.filter(domain => existing.has(`${company_size}-${domain}`))
+      .map(domain => ({ params: { company_size, domain } }))
   );
 }
 

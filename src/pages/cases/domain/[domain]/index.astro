@@ -7,7 +7,10 @@ import { DOMAIN_KEYS, domainLabels } from '@/utils/caseConstants';
 import { getSortedCases } from '@/utils/getCasesData';
 
 export async function getStaticPaths() {
-  return DOMAIN_KEYS.map(domain => ({ params: { domain } }));
+  const cases = await getSortedCases();
+  const existing = new Set(cases.map(c => c.domain));
+  return DOMAIN_KEYS.filter(domain => existing.has(domain))
+    .map(domain => ({ params: { domain } }));
 }
 
 const { domain } = Astro.params;

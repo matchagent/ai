@@ -7,7 +7,10 @@ import { COMPANY_SIZE_KEYS, companySizeLabels, companySizeFullLabels } from '@/u
 import { getSortedCases } from '@/utils/getCasesData';
 
 export async function getStaticPaths() {
-  return COMPANY_SIZE_KEYS.map(company_size => ({ params: { company_size } }));
+  const cases = await getSortedCases();
+  const existing = new Set(cases.map(c => c.company_size));
+  return COMPANY_SIZE_KEYS.filter(company_size => existing.has(company_size))
+    .map(company_size => ({ params: { company_size } }));
 }
 
 const { company_size } = Astro.params;

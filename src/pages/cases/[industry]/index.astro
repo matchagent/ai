@@ -7,7 +7,10 @@ import { INDUSTRY_KEYS, industryLabels } from '@/utils/caseConstants';
 import { getSortedCases } from '@/utils/getCasesData';
 
 export async function getStaticPaths() {
-  return INDUSTRY_KEYS.map(industry => ({ params: { industry } }));
+  const cases = await getSortedCases();
+  const existing = new Set(cases.map(c => c.industry));
+  return INDUSTRY_KEYS.filter(industry => existing.has(industry))
+    .map(industry => ({ params: { industry } }));
 }
 
 const { industry } = Astro.params;

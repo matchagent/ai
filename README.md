@@ -124,6 +124,14 @@ npm run deploy       # Cloudflare Pages へデプロイ
 npm run check        # TypeScript 型チェック
 ```
 
+### コマンドの詳細
+
+| コマンド | 内容 |
+|---------|------|
+| `npm run dev` | 開発サーバーを起動します。ファイル変更を検知して即座にブラウザを更新（HMR）します。**`@astrojs/sitemap` などのビルド時専用インテグレーションは動作しないため、`/sitemap-0.xml` などにはアクセスできません。** |
+| `npm run build` | プロダクション用の静的ファイルを `dist/` に出力します。TypeScript の型チェック（`astro check`）も同時に実行されます。`@astrojs/sitemap` による `sitemap-index.xml` / `sitemap-0.xml` の生成もこのタイミングで行われます。 |
+| `npm run preview` | `npm run build` で生成された `dist/` の内容を本番同様のサーバーで配信します。sitemap や `_redirects` など、ビルド時に生成されたファイルが正しく動作するか確認する際に使用します。 |
+
 ## 環境変数
 
 `.env` ファイルを作成し以下を設定（`.env.example` 参照）:
