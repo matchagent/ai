@@ -56,7 +56,7 @@ note/openclaw_sn.txt
 
 2.作成
 ```
-.agents/skills/add-case.md を参照して、以下の記事を作成してください。
+.agents/skills/add-case.md を参照して、以下の記事を作成して。
 
 | 出典URL | 出力ファイル |
 |---------|-------------|
@@ -89,7 +89,8 @@ src/content/cases/re-025.md
 ```
 あなたは AI 事例プラットフォーム「AIMatchAgent」のコンテンツ日本語ローカライズディレクターです。
 
-src/content/cases/rtl-031.md
+src/content/cases/food-052.md
+src/content/cases/food-053.md
 
 の内容を、以下の 観点から検証してください。
 
