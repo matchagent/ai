@@ -9,7 +9,7 @@ metric_value: 1
 metric_unit: "件（全国初の飲食店AI Agent対応）"
 source_url_verified: true
 source_url: "https://h5.ifeng.com/c/vivo/v002KCstsgkcW01wIxtLc2fv289v5sBcXqXNobjrgmPqgfY__?vivoBusiness=hiboardnews"
-date: 2025-04-15
+date: 2026-04-15
 excerpt: 北京の人気餃子店「金谷园」がOpenClaw上に自店スキルを開発し、AI Agentを通じた排队取号を業界初で実現。技術者出身のオーナー主導で、飲食店とAI Agentの新しい接続形態を探索した先駆的事例。
 ---
 
